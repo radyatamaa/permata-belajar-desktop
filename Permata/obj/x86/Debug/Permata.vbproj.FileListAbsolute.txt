@@ -30,3 +30,21 @@ E:\radya\project\pribadi\permata-belajar-desktop\Permata\obj\x86\Debug\Permata.v
 E:\radya\project\pribadi\permata-belajar-desktop\Permata\obj\x86\Debug\Permata.exe
 E:\radya\project\pribadi\permata-belajar-desktop\Permata\obj\x86\Debug\Permata.xml
 E:\radya\project\pribadi\permata-belajar-desktop\Permata\obj\x86\Debug\Permata.pdb
+C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\bin\Debug\Permata.exe
+C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\bin\Debug\Permata.pdb
+C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\bin\Debug\Permata.xml
+C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\obj\x86\Debug\Permata.vbprojAssemblyReference.cache
+C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\obj\x86\Debug\WindowsApplication1.Form1.resources
+C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\obj\x86\Debug\WindowsApplication1.Form2.resources
+C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\obj\x86\Debug\WindowsApplication1.Form3.resources
+C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\obj\x86\Debug\WindowsApplication1.Form4.resources
+C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\obj\x86\Debug\WindowsApplication1.Form5.resources
+C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\obj\x86\Debug\WindowsApplication1.Form6.resources
+C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\obj\x86\Debug\WindowsApplication1.Form7.resources
+C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\obj\x86\Debug\WindowsApplication1.Form8.resources
+C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\obj\x86\Debug\WindowsApplication1.Resources.resources
+C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\obj\x86\Debug\Permata.vbproj.GenerateResource.cache
+C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\obj\x86\Debug\Permata.vbproj.CoreCompileInputs.cache
+C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\obj\x86\Debug\Permata.exe
+C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\obj\x86\Debug\Permata.xml
+C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\obj\x86\Debug\Permata.pdb
