@@ -43,9 +43,10 @@ Partial Class Form1
         Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.PictureBox1.ErrorImage = CType(resources.GetObject("PictureBox1.ErrorImage"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(778, 119)
+        Me.PictureBox1.Location = New System.Drawing.Point(584, 97)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(39, 45)
+        Me.PictureBox1.Size = New System.Drawing.Size(29, 37)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
@@ -54,9 +55,10 @@ Partial Class Form1
         '
         Me.PictureBox2.BackgroundImage = CType(resources.GetObject("PictureBox2.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox2.Location = New System.Drawing.Point(778, 182)
+        Me.PictureBox2.Location = New System.Drawing.Point(584, 148)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(39, 45)
+        Me.PictureBox2.Size = New System.Drawing.Size(29, 37)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 1
         Me.PictureBox2.TabStop = False
@@ -64,84 +66,93 @@ Partial Class Form1
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.SystemColors.ActiveBorder
-        Me.Panel1.Location = New System.Drawing.Point(778, 255)
+        Me.Panel1.Location = New System.Drawing.Point(584, 207)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(80, 1)
+        Me.Panel1.Size = New System.Drawing.Size(60, 1)
         Me.Panel1.TabIndex = 2
         '
         'Email
         '
         Me.Email.AutoSize = True
-        Me.Email.Location = New System.Drawing.Point(778, 275)
+        Me.Email.Location = New System.Drawing.Point(584, 223)
+        Me.Email.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Email.Name = "Email"
-        Me.Email.Size = New System.Drawing.Size(42, 17)
+        Me.Email.Size = New System.Drawing.Size(32, 13)
         Me.Email.TabIndex = 3
         Me.Email.Text = "Email"
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(781, 308)
+        Me.TextBox1.Location = New System.Drawing.Point(586, 250)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(202, 22)
+        Me.TextBox1.Size = New System.Drawing.Size(152, 20)
         Me.TextBox1.TabIndex = 4
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(778, 385)
+        Me.TextBox2.Location = New System.Drawing.Point(584, 313)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(202, 22)
+        Me.TextBox2.Size = New System.Drawing.Size(152, 20)
         Me.TextBox2.TabIndex = 5
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(778, 348)
+        Me.Label1.Location = New System.Drawing.Point(584, 283)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(69, 17)
+        Me.Label1.Size = New System.Drawing.Size(53, 13)
         Me.Label1.TabIndex = 6
         Me.Label1.Text = "Password"
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(778, 442)
+        Me.Button1.Location = New System.Drawing.Point(584, 359)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(237, 51)
+        Me.Button1.Size = New System.Drawing.Size(178, 41)
         Me.Button1.TabIndex = 7
-        Me.Button1.Text = "Sign In"
+        Me.Button1.Text = "Sign in"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.SystemColors.ActiveBorder
-        Me.Panel2.Location = New System.Drawing.Point(910, 255)
+        Me.Panel2.Location = New System.Drawing.Point(682, 207)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(80, 1)
+        Me.Panel2.Size = New System.Drawing.Size(60, 1)
         Me.Panel2.TabIndex = 3
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(867, 245)
+        Me.Label2.Location = New System.Drawing.Point(650, 199)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(37, 17)
+        Me.Label2.Size = New System.Drawing.Size(29, 13)
         Me.Label2.TabIndex = 8
         Me.Label2.Text = "Atau"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(778, 75)
+        Me.Label3.Location = New System.Drawing.Point(584, 61)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(51, 17)
+        Me.Label3.Size = New System.Drawing.Size(40, 13)
         Me.Label3.TabIndex = 9
         Me.Label3.Text = "Sign In"
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.ClientSize = New System.Drawing.Size(1141, 611)
+        Me.ClientSize = New System.Drawing.Size(856, 496)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Panel2)
@@ -153,6 +164,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "Form1"
         Me.Text = "Form1"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
