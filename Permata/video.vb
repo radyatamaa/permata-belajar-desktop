@@ -1,4 +1,4 @@
-﻿Public Class Form4
+﻿Public Class video
 
     Private Sub Label1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
