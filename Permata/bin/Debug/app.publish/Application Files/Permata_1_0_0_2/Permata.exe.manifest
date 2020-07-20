@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Permata.exe" version="1.0.0.2" publicKeyToken="55a6091f7d621500" language="neutral" processorArchitecture="x86" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Permata" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="Permata.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Permata.exe" size="3861432">
+      <assemblyIdentity name="Permata" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>kV+UavOvVgjLLDPQ+mG5FDzo1iU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+<publisherIdentity name="CN=LAPTOP-CC80CKGO\Asus" issuerKeyHash="ff797a13a80b094005af6f83bcf8a9af8050f517" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>7uWzAqpnaSv/E2uMz3XcJ2kCj3Y=</DigestValue></Reference></SignedInfo><SignatureValue>A7mh3GVfdEo2ql9glgNlDgxHIRCPBXHLs5UnfY1Oyd1WB+I9X14p9dUWGk44w+w0N0FhZagkPOK2vh+Ob0QhXCSHRyLQd/I+dCCWTqlM7tpbcpIcVF2ilnhQQ4IgwpdglCOWWZDP9SlcfnuPrM2TZeUKLAB5NehhyEP7LaB2iSM=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>10A/uaIwIZJJYlApCFHR1pwv2OF+L1oDMmPMXMt/4Lt7DBiES6YAqXGSVBl19avY8DDJeXc9k8MuTbydjhhPrnT6016XogZV8Ow3IGEWkZ9kIjNmkUZNPEcz2XsTMP5I6oUjzV4n2oP5yktY55UdV3fhHpdjC57YGxnQJ7/qO50=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="768f026927dc75cf8c6b13ff2b6967aa02b3e5ee" Description="" Url=""><as:assemblyIdentity name="Permata.exe" version="1.0.0.2" publicKeyToken="55a6091f7d621500" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=LAPTOP-CC80CKGO\Asus</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>o7SsBc+1krPJCqQr6o9x9xfA7C8=</DigestValue></Reference></SignedInfo><SignatureValue>AbJkSACir831eNMnceQwhClyYRUYJtIHR9kXmjSbjUBxUAc6KNfKF/vWz/0q+GIILK1djlCuqZmL1birbJ5daUo828pBi7IOncfJ2bn5G/ifU1GtBpHu0vYROhOpIXJMg5hqZSD+AKI6fYYzaTRF1ihqNgJ0KGkM1zTo52ui9Kk=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>10A/uaIwIZJJYlApCFHR1pwv2OF+L1oDMmPMXMt/4Lt7DBiES6YAqXGSVBl19avY8DDJeXc9k8MuTbydjhhPrnT6016XogZV8Ow3IGEWkZ9kIjNmkUZNPEcz2XsTMP5I6oUjzV4n2oP5yktY55UdV3fhHpdjC57YGxnQJ7/qO50=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB6TCCAVKgAwIBAgIQQqFosIx/f4hBIvVpX+LigjANBgkqhkiG9w0BAQUFADAzMTEwLwYDVQQDHigATABBAFAAVABPAFAALQBDAEMAOAAwAEMASwBHAE8AXABBAHMAdQBzMB4XDTIwMDcyMDA3MjIyN1oXDTIxMDcyMDEzMjIyN1owMzExMC8GA1UEAx4oAEwAQQBQAFQATwBQAC0AQwBDADgAMABDAEsARwBPAFwAQQBzAHUAczCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA10A/uaIwIZJJYlApCFHR1pwv2OF+L1oDMmPMXMt/4Lt7DBiES6YAqXGSVBl19avY8DDJeXc9k8MuTbydjhhPrnT6016XogZV8Ow3IGEWkZ9kIjNmkUZNPEcz2XsTMP5I6oUjzV4n2oP5yktY55UdV3fhHpdjC57YGxnQJ7/qO50CAwEAATANBgkqhkiG9w0BAQUFAAOBgQA2/fHFTGNUd+fPCFcPUmdd6SeEnlkv/J4D8za4zto22od95BvZS639+W/6XlZxgCwAHmGg8gfM7P0jgC2zFMDB5hS+d7XIMx5Ypb4o5KdcM+gfFIVnYGw4JaPO79x4GtXmUoZT8vbEP+LpFkqVRDFMEYVZ0WPp5n9dwqfx8Zdmzw==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
