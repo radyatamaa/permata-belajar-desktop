@@ -79,11 +79,29 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.vb" />
-    <Compile Include="Form1.vb">
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
+    <Compile Include="My Project\Form1.Designer.vb">
       <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ringkasan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ringkasan.Designer.vb">
+      <DependentUpon>Ringkasan.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MenuUtama.Designer.vb">
@@ -108,10 +126,31 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Signin.Designer.vb">
+      <DependentUpon>Signin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Signin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Soal.Designer.vb">
+      <DependentUpon>Soal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Soal.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form1.resx">
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ringkasan.resx">
+      <DependentUpon>Ringkasan.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuUtama.resx">
       <DependentUpon>MenuUtama.vb</DependentUpon>
@@ -121,6 +160,12 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Signin.resx">
+      <DependentUpon>Signin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Soal.resx">
+      <DependentUpon>Soal.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -191,6 +236,17 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\tes masuk ptn1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
