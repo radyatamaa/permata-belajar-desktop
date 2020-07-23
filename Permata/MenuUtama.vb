@@ -3,15 +3,15 @@
 
     End Sub
 
-    Private Sub Guna2Button4_Click(sender As Object, e As EventArgs) Handles Guna2Button4.Click
-        Form1.Show()
+    Private Sub Guna2Button4_Click(sender As Object, e As EventArgs)
+        Ringkasan.Show()
     End Sub
 
-    Private Sub Guna2Panel3_Paint(sender As Object, e As PaintEventArgs) Handles Guna2Panel3.Paint
+    Private Sub Guna2Panel3_Paint(sender As Object, e As PaintEventArgs)
 
     End Sub
 
-    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
+    Private Sub Label4_Click(sender As Object, e As EventArgs)
 
     End Sub
 End Class

@@ -4,7 +4,6 @@ C:\Users\Asus\source\repos\Permata\Permata\bin\Debug\Permata.pdb
 C:\Users\Asus\source\repos\Permata\Permata\bin\Debug\Permata.xml
 C:\Users\Asus\source\repos\Permata\Permata\bin\Debug\Guna.UI2.dll
 C:\Users\Asus\source\repos\Permata\Permata\obj\Debug\Permata.vbprojAssemblyReference.cache
-C:\Users\Asus\source\repos\Permata\Permata\obj\Debug\Permata.Form1.resources
 C:\Users\Asus\source\repos\Permata\Permata\obj\Debug\Permata.Resources.resources
 C:\Users\Asus\source\repos\Permata\Permata\obj\Debug\Permata.vbproj.GenerateResource.cache
 C:\Users\Asus\source\repos\Permata\Permata\obj\Debug\Permata.vbproj.CoreCompileInputs.cache
@@ -13,3 +12,7 @@ C:\Users\Asus\source\repos\Permata\Permata\obj\Debug\Permata.exe
 C:\Users\Asus\source\repos\Permata\Permata\obj\Debug\Permata.xml
 C:\Users\Asus\source\repos\Permata\Permata\obj\Debug\Permata.pdb
 C:\Users\Asus\source\repos\Permata\Permata\obj\Debug\Permata.MenuUtama.resources
+C:\Users\Asus\source\repos\Permata\Permata\obj\Debug\Permata.Ringkasan.resources
+C:\Users\Asus\source\repos\Permata\Permata\obj\Debug\Permata.Form1.resources
+C:\Users\Asus\source\repos\Permata\Permata\obj\Debug\Permata.Login.resources
+C:\Users\Asus\source\repos\Permata\Permata\obj\Debug\Permata.Form2.resources

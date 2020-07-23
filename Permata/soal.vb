@@ -1,3 +1,3 @@
-﻿Public Class soal
+﻿Public Class Soal
 
 End Class
