@@ -23,38 +23,217 @@ Partial Class Soaljawaban
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Soaljawaban))
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Panel9 = New System.Windows.Forms.Panel()
+        Me.Button10 = New System.Windows.Forms.Button()
+        Me.Button9 = New System.Windows.Forms.Button()
+        Me.Panel8 = New System.Windows.Forms.Panel()
+        Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.Button8 = New System.Windows.Forms.Button()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Panel7 = New System.Windows.Forms.Panel()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.Guna2Button7 = New Guna.UI2.WinForms.Guna2Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.Panel7 = New System.Windows.Forms.Panel()
-        Me.Panel8 = New System.Windows.Forms.Panel()
-        Me.Panel9 = New System.Windows.Forms.Panel()
-        Me.Button9 = New System.Windows.Forms.Button()
-        Me.Button10 = New System.Windows.Forms.Button()
-        Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
-        Me.Panel3.SuspendLayout()
-        Me.Panel4.SuspendLayout()
-        Me.Panel5.SuspendLayout()
         Me.Panel9.SuspendLayout()
+        Me.Panel5.SuspendLayout()
+        Me.Panel4.SuspendLayout()
+        Me.Panel3.SuspendLayout()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
+        '
+        'Panel2
+        '
+        Me.Panel2.Controls.Add(Me.Panel9)
+        Me.Panel2.Controls.Add(Me.Panel8)
+        Me.Panel2.Controls.Add(Me.Panel6)
+        Me.Panel2.Controls.Add(Me.Panel5)
+        Me.Panel2.Controls.Add(Me.Panel4)
+        Me.Panel2.Controls.Add(Me.Panel3)
+        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel2.Location = New System.Drawing.Point(595, 0)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(932, 803)
+        Me.Panel2.TabIndex = 6
+        '
+        'Panel9
+        '
+        Me.Panel9.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Panel9.Controls.Add(Me.Button10)
+        Me.Panel9.Controls.Add(Me.Button9)
+        Me.Panel9.Location = New System.Drawing.Point(0, 703)
+        Me.Panel9.Name = "Panel9"
+        Me.Panel9.Size = New System.Drawing.Size(932, 100)
+        Me.Panel9.TabIndex = 5
+        '
+        'Button10
+        '
+        Me.Button10.Location = New System.Drawing.Point(534, 14)
+        Me.Button10.Name = "Button10"
+        Me.Button10.Size = New System.Drawing.Size(281, 73)
+        Me.Button10.TabIndex = 1
+        Me.Button10.Text = "Selanjutnya"
+        Me.Button10.UseVisualStyleBackColor = True
+        '
+        'Button9
+        '
+        Me.Button9.Location = New System.Drawing.Point(134, 15)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(281, 73)
+        Me.Button9.TabIndex = 0
+        Me.Button9.Text = "Sebelumnya"
+        Me.Button9.UseVisualStyleBackColor = True
+        '
+        'Panel8
+        '
+        Me.Panel8.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Panel8.Location = New System.Drawing.Point(0, 570)
+        Me.Panel8.Name = "Panel8"
+        Me.Panel8.Size = New System.Drawing.Size(929, 94)
+        Me.Panel8.TabIndex = 4
+        '
+        'Panel6
+        '
+        Me.Panel6.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Panel6.Location = New System.Drawing.Point(0, 510)
+        Me.Panel6.Name = "Panel6"
+        Me.Panel6.Size = New System.Drawing.Size(932, 45)
+        Me.Panel6.TabIndex = 3
+        '
+        'Panel5
+        '
+        Me.Panel5.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Panel5.Controls.Add(Me.Button8)
+        Me.Panel5.Controls.Add(Me.Button7)
+        Me.Panel5.Controls.Add(Me.Button6)
+        Me.Panel5.Controls.Add(Me.Button5)
+        Me.Panel5.Controls.Add(Me.Button4)
+        Me.Panel5.Controls.Add(Me.Label5)
+        Me.Panel5.Location = New System.Drawing.Point(0, 400)
+        Me.Panel5.Name = "Panel5"
+        Me.Panel5.Size = New System.Drawing.Size(932, 100)
+        Me.Panel5.TabIndex = 2
+        '
+        'Button8
+        '
+        Me.Button8.Location = New System.Drawing.Point(396, 49)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(60, 38)
+        Me.Button8.TabIndex = 5
+        Me.Button8.Text = "E"
+        Me.Button8.UseVisualStyleBackColor = True
+        '
+        'Button7
+        '
+        Me.Button7.Location = New System.Drawing.Point(314, 49)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(60, 38)
+        Me.Button7.TabIndex = 4
+        Me.Button7.Text = "D"
+        Me.Button7.UseVisualStyleBackColor = True
+        '
+        'Button6
+        '
+        Me.Button6.Location = New System.Drawing.Point(224, 49)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(60, 38)
+        Me.Button6.TabIndex = 3
+        Me.Button6.Text = "C"
+        Me.Button6.UseVisualStyleBackColor = True
+        '
+        'Button5
+        '
+        Me.Button5.Location = New System.Drawing.Point(134, 49)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(60, 38)
+        Me.Button5.TabIndex = 2
+        Me.Button5.Text = "B"
+        Me.Button5.UseVisualStyleBackColor = True
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(45, 49)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(60, 38)
+        Me.Button4.TabIndex = 1
+        Me.Button4.Text = "A"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(42, 16)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(173, 17)
+        Me.Label5.TabIndex = 0
+        Me.Label5.Text = "Pilihalah Jawaban Terbaik"
+        '
+        'Panel4
+        '
+        Me.Panel4.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Panel4.Controls.Add(Me.Label4)
+        Me.Panel4.Location = New System.Drawing.Point(0, 82)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(932, 310)
+        Me.Panel4.TabIndex = 1
+        '
+        'Label4
+        '
+        Me.Label4.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label4.Font = New System.Drawing.Font("Ubuntu Condensed", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(18, 16)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(407, 286)
+        Me.Label4.TabIndex = 1
+        Me.Label4.Text = resources.GetString("Label4.Text")
+        '
+        'Panel3
+        '
+        Me.Panel3.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Panel3.Controls.Add(Me.Label3)
+        Me.Panel3.Controls.Add(Me.Button3)
+        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel3.Location = New System.Drawing.Point(0, 0)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(932, 76)
+        Me.Panel3.TabIndex = 0
+        '
+        'Label3
+        '
+        Me.Label3.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.DimGray
+        Me.Label3.Location = New System.Drawing.Point(172, 24)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(159, 23)
+        Me.Label3.TabIndex = 1
+        Me.Label3.Text = "Topik Pelajaran"
+        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Button3
+        '
+        Me.Button3.BackColor = System.Drawing.Color.ForestGreen
+        Me.Button3.Font = New System.Drawing.Font("Ubuntu Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button3.Location = New System.Drawing.Point(7, 13)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(158, 43)
+        Me.Button3.TabIndex = 0
+        Me.Button3.Text = "Pelajaran"
+        Me.Button3.UseVisualStyleBackColor = False
         '
         'Panel1
         '
@@ -71,6 +250,31 @@ Partial Class Soaljawaban
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(595, 803)
         Me.Panel1.TabIndex = 5
+        '
+        'Panel7
+        '
+        Me.Panel7.Location = New System.Drawing.Point(595, 638)
+        Me.Panel7.Name = "Panel7"
+        Me.Panel7.Size = New System.Drawing.Size(932, 73)
+        Me.Panel7.TabIndex = 4
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(165, 439)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(248, 56)
+        Me.Button2.TabIndex = 58
+        Me.Button2.Text = "Laporkan Masalah"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(165, 361)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(248, 56)
+        Me.Button1.TabIndex = 57
+        Me.Button1.Text = "Selasai"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'Guna2Button7
         '
@@ -119,210 +323,6 @@ Partial Class Soaljawaban
         Me.Label1.TabIndex = 54
         Me.Label1.Text = "Soal dan Latihan" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(165, 361)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(248, 56)
-        Me.Button1.TabIndex = 57
-        Me.Button1.Text = "Selasai"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(165, 439)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(248, 56)
-        Me.Button2.TabIndex = 58
-        Me.Button2.Text = "Laporkan Masalah"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Panel2
-        '
-        Me.Panel2.Controls.Add(Me.Panel9)
-        Me.Panel2.Controls.Add(Me.Panel8)
-        Me.Panel2.Controls.Add(Me.Panel6)
-        Me.Panel2.Controls.Add(Me.Panel5)
-        Me.Panel2.Controls.Add(Me.Panel4)
-        Me.Panel2.Controls.Add(Me.Panel3)
-        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel2.Location = New System.Drawing.Point(595, 0)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(932, 803)
-        Me.Panel2.TabIndex = 6
-        '
-        'Panel3
-        '
-        Me.Panel3.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Panel3.Controls.Add(Me.Label3)
-        Me.Panel3.Controls.Add(Me.Button3)
-        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel3.Location = New System.Drawing.Point(0, 0)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(932, 76)
-        Me.Panel3.TabIndex = 0
-        '
-        'Button3
-        '
-        Me.Button3.BackColor = System.Drawing.Color.ForestGreen
-        Me.Button3.Font = New System.Drawing.Font("Ubuntu Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button3.Location = New System.Drawing.Point(7, 13)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(158, 43)
-        Me.Button3.TabIndex = 0
-        Me.Button3.Text = "Pelajaran"
-        Me.Button3.UseVisualStyleBackColor = False
-        '
-        'Label3
-        '
-        Me.Label3.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.DimGray
-        Me.Label3.Location = New System.Drawing.Point(172, 24)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(159, 23)
-        Me.Label3.TabIndex = 1
-        Me.Label3.Text = "Topik Pelajaran"
-        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Label4
-        '
-        Me.Label4.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label4.Font = New System.Drawing.Font("Ubuntu Condensed", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(18, 16)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(407, 286)
-        Me.Label4.TabIndex = 1
-        Me.Label4.Text = resources.GetString("Label4.Text")
-        '
-        'Panel4
-        '
-        Me.Panel4.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Panel4.Controls.Add(Me.Label4)
-        Me.Panel4.Location = New System.Drawing.Point(0, 82)
-        Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(932, 310)
-        Me.Panel4.TabIndex = 1
-        '
-        'Panel5
-        '
-        Me.Panel5.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Panel5.Controls.Add(Me.Button8)
-        Me.Panel5.Controls.Add(Me.Button7)
-        Me.Panel5.Controls.Add(Me.Button6)
-        Me.Panel5.Controls.Add(Me.Button5)
-        Me.Panel5.Controls.Add(Me.Button4)
-        Me.Panel5.Controls.Add(Me.Label5)
-        Me.Panel5.Location = New System.Drawing.Point(0, 400)
-        Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(932, 100)
-        Me.Panel5.TabIndex = 2
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(42, 16)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(173, 17)
-        Me.Label5.TabIndex = 0
-        Me.Label5.Text = "Pilihalah Jawaban Terbaik"
-        '
-        'Button4
-        '
-        Me.Button4.Location = New System.Drawing.Point(45, 49)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(60, 38)
-        Me.Button4.TabIndex = 1
-        Me.Button4.Text = "A"
-        Me.Button4.UseVisualStyleBackColor = True
-        '
-        'Button5
-        '
-        Me.Button5.Location = New System.Drawing.Point(134, 49)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(60, 38)
-        Me.Button5.TabIndex = 2
-        Me.Button5.Text = "B"
-        Me.Button5.UseVisualStyleBackColor = True
-        '
-        'Button6
-        '
-        Me.Button6.Location = New System.Drawing.Point(224, 49)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(60, 38)
-        Me.Button6.TabIndex = 3
-        Me.Button6.Text = "C"
-        Me.Button6.UseVisualStyleBackColor = True
-        '
-        'Button7
-        '
-        Me.Button7.Location = New System.Drawing.Point(314, 49)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(60, 38)
-        Me.Button7.TabIndex = 4
-        Me.Button7.Text = "D"
-        Me.Button7.UseVisualStyleBackColor = True
-        '
-        'Button8
-        '
-        Me.Button8.Location = New System.Drawing.Point(396, 49)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(60, 38)
-        Me.Button8.TabIndex = 5
-        Me.Button8.Text = "E"
-        Me.Button8.UseVisualStyleBackColor = True
-        '
-        'Panel6
-        '
-        Me.Panel6.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Panel6.Location = New System.Drawing.Point(0, 510)
-        Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(932, 45)
-        Me.Panel6.TabIndex = 3
-        '
-        'Panel7
-        '
-        Me.Panel7.Location = New System.Drawing.Point(595, 638)
-        Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(932, 73)
-        Me.Panel7.TabIndex = 4
-        '
-        'Panel8
-        '
-        Me.Panel8.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Panel8.Location = New System.Drawing.Point(0, 570)
-        Me.Panel8.Name = "Panel8"
-        Me.Panel8.Size = New System.Drawing.Size(929, 94)
-        Me.Panel8.TabIndex = 4
-        '
-        'Panel9
-        '
-        Me.Panel9.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Panel9.Controls.Add(Me.Button10)
-        Me.Panel9.Controls.Add(Me.Button9)
-        Me.Panel9.Location = New System.Drawing.Point(0, 703)
-        Me.Panel9.Name = "Panel9"
-        Me.Panel9.Size = New System.Drawing.Size(932, 100)
-        Me.Panel9.TabIndex = 5
-        '
-        'Button9
-        '
-        Me.Button9.Location = New System.Drawing.Point(134, 15)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(281, 73)
-        Me.Button9.TabIndex = 0
-        Me.Button9.Text = "Sebelumnya"
-        Me.Button9.UseVisualStyleBackColor = True
-        '
-        'Button10
-        '
-        Me.Button10.Location = New System.Drawing.Point(534, 14)
-        Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(281, 73)
-        Me.Button10.TabIndex = 1
-        Me.Button10.Text = "Selanjutnya"
-        Me.Button10.UseVisualStyleBackColor = True
-        '
         'Soaljawaban
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -332,14 +332,14 @@ Partial Class Soaljawaban
         Me.Controls.Add(Me.Panel1)
         Me.Name = "Soaljawaban"
         Me.Text = "Soaljawaban"
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
-        Me.Panel3.ResumeLayout(False)
-        Me.Panel4.ResumeLayout(False)
+        Me.Panel9.ResumeLayout(False)
         Me.Panel5.ResumeLayout(False)
         Me.Panel5.PerformLayout()
-        Me.Panel9.ResumeLayout(False)
+        Me.Panel4.ResumeLayout(False)
+        Me.Panel3.ResumeLayout(False)
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub

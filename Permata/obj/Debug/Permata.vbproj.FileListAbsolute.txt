@@ -38,3 +38,5 @@ C:\Users\Asus\Documents\Github\permata-belajar-desktop\Permata\obj\Debug\Permata
 C:\Users\Asus\Documents\Github\permata-belajar-desktop\Permata\obj\Debug\Permata.vbproj.GenerateResource.cache
 C:\Users\Asus\Documents\Github\permata-belajar-desktop\Permata\obj\Debug\Permata.vbproj.CoreCompileInputs.cache
 C:\Users\Asus\Documents\Github\permata-belajar-desktop\Permata\obj\Debug\Permata.vbproj.CopyComplete
+C:\Users\Asus\Documents\Github\permata-belajar-desktop\Permata\obj\Debug\Permata.vbprojAssemblyReference.cache
+C:\Users\Asus\Documents\Github\permata-belajar-desktop\Permata\obj\Debug\Permata.Profil.resources
