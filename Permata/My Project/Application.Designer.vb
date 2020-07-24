@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.Permata.Lainnya
+            Me.MainForm = Global.Permata.Signin
         End Sub
     End Class
 End Namespace

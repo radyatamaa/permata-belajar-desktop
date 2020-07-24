@@ -42,4 +42,25 @@
     Private Sub Button20_Click(sender As Object, e As EventArgs) Handles Button20.Click
         Panel5.Visible = True
     End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Lainnya.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
+        Ringkasan.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub Guna2Button2_Click(sender As Object, e As EventArgs) Handles Guna2Button2.Click
+        Soal.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub Guna2Button3_Click(sender As Object, e As EventArgs) Handles Guna2Button3.Click
+        Form2.Show()
+        Me.Hide()
+    End Sub
+
 End Class
