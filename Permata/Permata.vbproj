@@ -12,7 +12,7 @@
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -85,16 +85,22 @@
     <Compile Include="Form2.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="My Project\Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="Lainnya.Designer.vb">
+      <DependentUpon>Lainnya.vb</DependentUpon>
     </Compile>
-    <Compile Include="My Project\Form1.vb">
+    <Compile Include="Lainnya.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="My Project\Login.Designer.vb">
-      <DependentUpon>Login.vb</DependentUpon>
+    <Compile Include="Prestasi.Designer.vb">
+      <DependentUpon>Prestasi.vb</DependentUpon>
     </Compile>
-    <Compile Include="My Project\Login.vb">
+    <Compile Include="Prestasi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profil.Designer.vb">
+      <DependentUpon>Profil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Profil.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Ringkasan.vb">
@@ -138,16 +144,25 @@
     <Compile Include="Soal.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Soaljawaban.Designer.vb">
+      <DependentUpon>Soaljawaban.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Soaljawaban.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="My Project\Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="Lainnya.resx">
+      <DependentUpon>Lainnya.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="My Project\Login.resx">
-      <DependentUpon>Login.vb</DependentUpon>
+    <EmbeddedResource Include="Prestasi.resx">
+      <DependentUpon>Prestasi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profil.resx">
+      <DependentUpon>Profil.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ringkasan.resx">
       <DependentUpon>Ringkasan.vb</DependentUpon>
@@ -166,6 +181,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Soal.resx">
       <DependentUpon>Soal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Soaljawaban.resx">
+      <DependentUpon>Soaljawaban.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

@@ -192,7 +192,7 @@ Partial Class Soal
         Me.Label25.Font = New System.Drawing.Font("Ubuntu Condensed", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label25.Location = New System.Drawing.Point(226, 428)
         Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(80, 17)
+        Me.Label25.Size = New System.Drawing.Size(85, 18)
         Me.Label25.TabIndex = 50
         Me.Label25.Text = "Tes Masuk PTN" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
@@ -204,7 +204,7 @@ Partial Class Soal
         Me.Label24.Font = New System.Drawing.Font("Ubuntu Condensed", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label24.Location = New System.Drawing.Point(71, 429)
         Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(66, 17)
+        Me.Label24.Size = New System.Drawing.Size(70, 18)
         Me.Label24.TabIndex = 49
         Me.Label24.Text = "Kelas 12 IPS"
         '
@@ -226,7 +226,7 @@ Partial Class Soal
         Me.Label11.Font = New System.Drawing.Font("Ubuntu Condensed", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.Location = New System.Drawing.Point(397, 327)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(68, 17)
+        Me.Label11.Size = New System.Drawing.Size(71, 18)
         Me.Label11.TabIndex = 47
         Me.Label11.Text = "Kelas 12 IPA"
         '
@@ -238,7 +238,7 @@ Partial Class Soal
         Me.Label10.Font = New System.Drawing.Font("Ubuntu Condensed", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.Location = New System.Drawing.Point(246, 327)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(49, 17)
+        Me.Label10.Size = New System.Drawing.Size(50, 18)
         Me.Label10.TabIndex = 46
         Me.Label10.Text = "Kelas 11"
         '
@@ -250,7 +250,7 @@ Partial Class Soal
         Me.Label9.Font = New System.Drawing.Font("Ubuntu Condensed", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.Location = New System.Drawing.Point(79, 327)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(49, 17)
+        Me.Label9.Size = New System.Drawing.Size(50, 18)
         Me.Label9.TabIndex = 45
         Me.Label9.Text = "Kelas 10"
         '
@@ -262,7 +262,7 @@ Partial Class Soal
         Me.Label8.Font = New System.Drawing.Font("Ubuntu Condensed", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.Location = New System.Drawing.Point(413, 220)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(43, 17)
+        Me.Label8.Size = New System.Drawing.Size(44, 18)
         Me.Label8.TabIndex = 44
         Me.Label8.Text = "Kelas 9"
         '
@@ -274,7 +274,7 @@ Partial Class Soal
         Me.Label7.Font = New System.Drawing.Font("Ubuntu Condensed", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.Location = New System.Drawing.Point(246, 226)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(43, 17)
+        Me.Label7.Size = New System.Drawing.Size(44, 18)
         Me.Label7.TabIndex = 43
         Me.Label7.Text = "Kelas 8"
         '
@@ -286,7 +286,7 @@ Partial Class Soal
         Me.Label6.Font = New System.Drawing.Font("Ubuntu Condensed", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.Location = New System.Drawing.Point(79, 226)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(43, 17)
+        Me.Label6.Size = New System.Drawing.Size(44, 18)
         Me.Label6.TabIndex = 42
         Me.Label6.Text = "Kelas 7"
         '
@@ -298,7 +298,7 @@ Partial Class Soal
         Me.Label4.Font = New System.Drawing.Font("Ubuntu Condensed", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(246, 120)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(43, 17)
+        Me.Label4.Size = New System.Drawing.Size(44, 18)
         Me.Label4.TabIndex = 40
         Me.Label4.Text = "Kelas 5"
         '
@@ -310,7 +310,7 @@ Partial Class Soal
         Me.Label3.Font = New System.Drawing.Font("Ubuntu Condensed", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(79, 120)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(43, 17)
+        Me.Label3.Size = New System.Drawing.Size(44, 18)
         Me.Label3.TabIndex = 39
         Me.Label3.Text = "Kelas 4"
         '
@@ -483,7 +483,7 @@ Partial Class Soal
         Me.Label5.Font = New System.Drawing.Font("Ubuntu Condensed", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.Location = New System.Drawing.Point(413, 120)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(43, 17)
+        Me.Label5.Size = New System.Drawing.Size(44, 18)
         Me.Label5.TabIndex = 41
         Me.Label5.Text = "Kelas 6"
         '
