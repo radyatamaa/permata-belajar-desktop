@@ -77,14 +77,14 @@ Partial Class MenuUtama
         Me.Panel7 = New System.Windows.Forms.Panel()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label17 = New System.Windows.Forms.Label()
-        Me.Label16 = New System.Windows.Forms.Label()
-        Me.Label15 = New System.Windows.Forms.Label()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.Guna2Button4 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
+        Me.lblfeature3 = New System.Windows.Forms.Label()
+        Me.lblfeature2 = New System.Windows.Forms.Label()
+        Me.lblfeature1 = New System.Windows.Forms.Label()
+        Me.lblfeature0 = New System.Windows.Forms.Label()
+        Me.btnfeature3 = New Guna.UI2.WinForms.Guna2Button()
+        Me.btnfeature0 = New Guna.UI2.WinForms.Guna2Button()
+        Me.btnfeature2 = New Guna.UI2.WinForms.Guna2Button()
+        Me.btnfeature1 = New Guna.UI2.WinForms.Guna2Button()
         Me.Panel6 = New System.Windows.Forms.Panel()
         Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Panel1.SuspendLayout()
@@ -107,7 +107,7 @@ Partial Class MenuUtama
         Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(400, 609)
         Me.Panel1.TabIndex = 0
@@ -151,7 +151,7 @@ Partial Class MenuUtama
         Me.Panel3.Controls.Add(Me.btnkelas0)
         Me.Panel3.Controls.Add(Me.btnkelas1)
         Me.Panel3.Location = New System.Drawing.Point(0, 175)
-        Me.Panel3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(400, 432)
         Me.Panel3.TabIndex = 1
@@ -217,7 +217,7 @@ Partial Class MenuUtama
         Me.btnkelas14.FlatAppearance.BorderSize = 0
         Me.btnkelas14.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnkelas14.Location = New System.Drawing.Point(284, 384)
-        Me.btnkelas14.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnkelas14.Margin = New System.Windows.Forms.Padding(2)
         Me.btnkelas14.Name = "btnkelas14"
         Me.btnkelas14.Size = New System.Drawing.Size(57, 52)
         Me.btnkelas14.TabIndex = 54
@@ -232,7 +232,7 @@ Partial Class MenuUtama
         Me.btnkelas12.FlatAppearance.BorderSize = 0
         Me.btnkelas12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnkelas12.Location = New System.Drawing.Point(36, 384)
-        Me.btnkelas12.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnkelas12.Margin = New System.Windows.Forms.Padding(2)
         Me.btnkelas12.Name = "btnkelas12"
         Me.btnkelas12.Size = New System.Drawing.Size(57, 52)
         Me.btnkelas12.TabIndex = 53
@@ -247,7 +247,7 @@ Partial Class MenuUtama
         Me.btnkelas13.FlatAppearance.BorderSize = 0
         Me.btnkelas13.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnkelas13.Location = New System.Drawing.Point(159, 384)
-        Me.btnkelas13.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnkelas13.Margin = New System.Windows.Forms.Padding(2)
         Me.btnkelas13.Name = "btnkelas13"
         Me.btnkelas13.Size = New System.Drawing.Size(57, 52)
         Me.btnkelas13.TabIndex = 52
@@ -263,7 +263,7 @@ Partial Class MenuUtama
         Me.btnkelas11.FlatAppearance.BorderSize = 0
         Me.btnkelas11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnkelas11.Location = New System.Drawing.Point(286, 293)
-        Me.btnkelas11.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnkelas11.Margin = New System.Windows.Forms.Padding(2)
         Me.btnkelas11.Name = "btnkelas11"
         Me.btnkelas11.Size = New System.Drawing.Size(57, 52)
         Me.btnkelas11.TabIndex = 51
@@ -432,7 +432,7 @@ Partial Class MenuUtama
         Me.btnkelas9.FlatAppearance.BorderSize = 0
         Me.btnkelas9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnkelas9.Location = New System.Drawing.Point(39, 293)
-        Me.btnkelas9.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnkelas9.Margin = New System.Windows.Forms.Padding(2)
         Me.btnkelas9.Name = "btnkelas9"
         Me.btnkelas9.Size = New System.Drawing.Size(57, 52)
         Me.btnkelas9.TabIndex = 38
@@ -448,7 +448,7 @@ Partial Class MenuUtama
         Me.btnkelas10.FlatAppearance.BorderSize = 0
         Me.btnkelas10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnkelas10.Location = New System.Drawing.Point(162, 293)
-        Me.btnkelas10.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnkelas10.Margin = New System.Windows.Forms.Padding(2)
         Me.btnkelas10.Name = "btnkelas10"
         Me.btnkelas10.Size = New System.Drawing.Size(57, 52)
         Me.btnkelas10.TabIndex = 37
@@ -463,7 +463,7 @@ Partial Class MenuUtama
         Me.btnkelas8.FlatAppearance.BorderSize = 0
         Me.btnkelas8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnkelas8.Location = New System.Drawing.Point(286, 211)
-        Me.btnkelas8.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnkelas8.Margin = New System.Windows.Forms.Padding(2)
         Me.btnkelas8.Name = "btnkelas8"
         Me.btnkelas8.Size = New System.Drawing.Size(57, 52)
         Me.btnkelas8.TabIndex = 36
@@ -478,7 +478,7 @@ Partial Class MenuUtama
         Me.btnkelas6.FlatAppearance.BorderSize = 0
         Me.btnkelas6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnkelas6.Location = New System.Drawing.Point(39, 211)
-        Me.btnkelas6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnkelas6.Margin = New System.Windows.Forms.Padding(2)
         Me.btnkelas6.Name = "btnkelas6"
         Me.btnkelas6.Size = New System.Drawing.Size(57, 52)
         Me.btnkelas6.TabIndex = 35
@@ -493,7 +493,7 @@ Partial Class MenuUtama
         Me.btnkelas7.FlatAppearance.BorderSize = 0
         Me.btnkelas7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnkelas7.Location = New System.Drawing.Point(162, 211)
-        Me.btnkelas7.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnkelas7.Margin = New System.Windows.Forms.Padding(2)
         Me.btnkelas7.Name = "btnkelas7"
         Me.btnkelas7.Size = New System.Drawing.Size(57, 52)
         Me.btnkelas7.TabIndex = 34
@@ -508,7 +508,7 @@ Partial Class MenuUtama
         Me.btnkelas5.FlatAppearance.BorderSize = 0
         Me.btnkelas5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnkelas5.Location = New System.Drawing.Point(286, 124)
-        Me.btnkelas5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnkelas5.Margin = New System.Windows.Forms.Padding(2)
         Me.btnkelas5.Name = "btnkelas5"
         Me.btnkelas5.Size = New System.Drawing.Size(57, 52)
         Me.btnkelas5.TabIndex = 33
@@ -523,7 +523,7 @@ Partial Class MenuUtama
         Me.btnkelas3.FlatAppearance.BorderSize = 0
         Me.btnkelas3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnkelas3.Location = New System.Drawing.Point(39, 124)
-        Me.btnkelas3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnkelas3.Margin = New System.Windows.Forms.Padding(2)
         Me.btnkelas3.Name = "btnkelas3"
         Me.btnkelas3.Size = New System.Drawing.Size(57, 52)
         Me.btnkelas3.TabIndex = 32
@@ -538,7 +538,7 @@ Partial Class MenuUtama
         Me.btnkelas4.FlatAppearance.BorderSize = 0
         Me.btnkelas4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnkelas4.Location = New System.Drawing.Point(162, 124)
-        Me.btnkelas4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnkelas4.Margin = New System.Windows.Forms.Padding(2)
         Me.btnkelas4.Name = "btnkelas4"
         Me.btnkelas4.Size = New System.Drawing.Size(57, 52)
         Me.btnkelas4.TabIndex = 31
@@ -553,7 +553,7 @@ Partial Class MenuUtama
         Me.btnkelas2.FlatAppearance.BorderSize = 0
         Me.btnkelas2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnkelas2.Location = New System.Drawing.Point(286, 43)
-        Me.btnkelas2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnkelas2.Margin = New System.Windows.Forms.Padding(2)
         Me.btnkelas2.Name = "btnkelas2"
         Me.btnkelas2.Size = New System.Drawing.Size(57, 52)
         Me.btnkelas2.TabIndex = 30
@@ -568,7 +568,7 @@ Partial Class MenuUtama
         Me.btnkelas0.FlatAppearance.BorderSize = 0
         Me.btnkelas0.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnkelas0.Location = New System.Drawing.Point(39, 43)
-        Me.btnkelas0.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnkelas0.Margin = New System.Windows.Forms.Padding(2)
         Me.btnkelas0.Name = "btnkelas0"
         Me.btnkelas0.Size = New System.Drawing.Size(57, 52)
         Me.btnkelas0.TabIndex = 29
@@ -584,7 +584,7 @@ Partial Class MenuUtama
         Me.btnkelas1.FlatAppearance.BorderSize = 0
         Me.btnkelas1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnkelas1.Location = New System.Drawing.Point(162, 43)
-        Me.btnkelas1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnkelas1.Margin = New System.Windows.Forms.Padding(2)
         Me.btnkelas1.Name = "btnkelas1"
         Me.btnkelas1.Size = New System.Drawing.Size(57, 52)
         Me.btnkelas1.TabIndex = 28
@@ -601,7 +601,7 @@ Partial Class MenuUtama
         Me.Panel2.Controls.Add(Me.Label12)
         Me.Panel2.Controls.Add(Me.Guna2PictureBox3)
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(400, 175)
         Me.Panel2.TabIndex = 0
@@ -664,7 +664,7 @@ Partial Class MenuUtama
         Me.Guna2PictureBox3.BorderRadius = 33
         Me.Guna2PictureBox3.Image = CType(resources.GetObject("Guna2PictureBox3.Image"), System.Drawing.Image)
         Me.Guna2PictureBox3.Location = New System.Drawing.Point(56, 18)
-        Me.Guna2PictureBox3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2PictureBox3.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2PictureBox3.Name = "Guna2PictureBox3"
         Me.Guna2PictureBox3.ShadowDecoration.Parent = Me.Guna2PictureBox3
         Me.Guna2PictureBox3.Size = New System.Drawing.Size(68, 76)
@@ -681,7 +681,7 @@ Partial Class MenuUtama
         Me.Panel4.Controls.Add(Me.Guna2Panel6)
         Me.Panel4.Controls.Add(Me.Guna2PictureBox1)
         Me.Panel4.Location = New System.Drawing.Point(399, 0)
-        Me.Panel4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel4.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(746, 81)
         Me.Panel4.TabIndex = 1
@@ -698,7 +698,7 @@ Partial Class MenuUtama
         Me.Guna2Panel6.Controls.Add(Me.Button2)
         Me.Guna2Panel6.Controls.Add(Me.Button1)
         Me.Guna2Panel6.Location = New System.Drawing.Point(466, 2)
-        Me.Guna2Panel6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Panel6.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Panel6.Name = "Guna2Panel6"
         Me.Guna2Panel6.ShadowDecoration.Parent = Me.Guna2Panel6
         Me.Guna2Panel6.Size = New System.Drawing.Size(278, 77)
@@ -752,7 +752,7 @@ Partial Class MenuUtama
         Me.Button4.FlatAppearance.BorderSize = 0
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button4.Location = New System.Drawing.Point(148, 24)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(2)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(28, 25)
         Me.Button4.TabIndex = 4
@@ -766,7 +766,7 @@ Partial Class MenuUtama
         Me.Button3.FlatAppearance.BorderSize = 0
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Location = New System.Drawing.Point(214, 24)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(2)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(28, 25)
         Me.Button3.TabIndex = 3
@@ -780,7 +780,7 @@ Partial Class MenuUtama
         Me.Button2.FlatAppearance.BorderSize = 0
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Location = New System.Drawing.Point(17, 24)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(2)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(28, 25)
         Me.Button2.TabIndex = 2
@@ -794,7 +794,7 @@ Partial Class MenuUtama
         Me.Button1.FlatAppearance.BorderSize = 0
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Location = New System.Drawing.Point(84, 24)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(28, 25)
         Me.Button1.TabIndex = 1
@@ -807,7 +807,7 @@ Partial Class MenuUtama
         Me.Guna2PictureBox1.BackgroundImage = CType(resources.GetObject("Guna2PictureBox1.BackgroundImage"), System.Drawing.Image)
         Me.Guna2PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Guna2PictureBox1.Location = New System.Drawing.Point(16, 18)
-        Me.Guna2PictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2PictureBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
         Me.Guna2PictureBox1.ShadowDecoration.Parent = Me.Guna2PictureBox1
         Me.Guna2PictureBox1.Size = New System.Drawing.Size(256, 41)
@@ -825,7 +825,7 @@ Partial Class MenuUtama
         Me.Panel5.Controls.Add(Me.Panel6)
         Me.Panel5.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Panel5.Location = New System.Drawing.Point(399, 81)
-        Me.Panel5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel5.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(746, 590)
         Me.Panel5.TabIndex = 2
@@ -837,16 +837,16 @@ Partial Class MenuUtama
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel7.Controls.Add(Me.Label2)
         Me.Panel7.Controls.Add(Me.Label1)
-        Me.Panel7.Controls.Add(Me.Label17)
-        Me.Panel7.Controls.Add(Me.Label16)
-        Me.Panel7.Controls.Add(Me.Label15)
-        Me.Panel7.Controls.Add(Me.Label14)
-        Me.Panel7.Controls.Add(Me.Guna2Button4)
-        Me.Panel7.Controls.Add(Me.Guna2Button1)
-        Me.Panel7.Controls.Add(Me.Guna2Button3)
-        Me.Panel7.Controls.Add(Me.Guna2Button2)
+        Me.Panel7.Controls.Add(Me.lblfeature3)
+        Me.Panel7.Controls.Add(Me.lblfeature2)
+        Me.Panel7.Controls.Add(Me.lblfeature1)
+        Me.Panel7.Controls.Add(Me.lblfeature0)
+        Me.Panel7.Controls.Add(Me.btnfeature3)
+        Me.Panel7.Controls.Add(Me.btnfeature0)
+        Me.Panel7.Controls.Add(Me.btnfeature2)
+        Me.Panel7.Controls.Add(Me.btnfeature1)
         Me.Panel7.Location = New System.Drawing.Point(62, 277)
-        Me.Panel7.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel7.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel7.Name = "Panel7"
         Me.Panel7.Size = New System.Drawing.Size(652, 179)
         Me.Panel7.TabIndex = 2
@@ -874,122 +874,122 @@ Partial Class MenuUtama
         Me.Label1.Text = "Bimbel Online"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label17
+        'lblfeature3
         '
-        Me.Label17.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label17.Location = New System.Drawing.Point(485, 126)
-        Me.Label17.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(135, 15)
-        Me.Label17.TabIndex = 17
-        Me.Label17.Text = "Forum Konsultasi"
-        Me.Label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblfeature3.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lblfeature3.Location = New System.Drawing.Point(485, 126)
+        Me.lblfeature3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblfeature3.Name = "lblfeature3"
+        Me.lblfeature3.Size = New System.Drawing.Size(135, 15)
+        Me.lblfeature3.TabIndex = 17
+        Me.lblfeature3.Text = "Forum Konsultasi"
+        Me.lblfeature3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label16
+        'lblfeature2
         '
-        Me.Label16.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label16.Location = New System.Drawing.Point(331, 126)
-        Me.Label16.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(135, 15)
-        Me.Label16.TabIndex = 16
-        Me.Label16.Text = "Video Belajar"
-        Me.Label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblfeature2.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lblfeature2.Location = New System.Drawing.Point(331, 126)
+        Me.lblfeature2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblfeature2.Name = "lblfeature2"
+        Me.lblfeature2.Size = New System.Drawing.Size(135, 15)
+        Me.lblfeature2.TabIndex = 16
+        Me.lblfeature2.Text = "Video Belajar"
+        Me.lblfeature2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label15
+        'lblfeature1
         '
-        Me.Label15.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label15.Location = New System.Drawing.Point(181, 126)
-        Me.Label15.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(135, 15)
-        Me.Label15.TabIndex = 15
-        Me.Label15.Text = "Soal dan Latihan"
-        Me.Label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblfeature1.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lblfeature1.Location = New System.Drawing.Point(181, 126)
+        Me.lblfeature1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblfeature1.Name = "lblfeature1"
+        Me.lblfeature1.Size = New System.Drawing.Size(135, 15)
+        Me.lblfeature1.TabIndex = 15
+        Me.lblfeature1.Text = "Soal dan Latihan"
+        Me.lblfeature1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label14
+        'lblfeature0
         '
-        Me.Label14.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label14.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Label14.Location = New System.Drawing.Point(31, 126)
-        Me.Label14.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(135, 15)
-        Me.Label14.TabIndex = 14
-        Me.Label14.Text = "Ringkasan Materi"
-        Me.Label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblfeature0.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lblfeature0.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.lblfeature0.Location = New System.Drawing.Point(31, 126)
+        Me.lblfeature0.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblfeature0.Name = "lblfeature0"
+        Me.lblfeature0.Size = New System.Drawing.Size(135, 15)
+        Me.lblfeature0.TabIndex = 14
+        Me.lblfeature0.Text = "Ringkasan Materi"
+        Me.lblfeature0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Guna2Button4
+        'btnfeature3
         '
-        Me.Guna2Button4.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Guna2Button4.CheckedState.Parent = Me.Guna2Button4
-        Me.Guna2Button4.CustomImages.Parent = Me.Guna2Button4
-        Me.Guna2Button4.FillColor = System.Drawing.Color.White
-        Me.Guna2Button4.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2Button4.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button4.HoverState.Parent = Me.Guna2Button4
-        Me.Guna2Button4.Image = Global.Permata.My.Resources.Resources.tes_masuk_ptn1
-        Me.Guna2Button4.ImageSize = New System.Drawing.Size(180, 125)
-        Me.Guna2Button4.Location = New System.Drawing.Point(485, 39)
-        Me.Guna2Button4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.Guna2Button4.Name = "Guna2Button4"
-        Me.Guna2Button4.ShadowDecoration.Parent = Me.Guna2Button4
-        Me.Guna2Button4.Size = New System.Drawing.Size(135, 102)
-        Me.Guna2Button4.TabIndex = 13
+        Me.btnfeature3.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.btnfeature3.CheckedState.Parent = Me.btnfeature3
+        Me.btnfeature3.CustomImages.Parent = Me.btnfeature3
+        Me.btnfeature3.FillColor = System.Drawing.Color.White
+        Me.btnfeature3.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.btnfeature3.ForeColor = System.Drawing.Color.White
+        Me.btnfeature3.HoverState.Parent = Me.btnfeature3
+        Me.btnfeature3.Image = Global.Permata.My.Resources.Resources.tes_masuk_ptn1
+        Me.btnfeature3.ImageSize = New System.Drawing.Size(180, 125)
+        Me.btnfeature3.Location = New System.Drawing.Point(485, 39)
+        Me.btnfeature3.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnfeature3.Name = "btnfeature3"
+        Me.btnfeature3.ShadowDecoration.Parent = Me.btnfeature3
+        Me.btnfeature3.Size = New System.Drawing.Size(135, 102)
+        Me.btnfeature3.TabIndex = 13
         '
-        'Guna2Button1
+        'btnfeature0
         '
-        Me.Guna2Button1.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Guna2Button1.CheckedState.Parent = Me.Guna2Button1
-        Me.Guna2Button1.CustomImages.Parent = Me.Guna2Button1
-        Me.Guna2Button1.FillColor = System.Drawing.Color.White
-        Me.Guna2Button1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2Button1.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button1.HoverState.Parent = Me.Guna2Button1
-        Me.Guna2Button1.Image = Global.Permata.My.Resources.Resources.ringkasan
-        Me.Guna2Button1.ImageSize = New System.Drawing.Size(180, 125)
-        Me.Guna2Button1.Location = New System.Drawing.Point(31, 39)
-        Me.Guna2Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.Guna2Button1.Name = "Guna2Button1"
-        Me.Guna2Button1.ShadowDecoration.Parent = Me.Guna2Button1
-        Me.Guna2Button1.Size = New System.Drawing.Size(135, 102)
-        Me.Guna2Button1.TabIndex = 10
+        Me.btnfeature0.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.btnfeature0.CheckedState.Parent = Me.btnfeature0
+        Me.btnfeature0.CustomImages.Parent = Me.btnfeature0
+        Me.btnfeature0.FillColor = System.Drawing.Color.White
+        Me.btnfeature0.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.btnfeature0.ForeColor = System.Drawing.Color.White
+        Me.btnfeature0.HoverState.Parent = Me.btnfeature0
+        Me.btnfeature0.Image = Global.Permata.My.Resources.Resources.ringkasan
+        Me.btnfeature0.ImageSize = New System.Drawing.Size(180, 125)
+        Me.btnfeature0.Location = New System.Drawing.Point(31, 39)
+        Me.btnfeature0.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnfeature0.Name = "btnfeature0"
+        Me.btnfeature0.ShadowDecoration.Parent = Me.btnfeature0
+        Me.btnfeature0.Size = New System.Drawing.Size(135, 102)
+        Me.btnfeature0.TabIndex = 10
         '
-        'Guna2Button3
+        'btnfeature2
         '
-        Me.Guna2Button3.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Guna2Button3.CheckedState.Parent = Me.Guna2Button3
-        Me.Guna2Button3.CustomImages.Parent = Me.Guna2Button3
-        Me.Guna2Button3.FillColor = System.Drawing.Color.White
-        Me.Guna2Button3.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2Button3.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button3.HoverState.Parent = Me.Guna2Button3
-        Me.Guna2Button3.Image = Global.Permata.My.Resources.Resources.videos
-        Me.Guna2Button3.ImageSize = New System.Drawing.Size(180, 125)
-        Me.Guna2Button3.Location = New System.Drawing.Point(331, 39)
-        Me.Guna2Button3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.Guna2Button3.Name = "Guna2Button3"
-        Me.Guna2Button3.ShadowDecoration.Parent = Me.Guna2Button3
-        Me.Guna2Button3.Size = New System.Drawing.Size(135, 102)
-        Me.Guna2Button3.TabIndex = 12
+        Me.btnfeature2.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.btnfeature2.CheckedState.Parent = Me.btnfeature2
+        Me.btnfeature2.CustomImages.Parent = Me.btnfeature2
+        Me.btnfeature2.FillColor = System.Drawing.Color.White
+        Me.btnfeature2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.btnfeature2.ForeColor = System.Drawing.Color.White
+        Me.btnfeature2.HoverState.Parent = Me.btnfeature2
+        Me.btnfeature2.Image = Global.Permata.My.Resources.Resources.videos
+        Me.btnfeature2.ImageSize = New System.Drawing.Size(180, 125)
+        Me.btnfeature2.Location = New System.Drawing.Point(331, 39)
+        Me.btnfeature2.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnfeature2.Name = "btnfeature2"
+        Me.btnfeature2.ShadowDecoration.Parent = Me.btnfeature2
+        Me.btnfeature2.Size = New System.Drawing.Size(135, 102)
+        Me.btnfeature2.TabIndex = 12
         '
-        'Guna2Button2
+        'btnfeature1
         '
-        Me.Guna2Button2.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Guna2Button2.CheckedState.Parent = Me.Guna2Button2
-        Me.Guna2Button2.CustomImages.Parent = Me.Guna2Button2
-        Me.Guna2Button2.FillColor = System.Drawing.Color.White
-        Me.Guna2Button2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2Button2.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button2.HoverState.Parent = Me.Guna2Button2
-        Me.Guna2Button2.Image = Global.Permata.My.Resources.Resources.soal_dan_latihan
-        Me.Guna2Button2.ImageSize = New System.Drawing.Size(180, 125)
-        Me.Guna2Button2.Location = New System.Drawing.Point(181, 39)
-        Me.Guna2Button2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.Guna2Button2.Name = "Guna2Button2"
-        Me.Guna2Button2.ShadowDecoration.Parent = Me.Guna2Button2
-        Me.Guna2Button2.Size = New System.Drawing.Size(135, 102)
-        Me.Guna2Button2.TabIndex = 11
+        Me.btnfeature1.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.btnfeature1.CheckedState.Parent = Me.btnfeature1
+        Me.btnfeature1.CustomImages.Parent = Me.btnfeature1
+        Me.btnfeature1.FillColor = System.Drawing.Color.White
+        Me.btnfeature1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.btnfeature1.ForeColor = System.Drawing.Color.White
+        Me.btnfeature1.HoverState.Parent = Me.btnfeature1
+        Me.btnfeature1.Image = Global.Permata.My.Resources.Resources.soal_dan_latihan
+        Me.btnfeature1.ImageSize = New System.Drawing.Size(180, 125)
+        Me.btnfeature1.Location = New System.Drawing.Point(181, 39)
+        Me.btnfeature1.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnfeature1.Name = "btnfeature1"
+        Me.btnfeature1.ShadowDecoration.Parent = Me.btnfeature1
+        Me.btnfeature1.Size = New System.Drawing.Size(135, 102)
+        Me.btnfeature1.TabIndex = 11
         '
         'Panel6
         '
@@ -997,7 +997,7 @@ Partial Class MenuUtama
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel6.Controls.Add(Me.Guna2PictureBox2)
         Me.Panel6.Location = New System.Drawing.Point(62, 16)
-        Me.Panel6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel6.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(652, 188)
         Me.Panel6.TabIndex = 1
@@ -1010,7 +1010,7 @@ Partial Class MenuUtama
         Me.Guna2PictureBox2.BorderRadius = 71
         Me.Guna2PictureBox2.Image = CType(resources.GetObject("Guna2PictureBox2.Image"), System.Drawing.Image)
         Me.Guna2PictureBox2.Location = New System.Drawing.Point(16, 17)
-        Me.Guna2PictureBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2PictureBox2.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
         Me.Guna2PictureBox2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
         Me.Guna2PictureBox2.ShadowDecoration.Parent = Me.Guna2PictureBox2
@@ -1027,7 +1027,7 @@ Partial Class MenuUtama
         Me.Controls.Add(Me.Panel5)
         Me.Controls.Add(Me.Panel4)
         Me.Controls.Add(Me.Panel1)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "MenuUtama"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "MenuUtama"
@@ -1066,14 +1066,14 @@ Partial Class MenuUtama
     Friend WithEvents Guna2PictureBox2 As Guna.UI2.WinForms.Guna2PictureBox
     Friend WithEvents Panel6 As Panel
     Friend WithEvents Panel7 As Panel
-    Friend WithEvents Label17 As Label
-    Friend WithEvents Label16 As Label
-    Friend WithEvents Label15 As Label
-    Friend WithEvents Label14 As Label
-    Friend WithEvents Guna2Button4 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2Button3 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2Button2 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents lblfeature3 As Label
+    Friend WithEvents lblfeature2 As Label
+    Friend WithEvents lblfeature1 As Label
+    Friend WithEvents lblfeature0 As Label
+    Friend WithEvents btnfeature3 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents btnfeature0 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents btnfeature2 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents btnfeature1 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents Label12 As Label

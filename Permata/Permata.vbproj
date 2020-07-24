@@ -94,8 +94,10 @@
     <Compile Include="Lainnya.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Model\Feature.vb" />
     <Compile Include="Model\Kelas.vb" />
     <Compile Include="Model\KelasResponse.vb" />
+    <Compile Include="Model\FeatureResponse.vb" />
     <Compile Include="Prestasi.Designer.vb">
       <DependentUpon>Prestasi.vb</DependentUpon>
     </Compile>
