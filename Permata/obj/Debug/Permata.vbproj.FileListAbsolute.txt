@@ -90,3 +90,6 @@ C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop-baru\Permata\obj\De
 C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop-baru\Permata\obj\Debug\Permata.exe
 C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop-baru\Permata\obj\Debug\Permata.xml
 C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop-baru\Permata\obj\Debug\Permata.pdb
+C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop-baru\Permata\bin\Debug\Interop.WMPLib.dll
+C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop-baru\Permata\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop-baru\Permata\obj\Debug\AxInterop.WMPLib.dll

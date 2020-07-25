@@ -43,10 +43,13 @@ Partial Class Form2
         Me.Button8 = New System.Windows.Forms.Button()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Panel7 = New System.Windows.Forms.Panel()
+        Me.vidbelajar2 = New AxWMPLib.AxWindowsMediaPlayer()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.vidbelajar1 = New AxWMPLib.AxWindowsMediaPlayer()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.vidbelajar0 = New AxWMPLib.AxWindowsMediaPlayer()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.lblbab2 = New System.Windows.Forms.Label()
         Me.lblbab1 = New System.Windows.Forms.Label()
@@ -57,21 +60,16 @@ Partial Class Form2
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label26 = New System.Windows.Forms.Label()
         Me.Label22 = New System.Windows.Forms.Label()
-        Me.AxWindowsMediaPlayer2 = New AxWMPLib.AxWindowsMediaPlayer()
-        Me.vidbelajar0 = New AxWMPLib.AxWindowsMediaPlayer()
-        Me.vidbelajar1 = New AxWMPLib.AxWindowsMediaPlayer()
-        Me.vidbelajar2 = New AxWMPLib.AxWindowsMediaPlayer()
         Me.Panel4.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.Panel7.SuspendLayout()
+        CType(Me.vidbelajar2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel6.SuspendLayout()
+        CType(Me.vidbelajar1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel5.SuspendLayout()
+        CType(Me.vidbelajar0, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
-        CType(Me.AxWindowsMediaPlayer2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.vidbelajar0, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.vidbelajar1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.vidbelajar2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label25
@@ -135,7 +133,7 @@ Partial Class Form2
         Me.Panel4.Controls.Add(Me.Button7)
         Me.Panel4.Controls.Add(Me.Button8)
         Me.Panel4.Location = New System.Drawing.Point(0, 176)
-        Me.Panel4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel4.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(418, 390)
         Me.Panel4.TabIndex = 2
@@ -227,7 +225,7 @@ Partial Class Form2
         Me.Button19.FlatAppearance.BorderSize = 0
         Me.Button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button19.Location = New System.Drawing.Point(39, 270)
-        Me.Button19.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button19.Margin = New System.Windows.Forms.Padding(2)
         Me.Button19.Name = "Button19"
         Me.Button19.Size = New System.Drawing.Size(92, 52)
         Me.Button19.TabIndex = 38
@@ -243,7 +241,7 @@ Partial Class Form2
         Me.Button20.FlatAppearance.BorderSize = 0
         Me.Button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button20.Location = New System.Drawing.Point(162, 270)
-        Me.Button20.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button20.Margin = New System.Windows.Forms.Padding(2)
         Me.Button20.Name = "Button20"
         Me.Button20.Size = New System.Drawing.Size(92, 52)
         Me.Button20.TabIndex = 37
@@ -258,7 +256,7 @@ Partial Class Form2
         Me.Button9.FlatAppearance.BorderSize = 0
         Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button9.Location = New System.Drawing.Point(286, 172)
-        Me.Button9.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button9.Margin = New System.Windows.Forms.Padding(2)
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(92, 52)
         Me.Button9.TabIndex = 33
@@ -273,7 +271,7 @@ Partial Class Form2
         Me.Button11.FlatAppearance.BorderSize = 0
         Me.Button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button11.Location = New System.Drawing.Point(39, 172)
-        Me.Button11.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button11.Margin = New System.Windows.Forms.Padding(2)
         Me.Button11.Name = "Button11"
         Me.Button11.Size = New System.Drawing.Size(92, 52)
         Me.Button11.TabIndex = 32
@@ -288,7 +286,7 @@ Partial Class Form2
         Me.Button12.FlatAppearance.BorderSize = 0
         Me.Button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button12.Location = New System.Drawing.Point(162, 172)
-        Me.Button12.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button12.Margin = New System.Windows.Forms.Padding(2)
         Me.Button12.Name = "Button12"
         Me.Button12.Size = New System.Drawing.Size(92, 52)
         Me.Button12.TabIndex = 31
@@ -303,7 +301,7 @@ Partial Class Form2
         Me.Button5.FlatAppearance.BorderSize = 0
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button5.Location = New System.Drawing.Point(286, 62)
-        Me.Button5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button5.Margin = New System.Windows.Forms.Padding(2)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(92, 52)
         Me.Button5.TabIndex = 30
@@ -318,7 +316,7 @@ Partial Class Form2
         Me.Button7.FlatAppearance.BorderSize = 0
         Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button7.Location = New System.Drawing.Point(39, 62)
-        Me.Button7.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button7.Margin = New System.Windows.Forms.Padding(2)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(92, 52)
         Me.Button7.TabIndex = 29
@@ -334,7 +332,7 @@ Partial Class Form2
         Me.Button8.FlatAppearance.BorderSize = 0
         Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button8.Location = New System.Drawing.Point(162, 62)
-        Me.Button8.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button8.Margin = New System.Windows.Forms.Padding(2)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(92, 52)
         Me.Button8.TabIndex = 28
@@ -348,7 +346,7 @@ Partial Class Form2
         Me.Panel3.Controls.Add(Me.lblbab2)
         Me.Panel3.Controls.Add(Me.lblbab1)
         Me.Panel3.Location = New System.Drawing.Point(418, 0)
-        Me.Panel3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(728, 566)
         Me.Panel3.TabIndex = 4
@@ -360,10 +358,19 @@ Partial Class Form2
         Me.Panel7.Controls.Add(Me.vidbelajar2)
         Me.Panel7.Controls.Add(Me.Button3)
         Me.Panel7.Location = New System.Drawing.Point(145, 387)
-        Me.Panel7.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel7.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel7.Name = "Panel7"
         Me.Panel7.Size = New System.Drawing.Size(470, 148)
         Me.Panel7.TabIndex = 10
+        '
+        'vidbelajar2
+        '
+        Me.vidbelajar2.Enabled = True
+        Me.vidbelajar2.Location = New System.Drawing.Point(19, 5)
+        Me.vidbelajar2.Name = "vidbelajar2"
+        Me.vidbelajar2.OcxState = CType(resources.GetObject("vidbelajar2.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.vidbelajar2.Size = New System.Drawing.Size(435, 97)
+        Me.vidbelajar2.TabIndex = 3
         '
         'Button3
         '
@@ -373,7 +380,7 @@ Partial Class Form2
         Me.Button3.Image = CType(resources.GetObject("Button3.Image"), System.Drawing.Image)
         Me.Button3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Button3.Location = New System.Drawing.Point(100, 107)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(2)
         Me.Button3.Name = "Button3"
         Me.Button3.Padding = New System.Windows.Forms.Padding(30, 0, 0, 0)
         Me.Button3.Size = New System.Drawing.Size(329, 32)
@@ -389,10 +396,19 @@ Partial Class Form2
         Me.Panel6.Controls.Add(Me.vidbelajar1)
         Me.Panel6.Controls.Add(Me.Button1)
         Me.Panel6.Location = New System.Drawing.Point(145, 211)
-        Me.Panel6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel6.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(470, 148)
         Me.Panel6.TabIndex = 10
+        '
+        'vidbelajar1
+        '
+        Me.vidbelajar1.Enabled = True
+        Me.vidbelajar1.Location = New System.Drawing.Point(19, 6)
+        Me.vidbelajar1.Name = "vidbelajar1"
+        Me.vidbelajar1.OcxState = CType(resources.GetObject("vidbelajar1.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.vidbelajar1.Size = New System.Drawing.Size(435, 93)
+        Me.vidbelajar1.TabIndex = 4
         '
         'Button1
         '
@@ -403,7 +419,7 @@ Partial Class Form2
         Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Button1.Location = New System.Drawing.Point(100, 104)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2)
         Me.Button1.Name = "Button1"
         Me.Button1.Padding = New System.Windows.Forms.Padding(30, 0, 0, 0)
         Me.Button1.Size = New System.Drawing.Size(329, 32)
@@ -416,14 +432,22 @@ Partial Class Form2
         '
         Me.Panel5.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Panel5.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Panel5.Controls.Add(Me.AxWindowsMediaPlayer2)
         Me.Panel5.Controls.Add(Me.vidbelajar0)
         Me.Panel5.Controls.Add(Me.Button2)
         Me.Panel5.Location = New System.Drawing.Point(145, 39)
-        Me.Panel5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel5.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(470, 148)
         Me.Panel5.TabIndex = 9
+        '
+        'vidbelajar0
+        '
+        Me.vidbelajar0.Enabled = True
+        Me.vidbelajar0.Location = New System.Drawing.Point(19, 9)
+        Me.vidbelajar0.Name = "vidbelajar0"
+        Me.vidbelajar0.OcxState = CType(resources.GetObject("vidbelajar0.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.vidbelajar0.Size = New System.Drawing.Size(437, 95)
+        Me.vidbelajar0.TabIndex = 5
         '
         'Button2
         '
@@ -434,7 +458,7 @@ Partial Class Form2
         Me.Button2.Image = CType(resources.GetObject("Button2.Image"), System.Drawing.Image)
         Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Button2.Location = New System.Drawing.Point(100, 106)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(2)
         Me.Button2.Name = "Button2"
         Me.Button2.Padding = New System.Windows.Forms.Padding(30, 0, 0, 0)
         Me.Button2.Size = New System.Drawing.Size(329, 32)
@@ -472,7 +496,7 @@ Partial Class Form2
         Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(418, 566)
         Me.Panel1.TabIndex = 3
@@ -488,7 +512,7 @@ Partial Class Form2
         Me.Panel2.Controls.Add(Me.Label26)
         Me.Panel2.Controls.Add(Me.Label22)
         Me.Panel2.Location = New System.Drawing.Point(2, 0)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(416, 175)
         Me.Panel2.TabIndex = 1
@@ -507,7 +531,7 @@ Partial Class Form2
         Me.Guna2Button7.Image = CType(resources.GetObject("Guna2Button7.Image"), System.Drawing.Image)
         Me.Guna2Button7.ImageSize = New System.Drawing.Size(30, 30)
         Me.Guna2Button7.Location = New System.Drawing.Point(32, 27)
-        Me.Guna2Button7.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Button7.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Button7.Name = "Guna2Button7"
         Me.Guna2Button7.PressedColor = System.Drawing.Color.White
         Me.Guna2Button7.ShadowDecoration.Parent = Me.Guna2Button7
@@ -568,42 +592,6 @@ Partial Class Form2
         Me.Label22.Size = New System.Drawing.Size(400, 2)
         Me.Label22.TabIndex = 3
         '
-        'AxWindowsMediaPlayer2
-        '
-        Me.AxWindowsMediaPlayer2.Enabled = True
-        Me.AxWindowsMediaPlayer2.Location = New System.Drawing.Point(17, 27)
-        Me.AxWindowsMediaPlayer2.Name = "AxWindowsMediaPlayer2"
-        Me.AxWindowsMediaPlayer2.OcxState = CType(resources.GetObject("AxWindowsMediaPlayer2.OcxState"), System.Windows.Forms.AxHost.State)
-        Me.AxWindowsMediaPlayer2.Size = New System.Drawing.Size(437, 95)
-        Me.AxWindowsMediaPlayer2.TabIndex = 6
-        '
-        'vidbelajar0
-        '
-        Me.vidbelajar0.Enabled = True
-        Me.vidbelajar0.Location = New System.Drawing.Point(19, 3)
-        Me.vidbelajar0.Name = "vidbelajar0"
-        Me.vidbelajar0.OcxState = CType(resources.GetObject("vidbelajar0.OcxState"), System.Windows.Forms.AxHost.State)
-        Me.vidbelajar0.Size = New System.Drawing.Size(437, 95)
-        Me.vidbelajar0.TabIndex = 5
-        '
-        'vidbelajar1
-        '
-        Me.vidbelajar1.Enabled = True
-        Me.vidbelajar1.Location = New System.Drawing.Point(19, 6)
-        Me.vidbelajar1.Name = "vidbelajar1"
-        Me.vidbelajar1.OcxState = CType(resources.GetObject("vidbelajar1.OcxState"), System.Windows.Forms.AxHost.State)
-        Me.vidbelajar1.Size = New System.Drawing.Size(435, 93)
-        Me.vidbelajar1.TabIndex = 4
-        '
-        'vidbelajar2
-        '
-        Me.vidbelajar2.Enabled = True
-        Me.vidbelajar2.Location = New System.Drawing.Point(19, 5)
-        Me.vidbelajar2.Name = "vidbelajar2"
-        Me.vidbelajar2.OcxState = CType(resources.GetObject("vidbelajar2.OcxState"), System.Windows.Forms.AxHost.State)
-        Me.vidbelajar2.Size = New System.Drawing.Size(435, 97)
-        Me.vidbelajar2.TabIndex = 3
-        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -611,7 +599,7 @@ Partial Class Form2
         Me.ClientSize = New System.Drawing.Size(1052, 566)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel1)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Form2"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form2"
@@ -619,15 +607,14 @@ Partial Class Form2
         Me.Panel4.PerformLayout()
         Me.Panel3.ResumeLayout(False)
         Me.Panel7.ResumeLayout(False)
+        CType(Me.vidbelajar2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel6.ResumeLayout(False)
+        CType(Me.vidbelajar1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel5.ResumeLayout(False)
+        CType(Me.vidbelajar0, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
-        CType(Me.AxWindowsMediaPlayer2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.vidbelajar0, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.vidbelajar1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.vidbelajar2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -668,6 +655,5 @@ Partial Class Form2
     Friend WithEvents Button2 As Button
     Friend WithEvents vidbelajar2 As AxWMPLib.AxWindowsMediaPlayer
     Friend WithEvents vidbelajar1 As AxWMPLib.AxWindowsMediaPlayer
-    Friend WithEvents AxWindowsMediaPlayer2 As AxWMPLib.AxWindowsMediaPlayer
     Friend WithEvents vidbelajar0 As AxWMPLib.AxWindowsMediaPlayer
 End Class
