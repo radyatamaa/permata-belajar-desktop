@@ -73,6 +73,8 @@ Public Class MenuUtama
                 'ShowFeature(Integer.Parse(Me.btnkelas1.Tag))
             Case "videoPages"
                 Form2.Show()
+            Case "latihansoalPages"
+                Soal.Show()
                 'Case Me.btnkelas3.Tag
                 '    ShowFeature(Integer.Parse(Me.btnkelas3.Tag))
 
@@ -89,6 +91,8 @@ Public Class MenuUtama
                 'ShowFeature(Integer.Parse(Me.btnkelas1.Tag))
             Case "videoPages"
                 Form2.Show()
+            Case "latihansoalPages"
+                Soal.Show()
                 'Case Me.btnkelas3.Tag
                 '    ShowFeature(Integer.Parse(Me.btnkelas3.Tag))
 
@@ -105,6 +109,8 @@ Public Class MenuUtama
                 'ShowFeature(Integer.Parse(Me.btnkelas1.Tag))
             Case "videoPages"
                 Form2.Show()
+            Case "latihansoalPages"
+                Soal.Show()
                 'Case Me.btnkelas3.Tag
                 '    ShowFeature(Integer.Parse(Me.btnkelas3.Tag))
 
@@ -332,6 +338,8 @@ Public Class MenuUtama
                 'ShowFeature(Integer.Parse(Me.btnkelas1.Tag))
             Case "videoPages"
                 Form2.Show()
+            Case "latihansoalPages"
+                Soal.Show()
                 'Case Me.btnkelas3.Tag
                 '    ShowFeature(Integer.Parse(Me.btnkelas3.Tag))
 
