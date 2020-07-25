@@ -33,16 +33,6 @@ Partial Class Form2
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.Panel7 = New System.Windows.Forms.Panel()
-        Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.lblbab2 = New System.Windows.Forms.Label()
-        Me.lblbab1 = New System.Windows.Forms.Label()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.Button19 = New System.Windows.Forms.Button()
         Me.Button20 = New System.Windows.Forms.Button()
         Me.Button9 = New System.Windows.Forms.Button()
@@ -51,12 +41,26 @@ Partial Class Form2
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Button8 = New System.Windows.Forms.Button()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Panel7 = New System.Windows.Forms.Panel()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.lblbab2 = New System.Windows.Forms.Label()
+        Me.lblbab1 = New System.Windows.Forms.Label()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Guna2Button7 = New Guna.UI2.WinForms.Guna2Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label26 = New System.Windows.Forms.Label()
         Me.Label22 = New System.Windows.Forms.Label()
+        Me.AxWindowsMediaPlayer2 = New AxWMPLib.AxWindowsMediaPlayer()
+        Me.vidbelajar0 = New AxWMPLib.AxWindowsMediaPlayer()
+        Me.vidbelajar1 = New AxWMPLib.AxWindowsMediaPlayer()
+        Me.vidbelajar2 = New AxWMPLib.AxWindowsMediaPlayer()
         Me.Panel4.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.Panel7.SuspendLayout()
@@ -64,6 +68,10 @@ Partial Class Form2
         Me.Panel5.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        CType(Me.AxWindowsMediaPlayer2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.vidbelajar0, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.vidbelajar1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.vidbelajar2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label25
@@ -72,9 +80,10 @@ Partial Class Form2
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label25.AutoSize = True
         Me.Label25.Font = New System.Drawing.Font("Ubuntu Condensed", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label25.Location = New System.Drawing.Point(235, 399)
+        Me.Label25.Location = New System.Drawing.Point(176, 324)
+        Me.Label25.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(80, 18)
+        Me.Label25.Size = New System.Drawing.Size(65, 16)
         Me.Label25.TabIndex = 50
         Me.Label25.Text = "Sejarah Wajib"
         '
@@ -84,9 +93,10 @@ Partial Class Form2
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label24.AutoSize = True
         Me.Label24.Font = New System.Drawing.Font("Ubuntu Condensed", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label24.Location = New System.Drawing.Point(87, 399)
+        Me.Label24.Location = New System.Drawing.Point(65, 324)
+        Me.Label24.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(43, 18)
+        Me.Label24.Size = New System.Drawing.Size(38, 16)
         Me.Label24.TabIndex = 49
         Me.Label24.Text = "Biologi"
         '
@@ -94,9 +104,10 @@ Partial Class Form2
         '
         Me.Label23.AutoSize = True
         Me.Label23.Font = New System.Drawing.Font("Ubuntu Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label23.Location = New System.Drawing.Point(48, 13)
+        Me.Label23.Location = New System.Drawing.Point(36, 11)
+        Me.Label23.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(165, 24)
+        Me.Label23.Size = New System.Drawing.Size(131, 19)
         Me.Label23.TabIndex = 48
         Me.Label23.Text = "Pilih Mata Pelajaran"
         '
@@ -123,9 +134,10 @@ Partial Class Form2
         Me.Panel4.Controls.Add(Me.Button5)
         Me.Panel4.Controls.Add(Me.Button7)
         Me.Panel4.Controls.Add(Me.Button8)
-        Me.Panel4.Location = New System.Drawing.Point(0, 216)
+        Me.Panel4.Location = New System.Drawing.Point(0, 176)
+        Me.Panel4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(557, 480)
+        Me.Panel4.Size = New System.Drawing.Size(418, 390)
         Me.Panel4.TabIndex = 2
         '
         'Label8
@@ -134,9 +146,10 @@ Partial Class Form2
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Ubuntu Condensed", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(413, 279)
+        Me.Label8.Location = New System.Drawing.Point(310, 227)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(37, 18)
+        Me.Label8.Size = New System.Drawing.Size(33, 16)
         Me.Label8.TabIndex = 44
         Me.Label8.Text = "Kimia"
         '
@@ -146,9 +159,10 @@ Partial Class Form2
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Ubuntu Condensed", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(259, 279)
+        Me.Label7.Location = New System.Drawing.Point(194, 227)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(37, 18)
+        Me.Label7.Size = New System.Drawing.Size(33, 16)
         Me.Label7.TabIndex = 43
         Me.Label7.Text = "Fisika"
         '
@@ -158,9 +172,10 @@ Partial Class Form2
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Ubuntu Condensed", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(56, 279)
+        Me.Label6.Location = New System.Drawing.Point(42, 227)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(105, 18)
+        Me.Label6.Size = New System.Drawing.Size(87, 16)
         Me.Label6.TabIndex = 42
         Me.Label6.Text = "Matematika Minat"
         '
@@ -170,9 +185,10 @@ Partial Class Form2
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Ubuntu Condensed", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(397, 143)
+        Me.Label5.Location = New System.Drawing.Point(298, 116)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(104, 18)
+        Me.Label5.Size = New System.Drawing.Size(86, 16)
         Me.Label5.TabIndex = 41
         Me.Label5.Text = "Matematika Wajib"
         '
@@ -182,9 +198,10 @@ Partial Class Form2
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Ubuntu Condensed", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(235, 143)
+        Me.Label4.Location = New System.Drawing.Point(176, 116)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(86, 18)
+        Me.Label4.Size = New System.Drawing.Size(69, 16)
         Me.Label4.TabIndex = 40
         Me.Label4.Text = "Bahasa Inggris"
         '
@@ -194,134 +211,12 @@ Partial Class Form2
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Ubuntu Condensed", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(62, 143)
+        Me.Label3.Location = New System.Drawing.Point(46, 116)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(99, 18)
+        Me.Label3.Size = New System.Drawing.Size(80, 16)
         Me.Label3.TabIndex = 39
         Me.Label3.Text = "Bahasa Indonesia"
-        '
-        'Panel3
-        '
-        Me.Panel3.Controls.Add(Me.Panel7)
-        Me.Panel3.Controls.Add(Me.Panel6)
-        Me.Panel3.Controls.Add(Me.Panel5)
-        Me.Panel3.Controls.Add(Me.lblbab2)
-        Me.Panel3.Controls.Add(Me.lblbab1)
-        Me.Panel3.Location = New System.Drawing.Point(557, 0)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(970, 696)
-        Me.Panel3.TabIndex = 4
-        '
-        'Panel7
-        '
-        Me.Panel7.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Panel7.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Panel7.Controls.Add(Me.Button3)
-        Me.Panel7.Location = New System.Drawing.Point(193, 476)
-        Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(626, 182)
-        Me.Panel7.TabIndex = 10
-        '
-        'Panel6
-        '
-        Me.Panel6.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Panel6.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Panel6.Controls.Add(Me.Button1)
-        Me.Panel6.Location = New System.Drawing.Point(193, 260)
-        Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(626, 182)
-        Me.Panel6.TabIndex = 10
-        '
-        'Panel5
-        '
-        Me.Panel5.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Panel5.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Panel5.Controls.Add(Me.Button2)
-        Me.Panel5.Location = New System.Drawing.Point(193, 48)
-        Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(626, 182)
-        Me.Panel5.TabIndex = 9
-        '
-        'lblbab2
-        '
-        Me.lblbab2.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblbab2.BackColor = System.Drawing.Color.LimeGreen
-        Me.lblbab2.Location = New System.Drawing.Point(215, 442)
-        Me.lblbab2.Name = "lblbab2"
-        Me.lblbab2.Size = New System.Drawing.Size(35, 37)
-        Me.lblbab2.TabIndex = 7
-        Me.lblbab2.Visible = False
-        '
-        'lblbab1
-        '
-        Me.lblbab1.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblbab1.BackColor = System.Drawing.Color.LimeGreen
-        Me.lblbab1.Location = New System.Drawing.Point(215, 229)
-        Me.lblbab1.Name = "lblbab1"
-        Me.lblbab1.Size = New System.Drawing.Size(35, 35)
-        Me.lblbab1.TabIndex = 6
-        Me.lblbab1.Visible = False
-        '
-        'Panel1
-        '
-        Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Panel1.Controls.Add(Me.Panel4)
-        Me.Panel1.Controls.Add(Me.Panel2)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(557, 696)
-        Me.Panel1.TabIndex = 3
-        '
-        'Button3
-        '
-        Me.Button3.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.Button3.Font = New System.Drawing.Font("Ubuntu Condensed", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button3.Image = CType(resources.GetObject("Button3.Image"), System.Drawing.Image)
-        Me.Button3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button3.Location = New System.Drawing.Point(133, 125)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Padding = New System.Windows.Forms.Padding(40, 0, 0, 0)
-        Me.Button3.Size = New System.Drawing.Size(439, 40)
-        Me.Button3.TabIndex = 2
-        Me.Button3.Text = "Uji Pemahaman"
-        Me.Button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button3.UseVisualStyleBackColor = False
-        '
-        'Button1
-        '
-        Me.Button1.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Button1.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.Button1.Font = New System.Drawing.Font("Ubuntu Condensed", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
-        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button1.Location = New System.Drawing.Point(133, 116)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Padding = New System.Windows.Forms.Padding(40, 0, 0, 0)
-        Me.Button1.Size = New System.Drawing.Size(439, 40)
-        Me.Button1.TabIndex = 3
-        Me.Button1.Text = "Uji Pemahaman"
-        Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button1.UseVisualStyleBackColor = False
-        '
-        'Button2
-        '
-        Me.Button2.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Button2.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.Button2.Font = New System.Drawing.Font("Ubuntu Condensed", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button2.Image = CType(resources.GetObject("Button2.Image"), System.Drawing.Image)
-        Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button2.Location = New System.Drawing.Point(133, 127)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Padding = New System.Windows.Forms.Padding(40, 0, 0, 0)
-        Me.Button2.Size = New System.Drawing.Size(439, 40)
-        Me.Button2.TabIndex = 4
-        Me.Button2.Text = "Uji Pemahaman"
-        Me.Button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button2.UseVisualStyleBackColor = False
         '
         'Button19
         '
@@ -331,9 +226,10 @@ Partial Class Form2
         Me.Button19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Button19.FlatAppearance.BorderSize = 0
         Me.Button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button19.Location = New System.Drawing.Point(52, 332)
+        Me.Button19.Location = New System.Drawing.Point(39, 270)
+        Me.Button19.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button19.Name = "Button19"
-        Me.Button19.Size = New System.Drawing.Size(123, 64)
+        Me.Button19.Size = New System.Drawing.Size(92, 52)
         Me.Button19.TabIndex = 38
         Me.Button19.UseVisualStyleBackColor = True
         '
@@ -346,9 +242,10 @@ Partial Class Form2
         Me.Button20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Button20.FlatAppearance.BorderSize = 0
         Me.Button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button20.Location = New System.Drawing.Point(216, 332)
+        Me.Button20.Location = New System.Drawing.Point(162, 270)
+        Me.Button20.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button20.Name = "Button20"
-        Me.Button20.Size = New System.Drawing.Size(123, 64)
+        Me.Button20.Size = New System.Drawing.Size(92, 52)
         Me.Button20.TabIndex = 37
         Me.Button20.UseVisualStyleBackColor = True
         '
@@ -360,9 +257,10 @@ Partial Class Form2
         Me.Button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Button9.FlatAppearance.BorderSize = 0
         Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button9.Location = New System.Drawing.Point(382, 212)
+        Me.Button9.Location = New System.Drawing.Point(286, 172)
+        Me.Button9.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(123, 64)
+        Me.Button9.Size = New System.Drawing.Size(92, 52)
         Me.Button9.TabIndex = 33
         Me.Button9.UseVisualStyleBackColor = True
         '
@@ -374,9 +272,10 @@ Partial Class Form2
         Me.Button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Button11.FlatAppearance.BorderSize = 0
         Me.Button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button11.Location = New System.Drawing.Point(52, 212)
+        Me.Button11.Location = New System.Drawing.Point(39, 172)
+        Me.Button11.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(123, 64)
+        Me.Button11.Size = New System.Drawing.Size(92, 52)
         Me.Button11.TabIndex = 32
         Me.Button11.UseVisualStyleBackColor = True
         '
@@ -388,9 +287,10 @@ Partial Class Form2
         Me.Button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Button12.FlatAppearance.BorderSize = 0
         Me.Button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button12.Location = New System.Drawing.Point(216, 212)
+        Me.Button12.Location = New System.Drawing.Point(162, 172)
+        Me.Button12.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(123, 64)
+        Me.Button12.Size = New System.Drawing.Size(92, 52)
         Me.Button12.TabIndex = 31
         Me.Button12.UseVisualStyleBackColor = True
         '
@@ -402,9 +302,10 @@ Partial Class Form2
         Me.Button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Button5.FlatAppearance.BorderSize = 0
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.Location = New System.Drawing.Point(382, 76)
+        Me.Button5.Location = New System.Drawing.Point(286, 62)
+        Me.Button5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(123, 64)
+        Me.Button5.Size = New System.Drawing.Size(92, 52)
         Me.Button5.TabIndex = 30
         Me.Button5.UseVisualStyleBackColor = True
         '
@@ -416,9 +317,10 @@ Partial Class Form2
         Me.Button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Button7.FlatAppearance.BorderSize = 0
         Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button7.Location = New System.Drawing.Point(52, 76)
+        Me.Button7.Location = New System.Drawing.Point(39, 62)
+        Me.Button7.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(123, 64)
+        Me.Button7.Size = New System.Drawing.Size(92, 52)
         Me.Button7.TabIndex = 29
         Me.Button7.UseVisualStyleBackColor = True
         '
@@ -431,11 +333,149 @@ Partial Class Form2
         Me.Button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Button8.FlatAppearance.BorderSize = 0
         Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button8.Location = New System.Drawing.Point(216, 76)
+        Me.Button8.Location = New System.Drawing.Point(162, 62)
+        Me.Button8.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(123, 64)
+        Me.Button8.Size = New System.Drawing.Size(92, 52)
         Me.Button8.TabIndex = 28
         Me.Button8.UseVisualStyleBackColor = True
+        '
+        'Panel3
+        '
+        Me.Panel3.Controls.Add(Me.Panel7)
+        Me.Panel3.Controls.Add(Me.Panel6)
+        Me.Panel3.Controls.Add(Me.Panel5)
+        Me.Panel3.Controls.Add(Me.lblbab2)
+        Me.Panel3.Controls.Add(Me.lblbab1)
+        Me.Panel3.Location = New System.Drawing.Point(418, 0)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(728, 566)
+        Me.Panel3.TabIndex = 4
+        '
+        'Panel7
+        '
+        Me.Panel7.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Panel7.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Panel7.Controls.Add(Me.vidbelajar2)
+        Me.Panel7.Controls.Add(Me.Button3)
+        Me.Panel7.Location = New System.Drawing.Point(145, 387)
+        Me.Panel7.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel7.Name = "Panel7"
+        Me.Panel7.Size = New System.Drawing.Size(470, 148)
+        Me.Panel7.TabIndex = 10
+        '
+        'Button3
+        '
+        Me.Button3.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Button3.Font = New System.Drawing.Font("Ubuntu Condensed", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button3.Image = CType(resources.GetObject("Button3.Image"), System.Drawing.Image)
+        Me.Button3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Button3.Location = New System.Drawing.Point(100, 107)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Padding = New System.Windows.Forms.Padding(30, 0, 0, 0)
+        Me.Button3.Size = New System.Drawing.Size(329, 32)
+        Me.Button3.TabIndex = 2
+        Me.Button3.Text = "Uji Pemahaman"
+        Me.Button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button3.UseVisualStyleBackColor = False
+        '
+        'Panel6
+        '
+        Me.Panel6.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Panel6.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Panel6.Controls.Add(Me.vidbelajar1)
+        Me.Panel6.Controls.Add(Me.Button1)
+        Me.Panel6.Location = New System.Drawing.Point(145, 211)
+        Me.Panel6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel6.Name = "Panel6"
+        Me.Panel6.Size = New System.Drawing.Size(470, 148)
+        Me.Panel6.TabIndex = 10
+        '
+        'Button1
+        '
+        Me.Button1.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Button1.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Button1.Font = New System.Drawing.Font("Ubuntu Condensed", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
+        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Button1.Location = New System.Drawing.Point(100, 104)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Padding = New System.Windows.Forms.Padding(30, 0, 0, 0)
+        Me.Button1.Size = New System.Drawing.Size(329, 32)
+        Me.Button1.TabIndex = 3
+        Me.Button1.Text = "Uji Pemahaman"
+        Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'Panel5
+        '
+        Me.Panel5.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Panel5.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Panel5.Controls.Add(Me.AxWindowsMediaPlayer2)
+        Me.Panel5.Controls.Add(Me.vidbelajar0)
+        Me.Panel5.Controls.Add(Me.Button2)
+        Me.Panel5.Location = New System.Drawing.Point(145, 39)
+        Me.Panel5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel5.Name = "Panel5"
+        Me.Panel5.Size = New System.Drawing.Size(470, 148)
+        Me.Panel5.TabIndex = 9
+        '
+        'Button2
+        '
+        Me.Button2.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Button2.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Button2.Font = New System.Drawing.Font("Ubuntu Condensed", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button2.Image = CType(resources.GetObject("Button2.Image"), System.Drawing.Image)
+        Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Button2.Location = New System.Drawing.Point(100, 106)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Padding = New System.Windows.Forms.Padding(30, 0, 0, 0)
+        Me.Button2.Size = New System.Drawing.Size(329, 32)
+        Me.Button2.TabIndex = 4
+        Me.Button2.Text = "Uji Pemahaman"
+        Me.Button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button2.UseVisualStyleBackColor = False
+        '
+        'lblbab2
+        '
+        Me.lblbab2.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lblbab2.BackColor = System.Drawing.Color.LimeGreen
+        Me.lblbab2.Location = New System.Drawing.Point(161, 359)
+        Me.lblbab2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblbab2.Name = "lblbab2"
+        Me.lblbab2.Size = New System.Drawing.Size(26, 30)
+        Me.lblbab2.TabIndex = 7
+        Me.lblbab2.Visible = False
+        '
+        'lblbab1
+        '
+        Me.lblbab1.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lblbab1.BackColor = System.Drawing.Color.LimeGreen
+        Me.lblbab1.Location = New System.Drawing.Point(161, 186)
+        Me.lblbab1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblbab1.Name = "lblbab1"
+        Me.lblbab1.Size = New System.Drawing.Size(26, 28)
+        Me.lblbab1.TabIndex = 6
+        Me.lblbab1.Visible = False
+        '
+        'Panel1
+        '
+        Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel1.Controls.Add(Me.Panel4)
+        Me.Panel1.Controls.Add(Me.Panel2)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(418, 566)
+        Me.Panel1.TabIndex = 3
         '
         'Panel2
         '
@@ -447,16 +487,17 @@ Partial Class Form2
         Me.Panel2.Controls.Add(Me.Label1)
         Me.Panel2.Controls.Add(Me.Label26)
         Me.Panel2.Controls.Add(Me.Label22)
-        Me.Panel2.Location = New System.Drawing.Point(3, 0)
+        Me.Panel2.Location = New System.Drawing.Point(2, 0)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(554, 215)
+        Me.Panel2.Size = New System.Drawing.Size(416, 175)
         Me.Panel2.TabIndex = 1
         '
         'Guna2Button7
         '
         Me.Guna2Button7.AutoRoundedCorners = True
         Me.Guna2Button7.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2Button7.BorderRadius = 34
+        Me.Guna2Button7.BorderRadius = 25
         Me.Guna2Button7.CheckedState.Parent = Me.Guna2Button7
         Me.Guna2Button7.CustomImages.Parent = Me.Guna2Button7
         Me.Guna2Button7.FillColor = System.Drawing.Color.Transparent
@@ -465,11 +506,12 @@ Partial Class Form2
         Me.Guna2Button7.HoverState.Parent = Me.Guna2Button7
         Me.Guna2Button7.Image = CType(resources.GetObject("Guna2Button7.Image"), System.Drawing.Image)
         Me.Guna2Button7.ImageSize = New System.Drawing.Size(30, 30)
-        Me.Guna2Button7.Location = New System.Drawing.Point(43, 33)
+        Me.Guna2Button7.Location = New System.Drawing.Point(32, 27)
+        Me.Guna2Button7.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Guna2Button7.Name = "Guna2Button7"
         Me.Guna2Button7.PressedColor = System.Drawing.Color.White
         Me.Guna2Button7.ShadowDecoration.Parent = Me.Guna2Button7
-        Me.Guna2Button7.Size = New System.Drawing.Size(71, 72)
+        Me.Guna2Button7.Size = New System.Drawing.Size(53, 58)
         Me.Guna2Button7.TabIndex = 54
         Me.Guna2Button7.UseTransparentBackground = True
         '
@@ -480,9 +522,10 @@ Partial Class Form2
         Me.Label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Label2.Font = New System.Drawing.Font("Meiryo UI", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(190, 59)
+        Me.Label2.Location = New System.Drawing.Point(142, 48)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(159, 30)
+        Me.Label2.Size = New System.Drawing.Size(126, 24)
         Me.Label2.TabIndex = 53
         Me.Label2.Text = "Kelas 12 IPA"
         '
@@ -493,9 +536,10 @@ Partial Class Form2
         Me.Label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Label1.Font = New System.Drawing.Font("Ubuntu", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(164, 22)
+        Me.Label1.Location = New System.Drawing.Point(123, 18)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(211, 37)
+        Me.Label1.Size = New System.Drawing.Size(170, 31)
         Me.Label1.TabIndex = 52
         Me.Label1.Text = "Video Belajar"
         '
@@ -507,9 +551,10 @@ Partial Class Form2
         Me.Label26.BackColor = System.Drawing.Color.Transparent
         Me.Label26.Font = New System.Drawing.Font("Ubuntu Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label26.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label26.Location = New System.Drawing.Point(83, 151)
+        Me.Label26.Location = New System.Drawing.Point(62, 123)
+        Me.Label26.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label26.Name = "Label26"
-        Me.Label26.Size = New System.Drawing.Size(389, 48)
+        Me.Label26.Size = New System.Drawing.Size(304, 38)
         Me.Label26.TabIndex = 51
         Me.Label26.Text = "kamu sedang berlangganan paket 1 bulan kelas 12" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "masa berlaku paket hingga 31 Des" &
     "ember 2020"
@@ -517,18 +562,56 @@ Partial Class Form2
         'Label22
         '
         Me.Label22.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label22.Location = New System.Drawing.Point(0, 132)
+        Me.Label22.Location = New System.Drawing.Point(0, 107)
+        Me.Label22.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(533, 2)
+        Me.Label22.Size = New System.Drawing.Size(400, 2)
         Me.Label22.TabIndex = 3
+        '
+        'AxWindowsMediaPlayer2
+        '
+        Me.AxWindowsMediaPlayer2.Enabled = True
+        Me.AxWindowsMediaPlayer2.Location = New System.Drawing.Point(17, 27)
+        Me.AxWindowsMediaPlayer2.Name = "AxWindowsMediaPlayer2"
+        Me.AxWindowsMediaPlayer2.OcxState = CType(resources.GetObject("AxWindowsMediaPlayer2.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.AxWindowsMediaPlayer2.Size = New System.Drawing.Size(437, 95)
+        Me.AxWindowsMediaPlayer2.TabIndex = 6
+        '
+        'vidbelajar0
+        '
+        Me.vidbelajar0.Enabled = True
+        Me.vidbelajar0.Location = New System.Drawing.Point(19, 3)
+        Me.vidbelajar0.Name = "vidbelajar0"
+        Me.vidbelajar0.OcxState = CType(resources.GetObject("vidbelajar0.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.vidbelajar0.Size = New System.Drawing.Size(437, 95)
+        Me.vidbelajar0.TabIndex = 5
+        '
+        'vidbelajar1
+        '
+        Me.vidbelajar1.Enabled = True
+        Me.vidbelajar1.Location = New System.Drawing.Point(19, 6)
+        Me.vidbelajar1.Name = "vidbelajar1"
+        Me.vidbelajar1.OcxState = CType(resources.GetObject("vidbelajar1.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.vidbelajar1.Size = New System.Drawing.Size(435, 93)
+        Me.vidbelajar1.TabIndex = 4
+        '
+        'vidbelajar2
+        '
+        Me.vidbelajar2.Enabled = True
+        Me.vidbelajar2.Location = New System.Drawing.Point(19, 5)
+        Me.vidbelajar2.Name = "vidbelajar2"
+        Me.vidbelajar2.OcxState = CType(resources.GetObject("vidbelajar2.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.vidbelajar2.Size = New System.Drawing.Size(435, 97)
+        Me.vidbelajar2.TabIndex = 3
         '
         'Form2
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1527, 696)
+        Me.ClientSize = New System.Drawing.Size(1052, 566)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel1)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "Form2"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form2"
@@ -541,6 +624,10 @@ Partial Class Form2
         Me.Panel1.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        CType(Me.AxWindowsMediaPlayer2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.vidbelajar0, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.vidbelajar1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.vidbelajar2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -579,4 +666,8 @@ Partial Class Form2
     Friend WithEvents Button1 As Button
     Friend WithEvents Panel5 As Panel
     Friend WithEvents Button2 As Button
+    Friend WithEvents vidbelajar2 As AxWMPLib.AxWindowsMediaPlayer
+    Friend WithEvents vidbelajar1 As AxWMPLib.AxWindowsMediaPlayer
+    Friend WithEvents AxWindowsMediaPlayer2 As AxWMPLib.AxWindowsMediaPlayer
+    Friend WithEvents vidbelajar0 As AxWMPLib.AxWindowsMediaPlayer
 End Class
