@@ -109,7 +109,7 @@ Partial Class MenuUtama
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(400, 609)
+        Me.Panel1.Size = New System.Drawing.Size(400, 641)
         Me.Panel1.TabIndex = 0
         '
         'Panel3
@@ -153,7 +153,7 @@ Partial Class MenuUtama
         Me.Panel3.Location = New System.Drawing.Point(0, 175)
         Me.Panel3.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(400, 432)
+        Me.Panel3.Size = New System.Drawing.Size(400, 464)
         Me.Panel3.TabIndex = 1
         '
         'lblkelas11
@@ -219,7 +219,7 @@ Partial Class MenuUtama
         Me.btnkelas14.Location = New System.Drawing.Point(284, 384)
         Me.btnkelas14.Margin = New System.Windows.Forms.Padding(2)
         Me.btnkelas14.Name = "btnkelas14"
-        Me.btnkelas14.Size = New System.Drawing.Size(57, 52)
+        Me.btnkelas14.Size = New System.Drawing.Size(74, 52)
         Me.btnkelas14.TabIndex = 54
         Me.btnkelas14.UseVisualStyleBackColor = True
         '
@@ -234,7 +234,7 @@ Partial Class MenuUtama
         Me.btnkelas12.Location = New System.Drawing.Point(36, 384)
         Me.btnkelas12.Margin = New System.Windows.Forms.Padding(2)
         Me.btnkelas12.Name = "btnkelas12"
-        Me.btnkelas12.Size = New System.Drawing.Size(57, 52)
+        Me.btnkelas12.Size = New System.Drawing.Size(74, 52)
         Me.btnkelas12.TabIndex = 53
         Me.btnkelas12.UseVisualStyleBackColor = True
         '
@@ -249,7 +249,7 @@ Partial Class MenuUtama
         Me.btnkelas13.Location = New System.Drawing.Point(159, 384)
         Me.btnkelas13.Margin = New System.Windows.Forms.Padding(2)
         Me.btnkelas13.Name = "btnkelas13"
-        Me.btnkelas13.Size = New System.Drawing.Size(57, 52)
+        Me.btnkelas13.Size = New System.Drawing.Size(74, 52)
         Me.btnkelas13.TabIndex = 52
         Me.btnkelas13.UseVisualStyleBackColor = True
         '
@@ -265,7 +265,7 @@ Partial Class MenuUtama
         Me.btnkelas11.Location = New System.Drawing.Point(286, 293)
         Me.btnkelas11.Margin = New System.Windows.Forms.Padding(2)
         Me.btnkelas11.Name = "btnkelas11"
-        Me.btnkelas11.Size = New System.Drawing.Size(57, 52)
+        Me.btnkelas11.Size = New System.Drawing.Size(74, 52)
         Me.btnkelas11.TabIndex = 51
         Me.btnkelas11.UseVisualStyleBackColor = True
         '
@@ -275,7 +275,7 @@ Partial Class MenuUtama
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lblkelas10.AutoSize = True
         Me.lblkelas10.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblkelas10.Location = New System.Drawing.Point(170, 348)
+        Me.lblkelas10.Location = New System.Drawing.Point(156, 349)
         Me.lblkelas10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblkelas10.Name = "lblkelas10"
         Me.lblkelas10.Size = New System.Drawing.Size(85, 13)
@@ -288,7 +288,7 @@ Partial Class MenuUtama
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lblkelas9.AutoSize = True
         Me.lblkelas9.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblkelas9.Location = New System.Drawing.Point(53, 349)
+        Me.lblkelas9.Location = New System.Drawing.Point(42, 349)
         Me.lblkelas9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblkelas9.Name = "lblkelas9"
         Me.lblkelas9.Size = New System.Drawing.Size(68, 13)
@@ -312,7 +312,7 @@ Partial Class MenuUtama
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lblkelas8.AutoSize = True
         Me.lblkelas8.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblkelas8.Location = New System.Drawing.Point(298, 266)
+        Me.lblkelas8.Location = New System.Drawing.Point(283, 266)
         Me.lblkelas8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblkelas8.Name = "lblkelas8"
         Me.lblkelas8.Size = New System.Drawing.Size(68, 13)
@@ -325,7 +325,7 @@ Partial Class MenuUtama
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lblkelas7.AutoSize = True
         Me.lblkelas7.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblkelas7.Location = New System.Drawing.Point(184, 266)
+        Me.lblkelas7.Location = New System.Drawing.Point(171, 266)
         Me.lblkelas7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblkelas7.Name = "lblkelas7"
         Me.lblkelas7.Size = New System.Drawing.Size(48, 13)
@@ -338,7 +338,7 @@ Partial Class MenuUtama
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lblkelas6.AutoSize = True
         Me.lblkelas6.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblkelas6.Location = New System.Drawing.Point(59, 266)
+        Me.lblkelas6.Location = New System.Drawing.Point(48, 266)
         Me.lblkelas6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblkelas6.Name = "lblkelas6"
         Me.lblkelas6.Size = New System.Drawing.Size(48, 13)
@@ -351,7 +351,7 @@ Partial Class MenuUtama
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lblkelas5.AutoSize = True
         Me.lblkelas5.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblkelas5.Location = New System.Drawing.Point(310, 179)
+        Me.lblkelas5.Location = New System.Drawing.Point(295, 184)
         Me.lblkelas5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblkelas5.Name = "lblkelas5"
         Me.lblkelas5.Size = New System.Drawing.Size(42, 13)
@@ -364,7 +364,7 @@ Partial Class MenuUtama
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lblkelas4.AutoSize = True
         Me.lblkelas4.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblkelas4.Location = New System.Drawing.Point(184, 184)
+        Me.lblkelas4.Location = New System.Drawing.Point(170, 184)
         Me.lblkelas4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblkelas4.Name = "lblkelas4"
         Me.lblkelas4.Size = New System.Drawing.Size(42, 13)
@@ -377,7 +377,7 @@ Partial Class MenuUtama
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lblkelas3.AutoSize = True
         Me.lblkelas3.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblkelas3.Location = New System.Drawing.Point(59, 184)
+        Me.lblkelas3.Location = New System.Drawing.Point(51, 184)
         Me.lblkelas3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblkelas3.Name = "lblkelas3"
         Me.lblkelas3.Size = New System.Drawing.Size(42, 13)
@@ -390,7 +390,7 @@ Partial Class MenuUtama
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lblkelas2.AutoSize = True
         Me.lblkelas2.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblkelas2.Location = New System.Drawing.Point(310, 98)
+        Me.lblkelas2.Location = New System.Drawing.Point(295, 98)
         Me.lblkelas2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblkelas2.Name = "lblkelas2"
         Me.lblkelas2.Size = New System.Drawing.Size(42, 13)
@@ -403,7 +403,7 @@ Partial Class MenuUtama
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lblkelas1.AutoSize = True
         Me.lblkelas1.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblkelas1.Location = New System.Drawing.Point(184, 98)
+        Me.lblkelas1.Location = New System.Drawing.Point(170, 98)
         Me.lblkelas1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblkelas1.Name = "lblkelas1"
         Me.lblkelas1.Size = New System.Drawing.Size(42, 13)
@@ -416,7 +416,7 @@ Partial Class MenuUtama
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lblkelas0.AutoSize = True
         Me.lblkelas0.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblkelas0.Location = New System.Drawing.Point(59, 98)
+        Me.lblkelas0.Location = New System.Drawing.Point(51, 98)
         Me.lblkelas0.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblkelas0.Name = "lblkelas0"
         Me.lblkelas0.Size = New System.Drawing.Size(42, 13)
@@ -434,7 +434,7 @@ Partial Class MenuUtama
         Me.btnkelas9.Location = New System.Drawing.Point(39, 293)
         Me.btnkelas9.Margin = New System.Windows.Forms.Padding(2)
         Me.btnkelas9.Name = "btnkelas9"
-        Me.btnkelas9.Size = New System.Drawing.Size(57, 52)
+        Me.btnkelas9.Size = New System.Drawing.Size(74, 52)
         Me.btnkelas9.TabIndex = 38
         Me.btnkelas9.UseVisualStyleBackColor = True
         '
@@ -450,7 +450,7 @@ Partial Class MenuUtama
         Me.btnkelas10.Location = New System.Drawing.Point(162, 293)
         Me.btnkelas10.Margin = New System.Windows.Forms.Padding(2)
         Me.btnkelas10.Name = "btnkelas10"
-        Me.btnkelas10.Size = New System.Drawing.Size(57, 52)
+        Me.btnkelas10.Size = New System.Drawing.Size(74, 52)
         Me.btnkelas10.TabIndex = 37
         Me.btnkelas10.UseVisualStyleBackColor = True
         '
@@ -465,7 +465,7 @@ Partial Class MenuUtama
         Me.btnkelas8.Location = New System.Drawing.Point(286, 211)
         Me.btnkelas8.Margin = New System.Windows.Forms.Padding(2)
         Me.btnkelas8.Name = "btnkelas8"
-        Me.btnkelas8.Size = New System.Drawing.Size(57, 52)
+        Me.btnkelas8.Size = New System.Drawing.Size(74, 52)
         Me.btnkelas8.TabIndex = 36
         Me.btnkelas8.UseVisualStyleBackColor = True
         '
@@ -480,7 +480,7 @@ Partial Class MenuUtama
         Me.btnkelas6.Location = New System.Drawing.Point(39, 211)
         Me.btnkelas6.Margin = New System.Windows.Forms.Padding(2)
         Me.btnkelas6.Name = "btnkelas6"
-        Me.btnkelas6.Size = New System.Drawing.Size(57, 52)
+        Me.btnkelas6.Size = New System.Drawing.Size(74, 52)
         Me.btnkelas6.TabIndex = 35
         Me.btnkelas6.UseVisualStyleBackColor = True
         '
@@ -495,7 +495,7 @@ Partial Class MenuUtama
         Me.btnkelas7.Location = New System.Drawing.Point(162, 211)
         Me.btnkelas7.Margin = New System.Windows.Forms.Padding(2)
         Me.btnkelas7.Name = "btnkelas7"
-        Me.btnkelas7.Size = New System.Drawing.Size(57, 52)
+        Me.btnkelas7.Size = New System.Drawing.Size(74, 52)
         Me.btnkelas7.TabIndex = 34
         Me.btnkelas7.UseVisualStyleBackColor = True
         '
@@ -510,7 +510,7 @@ Partial Class MenuUtama
         Me.btnkelas5.Location = New System.Drawing.Point(286, 124)
         Me.btnkelas5.Margin = New System.Windows.Forms.Padding(2)
         Me.btnkelas5.Name = "btnkelas5"
-        Me.btnkelas5.Size = New System.Drawing.Size(57, 52)
+        Me.btnkelas5.Size = New System.Drawing.Size(74, 52)
         Me.btnkelas5.TabIndex = 33
         Me.btnkelas5.UseVisualStyleBackColor = True
         '
@@ -525,7 +525,7 @@ Partial Class MenuUtama
         Me.btnkelas3.Location = New System.Drawing.Point(39, 124)
         Me.btnkelas3.Margin = New System.Windows.Forms.Padding(2)
         Me.btnkelas3.Name = "btnkelas3"
-        Me.btnkelas3.Size = New System.Drawing.Size(57, 52)
+        Me.btnkelas3.Size = New System.Drawing.Size(74, 52)
         Me.btnkelas3.TabIndex = 32
         Me.btnkelas3.UseVisualStyleBackColor = True
         '
@@ -540,7 +540,7 @@ Partial Class MenuUtama
         Me.btnkelas4.Location = New System.Drawing.Point(162, 124)
         Me.btnkelas4.Margin = New System.Windows.Forms.Padding(2)
         Me.btnkelas4.Name = "btnkelas4"
-        Me.btnkelas4.Size = New System.Drawing.Size(57, 52)
+        Me.btnkelas4.Size = New System.Drawing.Size(74, 52)
         Me.btnkelas4.TabIndex = 31
         Me.btnkelas4.UseVisualStyleBackColor = True
         '
@@ -555,7 +555,7 @@ Partial Class MenuUtama
         Me.btnkelas2.Location = New System.Drawing.Point(286, 43)
         Me.btnkelas2.Margin = New System.Windows.Forms.Padding(2)
         Me.btnkelas2.Name = "btnkelas2"
-        Me.btnkelas2.Size = New System.Drawing.Size(57, 52)
+        Me.btnkelas2.Size = New System.Drawing.Size(74, 52)
         Me.btnkelas2.TabIndex = 30
         Me.btnkelas2.UseVisualStyleBackColor = True
         '
@@ -570,7 +570,7 @@ Partial Class MenuUtama
         Me.btnkelas0.Location = New System.Drawing.Point(39, 43)
         Me.btnkelas0.Margin = New System.Windows.Forms.Padding(2)
         Me.btnkelas0.Name = "btnkelas0"
-        Me.btnkelas0.Size = New System.Drawing.Size(57, 52)
+        Me.btnkelas0.Size = New System.Drawing.Size(74, 52)
         Me.btnkelas0.TabIndex = 29
         Me.btnkelas0.UseVisualStyleBackColor = True
         '
@@ -586,7 +586,7 @@ Partial Class MenuUtama
         Me.btnkelas1.Location = New System.Drawing.Point(162, 43)
         Me.btnkelas1.Margin = New System.Windows.Forms.Padding(2)
         Me.btnkelas1.Name = "btnkelas1"
-        Me.btnkelas1.Size = New System.Drawing.Size(57, 52)
+        Me.btnkelas1.Size = New System.Drawing.Size(74, 52)
         Me.btnkelas1.TabIndex = 28
         Me.btnkelas1.UseVisualStyleBackColor = True
         '
@@ -614,7 +614,7 @@ Partial Class MenuUtama
         Me.Label26.BackColor = System.Drawing.Color.Transparent
         Me.Label26.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label26.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label26.Location = New System.Drawing.Point(62, 123)
+        Me.Label26.Location = New System.Drawing.Point(11, 123)
         Me.Label26.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label26.Name = "Label26"
         Me.Label26.Size = New System.Drawing.Size(370, 40)
@@ -683,7 +683,7 @@ Partial Class MenuUtama
         Me.Panel4.Location = New System.Drawing.Point(399, 0)
         Me.Panel4.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(746, 81)
+        Me.Panel4.Size = New System.Drawing.Size(1088, 81)
         Me.Panel4.TabIndex = 1
         '
         'Guna2Panel6
@@ -697,7 +697,7 @@ Partial Class MenuUtama
         Me.Guna2Panel6.Controls.Add(Me.Button3)
         Me.Guna2Panel6.Controls.Add(Me.Button2)
         Me.Guna2Panel6.Controls.Add(Me.Button1)
-        Me.Guna2Panel6.Location = New System.Drawing.Point(466, 2)
+        Me.Guna2Panel6.Location = New System.Drawing.Point(682, 2)
         Me.Guna2Panel6.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Panel6.Name = "Guna2Panel6"
         Me.Guna2Panel6.ShadowDecoration.Parent = Me.Guna2Panel6
@@ -816,18 +816,16 @@ Partial Class MenuUtama
         '
         'Panel5
         '
-        Me.Panel5.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Panel5.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Panel5.AutoScroll = True
         Me.Panel5.BackColor = System.Drawing.SystemColors.ControlLight
         Me.Panel5.Controls.Add(Me.Panel7)
         Me.Panel5.Controls.Add(Me.Panel6)
         Me.Panel5.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Panel5.Location = New System.Drawing.Point(399, 81)
+        Me.Panel5.Location = New System.Drawing.Point(399, 97)
         Me.Panel5.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(746, 590)
+        Me.Panel5.Size = New System.Drawing.Size(1088, 590)
         Me.Panel5.TabIndex = 2
         Me.Panel5.Visible = False
         '
@@ -848,14 +846,14 @@ Partial Class MenuUtama
         Me.Panel7.Location = New System.Drawing.Point(62, 277)
         Me.Panel7.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(652, 179)
+        Me.Panel7.Size = New System.Drawing.Size(994, 179)
         Me.Panel7.TabIndex = 2
         '
         'Label2
         '
         Me.Label2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(161, 19)
+        Me.Label2.Location = New System.Drawing.Point(332, 19)
         Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(390, 13)
@@ -866,7 +864,7 @@ Partial Class MenuUtama
         '
         Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(29, 11)
+        Me.Label1.Location = New System.Drawing.Point(200, 11)
         Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(127, 26)
@@ -877,7 +875,7 @@ Partial Class MenuUtama
         'lblfeature3
         '
         Me.lblfeature3.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblfeature3.Location = New System.Drawing.Point(485, 126)
+        Me.lblfeature3.Location = New System.Drawing.Point(656, 126)
         Me.lblfeature3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblfeature3.Name = "lblfeature3"
         Me.lblfeature3.Size = New System.Drawing.Size(135, 15)
@@ -888,7 +886,7 @@ Partial Class MenuUtama
         'lblfeature2
         '
         Me.lblfeature2.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblfeature2.Location = New System.Drawing.Point(331, 126)
+        Me.lblfeature2.Location = New System.Drawing.Point(502, 126)
         Me.lblfeature2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblfeature2.Name = "lblfeature2"
         Me.lblfeature2.Size = New System.Drawing.Size(135, 15)
@@ -899,7 +897,7 @@ Partial Class MenuUtama
         'lblfeature1
         '
         Me.lblfeature1.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblfeature1.Location = New System.Drawing.Point(181, 126)
+        Me.lblfeature1.Location = New System.Drawing.Point(352, 126)
         Me.lblfeature1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblfeature1.Name = "lblfeature1"
         Me.lblfeature1.Size = New System.Drawing.Size(135, 15)
@@ -911,7 +909,7 @@ Partial Class MenuUtama
         '
         Me.lblfeature0.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.lblfeature0.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.lblfeature0.Location = New System.Drawing.Point(31, 126)
+        Me.lblfeature0.Location = New System.Drawing.Point(202, 126)
         Me.lblfeature0.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblfeature0.Name = "lblfeature0"
         Me.lblfeature0.Size = New System.Drawing.Size(135, 15)
@@ -930,7 +928,7 @@ Partial Class MenuUtama
         Me.btnfeature3.HoverState.Parent = Me.btnfeature3
         Me.btnfeature3.Image = Global.Permata.My.Resources.Resources.tes_masuk_ptn1
         Me.btnfeature3.ImageSize = New System.Drawing.Size(180, 125)
-        Me.btnfeature3.Location = New System.Drawing.Point(485, 39)
+        Me.btnfeature3.Location = New System.Drawing.Point(656, 39)
         Me.btnfeature3.Margin = New System.Windows.Forms.Padding(2)
         Me.btnfeature3.Name = "btnfeature3"
         Me.btnfeature3.ShadowDecoration.Parent = Me.btnfeature3
@@ -948,7 +946,7 @@ Partial Class MenuUtama
         Me.btnfeature0.HoverState.Parent = Me.btnfeature0
         Me.btnfeature0.Image = Global.Permata.My.Resources.Resources.ringkasan
         Me.btnfeature0.ImageSize = New System.Drawing.Size(180, 125)
-        Me.btnfeature0.Location = New System.Drawing.Point(31, 39)
+        Me.btnfeature0.Location = New System.Drawing.Point(202, 39)
         Me.btnfeature0.Margin = New System.Windows.Forms.Padding(2)
         Me.btnfeature0.Name = "btnfeature0"
         Me.btnfeature0.ShadowDecoration.Parent = Me.btnfeature0
@@ -966,7 +964,7 @@ Partial Class MenuUtama
         Me.btnfeature2.HoverState.Parent = Me.btnfeature2
         Me.btnfeature2.Image = Global.Permata.My.Resources.Resources.videos
         Me.btnfeature2.ImageSize = New System.Drawing.Size(180, 125)
-        Me.btnfeature2.Location = New System.Drawing.Point(331, 39)
+        Me.btnfeature2.Location = New System.Drawing.Point(502, 39)
         Me.btnfeature2.Margin = New System.Windows.Forms.Padding(2)
         Me.btnfeature2.Name = "btnfeature2"
         Me.btnfeature2.ShadowDecoration.Parent = Me.btnfeature2
@@ -984,7 +982,7 @@ Partial Class MenuUtama
         Me.btnfeature1.HoverState.Parent = Me.btnfeature1
         Me.btnfeature1.Image = Global.Permata.My.Resources.Resources.soal_dan_latihan
         Me.btnfeature1.ImageSize = New System.Drawing.Size(180, 125)
-        Me.btnfeature1.Location = New System.Drawing.Point(181, 39)
+        Me.btnfeature1.Location = New System.Drawing.Point(352, 39)
         Me.btnfeature1.Margin = New System.Windows.Forms.Padding(2)
         Me.btnfeature1.Name = "btnfeature1"
         Me.btnfeature1.ShadowDecoration.Parent = Me.btnfeature1
@@ -999,7 +997,7 @@ Partial Class MenuUtama
         Me.Panel6.Location = New System.Drawing.Point(62, 16)
         Me.Panel6.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(652, 188)
+        Me.Panel6.Size = New System.Drawing.Size(994, 188)
         Me.Panel6.TabIndex = 1
         '
         'Guna2PictureBox2
@@ -1009,7 +1007,7 @@ Partial Class MenuUtama
         Me.Guna2PictureBox2.BackColor = System.Drawing.Color.Transparent
         Me.Guna2PictureBox2.BorderRadius = 71
         Me.Guna2PictureBox2.Image = CType(resources.GetObject("Guna2PictureBox2.Image"), System.Drawing.Image)
-        Me.Guna2PictureBox2.Location = New System.Drawing.Point(16, 17)
+        Me.Guna2PictureBox2.Location = New System.Drawing.Point(187, 17)
         Me.Guna2PictureBox2.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
         Me.Guna2PictureBox2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
@@ -1023,7 +1021,7 @@ Partial Class MenuUtama
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1028, 609)
+        Me.ClientSize = New System.Drawing.Size(1370, 641)
         Me.Controls.Add(Me.Panel5)
         Me.Controls.Add(Me.Panel4)
         Me.Controls.Add(Me.Panel1)
