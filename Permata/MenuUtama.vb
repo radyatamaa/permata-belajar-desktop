@@ -65,17 +65,50 @@ Public Class MenuUtama
     End Sub
 
     Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles btnfeature0.Click
-        Ringkasan.Show()
+        Dim BT As Guna.UI2.WinForms.Guna2Button = CType(sender, Guna.UI2.WinForms.Guna2Button)
+        Select Case BT.Tag
+            Case "ringkasanmateriPages"
+                Ringkasan.Show()
+            Case "sbmptnPages"
+                'ShowFeature(Integer.Parse(Me.btnkelas1.Tag))
+            Case "videoPages"
+                Form2.Show()
+                'Case Me.btnkelas3.Tag
+                '    ShowFeature(Integer.Parse(Me.btnkelas3.Tag))
+
+        End Select
         Me.Hide()
     End Sub
 
     Private Sub Guna2Button2_Click(sender As Object, e As EventArgs) Handles btnfeature1.Click
-        Soal.Show()
+        Dim BT As Guna.UI2.WinForms.Guna2Button = CType(sender, Guna.UI2.WinForms.Guna2Button)
+        Select Case BT.Tag
+            Case "ringkasanmateriPages"
+                Ringkasan.Show()
+            Case "sbmptnPages"
+                'ShowFeature(Integer.Parse(Me.btnkelas1.Tag))
+            Case "videoPages"
+                Form2.Show()
+                'Case Me.btnkelas3.Tag
+                '    ShowFeature(Integer.Parse(Me.btnkelas3.Tag))
+
+        End Select
         Me.Hide()
     End Sub
 
     Private Sub Guna2Button3_Click(sender As Object, e As EventArgs) Handles btnfeature2.Click
-        Form2.Show()
+        Dim BT As Guna.UI2.WinForms.Guna2Button = CType(sender, Guna.UI2.WinForms.Guna2Button)
+        Select Case BT.Tag
+            Case "ringkasanmateriPages"
+                Ringkasan.Show()
+            Case "sbmptnPages"
+                'ShowFeature(Integer.Parse(Me.btnkelas1.Tag))
+            Case "videoPages"
+                Form2.Show()
+                'Case Me.btnkelas3.Tag
+                '    ShowFeature(Integer.Parse(Me.btnkelas3.Tag))
+
+        End Select
         Me.Hide()
     End Sub
     Public Function GetKelas() As List(Of Kelas)
@@ -201,7 +234,7 @@ Public Class MenuUtama
                 Dim tClient As WebClient = New WebClient
                 Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(Datafeature(i).Image)))
                 buttonFeature.Image = downloadImage
-                featureButton.FirstOrDefault().Tag = i
+                featureButton.FirstOrDefault().Tag = Datafeature(i).Pages
                 lastIndex = lastIndex + 1
             Catch ex As Exception
 
@@ -288,5 +321,20 @@ Public Class MenuUtama
     Private Sub btnkelas14_Click(sender As Object, e As EventArgs) Handles btnkelas14.Click
         ShowFeature(Integer.Parse(Me.btnkelas14.Tag))
         Panel5.Visible = True
+    End Sub
+
+    Private Sub btnfeature3_Click(sender As Object, e As EventArgs) Handles btnfeature3.Click
+        Dim BT As Guna.UI2.WinForms.Guna2Button = CType(sender, Guna.UI2.WinForms.Guna2Button)
+        Select Case BT.Tag
+            Case "ringkasanmateriPages"
+                Ringkasan.Show()
+            Case "sbmptnPages"
+                'ShowFeature(Integer.Parse(Me.btnkelas1.Tag))
+            Case "videoPages"
+                Form2.Show()
+                'Case Me.btnkelas3.Tag
+                '    ShowFeature(Integer.Parse(Me.btnkelas3.Tag))
+
+        End Select
     End Sub
 End Class
