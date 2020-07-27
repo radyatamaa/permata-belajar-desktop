@@ -49,9 +49,10 @@ Partial Class Signin
         Me.Panel2.BackColor = System.Drawing.Color.LimeGreen
         Me.Panel2.Controls.Add(Me.Guna2Panel1)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel2.Location = New System.Drawing.Point(797, 0)
+        Me.Panel2.Location = New System.Drawing.Point(480, 0)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(730, 696)
+        Me.Panel2.Size = New System.Drawing.Size(548, 566)
         Me.Panel2.TabIndex = 3
         '
         'Guna2Panel1
@@ -68,18 +69,20 @@ Partial Class Signin
         Me.Guna2Panel1.Controls.Add(Me.Label1)
         Me.Guna2Panel1.Controls.Add(Me.Guna2Button2)
         Me.Guna2Panel1.Controls.Add(Me.Guna2Button1)
-        Me.Guna2Panel1.Location = New System.Drawing.Point(182, 132)
+        Me.Guna2Panel1.Location = New System.Drawing.Point(136, 107)
+        Me.Guna2Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Guna2Panel1.Name = "Guna2Panel1"
         Me.Guna2Panel1.ShadowDecoration.Parent = Me.Guna2Panel1
-        Me.Guna2Panel1.Size = New System.Drawing.Size(408, 494)
+        Me.Guna2Panel1.Size = New System.Drawing.Size(306, 401)
         Me.Guna2Panel1.TabIndex = 0
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(172, 181)
+        Me.Label4.Location = New System.Drawing.Point(129, 147)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(37, 17)
+        Me.Label4.Size = New System.Drawing.Size(29, 13)
         Me.Label4.TabIndex = 10
         Me.Label4.Text = "Atau"
         '
@@ -87,9 +90,10 @@ Partial Class Signin
         '
         Me.LinkLabel1.AutoSize = True
         Me.LinkLabel1.LinkColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.LinkLabel1.Location = New System.Drawing.Point(302, 18)
+        Me.LinkLabel1.Location = New System.Drawing.Point(226, 15)
+        Me.LinkLabel1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(81, 17)
+        Me.LinkLabel1.Size = New System.Drawing.Size(63, 13)
         Me.LinkLabel1.TabIndex = 9
         Me.LinkLabel1.TabStop = True
         Me.LinkLabel1.Text = "Buat Akun?"
@@ -98,9 +102,10 @@ Partial Class Signin
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(37, 18)
+        Me.Label3.Location = New System.Drawing.Point(28, 15)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(51, 17)
+        Me.Label3.Size = New System.Drawing.Size(40, 13)
         Me.Label3.TabIndex = 8
         Me.Label3.Text = "Sign In"
         '
@@ -112,10 +117,11 @@ Partial Class Signin
         Me.Guna2Button4.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Guna2Button4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Guna2Button4.HoverState.Parent = Me.Guna2Button4
-        Me.Guna2Button4.Location = New System.Drawing.Point(59, 421)
+        Me.Guna2Button4.Location = New System.Drawing.Point(44, 342)
+        Me.Guna2Button4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Guna2Button4.Name = "Guna2Button4"
         Me.Guna2Button4.ShadowDecoration.Parent = Me.Guna2Button4
-        Me.Guna2Button4.Size = New System.Drawing.Size(267, 45)
+        Me.Guna2Button4.Size = New System.Drawing.Size(200, 37)
         Me.Guna2Button4.TabIndex = 7
         Me.Guna2Button4.Text = "Lupa Password?"
         '
@@ -127,10 +133,11 @@ Partial Class Signin
         Me.Guna2Button3.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Guna2Button3.ForeColor = System.Drawing.Color.White
         Me.Guna2Button3.HoverState.Parent = Me.Guna2Button3
-        Me.Guna2Button3.Location = New System.Drawing.Point(59, 370)
+        Me.Guna2Button3.Location = New System.Drawing.Point(44, 301)
+        Me.Guna2Button3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Guna2Button3.Name = "Guna2Button3"
         Me.Guna2Button3.ShadowDecoration.Parent = Me.Guna2Button3
-        Me.Guna2Button3.Size = New System.Drawing.Size(267, 45)
+        Me.Guna2Button3.Size = New System.Drawing.Size(200, 37)
         Me.Guna2Button3.TabIndex = 6
         Me.Guna2Button3.Text = "Sign In"
         '
@@ -147,14 +154,13 @@ Partial Class Signin
         Me.Guna2TextBox2.FocusedState.Parent = Me.Guna2TextBox2
         Me.Guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Guna2TextBox2.HoverState.Parent = Me.Guna2TextBox2
-        Me.Guna2TextBox2.Location = New System.Drawing.Point(59, 309)
-        Me.Guna2TextBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Guna2TextBox2.Location = New System.Drawing.Point(44, 251)
         Me.Guna2TextBox2.Name = "Guna2TextBox2"
         Me.Guna2TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.Guna2TextBox2.PlaceholderText = ""
         Me.Guna2TextBox2.SelectedText = ""
         Me.Guna2TextBox2.ShadowDecoration.Parent = Me.Guna2TextBox2
-        Me.Guna2TextBox2.Size = New System.Drawing.Size(267, 37)
+        Me.Guna2TextBox2.Size = New System.Drawing.Size(200, 30)
         Me.Guna2TextBox2.TabIndex = 5
         '
         'Guna2TextBox1
@@ -170,31 +176,32 @@ Partial Class Signin
         Me.Guna2TextBox1.FocusedState.Parent = Me.Guna2TextBox1
         Me.Guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Guna2TextBox1.HoverState.Parent = Me.Guna2TextBox1
-        Me.Guna2TextBox1.Location = New System.Drawing.Point(59, 234)
-        Me.Guna2TextBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Guna2TextBox1.Location = New System.Drawing.Point(44, 190)
         Me.Guna2TextBox1.Name = "Guna2TextBox1"
         Me.Guna2TextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.Guna2TextBox1.PlaceholderText = ""
         Me.Guna2TextBox1.SelectedText = ""
         Me.Guna2TextBox1.ShadowDecoration.Parent = Me.Guna2TextBox1
-        Me.Guna2TextBox1.Size = New System.Drawing.Size(267, 37)
+        Me.Guna2TextBox1.Size = New System.Drawing.Size(200, 30)
         Me.Guna2TextBox1.TabIndex = 4
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(56, 288)
+        Me.Label2.Location = New System.Drawing.Point(42, 234)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(69, 17)
+        Me.Label2.Size = New System.Drawing.Size(53, 13)
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "Password"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(56, 213)
+        Me.Label1.Location = New System.Drawing.Point(42, 173)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(42, 17)
+        Me.Label1.Size = New System.Drawing.Size(32, 13)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "Email"
         '
@@ -210,10 +217,11 @@ Partial Class Signin
         Me.Guna2Button2.Image = CType(resources.GetObject("Guna2Button2.Image"), System.Drawing.Image)
         Me.Guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.Guna2Button2.ImageSize = New System.Drawing.Size(40, 40)
-        Me.Guna2Button2.Location = New System.Drawing.Point(59, 122)
+        Me.Guna2Button2.Location = New System.Drawing.Point(44, 99)
+        Me.Guna2Button2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Guna2Button2.Name = "Guna2Button2"
         Me.Guna2Button2.ShadowDecoration.Parent = Me.Guna2Button2
-        Me.Guna2Button2.Size = New System.Drawing.Size(267, 45)
+        Me.Guna2Button2.Size = New System.Drawing.Size(200, 37)
         Me.Guna2Button2.TabIndex = 1
         Me.Guna2Button2.Text = "Masuk Dengan Facebook"
         Me.Guna2Button2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -232,11 +240,12 @@ Partial Class Signin
         Me.Guna2Button1.Image = CType(resources.GetObject("Guna2Button1.Image"), System.Drawing.Image)
         Me.Guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.Guna2Button1.ImageSize = New System.Drawing.Size(40, 40)
-        Me.Guna2Button1.Location = New System.Drawing.Point(59, 59)
+        Me.Guna2Button1.Location = New System.Drawing.Point(44, 48)
+        Me.Guna2Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Guna2Button1.Name = "Guna2Button1"
         Me.Guna2Button1.ShadowDecoration.Enabled = True
         Me.Guna2Button1.ShadowDecoration.Parent = Me.Guna2Button1
-        Me.Guna2Button1.Size = New System.Drawing.Size(267, 45)
+        Me.Guna2Button1.Size = New System.Drawing.Size(200, 37)
         Me.Guna2Button1.TabIndex = 0
         Me.Guna2Button1.Text = "Masuk Dengan Google"
         Me.Guna2Button1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -247,18 +256,20 @@ Partial Class Signin
         Me.Panel1.Controls.Add(Me.Guna2PictureBox1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(798, 696)
+        Me.Panel1.Size = New System.Drawing.Size(598, 566)
         Me.Panel1.TabIndex = 2
         '
         'Guna2PictureBox1
         '
         Me.Guna2PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.Guna2PictureBox1.Image = CType(resources.GetObject("Guna2PictureBox1.Image"), System.Drawing.Image)
-        Me.Guna2PictureBox1.Location = New System.Drawing.Point(151, 197)
+        Me.Guna2PictureBox1.Location = New System.Drawing.Point(113, 160)
+        Me.Guna2PictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
         Me.Guna2PictureBox1.ShadowDecoration.Parent = Me.Guna2PictureBox1
-        Me.Guna2PictureBox1.Size = New System.Drawing.Size(511, 281)
+        Me.Guna2PictureBox1.Size = New System.Drawing.Size(383, 228)
         Me.Guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.Guna2PictureBox1.TabIndex = 0
         Me.Guna2PictureBox1.TabStop = False
@@ -266,11 +277,12 @@ Partial Class Signin
         '
         'Signin
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1527, 696)
+        Me.ClientSize = New System.Drawing.Size(1028, 566)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "Signin"
         Me.Text = "Signin"
         Me.Panel2.ResumeLayout(False)

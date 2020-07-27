@@ -113,6 +113,7 @@
     <Compile Include="Model\Kelas.vb" />
     <Compile Include="Model\KelasResponse.vb" />
     <Compile Include="Model\FeatureResponse.vb" />
+    <Compile Include="Model\LoginResponse.vb" />
     <Compile Include="Prestasi.Designer.vb">
       <DependentUpon>Prestasi.vb</DependentUpon>
     </Compile>
