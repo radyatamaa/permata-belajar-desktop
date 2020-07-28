@@ -350,6 +350,20 @@ Public Class MenuUtama
 
 
         Signin.Show()
+        Signin.Guna2TextBox1.Text = ""
+        Signin.Guna2TextBox2.Text = ""
         Me.Close()
+    End Sub
+
+    Private Sub Panel2_Paint(sender As Object, e As PaintEventArgs) Handles Panel2.Paint
+
+    End Sub
+
+    Private Sub Label13_Click(sender As Object, e As EventArgs) Handles Label13.Click
+
+    End Sub
+
+    Private Sub Label26_Click(sender As Object, e As EventArgs) Handles Label26.Click
+
     End Sub
 End Class

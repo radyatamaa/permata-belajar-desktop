@@ -24,6 +24,13 @@ Public Class Signin
         End Try
         Return result
     End Function
+
+    Public Function ShowMenuUtama(nameUser As String)
+        MenuUtama.Show()
+        MenuUtama.Label13.Text = nameUser
+        Lainnya.Label13.Text = nameUser
+        'Guna2PictureBox1.Image
+    End Function
     Private Sub Guna2Button3_Click(sender As Object, e As EventArgs) Handles Guna2Button3.Click
         Dim usernameText As Control() = Me.Controls.Find("Guna2TextBox1", True)
         Dim passwordText As Control() = Me.Controls.Find("Guna2TextBox2", True)
@@ -35,7 +42,7 @@ Public Class Signin
         Dim password As String = passwordGuna.Text
         Dim checkUser As LoginResponse = Login(username, password)
         If checkUser.Status = "true" Then
-            MenuUtama.Show()
+            ShowMenuUtama(checkUser.CekEmail.Nama)
             Me.Hide()
         Else
             MsgBox("Email dan Password Salah!")
