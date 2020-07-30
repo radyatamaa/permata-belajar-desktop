@@ -116,6 +116,12 @@
     <Compile Include="Model\KelasResponse.vb" />
     <Compile Include="Model\FeatureResponse.vb" />
     <Compile Include="Model\LoginResponse.vb" />
+    <Compile Include="Model\Pelanggan.vb" />
+    <Compile Include="Model\PelangganResponse.vb" />
+    <Compile Include="Model\RingkasanMataPelajaran.vb" />
+    <Compile Include="Model\RingkasanMateriResponse.vb" />
+    <Compile Include="Model\RingkasanMateriTopik.vb" />
+    <Compile Include="Model\RingkasanMateriTopikResponse.vb" />
     <Compile Include="Prestasi.Designer.vb">
       <DependentUpon>Prestasi.vb</DependentUpon>
     </Compile>

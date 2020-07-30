@@ -6,4 +6,5 @@
     Public Property Background As String
     Public Property Image As String
     Public Property Active As Integer
+    Public Property Paket As String
 End Class

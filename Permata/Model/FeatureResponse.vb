@@ -12,3 +12,9 @@ Public Class FeatureWithPage
     Public Property Page As Integer
     Public Property Data As List(Of Feature)
 End Class
+Public Class DataLangganan
+    Public Property Title As String
+    Public Property Langganan As Boolean
+    Public Property Command As String
+    Public Property Page As String
+End Class
