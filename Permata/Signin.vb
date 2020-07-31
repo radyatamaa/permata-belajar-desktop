@@ -1,4 +1,5 @@
-﻿Imports System.Net
+﻿Imports System.IO
+Imports System.Net
 Imports Newtonsoft.Json
 
 Public Class Signin
@@ -24,6 +25,41 @@ Public Class Signin
         End Try
         Return result
     End Function
+
+    Public Function GetInfoPelanggan(IdPelanggan As String)
+        Dim result As New PelangganResponse
+        Dim myrequest As HttpWebRequest = HttpWebRequest.Create("https://api.permatamall.com/api/v2/auth/user/pelanggan?id_pelanggan=" + IdPelanggan)
+        myrequest.Method = "POST"
+        myrequest.Headers.Add("Authorization", "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjMsImlhdCI6MTU5NTI5ODMwN30.i4GWwTPyp853fcwO4f71qJTmQzu06qcSrh2_vw71tYE")
+        'myrequest.Timeout = reqtimeout
+        Try
+            Dim resp As System.Net.HttpWebResponse = myrequest.GetResponse()
+            Dim sr As New System.IO.StreamReader(resp.GetResponseStream())
+            Dim response = sr.ReadToEnd()
+            Dim responseConvert = JsonConvert.DeserializeObject(Of PelangganResponse)(response)
+            result = responseConvert
+            sr.Close()
+        Catch ex As WebException
+            If ex.Status = WebExceptionStatus.Timeout Then
+                'result = "Error: The request has timed out"
+            Else
+                'result = "Error: " + ex.Message
+            End If
+        End Try
+        Return result
+    End Function
+    Public Function ShowMenuUtama(pelanggan As Pelanggan, pelangganId As String)
+        MenuUtama.Show()
+        Dim tClient As WebClient = New WebClient
+        Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(pelanggan.Foto)))
+        MenuUtama.Label13.Text = pelanggan.Nama
+        MenuUtama.Guna2PictureBox3.Image = downloadImage
+        MenuUtama.Guna2PictureBox3.Tag = pelangganId
+        MenuUtama.Label26.Text = ""
+        Lainnya.Label13.Text = pelanggan.Nama
+        Lainnya.Guna2PictureBox3.Image = downloadImage
+        'Guna2PictureBox1.Image
+    End Function
     Private Sub Guna2Button3_Click(sender As Object, e As EventArgs) Handles Guna2Button3.Click
         Dim usernameText As Control() = Me.Controls.Find("Guna2TextBox1", True)
         Dim passwordText As Control() = Me.Controls.Find("Guna2TextBox2", True)
@@ -35,7 +71,8 @@ Public Class Signin
         Dim password As String = passwordGuna.Text
         Dim checkUser As LoginResponse = Login(username, password)
         If checkUser.Status = "true" Then
-            MenuUtama.Show()
+            Dim getPelanggan As PelangganResponse = GetInfoPelanggan(checkUser.CekEmail.Id_Pelanggan)
+            ShowMenuUtama(getPelanggan.Data, checkUser.CekEmail.Id_Pelanggan)
             Me.Hide()
         Else
             MsgBox("Email dan Password Salah!")
