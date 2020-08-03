@@ -56,71 +56,95 @@ Partial Class Ringkasan
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label26 = New System.Windows.Forms.Label()
         Me.Label22 = New System.Windows.Forms.Label()
-        Me.lbltpk0 = New System.Windows.Forms.Label()
-        Me.btntpk0 = New System.Windows.Forms.ComboBox()
         Me.green0 = New System.Windows.Forms.Label()
         Me.yellow0 = New System.Windows.Forms.Label()
         Me.gray0 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.btntpk1 = New System.Windows.Forms.ComboBox()
         Me.green1 = New System.Windows.Forms.Label()
         Me.yellow1 = New System.Windows.Forms.Label()
         Me.gray1 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.btntpk2 = New System.Windows.Forms.ComboBox()
         Me.green2 = New System.Windows.Forms.Label()
         Me.yellow2 = New System.Windows.Forms.Label()
         Me.gray2 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.btntpk3 = New System.Windows.Forms.ComboBox()
         Me.green3 = New System.Windows.Forms.Label()
         Me.yellow3 = New System.Windows.Forms.Label()
         Me.gray3 = New System.Windows.Forms.Label()
-        Me.Label15 = New System.Windows.Forms.Label()
-        Me.btntpk4 = New System.Windows.Forms.ComboBox()
         Me.green4 = New System.Windows.Forms.Label()
         Me.yellow4 = New System.Windows.Forms.Label()
         Me.gray4 = New System.Windows.Forms.Label()
-        Me.Label19 = New System.Windows.Forms.Label()
-        Me.btntpk5 = New System.Windows.Forms.ComboBox()
         Me.green5 = New System.Windows.Forms.Label()
         Me.yellow5 = New System.Windows.Forms.Label()
         Me.gray5 = New System.Windows.Forms.Label()
-        Me.Label38 = New System.Windows.Forms.Label()
-        Me.btntpk6 = New System.Windows.Forms.ComboBox()
         Me.green6 = New System.Windows.Forms.Label()
         Me.yellow6 = New System.Windows.Forms.Label()
         Me.gray6 = New System.Windows.Forms.Label()
-        Me.Label34 = New System.Windows.Forms.Label()
-        Me.btntpk7 = New System.Windows.Forms.ComboBox()
         Me.green7 = New System.Windows.Forms.Label()
         Me.yellow7 = New System.Windows.Forms.Label()
         Me.gray7 = New System.Windows.Forms.Label()
-        Me.Label30 = New System.Windows.Forms.Label()
-        Me.btntpk8 = New System.Windows.Forms.ComboBox()
         Me.green8 = New System.Windows.Forms.Label()
         Me.yellow8 = New System.Windows.Forms.Label()
         Me.gray8 = New System.Windows.Forms.Label()
-        Me.Label25 = New System.Windows.Forms.Label()
-        Me.btntpk9 = New System.Windows.Forms.ComboBox()
         Me.green9 = New System.Windows.Forms.Label()
         Me.yellow9 = New System.Windows.Forms.Label()
         Me.gray9 = New System.Windows.Forms.Label()
-        Me.Label42 = New System.Windows.Forms.Label()
-        Me.btntpk10 = New System.Windows.Forms.ComboBox()
         Me.green10 = New System.Windows.Forms.Label()
         Me.yellow10 = New System.Windows.Forms.Label()
         Me.gray10 = New System.Windows.Forms.Label()
-        Me.Label46 = New System.Windows.Forms.Label()
-        Me.btntpk11 = New System.Windows.Forms.ComboBox()
         Me.green11 = New System.Windows.Forms.Label()
         Me.yellow11 = New System.Windows.Forms.Label()
         Me.gray11 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.drop1 = New System.Windows.Forms.Panel()
+        Me.drop2 = New System.Windows.Forms.Panel()
+        Me.Button11 = New System.Windows.Forms.Button()
+        Me.Button12 = New System.Windows.Forms.Button()
+        Me.Button13 = New System.Windows.Forms.Button()
+        Me.Button14 = New System.Windows.Forms.Button()
+        Me.Button15 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.Button8 = New System.Windows.Forms.Button()
+        Me.Button9 = New System.Windows.Forms.Button()
+        Me.Button10 = New System.Windows.Forms.Button()
+        Me.drop0 = New System.Windows.Forms.Panel()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btntpk5 = New System.Windows.Forms.Button()
+        Me.btntpk4 = New System.Windows.Forms.Button()
+        Me.btntpk3 = New System.Windows.Forms.Button()
+        Me.btntpk2 = New System.Windows.Forms.Button()
+        Me.btntpk1 = New System.Windows.Forms.Button()
+        Me.btntpk0 = New System.Windows.Forms.Button()
+        Me.drop3 = New System.Windows.Forms.Panel()
+        Me.Button16 = New System.Windows.Forms.Button()
+        Me.Button17 = New System.Windows.Forms.Button()
+        Me.Button18 = New System.Windows.Forms.Button()
+        Me.Button19 = New System.Windows.Forms.Button()
+        Me.Button20 = New System.Windows.Forms.Button()
+        Me.drop4 = New System.Windows.Forms.Panel()
+        Me.Button21 = New System.Windows.Forms.Button()
+        Me.Button22 = New System.Windows.Forms.Button()
+        Me.Button23 = New System.Windows.Forms.Button()
+        Me.Button24 = New System.Windows.Forms.Button()
+        Me.Button25 = New System.Windows.Forms.Button()
+        Me.drop5 = New System.Windows.Forms.Panel()
+        Me.Button26 = New System.Windows.Forms.Button()
+        Me.Button27 = New System.Windows.Forms.Button()
+        Me.Button28 = New System.Windows.Forms.Button()
+        Me.Button29 = New System.Windows.Forms.Button()
+        Me.Button30 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel3.SuspendLayout()
+        Me.drop1.SuspendLayout()
+        Me.drop2.SuspendLayout()
+        Me.drop0.SuspendLayout()
+        Me.drop3.SuspendLayout()
+        Me.drop4.SuspendLayout()
+        Me.drop5.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
@@ -596,41 +620,21 @@ Partial Class Ringkasan
         Me.Label22.Size = New System.Drawing.Size(533, 2)
         Me.Label22.TabIndex = 3
         '
-        'lbltpk0
-        '
-        Me.lbltpk0.BackColor = System.Drawing.Color.White
-        Me.lbltpk0.Location = New System.Drawing.Point(73, 18)
-        Me.lbltpk0.Name = "lbltpk0"
-        Me.lbltpk0.Size = New System.Drawing.Size(68, 37)
-        Me.lbltpk0.TabIndex = 91
-        '
-        'btntpk0
-        '
-        Me.btntpk0.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btntpk0.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btntpk0.FormattingEnabled = True
-        Me.btntpk0.Items.AddRange(New Object() {"1", "2", "3"})
-        Me.btntpk0.Location = New System.Drawing.Point(133, 18)
-        Me.btntpk0.Name = "btntpk0"
-        Me.btntpk0.Size = New System.Drawing.Size(696, 37)
-        Me.btntpk0.TabIndex = 90
-        Me.btntpk0.Text = "Bab"
-        '
         'green0
         '
         Me.green0.BackColor = System.Drawing.Color.Lime
-        Me.green0.Location = New System.Drawing.Point(96, 23)
+        Me.green0.Location = New System.Drawing.Point(74, 145)
         Me.green0.Name = "green0"
-        Me.green0.Size = New System.Drawing.Size(15, 26)
+        Me.green0.Size = New System.Drawing.Size(15, 39)
         Me.green0.TabIndex = 92
         Me.green0.Visible = False
         '
         'yellow0
         '
         Me.yellow0.BackColor = System.Drawing.Color.Yellow
-        Me.yellow0.Location = New System.Drawing.Point(96, 23)
+        Me.yellow0.Location = New System.Drawing.Point(74, 145)
         Me.yellow0.Name = "yellow0"
-        Me.yellow0.Size = New System.Drawing.Size(15, 26)
+        Me.yellow0.Size = New System.Drawing.Size(15, 39)
         Me.yellow0.TabIndex = 93
         Me.yellow0.Visible = False
         '
@@ -638,271 +642,151 @@ Partial Class Ringkasan
         '
         Me.gray0.AutoEllipsis = True
         Me.gray0.BackColor = System.Drawing.Color.Silver
-        Me.gray0.Location = New System.Drawing.Point(96, 23)
+        Me.gray0.Location = New System.Drawing.Point(74, 145)
         Me.gray0.Name = "gray0"
-        Me.gray0.Size = New System.Drawing.Size(15, 26)
+        Me.gray0.Size = New System.Drawing.Size(15, 39)
         Me.gray0.TabIndex = 94
         Me.gray0.Visible = False
-        '
-        'Label3
-        '
-        Me.Label3.BackColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(73, 84)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(68, 37)
-        Me.Label3.TabIndex = 96
-        '
-        'btntpk1
-        '
-        Me.btntpk1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btntpk1.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btntpk1.FormattingEnabled = True
-        Me.btntpk1.Items.AddRange(New Object() {"1", "2", "3"})
-        Me.btntpk1.Location = New System.Drawing.Point(133, 84)
-        Me.btntpk1.Name = "btntpk1"
-        Me.btntpk1.Size = New System.Drawing.Size(696, 37)
-        Me.btntpk1.TabIndex = 95
-        Me.btntpk1.Text = "Bab"
         '
         'green1
         '
         Me.green1.BackColor = System.Drawing.Color.Lime
-        Me.green1.Location = New System.Drawing.Point(96, 89)
+        Me.green1.Location = New System.Drawing.Point(74, 227)
         Me.green1.Name = "green1"
-        Me.green1.Size = New System.Drawing.Size(15, 26)
+        Me.green1.Size = New System.Drawing.Size(15, 39)
         Me.green1.TabIndex = 97
         Me.green1.Visible = False
         '
         'yellow1
         '
         Me.yellow1.BackColor = System.Drawing.Color.Yellow
-        Me.yellow1.Location = New System.Drawing.Point(96, 89)
+        Me.yellow1.Location = New System.Drawing.Point(74, 227)
         Me.yellow1.Name = "yellow1"
-        Me.yellow1.Size = New System.Drawing.Size(15, 26)
+        Me.yellow1.Size = New System.Drawing.Size(15, 39)
         Me.yellow1.TabIndex = 98
         Me.yellow1.Visible = False
         '
         'gray1
         '
         Me.gray1.BackColor = System.Drawing.Color.Silver
-        Me.gray1.Location = New System.Drawing.Point(96, 89)
+        Me.gray1.Location = New System.Drawing.Point(74, 227)
         Me.gray1.Name = "gray1"
-        Me.gray1.Size = New System.Drawing.Size(15, 26)
+        Me.gray1.Size = New System.Drawing.Size(15, 39)
         Me.gray1.TabIndex = 99
         Me.gray1.Visible = False
-        '
-        'Label7
-        '
-        Me.Label7.BackColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(73, 145)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(68, 37)
-        Me.Label7.TabIndex = 101
-        '
-        'btntpk2
-        '
-        Me.btntpk2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btntpk2.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btntpk2.FormattingEnabled = True
-        Me.btntpk2.Items.AddRange(New Object() {"1", "2", "3"})
-        Me.btntpk2.Location = New System.Drawing.Point(133, 145)
-        Me.btntpk2.Name = "btntpk2"
-        Me.btntpk2.Size = New System.Drawing.Size(696, 37)
-        Me.btntpk2.TabIndex = 100
-        Me.btntpk2.Text = "Bab"
         '
         'green2
         '
         Me.green2.BackColor = System.Drawing.Color.Lime
-        Me.green2.Location = New System.Drawing.Point(96, 151)
+        Me.green2.Location = New System.Drawing.Point(74, 299)
         Me.green2.Name = "green2"
-        Me.green2.Size = New System.Drawing.Size(15, 26)
+        Me.green2.Size = New System.Drawing.Size(15, 39)
         Me.green2.TabIndex = 102
         Me.green2.Visible = False
         '
         'yellow2
         '
         Me.yellow2.BackColor = System.Drawing.Color.Yellow
-        Me.yellow2.Location = New System.Drawing.Point(96, 151)
+        Me.yellow2.Location = New System.Drawing.Point(74, 299)
         Me.yellow2.Name = "yellow2"
-        Me.yellow2.Size = New System.Drawing.Size(15, 26)
+        Me.yellow2.Size = New System.Drawing.Size(15, 39)
         Me.yellow2.TabIndex = 103
         Me.yellow2.Visible = False
         '
         'gray2
         '
         Me.gray2.BackColor = System.Drawing.Color.Silver
-        Me.gray2.Location = New System.Drawing.Point(96, 151)
+        Me.gray2.Location = New System.Drawing.Point(74, 299)
         Me.gray2.Name = "gray2"
-        Me.gray2.Size = New System.Drawing.Size(15, 26)
+        Me.gray2.Size = New System.Drawing.Size(15, 39)
         Me.gray2.TabIndex = 104
         Me.gray2.Visible = False
-        '
-        'Label11
-        '
-        Me.Label11.BackColor = System.Drawing.Color.White
-        Me.Label11.Location = New System.Drawing.Point(73, 204)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(68, 37)
-        Me.Label11.TabIndex = 106
-        '
-        'btntpk3
-        '
-        Me.btntpk3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btntpk3.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btntpk3.FormattingEnabled = True
-        Me.btntpk3.Items.AddRange(New Object() {"1", "2", "3"})
-        Me.btntpk3.Location = New System.Drawing.Point(133, 204)
-        Me.btntpk3.Name = "btntpk3"
-        Me.btntpk3.Size = New System.Drawing.Size(696, 37)
-        Me.btntpk3.TabIndex = 105
-        Me.btntpk3.Text = "Bab"
         '
         'green3
         '
         Me.green3.BackColor = System.Drawing.Color.Lime
-        Me.green3.Location = New System.Drawing.Point(96, 207)
+        Me.green3.Location = New System.Drawing.Point(74, 370)
         Me.green3.Name = "green3"
-        Me.green3.Size = New System.Drawing.Size(15, 26)
+        Me.green3.Size = New System.Drawing.Size(15, 39)
         Me.green3.TabIndex = 107
         Me.green3.Visible = False
         '
         'yellow3
         '
         Me.yellow3.BackColor = System.Drawing.Color.Yellow
-        Me.yellow3.Location = New System.Drawing.Point(96, 207)
+        Me.yellow3.Location = New System.Drawing.Point(74, 370)
         Me.yellow3.Name = "yellow3"
-        Me.yellow3.Size = New System.Drawing.Size(15, 26)
+        Me.yellow3.Size = New System.Drawing.Size(15, 39)
         Me.yellow3.TabIndex = 108
         Me.yellow3.Visible = False
         '
         'gray3
         '
         Me.gray3.BackColor = System.Drawing.Color.Silver
-        Me.gray3.Location = New System.Drawing.Point(96, 207)
+        Me.gray3.Location = New System.Drawing.Point(74, 370)
         Me.gray3.Name = "gray3"
-        Me.gray3.Size = New System.Drawing.Size(15, 26)
+        Me.gray3.Size = New System.Drawing.Size(15, 39)
         Me.gray3.TabIndex = 109
         Me.gray3.Visible = False
-        '
-        'Label15
-        '
-        Me.Label15.BackColor = System.Drawing.Color.White
-        Me.Label15.Location = New System.Drawing.Point(73, 268)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(68, 37)
-        Me.Label15.TabIndex = 111
-        '
-        'btntpk4
-        '
-        Me.btntpk4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btntpk4.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btntpk4.FormattingEnabled = True
-        Me.btntpk4.Items.AddRange(New Object() {"1", "2", "3"})
-        Me.btntpk4.Location = New System.Drawing.Point(133, 268)
-        Me.btntpk4.Name = "btntpk4"
-        Me.btntpk4.Size = New System.Drawing.Size(696, 37)
-        Me.btntpk4.TabIndex = 110
-        Me.btntpk4.Text = "Bab"
         '
         'green4
         '
         Me.green4.BackColor = System.Drawing.Color.Lime
-        Me.green4.Location = New System.Drawing.Point(96, 271)
+        Me.green4.Location = New System.Drawing.Point(74, 451)
         Me.green4.Name = "green4"
-        Me.green4.Size = New System.Drawing.Size(15, 26)
+        Me.green4.Size = New System.Drawing.Size(15, 39)
         Me.green4.TabIndex = 112
         Me.green4.Visible = False
         '
         'yellow4
         '
         Me.yellow4.BackColor = System.Drawing.Color.Yellow
-        Me.yellow4.Location = New System.Drawing.Point(96, 271)
+        Me.yellow4.Location = New System.Drawing.Point(74, 451)
         Me.yellow4.Name = "yellow4"
-        Me.yellow4.Size = New System.Drawing.Size(15, 26)
+        Me.yellow4.Size = New System.Drawing.Size(15, 39)
         Me.yellow4.TabIndex = 113
         Me.yellow4.Visible = False
         '
         'gray4
         '
         Me.gray4.BackColor = System.Drawing.Color.Silver
-        Me.gray4.Location = New System.Drawing.Point(96, 271)
+        Me.gray4.Location = New System.Drawing.Point(74, 451)
         Me.gray4.Name = "gray4"
-        Me.gray4.Size = New System.Drawing.Size(15, 26)
+        Me.gray4.Size = New System.Drawing.Size(15, 39)
         Me.gray4.TabIndex = 114
         Me.gray4.Visible = False
-        '
-        'Label19
-        '
-        Me.Label19.BackColor = System.Drawing.Color.White
-        Me.Label19.Location = New System.Drawing.Point(73, 332)
-        Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(68, 37)
-        Me.Label19.TabIndex = 116
-        '
-        'btntpk5
-        '
-        Me.btntpk5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btntpk5.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btntpk5.FormattingEnabled = True
-        Me.btntpk5.Items.AddRange(New Object() {"1", "2", "3"})
-        Me.btntpk5.Location = New System.Drawing.Point(133, 332)
-        Me.btntpk5.Name = "btntpk5"
-        Me.btntpk5.Size = New System.Drawing.Size(696, 37)
-        Me.btntpk5.TabIndex = 115
-        Me.btntpk5.Text = "Bab"
         '
         'green5
         '
         Me.green5.BackColor = System.Drawing.Color.Lime
-        Me.green5.Location = New System.Drawing.Point(96, 337)
+        Me.green5.Location = New System.Drawing.Point(74, 538)
         Me.green5.Name = "green5"
-        Me.green5.Size = New System.Drawing.Size(15, 26)
+        Me.green5.Size = New System.Drawing.Size(15, 39)
         Me.green5.TabIndex = 117
         Me.green5.Visible = False
         '
         'yellow5
         '
         Me.yellow5.BackColor = System.Drawing.Color.Yellow
-        Me.yellow5.Location = New System.Drawing.Point(96, 337)
+        Me.yellow5.Location = New System.Drawing.Point(74, 538)
         Me.yellow5.Name = "yellow5"
-        Me.yellow5.Size = New System.Drawing.Size(15, 26)
+        Me.yellow5.Size = New System.Drawing.Size(15, 39)
         Me.yellow5.TabIndex = 118
         Me.yellow5.Visible = False
         '
         'gray5
         '
         Me.gray5.BackColor = System.Drawing.Color.Silver
-        Me.gray5.Location = New System.Drawing.Point(96, 337)
+        Me.gray5.Location = New System.Drawing.Point(74, 538)
         Me.gray5.Name = "gray5"
-        Me.gray5.Size = New System.Drawing.Size(15, 26)
+        Me.gray5.Size = New System.Drawing.Size(15, 39)
         Me.gray5.TabIndex = 119
         Me.gray5.Visible = False
-        '
-        'Label38
-        '
-        Me.Label38.BackColor = System.Drawing.Color.White
-        Me.Label38.Location = New System.Drawing.Point(73, 389)
-        Me.Label38.Name = "Label38"
-        Me.Label38.Size = New System.Drawing.Size(68, 37)
-        Me.Label38.TabIndex = 121
-        '
-        'btntpk6
-        '
-        Me.btntpk6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btntpk6.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btntpk6.FormattingEnabled = True
-        Me.btntpk6.Items.AddRange(New Object() {"1", "2", "3"})
-        Me.btntpk6.Location = New System.Drawing.Point(133, 389)
-        Me.btntpk6.Name = "btntpk6"
-        Me.btntpk6.Size = New System.Drawing.Size(696, 37)
-        Me.btntpk6.TabIndex = 120
-        Me.btntpk6.Text = "Bab"
         '
         'green6
         '
         Me.green6.BackColor = System.Drawing.Color.Lime
-        Me.green6.Location = New System.Drawing.Point(96, 399)
+        Me.green6.Location = New System.Drawing.Point(885, 495)
         Me.green6.Name = "green6"
         Me.green6.Size = New System.Drawing.Size(15, 26)
         Me.green6.TabIndex = 122
@@ -911,7 +795,7 @@ Partial Class Ringkasan
         'yellow6
         '
         Me.yellow6.BackColor = System.Drawing.Color.Yellow
-        Me.yellow6.Location = New System.Drawing.Point(96, 399)
+        Me.yellow6.Location = New System.Drawing.Point(885, 495)
         Me.yellow6.Name = "yellow6"
         Me.yellow6.Size = New System.Drawing.Size(15, 26)
         Me.yellow6.TabIndex = 123
@@ -920,36 +804,16 @@ Partial Class Ringkasan
         'gray6
         '
         Me.gray6.BackColor = System.Drawing.Color.Silver
-        Me.gray6.Location = New System.Drawing.Point(96, 399)
+        Me.gray6.Location = New System.Drawing.Point(885, 495)
         Me.gray6.Name = "gray6"
         Me.gray6.Size = New System.Drawing.Size(15, 26)
         Me.gray6.TabIndex = 124
         Me.gray6.Visible = False
         '
-        'Label34
-        '
-        Me.Label34.BackColor = System.Drawing.Color.White
-        Me.Label34.Location = New System.Drawing.Point(73, 448)
-        Me.Label34.Name = "Label34"
-        Me.Label34.Size = New System.Drawing.Size(68, 37)
-        Me.Label34.TabIndex = 126
-        '
-        'btntpk7
-        '
-        Me.btntpk7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btntpk7.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btntpk7.FormattingEnabled = True
-        Me.btntpk7.Items.AddRange(New Object() {"1", "2", "3"})
-        Me.btntpk7.Location = New System.Drawing.Point(133, 448)
-        Me.btntpk7.Name = "btntpk7"
-        Me.btntpk7.Size = New System.Drawing.Size(696, 37)
-        Me.btntpk7.TabIndex = 125
-        Me.btntpk7.Text = "Bab"
-        '
         'green7
         '
         Me.green7.BackColor = System.Drawing.Color.Lime
-        Me.green7.Location = New System.Drawing.Point(96, 454)
+        Me.green7.Location = New System.Drawing.Point(885, 550)
         Me.green7.Name = "green7"
         Me.green7.Size = New System.Drawing.Size(15, 26)
         Me.green7.TabIndex = 127
@@ -958,7 +822,7 @@ Partial Class Ringkasan
         'yellow7
         '
         Me.yellow7.BackColor = System.Drawing.Color.Yellow
-        Me.yellow7.Location = New System.Drawing.Point(96, 454)
+        Me.yellow7.Location = New System.Drawing.Point(885, 550)
         Me.yellow7.Name = "yellow7"
         Me.yellow7.Size = New System.Drawing.Size(15, 26)
         Me.yellow7.TabIndex = 128
@@ -967,36 +831,16 @@ Partial Class Ringkasan
         'gray7
         '
         Me.gray7.BackColor = System.Drawing.Color.Silver
-        Me.gray7.Location = New System.Drawing.Point(96, 454)
+        Me.gray7.Location = New System.Drawing.Point(885, 550)
         Me.gray7.Name = "gray7"
         Me.gray7.Size = New System.Drawing.Size(15, 26)
         Me.gray7.TabIndex = 129
         Me.gray7.Visible = False
         '
-        'Label30
-        '
-        Me.Label30.BackColor = System.Drawing.Color.White
-        Me.Label30.Location = New System.Drawing.Point(73, 503)
-        Me.Label30.Name = "Label30"
-        Me.Label30.Size = New System.Drawing.Size(68, 37)
-        Me.Label30.TabIndex = 131
-        '
-        'btntpk8
-        '
-        Me.btntpk8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btntpk8.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btntpk8.FormattingEnabled = True
-        Me.btntpk8.Items.AddRange(New Object() {"1", "2", "3"})
-        Me.btntpk8.Location = New System.Drawing.Point(133, 503)
-        Me.btntpk8.Name = "btntpk8"
-        Me.btntpk8.Size = New System.Drawing.Size(696, 37)
-        Me.btntpk8.TabIndex = 130
-        Me.btntpk8.Text = "Bab"
-        '
         'green8
         '
         Me.green8.BackColor = System.Drawing.Color.Lime
-        Me.green8.Location = New System.Drawing.Point(96, 506)
+        Me.green8.Location = New System.Drawing.Point(923, 434)
         Me.green8.Name = "green8"
         Me.green8.Size = New System.Drawing.Size(15, 26)
         Me.green8.TabIndex = 132
@@ -1005,7 +849,7 @@ Partial Class Ringkasan
         'yellow8
         '
         Me.yellow8.BackColor = System.Drawing.Color.Yellow
-        Me.yellow8.Location = New System.Drawing.Point(96, 506)
+        Me.yellow8.Location = New System.Drawing.Point(923, 434)
         Me.yellow8.Name = "yellow8"
         Me.yellow8.Size = New System.Drawing.Size(15, 26)
         Me.yellow8.TabIndex = 133
@@ -1014,36 +858,16 @@ Partial Class Ringkasan
         'gray8
         '
         Me.gray8.BackColor = System.Drawing.Color.Silver
-        Me.gray8.Location = New System.Drawing.Point(96, 506)
+        Me.gray8.Location = New System.Drawing.Point(923, 434)
         Me.gray8.Name = "gray8"
         Me.gray8.Size = New System.Drawing.Size(15, 26)
         Me.gray8.TabIndex = 134
         Me.gray8.Visible = False
         '
-        'Label25
-        '
-        Me.Label25.BackColor = System.Drawing.Color.White
-        Me.Label25.Location = New System.Drawing.Point(73, 570)
-        Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(68, 37)
-        Me.Label25.TabIndex = 136
-        '
-        'btntpk9
-        '
-        Me.btntpk9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btntpk9.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btntpk9.FormattingEnabled = True
-        Me.btntpk9.Items.AddRange(New Object() {"1", "2", "3"})
-        Me.btntpk9.Location = New System.Drawing.Point(133, 570)
-        Me.btntpk9.Name = "btntpk9"
-        Me.btntpk9.Size = New System.Drawing.Size(696, 37)
-        Me.btntpk9.TabIndex = 135
-        Me.btntpk9.Text = "Bab"
-        '
         'green9
         '
         Me.green9.BackColor = System.Drawing.Color.Lime
-        Me.green9.Location = New System.Drawing.Point(96, 573)
+        Me.green9.Location = New System.Drawing.Point(923, 501)
         Me.green9.Name = "green9"
         Me.green9.Size = New System.Drawing.Size(15, 26)
         Me.green9.TabIndex = 137
@@ -1052,7 +876,7 @@ Partial Class Ringkasan
         'yellow9
         '
         Me.yellow9.BackColor = System.Drawing.Color.Yellow
-        Me.yellow9.Location = New System.Drawing.Point(96, 573)
+        Me.yellow9.Location = New System.Drawing.Point(923, 501)
         Me.yellow9.Name = "yellow9"
         Me.yellow9.Size = New System.Drawing.Size(15, 26)
         Me.yellow9.TabIndex = 138
@@ -1061,36 +885,16 @@ Partial Class Ringkasan
         'gray9
         '
         Me.gray9.BackColor = System.Drawing.Color.Silver
-        Me.gray9.Location = New System.Drawing.Point(96, 573)
+        Me.gray9.Location = New System.Drawing.Point(923, 501)
         Me.gray9.Name = "gray9"
         Me.gray9.Size = New System.Drawing.Size(15, 26)
         Me.gray9.TabIndex = 139
         Me.gray9.Visible = False
         '
-        'Label42
-        '
-        Me.Label42.BackColor = System.Drawing.Color.White
-        Me.Label42.Location = New System.Drawing.Point(73, 640)
-        Me.Label42.Name = "Label42"
-        Me.Label42.Size = New System.Drawing.Size(68, 37)
-        Me.Label42.TabIndex = 141
-        '
-        'btntpk10
-        '
-        Me.btntpk10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btntpk10.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btntpk10.FormattingEnabled = True
-        Me.btntpk10.Items.AddRange(New Object() {"1", "2", "3"})
-        Me.btntpk10.Location = New System.Drawing.Point(133, 640)
-        Me.btntpk10.Name = "btntpk10"
-        Me.btntpk10.Size = New System.Drawing.Size(696, 37)
-        Me.btntpk10.TabIndex = 140
-        Me.btntpk10.Text = "Bab"
-        '
         'green10
         '
         Me.green10.BackColor = System.Drawing.Color.Lime
-        Me.green10.Location = New System.Drawing.Point(96, 645)
+        Me.green10.Location = New System.Drawing.Point(923, 573)
         Me.green10.Name = "green10"
         Me.green10.Size = New System.Drawing.Size(15, 26)
         Me.green10.TabIndex = 142
@@ -1099,7 +903,7 @@ Partial Class Ringkasan
         'yellow10
         '
         Me.yellow10.BackColor = System.Drawing.Color.Yellow
-        Me.yellow10.Location = New System.Drawing.Point(96, 645)
+        Me.yellow10.Location = New System.Drawing.Point(923, 573)
         Me.yellow10.Name = "yellow10"
         Me.yellow10.Size = New System.Drawing.Size(15, 26)
         Me.yellow10.TabIndex = 143
@@ -1108,36 +912,16 @@ Partial Class Ringkasan
         'gray10
         '
         Me.gray10.BackColor = System.Drawing.Color.Silver
-        Me.gray10.Location = New System.Drawing.Point(96, 645)
+        Me.gray10.Location = New System.Drawing.Point(923, 573)
         Me.gray10.Name = "gray10"
         Me.gray10.Size = New System.Drawing.Size(15, 26)
         Me.gray10.TabIndex = 144
         Me.gray10.Visible = False
         '
-        'Label46
-        '
-        Me.Label46.BackColor = System.Drawing.Color.White
-        Me.Label46.Location = New System.Drawing.Point(73, 712)
-        Me.Label46.Name = "Label46"
-        Me.Label46.Size = New System.Drawing.Size(68, 37)
-        Me.Label46.TabIndex = 146
-        '
-        'btntpk11
-        '
-        Me.btntpk11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btntpk11.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btntpk11.FormattingEnabled = True
-        Me.btntpk11.Items.AddRange(New Object() {"1", "2", "3"})
-        Me.btntpk11.Location = New System.Drawing.Point(133, 712)
-        Me.btntpk11.Name = "btntpk11"
-        Me.btntpk11.Size = New System.Drawing.Size(696, 37)
-        Me.btntpk11.TabIndex = 145
-        Me.btntpk11.Text = "Bab"
-        '
         'green11
         '
         Me.green11.BackColor = System.Drawing.Color.Lime
-        Me.green11.Location = New System.Drawing.Point(96, 723)
+        Me.green11.Location = New System.Drawing.Point(923, 651)
         Me.green11.Name = "green11"
         Me.green11.Size = New System.Drawing.Size(15, 26)
         Me.green11.TabIndex = 147
@@ -1146,7 +930,7 @@ Partial Class Ringkasan
         'yellow11
         '
         Me.yellow11.BackColor = System.Drawing.Color.Yellow
-        Me.yellow11.Location = New System.Drawing.Point(96, 723)
+        Me.yellow11.Location = New System.Drawing.Point(923, 651)
         Me.yellow11.Name = "yellow11"
         Me.yellow11.Size = New System.Drawing.Size(15, 26)
         Me.yellow11.TabIndex = 148
@@ -1155,7 +939,7 @@ Partial Class Ringkasan
         'gray11
         '
         Me.gray11.BackColor = System.Drawing.Color.Silver
-        Me.gray11.Location = New System.Drawing.Point(96, 723)
+        Me.gray11.Location = New System.Drawing.Point(923, 651)
         Me.gray11.Name = "gray11"
         Me.gray11.Size = New System.Drawing.Size(15, 26)
         Me.gray11.TabIndex = 149
@@ -1164,72 +948,510 @@ Partial Class Ringkasan
         'Panel3
         '
         Me.Panel3.AutoScroll = True
+        Me.Panel3.Controls.Add(Me.drop5)
+        Me.Panel3.Controls.Add(Me.drop4)
+        Me.Panel3.Controls.Add(Me.drop3)
+        Me.Panel3.Controls.Add(Me.drop2)
+        Me.Panel3.Controls.Add(Me.drop1)
+        Me.Panel3.Controls.Add(Me.drop0)
+        Me.Panel3.Controls.Add(Me.btntpk5)
+        Me.Panel3.Controls.Add(Me.btntpk4)
+        Me.Panel3.Controls.Add(Me.btntpk3)
+        Me.Panel3.Controls.Add(Me.btntpk2)
+        Me.Panel3.Controls.Add(Me.btntpk1)
+        Me.Panel3.Controls.Add(Me.btntpk0)
         Me.Panel3.Controls.Add(Me.gray11)
         Me.Panel3.Controls.Add(Me.yellow11)
         Me.Panel3.Controls.Add(Me.green11)
-        Me.Panel3.Controls.Add(Me.btntpk11)
-        Me.Panel3.Controls.Add(Me.Label46)
         Me.Panel3.Controls.Add(Me.gray10)
         Me.Panel3.Controls.Add(Me.yellow10)
         Me.Panel3.Controls.Add(Me.green10)
-        Me.Panel3.Controls.Add(Me.btntpk10)
-        Me.Panel3.Controls.Add(Me.Label42)
         Me.Panel3.Controls.Add(Me.gray9)
         Me.Panel3.Controls.Add(Me.yellow9)
         Me.Panel3.Controls.Add(Me.green9)
-        Me.Panel3.Controls.Add(Me.btntpk9)
-        Me.Panel3.Controls.Add(Me.Label25)
         Me.Panel3.Controls.Add(Me.gray8)
         Me.Panel3.Controls.Add(Me.yellow8)
         Me.Panel3.Controls.Add(Me.green8)
-        Me.Panel3.Controls.Add(Me.btntpk8)
-        Me.Panel3.Controls.Add(Me.Label30)
         Me.Panel3.Controls.Add(Me.gray7)
         Me.Panel3.Controls.Add(Me.yellow7)
         Me.Panel3.Controls.Add(Me.green7)
-        Me.Panel3.Controls.Add(Me.btntpk7)
-        Me.Panel3.Controls.Add(Me.Label34)
         Me.Panel3.Controls.Add(Me.gray6)
         Me.Panel3.Controls.Add(Me.yellow6)
         Me.Panel3.Controls.Add(Me.green6)
-        Me.Panel3.Controls.Add(Me.btntpk6)
-        Me.Panel3.Controls.Add(Me.Label38)
         Me.Panel3.Controls.Add(Me.gray5)
         Me.Panel3.Controls.Add(Me.yellow5)
         Me.Panel3.Controls.Add(Me.green5)
-        Me.Panel3.Controls.Add(Me.btntpk5)
-        Me.Panel3.Controls.Add(Me.Label19)
         Me.Panel3.Controls.Add(Me.gray4)
         Me.Panel3.Controls.Add(Me.yellow4)
         Me.Panel3.Controls.Add(Me.green4)
-        Me.Panel3.Controls.Add(Me.btntpk4)
-        Me.Panel3.Controls.Add(Me.Label15)
         Me.Panel3.Controls.Add(Me.gray3)
         Me.Panel3.Controls.Add(Me.yellow3)
         Me.Panel3.Controls.Add(Me.green3)
-        Me.Panel3.Controls.Add(Me.btntpk3)
-        Me.Panel3.Controls.Add(Me.Label11)
         Me.Panel3.Controls.Add(Me.gray2)
         Me.Panel3.Controls.Add(Me.yellow2)
         Me.Panel3.Controls.Add(Me.green2)
-        Me.Panel3.Controls.Add(Me.btntpk2)
-        Me.Panel3.Controls.Add(Me.Label7)
         Me.Panel3.Controls.Add(Me.gray1)
         Me.Panel3.Controls.Add(Me.yellow1)
         Me.Panel3.Controls.Add(Me.green1)
-        Me.Panel3.Controls.Add(Me.btntpk1)
-        Me.Panel3.Controls.Add(Me.Label3)
         Me.Panel3.Controls.Add(Me.gray0)
         Me.Panel3.Controls.Add(Me.yellow0)
         Me.Panel3.Controls.Add(Me.green0)
-        Me.Panel3.Controls.Add(Me.btntpk0)
-        Me.Panel3.Controls.Add(Me.lbltpk0)
         Me.Panel3.Location = New System.Drawing.Point(558, 0)
         Me.Panel3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(980, 843)
         Me.Panel3.TabIndex = 4
         Me.Panel3.Visible = False
+        '
+        'drop1
+        '
+        Me.drop1.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.drop1.Controls.Add(Me.Button6)
+        Me.drop1.Controls.Add(Me.Button7)
+        Me.drop1.Controls.Add(Me.Button8)
+        Me.drop1.Controls.Add(Me.Button9)
+        Me.drop1.Controls.Add(Me.Button10)
+        Me.drop1.Location = New System.Drawing.Point(86, 269)
+        Me.drop1.Name = "drop1"
+        Me.drop1.Size = New System.Drawing.Size(757, 213)
+        Me.drop1.TabIndex = 5
+        Me.drop1.Visible = False
+        '
+        'drop2
+        '
+        Me.drop2.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.drop2.Controls.Add(Me.Button11)
+        Me.drop2.Controls.Add(Me.Button12)
+        Me.drop2.Controls.Add(Me.Button13)
+        Me.drop2.Controls.Add(Me.Button14)
+        Me.drop2.Controls.Add(Me.Button15)
+        Me.drop2.Location = New System.Drawing.Point(86, 338)
+        Me.drop2.Name = "drop2"
+        Me.drop2.Size = New System.Drawing.Size(757, 213)
+        Me.drop2.TabIndex = 6
+        Me.drop2.Visible = False
+        '
+        'Button11
+        '
+        Me.Button11.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button11.Location = New System.Drawing.Point(3, 167)
+        Me.Button11.Name = "Button11"
+        Me.Button11.Size = New System.Drawing.Size(751, 42)
+        Me.Button11.TabIndex = 4
+        Me.Button11.UseVisualStyleBackColor = False
+        '
+        'Button12
+        '
+        Me.Button12.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button12.Location = New System.Drawing.Point(3, 126)
+        Me.Button12.Name = "Button12"
+        Me.Button12.Size = New System.Drawing.Size(751, 42)
+        Me.Button12.TabIndex = 3
+        Me.Button12.UseVisualStyleBackColor = False
+        '
+        'Button13
+        '
+        Me.Button13.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button13.Location = New System.Drawing.Point(3, 85)
+        Me.Button13.Name = "Button13"
+        Me.Button13.Size = New System.Drawing.Size(751, 42)
+        Me.Button13.TabIndex = 2
+        Me.Button13.UseVisualStyleBackColor = False
+        '
+        'Button14
+        '
+        Me.Button14.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button14.Location = New System.Drawing.Point(3, 44)
+        Me.Button14.Name = "Button14"
+        Me.Button14.Size = New System.Drawing.Size(751, 42)
+        Me.Button14.TabIndex = 1
+        Me.Button14.UseVisualStyleBackColor = False
+        '
+        'Button15
+        '
+        Me.Button15.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button15.Location = New System.Drawing.Point(3, 3)
+        Me.Button15.Name = "Button15"
+        Me.Button15.Size = New System.Drawing.Size(751, 42)
+        Me.Button15.TabIndex = 0
+        Me.Button15.UseVisualStyleBackColor = False
+        '
+        'Button6
+        '
+        Me.Button6.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button6.Location = New System.Drawing.Point(3, 167)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(751, 42)
+        Me.Button6.TabIndex = 4
+        Me.Button6.UseVisualStyleBackColor = False
+        '
+        'Button7
+        '
+        Me.Button7.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button7.Location = New System.Drawing.Point(3, 126)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(751, 42)
+        Me.Button7.TabIndex = 3
+        Me.Button7.UseVisualStyleBackColor = False
+        '
+        'Button8
+        '
+        Me.Button8.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button8.Location = New System.Drawing.Point(3, 85)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(751, 42)
+        Me.Button8.TabIndex = 2
+        Me.Button8.UseVisualStyleBackColor = False
+        '
+        'Button9
+        '
+        Me.Button9.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button9.Location = New System.Drawing.Point(3, 44)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(751, 42)
+        Me.Button9.TabIndex = 1
+        Me.Button9.UseVisualStyleBackColor = False
+        '
+        'Button10
+        '
+        Me.Button10.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button10.Location = New System.Drawing.Point(3, 3)
+        Me.Button10.Name = "Button10"
+        Me.Button10.Size = New System.Drawing.Size(751, 42)
+        Me.Button10.TabIndex = 0
+        Me.Button10.UseVisualStyleBackColor = False
+        '
+        'drop0
+        '
+        Me.drop0.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.drop0.Controls.Add(Me.Button5)
+        Me.drop0.Controls.Add(Me.Button4)
+        Me.drop0.Controls.Add(Me.Button3)
+        Me.drop0.Controls.Add(Me.Button2)
+        Me.drop0.Controls.Add(Me.Button1)
+        Me.drop0.Location = New System.Drawing.Point(86, 187)
+        Me.drop0.Name = "drop0"
+        Me.drop0.Size = New System.Drawing.Size(757, 213)
+        Me.drop0.TabIndex = 157
+        Me.drop0.Visible = False
+        '
+        'Button5
+        '
+        Me.Button5.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button5.Location = New System.Drawing.Point(3, 167)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(751, 42)
+        Me.Button5.TabIndex = 4
+        Me.Button5.UseVisualStyleBackColor = False
+        '
+        'Button4
+        '
+        Me.Button4.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button4.Location = New System.Drawing.Point(3, 126)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(751, 42)
+        Me.Button4.TabIndex = 3
+        Me.Button4.UseVisualStyleBackColor = False
+        '
+        'Button3
+        '
+        Me.Button3.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button3.Location = New System.Drawing.Point(3, 85)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(751, 42)
+        Me.Button3.TabIndex = 2
+        Me.Button3.UseVisualStyleBackColor = False
+        '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Location = New System.Drawing.Point(3, 44)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(751, 42)
+        Me.Button2.TabIndex = 1
+        Me.Button2.UseVisualStyleBackColor = False
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Location = New System.Drawing.Point(3, 3)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(751, 42)
+        Me.Button1.TabIndex = 0
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'btntpk5
+        '
+        Me.btntpk5.Location = New System.Drawing.Point(89, 538)
+        Me.btntpk5.Name = "btntpk5"
+        Me.btntpk5.Padding = New System.Windows.Forms.Padding(15, 0, 0, 0)
+        Me.btntpk5.Size = New System.Drawing.Size(754, 39)
+        Me.btntpk5.TabIndex = 156
+        Me.btntpk5.Text = "Bab"
+        Me.btntpk5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btntpk5.UseVisualStyleBackColor = True
+        '
+        'btntpk4
+        '
+        Me.btntpk4.Location = New System.Drawing.Point(89, 451)
+        Me.btntpk4.Name = "btntpk4"
+        Me.btntpk4.Padding = New System.Windows.Forms.Padding(15, 0, 0, 0)
+        Me.btntpk4.Size = New System.Drawing.Size(754, 39)
+        Me.btntpk4.TabIndex = 155
+        Me.btntpk4.Text = "Bab"
+        Me.btntpk4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btntpk4.UseVisualStyleBackColor = True
+        '
+        'btntpk3
+        '
+        Me.btntpk3.Location = New System.Drawing.Point(89, 370)
+        Me.btntpk3.Name = "btntpk3"
+        Me.btntpk3.Padding = New System.Windows.Forms.Padding(15, 0, 0, 0)
+        Me.btntpk3.Size = New System.Drawing.Size(754, 39)
+        Me.btntpk3.TabIndex = 154
+        Me.btntpk3.Text = "Bab"
+        Me.btntpk3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btntpk3.UseVisualStyleBackColor = True
+        '
+        'btntpk2
+        '
+        Me.btntpk2.Location = New System.Drawing.Point(89, 299)
+        Me.btntpk2.Name = "btntpk2"
+        Me.btntpk2.Padding = New System.Windows.Forms.Padding(15, 0, 0, 0)
+        Me.btntpk2.Size = New System.Drawing.Size(754, 39)
+        Me.btntpk2.TabIndex = 153
+        Me.btntpk2.Text = "Bab"
+        Me.btntpk2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btntpk2.UseVisualStyleBackColor = True
+        '
+        'btntpk1
+        '
+        Me.btntpk1.Location = New System.Drawing.Point(89, 227)
+        Me.btntpk1.Name = "btntpk1"
+        Me.btntpk1.Padding = New System.Windows.Forms.Padding(15, 0, 0, 0)
+        Me.btntpk1.Size = New System.Drawing.Size(754, 39)
+        Me.btntpk1.TabIndex = 152
+        Me.btntpk1.Text = "Bab"
+        Me.btntpk1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btntpk1.UseVisualStyleBackColor = True
+        '
+        'btntpk0
+        '
+        Me.btntpk0.Location = New System.Drawing.Point(89, 145)
+        Me.btntpk0.Name = "btntpk0"
+        Me.btntpk0.Padding = New System.Windows.Forms.Padding(15, 0, 0, 0)
+        Me.btntpk0.Size = New System.Drawing.Size(754, 39)
+        Me.btntpk0.TabIndex = 151
+        Me.btntpk0.Text = "Bab"
+        Me.btntpk0.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btntpk0.UseVisualStyleBackColor = True
+        '
+        'drop3
+        '
+        Me.drop3.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.drop3.Controls.Add(Me.Button16)
+        Me.drop3.Controls.Add(Me.Button17)
+        Me.drop3.Controls.Add(Me.Button18)
+        Me.drop3.Controls.Add(Me.Button19)
+        Me.drop3.Controls.Add(Me.Button20)
+        Me.drop3.Location = New System.Drawing.Point(87, 410)
+        Me.drop3.Name = "drop3"
+        Me.drop3.Size = New System.Drawing.Size(757, 213)
+        Me.drop3.TabIndex = 7
+        Me.drop3.Visible = False
+        '
+        'Button16
+        '
+        Me.Button16.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button16.Location = New System.Drawing.Point(3, 167)
+        Me.Button16.Name = "Button16"
+        Me.Button16.Size = New System.Drawing.Size(751, 42)
+        Me.Button16.TabIndex = 4
+        Me.Button16.UseVisualStyleBackColor = False
+        '
+        'Button17
+        '
+        Me.Button17.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button17.Location = New System.Drawing.Point(3, 126)
+        Me.Button17.Name = "Button17"
+        Me.Button17.Size = New System.Drawing.Size(751, 42)
+        Me.Button17.TabIndex = 3
+        Me.Button17.UseVisualStyleBackColor = False
+        '
+        'Button18
+        '
+        Me.Button18.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button18.Location = New System.Drawing.Point(3, 85)
+        Me.Button18.Name = "Button18"
+        Me.Button18.Size = New System.Drawing.Size(751, 42)
+        Me.Button18.TabIndex = 2
+        Me.Button18.UseVisualStyleBackColor = False
+        '
+        'Button19
+        '
+        Me.Button19.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button19.Location = New System.Drawing.Point(3, 44)
+        Me.Button19.Name = "Button19"
+        Me.Button19.Size = New System.Drawing.Size(751, 42)
+        Me.Button19.TabIndex = 1
+        Me.Button19.UseVisualStyleBackColor = False
+        '
+        'Button20
+        '
+        Me.Button20.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button20.Location = New System.Drawing.Point(3, 3)
+        Me.Button20.Name = "Button20"
+        Me.Button20.Size = New System.Drawing.Size(751, 42)
+        Me.Button20.TabIndex = 0
+        Me.Button20.UseVisualStyleBackColor = False
+        '
+        'drop4
+        '
+        Me.drop4.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.drop4.Controls.Add(Me.Button21)
+        Me.drop4.Controls.Add(Me.Button22)
+        Me.drop4.Controls.Add(Me.Button23)
+        Me.drop4.Controls.Add(Me.Button24)
+        Me.drop4.Controls.Add(Me.Button25)
+        Me.drop4.Location = New System.Drawing.Point(87, 493)
+        Me.drop4.Name = "drop4"
+        Me.drop4.Size = New System.Drawing.Size(757, 213)
+        Me.drop4.TabIndex = 8
+        Me.drop4.Visible = False
+        '
+        'Button21
+        '
+        Me.Button21.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button21.Location = New System.Drawing.Point(3, 167)
+        Me.Button21.Name = "Button21"
+        Me.Button21.Size = New System.Drawing.Size(751, 42)
+        Me.Button21.TabIndex = 4
+        Me.Button21.UseVisualStyleBackColor = False
+        '
+        'Button22
+        '
+        Me.Button22.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button22.Location = New System.Drawing.Point(3, 126)
+        Me.Button22.Name = "Button22"
+        Me.Button22.Size = New System.Drawing.Size(751, 42)
+        Me.Button22.TabIndex = 3
+        Me.Button22.UseVisualStyleBackColor = False
+        '
+        'Button23
+        '
+        Me.Button23.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button23.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button23.Location = New System.Drawing.Point(3, 85)
+        Me.Button23.Name = "Button23"
+        Me.Button23.Size = New System.Drawing.Size(751, 42)
+        Me.Button23.TabIndex = 2
+        Me.Button23.UseVisualStyleBackColor = False
+        '
+        'Button24
+        '
+        Me.Button24.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button24.Location = New System.Drawing.Point(3, 44)
+        Me.Button24.Name = "Button24"
+        Me.Button24.Size = New System.Drawing.Size(751, 42)
+        Me.Button24.TabIndex = 1
+        Me.Button24.UseVisualStyleBackColor = False
+        '
+        'Button25
+        '
+        Me.Button25.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button25.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button25.Location = New System.Drawing.Point(3, 3)
+        Me.Button25.Name = "Button25"
+        Me.Button25.Size = New System.Drawing.Size(751, 42)
+        Me.Button25.TabIndex = 0
+        Me.Button25.UseVisualStyleBackColor = False
+        '
+        'drop5
+        '
+        Me.drop5.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.drop5.Controls.Add(Me.Button26)
+        Me.drop5.Controls.Add(Me.Button27)
+        Me.drop5.Controls.Add(Me.Button28)
+        Me.drop5.Controls.Add(Me.Button29)
+        Me.drop5.Controls.Add(Me.Button30)
+        Me.drop5.Location = New System.Drawing.Point(88, 575)
+        Me.drop5.Name = "drop5"
+        Me.drop5.Size = New System.Drawing.Size(757, 213)
+        Me.drop5.TabIndex = 9
+        Me.drop5.Visible = False
+        '
+        'Button26
+        '
+        Me.Button26.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button26.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button26.Location = New System.Drawing.Point(3, 167)
+        Me.Button26.Name = "Button26"
+        Me.Button26.Size = New System.Drawing.Size(751, 42)
+        Me.Button26.TabIndex = 4
+        Me.Button26.UseVisualStyleBackColor = False
+        '
+        'Button27
+        '
+        Me.Button27.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button27.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button27.Location = New System.Drawing.Point(3, 126)
+        Me.Button27.Name = "Button27"
+        Me.Button27.Size = New System.Drawing.Size(751, 42)
+        Me.Button27.TabIndex = 3
+        Me.Button27.UseVisualStyleBackColor = False
+        '
+        'Button28
+        '
+        Me.Button28.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button28.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button28.Location = New System.Drawing.Point(3, 85)
+        Me.Button28.Name = "Button28"
+        Me.Button28.Size = New System.Drawing.Size(751, 42)
+        Me.Button28.TabIndex = 2
+        Me.Button28.UseVisualStyleBackColor = False
+        '
+        'Button29
+        '
+        Me.Button29.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button29.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button29.Location = New System.Drawing.Point(3, 44)
+        Me.Button29.Name = "Button29"
+        Me.Button29.Size = New System.Drawing.Size(751, 42)
+        Me.Button29.TabIndex = 1
+        Me.Button29.UseVisualStyleBackColor = False
+        '
+        'Button30
+        '
+        Me.Button30.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button30.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button30.Location = New System.Drawing.Point(3, 3)
+        Me.Button30.Name = "Button30"
+        Me.Button30.Size = New System.Drawing.Size(751, 42)
+        Me.Button30.TabIndex = 0
+        Me.Button30.UseVisualStyleBackColor = False
         '
         'Ringkasan
         '
@@ -1250,6 +1472,12 @@ Partial Class Ringkasan
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         Me.Panel3.ResumeLayout(False)
+        Me.drop1.ResumeLayout(False)
+        Me.drop2.ResumeLayout(False)
+        Me.drop0.ResumeLayout(False)
+        Me.drop3.ResumeLayout(False)
+        Me.drop4.ResumeLayout(False)
+        Me.drop5.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -1286,65 +1514,83 @@ Partial Class Ringkasan
     Friend WithEvents btnrm1 As Button
     Friend WithEvents lblrm11 As Label
     Friend WithEvents btnrm11 As Button
-    Friend WithEvents lbltpk0 As Label
-    Friend WithEvents btntpk0 As ComboBox
     Friend WithEvents green0 As Label
     Friend WithEvents yellow0 As Label
     Friend WithEvents gray0 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents btntpk1 As ComboBox
     Friend WithEvents green1 As Label
     Friend WithEvents yellow1 As Label
     Friend WithEvents gray1 As Label
-    Friend WithEvents Label7 As Label
-    Friend WithEvents btntpk2 As ComboBox
     Friend WithEvents green2 As Label
     Friend WithEvents yellow2 As Label
     Friend WithEvents gray2 As Label
-    Friend WithEvents Label11 As Label
-    Friend WithEvents btntpk3 As ComboBox
     Friend WithEvents green3 As Label
     Friend WithEvents yellow3 As Label
     Friend WithEvents gray3 As Label
-    Friend WithEvents Label15 As Label
-    Friend WithEvents btntpk4 As ComboBox
     Friend WithEvents green4 As Label
     Friend WithEvents yellow4 As Label
     Friend WithEvents gray4 As Label
-    Friend WithEvents Label19 As Label
-    Friend WithEvents btntpk5 As ComboBox
     Friend WithEvents green5 As Label
     Friend WithEvents yellow5 As Label
     Friend WithEvents gray5 As Label
-    Friend WithEvents Label38 As Label
-    Friend WithEvents btntpk6 As ComboBox
     Friend WithEvents green6 As Label
     Friend WithEvents yellow6 As Label
     Friend WithEvents gray6 As Label
-    Friend WithEvents Label34 As Label
-    Friend WithEvents btntpk7 As ComboBox
     Friend WithEvents green7 As Label
     Friend WithEvents yellow7 As Label
     Friend WithEvents gray7 As Label
-    Friend WithEvents Label30 As Label
-    Friend WithEvents btntpk8 As ComboBox
     Friend WithEvents green8 As Label
     Friend WithEvents yellow8 As Label
     Friend WithEvents gray8 As Label
-    Friend WithEvents Label25 As Label
-    Friend WithEvents btntpk9 As ComboBox
     Friend WithEvents green9 As Label
     Friend WithEvents yellow9 As Label
     Friend WithEvents gray9 As Label
-    Friend WithEvents Label42 As Label
-    Friend WithEvents btntpk10 As ComboBox
     Friend WithEvents green10 As Label
     Friend WithEvents yellow10 As Label
     Friend WithEvents gray10 As Label
-    Friend WithEvents Label46 As Label
-    Friend WithEvents btntpk11 As ComboBox
     Friend WithEvents green11 As Label
     Friend WithEvents yellow11 As Label
     Friend WithEvents gray11 As Label
     Friend WithEvents Panel3 As Panel
+    Friend WithEvents btntpk5 As Button
+    Friend WithEvents btntpk4 As Button
+    Friend WithEvents btntpk3 As Button
+    Friend WithEvents btntpk2 As Button
+    Friend WithEvents btntpk1 As Button
+    Friend WithEvents btntpk0 As Button
+    Friend WithEvents drop0 As Panel
+    Friend WithEvents drop1 As Panel
+    Friend WithEvents Button6 As Button
+    Friend WithEvents Button7 As Button
+    Friend WithEvents Button8 As Button
+    Friend WithEvents Button9 As Button
+    Friend WithEvents Button10 As Button
+    Friend WithEvents Button5 As Button
+    Friend WithEvents Button4 As Button
+    Friend WithEvents Button3 As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Button1 As Button
+    Friend WithEvents drop2 As Panel
+    Friend WithEvents Button11 As Button
+    Friend WithEvents Button12 As Button
+    Friend WithEvents Button13 As Button
+    Friend WithEvents Button14 As Button
+    Friend WithEvents Button15 As Button
+    Friend WithEvents drop5 As Panel
+    Friend WithEvents Button26 As Button
+    Friend WithEvents Button27 As Button
+    Friend WithEvents Button28 As Button
+    Friend WithEvents Button29 As Button
+    Friend WithEvents Button30 As Button
+    Friend WithEvents drop4 As Panel
+    Friend WithEvents Button21 As Button
+    Friend WithEvents Button22 As Button
+    Friend WithEvents Button23 As Button
+    Friend WithEvents Button24 As Button
+    Friend WithEvents Button25 As Button
+    Friend WithEvents drop3 As Panel
+    Friend WithEvents Button16 As Button
+    Friend WithEvents Button17 As Button
+    Friend WithEvents Button18 As Button
+    Friend WithEvents Button19 As Button
+    Friend WithEvents Button20 As Button
 End Class
