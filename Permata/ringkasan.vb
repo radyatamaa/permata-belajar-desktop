@@ -3,65 +3,6 @@ Imports System.Net
 Imports Newtonsoft.Json
 
 Public Class Ringkasan
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
-
-    Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles btntpk0.Click
-        lblbab1.Visible = True
-        lblbab2.Visible = False
-        lblbab3.Visible = False
-        lblbab4.Visible = False
-        lblbab5.Visible = False
-        lblbab6.Visible = False
-
-    End Sub
-
-    Private Sub Guna2Button2_Click(sender As Object, e As EventArgs) Handles btntpk1.Click
-        lblbab1.Visible = False
-        lblbab2.Visible = True
-        lblbab3.Visible = False
-        lblbab4.Visible = False
-        lblbab5.Visible = False
-        lblbab6.Visible = False
-    End Sub
-
-    Private Sub Guna2Button3_Click(sender As Object, e As EventArgs) Handles btntpk2.Click
-        lblbab1.Visible = False
-        lblbab2.Visible = False
-        lblbab3.Visible = True
-        lblbab4.Visible = False
-        lblbab5.Visible = False
-        lblbab6.Visible = False
-    End Sub
-
-    Private Sub Guna2Button4_Click(sender As Object, e As EventArgs) Handles btntpk3.Click
-        lblbab1.Visible = False
-        lblbab2.Visible = False
-        lblbab3.Visible = False
-        lblbab4.Visible = True
-        lblbab5.Visible = False
-        lblbab6.Visible = False
-    End Sub
-
-    Private Sub Guna2Button5_Click(sender As Object, e As EventArgs) Handles btntpk4.Click
-        lblbab1.Visible = False
-        lblbab2.Visible = False
-        lblbab3.Visible = False
-        lblbab4.Visible = False
-        lblbab5.Visible = True
-        lblbab6.Visible = False
-    End Sub
-
-    Private Sub Guna2Button6_Click(sender As Object, e As EventArgs) Handles btntpk5.Click
-        lblbab1.Visible = False
-        lblbab2.Visible = False
-        lblbab3.Visible = False
-        lblbab4.Visible = False
-        lblbab5.Visible = False
-        lblbab6.Visible = True
-    End Sub
-
     Private Sub Guna2Button7_Click(sender As Object, e As EventArgs) Handles Guna2Button7.Click
         MenuUtama.Show()
         MenuUtama.Panel5.Visible = False
@@ -250,7 +191,7 @@ Public Class Ringkasan
         Panel3.Visible = True
     End Sub
 
-    Private Sub Panel3_Paint(sender As Object, e As PaintEventArgs) Handles Panel3.Paint
+    Private Sub Panel3_Paint(sender As Object, e As PaintEventArgs)
 
     End Sub
 
@@ -297,5 +238,88 @@ Public Class Ringkasan
     Private Sub btnrm11_Click(sender As Object, e As EventArgs) Handles btnrm11.Click
         ShowRingkasanTopik(0, Integer.Parse(Me.Label2.Tag), Integer.Parse(Me.Label26.Tag), Me.btnrm11.Tag, Me.Label1.Tag)
         Panel3.Visible = True
+    End Sub
+
+    Private Sub btntpk0_SelectedIndexChanged(sender As Object, e As EventArgs) Handles btntpk0.SelectedIndexChanged
+        gray0.Visible = False
+        green0.Visible = True
+        yellow0.Visible = False
+    End Sub
+
+    Private Sub btntpk1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles btntpk1.SelectedIndexChanged
+        gray1.Visible = False
+        green1.Visible = True
+        yellow1.Visible = False
+        yellow0.Visible = True
+    End Sub
+
+    Private Sub btntpk2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles btntpk2.SelectedIndexChanged
+        gray2.Visible = False
+        green2.Visible = True
+        yellow2.Visible = False
+        yellow1.Visible = True
+    End Sub
+
+    Private Sub btntpk3_SelectedIndexChanged(sender As Object, e As EventArgs) Handles btntpk3.SelectedIndexChanged
+        gray3.Visible = False
+        green3.Visible = True
+        yellow3.Visible = False
+        yellow2.Visible = True
+    End Sub
+
+    Private Sub btntpk4_SelectedIndexChanged(sender As Object, e As EventArgs) Handles btntpk4.SelectedIndexChanged
+        gray4.Visible = False
+        green4.Visible = True
+        yellow4.Visible = False
+        yellow3.Visible = True
+    End Sub
+
+    Private Sub btntpk5_SelectedIndexChanged(sender As Object, e As EventArgs) Handles btntpk5.SelectedIndexChanged
+        gray5.Visible = False
+        green5.Visible = True
+        yellow5.Visible = False
+        yellow4.Visible = True
+    End Sub
+
+    Private Sub btntpk6_SelectedIndexChanged(sender As Object, e As EventArgs) Handles btntpk6.SelectedIndexChanged
+        gray6.Visible = False
+        green6.Visible = True
+        yellow6.Visible = False
+        yellow5.Visible = True
+    End Sub
+
+    Private Sub btntpk7_SelectedIndexChanged(sender As Object, e As EventArgs) Handles btntpk7.SelectedIndexChanged
+        gray7.Visible = False
+        green7.Visible = True
+        yellow7.Visible = False
+        yellow6.Visible = True
+    End Sub
+
+    Private Sub btntpk8_SelectedIndexChanged(sender As Object, e As EventArgs) Handles btntpk8.SelectedIndexChanged
+        gray8.Visible = False
+        green8.Visible = True
+        yellow8.Visible = False
+        yellow7.Visible = True
+    End Sub
+
+    Private Sub btntpk9_SelectedIndexChanged(sender As Object, e As EventArgs) Handles btntpk9.SelectedIndexChanged
+        gray9.Visible = False
+        green9.Visible = True
+        yellow9.Visible = False
+        yellow8.Visible = True
+    End Sub
+
+    Private Sub btntpk10_SelectedIndexChanged(sender As Object, e As EventArgs) Handles btntpk10.SelectedIndexChanged
+        gray10.Visible = False
+        green10.Visible = True
+        yellow10.Visible = False
+        yellow9.Visible = True
+    End Sub
+
+    Private Sub btntpk11_SelectedIndexChanged(sender As Object, e As EventArgs) Handles btntpk11.SelectedIndexChanged
+        gray11.Visible = False
+        green11.Visible = True
+        yellow11.Visible = False
+        yellow10.Visible = True
     End Sub
 End Class

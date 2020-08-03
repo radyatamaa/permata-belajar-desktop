@@ -101,3 +101,5 @@ C:\Users\Asus\Documents\Github\permata-belajar-desktop\Permata\bin\Debug\Newtons
 C:\Users\Asus\Documents\Github\permata-belajar-desktop\Permata\bin\Debug\Interop.WMPLib.dll
 C:\Users\Asus\Documents\Github\permata-belajar-desktop\Permata\bin\Debug\AxInterop.WMPLib.dll
 C:\Users\Asus\Documents\Github\permata-belajar-desktop\Permata\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\Asus\Documents\Github\permata-belajar-desktop\Permata\obj\Debug\Permata.Form3.resources
+C:\Users\Asus\Documents\Github\permata-belajar-desktop\Permata\obj\Debug\Permata.Form4.resources
