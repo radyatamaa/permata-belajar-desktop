@@ -57,9 +57,9 @@ Partial Class Form2
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label26 = New System.Windows.Forms.Label()
         Me.Label22 = New System.Windows.Forms.Label()
-        Me.WebBrowser1 = New System.Windows.Forms.WebBrowser()
-        Me.WebBrowser2 = New System.Windows.Forms.WebBrowser()
-        Me.WebBrowser3 = New System.Windows.Forms.WebBrowser()
+        Me.video0 = New System.Windows.Forms.WebBrowser()
+        Me.video1 = New System.Windows.Forms.WebBrowser()
+        Me.video2 = New System.Windows.Forms.WebBrowser()
         Me.Panel4.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.Panel7.SuspendLayout()
@@ -221,7 +221,7 @@ Partial Class Form2
         '
         Me.Panel7.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Panel7.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Panel7.Controls.Add(Me.WebBrowser3)
+        Me.Panel7.Controls.Add(Me.video2)
         Me.Panel7.Controls.Add(Me.Button3)
         Me.Panel7.Location = New System.Drawing.Point(193, 476)
         Me.Panel7.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -233,7 +233,7 @@ Partial Class Form2
         '
         Me.Panel6.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Panel6.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Panel6.Controls.Add(Me.WebBrowser2)
+        Me.Panel6.Controls.Add(Me.video1)
         Me.Panel6.Controls.Add(Me.Button1)
         Me.Panel6.Location = New System.Drawing.Point(193, 260)
         Me.Panel6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -245,7 +245,7 @@ Partial Class Form2
         '
         Me.Panel5.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Panel5.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Panel5.Controls.Add(Me.WebBrowser1)
+        Me.Panel5.Controls.Add(Me.video0)
         Me.Panel5.Controls.Add(Me.Button2)
         Me.Panel5.Location = New System.Drawing.Point(193, 48)
         Me.Panel5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -547,29 +547,29 @@ Partial Class Form2
         Me.Label22.Size = New System.Drawing.Size(533, 2)
         Me.Label22.TabIndex = 3
         '
-        'WebBrowser1
+        'video0
         '
-        Me.WebBrowser1.Location = New System.Drawing.Point(48, 21)
-        Me.WebBrowser1.MinimumSize = New System.Drawing.Size(20, 20)
-        Me.WebBrowser1.Name = "WebBrowser1"
-        Me.WebBrowser1.Size = New System.Drawing.Size(267, 93)
-        Me.WebBrowser1.TabIndex = 5
+        Me.video0.Location = New System.Drawing.Point(48, 21)
+        Me.video0.MinimumSize = New System.Drawing.Size(20, 20)
+        Me.video0.Name = "video0"
+        Me.video0.Size = New System.Drawing.Size(267, 93)
+        Me.video0.TabIndex = 5
         '
-        'WebBrowser2
+        'video1
         '
-        Me.WebBrowser2.Location = New System.Drawing.Point(48, 25)
-        Me.WebBrowser2.MinimumSize = New System.Drawing.Size(20, 20)
-        Me.WebBrowser2.Name = "WebBrowser2"
-        Me.WebBrowser2.Size = New System.Drawing.Size(267, 93)
-        Me.WebBrowser2.TabIndex = 6
+        Me.video1.Location = New System.Drawing.Point(48, 25)
+        Me.video1.MinimumSize = New System.Drawing.Size(20, 20)
+        Me.video1.Name = "video1"
+        Me.video1.Size = New System.Drawing.Size(267, 93)
+        Me.video1.TabIndex = 6
         '
-        'WebBrowser3
+        'video2
         '
-        Me.WebBrowser3.Location = New System.Drawing.Point(48, 20)
-        Me.WebBrowser3.MinimumSize = New System.Drawing.Size(20, 20)
-        Me.WebBrowser3.Name = "WebBrowser3"
-        Me.WebBrowser3.Size = New System.Drawing.Size(267, 93)
-        Me.WebBrowser3.TabIndex = 7
+        Me.video2.Location = New System.Drawing.Point(48, 20)
+        Me.video2.MinimumSize = New System.Drawing.Size(20, 20)
+        Me.video2.Name = "video2"
+        Me.video2.Size = New System.Drawing.Size(267, 93)
+        Me.video2.TabIndex = 7
         '
         'Form2
         '
@@ -629,7 +629,7 @@ Partial Class Form2
     Friend WithEvents Button1 As Button
     Friend WithEvents Panel5 As Panel
     Friend WithEvents Button2 As Button
-    Friend WithEvents WebBrowser3 As WebBrowser
-    Friend WithEvents WebBrowser2 As WebBrowser
-    Friend WithEvents WebBrowser1 As WebBrowser
+    Friend WithEvents video2 As WebBrowser
+    Friend WithEvents video1 As WebBrowser
+    Friend WithEvents video0 As WebBrowser
 End Class

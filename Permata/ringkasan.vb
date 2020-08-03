@@ -240,86 +240,59 @@ Public Class Ringkasan
         Panel3.Visible = True
     End Sub
 
-    Private Sub btntpk0_SelectedIndexChanged(sender As Object, e As EventArgs) Handles btntpk0.SelectedIndexChanged
-        gray0.Visible = False
+
+    Private Sub btntpk0_Click(sender As Object, e As EventArgs) Handles btntpk0.Click
         green0.Visible = True
-        yellow0.Visible = False
+
+        If drop0.Visible = False Then
+            drop0.Visible = True
+        ElseIf drop0.Visible = True Then
+            drop0.Visible = False
+        End If
     End Sub
 
-    Private Sub btntpk1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles btntpk1.SelectedIndexChanged
-        gray1.Visible = False
+    Private Sub btntpk1_Click(sender As Object, e As EventArgs) Handles btntpk1.Click
         green1.Visible = True
-        yellow1.Visible = False
-        yellow0.Visible = True
+        If drop1.Visible = False Then
+            drop1.Visible = True
+        ElseIf drop1.Visible = True Then
+            drop1.Visible = False
+        End If
     End Sub
 
-    Private Sub btntpk2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles btntpk2.SelectedIndexChanged
-        gray2.Visible = False
+    Private Sub btntpk2_Click(sender As Object, e As EventArgs) Handles btntpk2.Click
         green2.Visible = True
-        yellow2.Visible = False
-        yellow1.Visible = True
+        If drop2.Visible = False Then
+            drop2.Visible = True
+        ElseIf drop2.Visible = True Then
+            drop2.Visible = False
+        End If
     End Sub
 
-    Private Sub btntpk3_SelectedIndexChanged(sender As Object, e As EventArgs) Handles btntpk3.SelectedIndexChanged
-        gray3.Visible = False
+    Private Sub btntpk3_Click(sender As Object, e As EventArgs) Handles btntpk3.Click
         green3.Visible = True
-        yellow3.Visible = False
-        yellow2.Visible = True
+        If drop3.Visible = False Then
+            drop3.Visible = True
+        ElseIf drop3.Visible = True Then
+            drop3.Visible = False
+        End If
     End Sub
 
-    Private Sub btntpk4_SelectedIndexChanged(sender As Object, e As EventArgs) Handles btntpk4.SelectedIndexChanged
-        gray4.Visible = False
+    Private Sub btntpk4_Click(sender As Object, e As EventArgs) Handles btntpk4.Click
         green4.Visible = True
-        yellow4.Visible = False
-        yellow3.Visible = True
+        If drop4.Visible = False Then
+            drop4.Visible = True
+        ElseIf drop4.Visible = True Then
+            drop4.Visible = False
+        End If
     End Sub
 
-    Private Sub btntpk5_SelectedIndexChanged(sender As Object, e As EventArgs) Handles btntpk5.SelectedIndexChanged
-        gray5.Visible = False
+    Private Sub btntpk5_Click(sender As Object, e As EventArgs) Handles btntpk5.Click
         green5.Visible = True
-        yellow5.Visible = False
-        yellow4.Visible = True
-    End Sub
-
-    Private Sub btntpk6_SelectedIndexChanged(sender As Object, e As EventArgs) Handles btntpk6.SelectedIndexChanged
-        gray6.Visible = False
-        green6.Visible = True
-        yellow6.Visible = False
-        yellow5.Visible = True
-    End Sub
-
-    Private Sub btntpk7_SelectedIndexChanged(sender As Object, e As EventArgs) Handles btntpk7.SelectedIndexChanged
-        gray7.Visible = False
-        green7.Visible = True
-        yellow7.Visible = False
-        yellow6.Visible = True
-    End Sub
-
-    Private Sub btntpk8_SelectedIndexChanged(sender As Object, e As EventArgs) Handles btntpk8.SelectedIndexChanged
-        gray8.Visible = False
-        green8.Visible = True
-        yellow8.Visible = False
-        yellow7.Visible = True
-    End Sub
-
-    Private Sub btntpk9_SelectedIndexChanged(sender As Object, e As EventArgs) Handles btntpk9.SelectedIndexChanged
-        gray9.Visible = False
-        green9.Visible = True
-        yellow9.Visible = False
-        yellow8.Visible = True
-    End Sub
-
-    Private Sub btntpk10_SelectedIndexChanged(sender As Object, e As EventArgs) Handles btntpk10.SelectedIndexChanged
-        gray10.Visible = False
-        green10.Visible = True
-        yellow10.Visible = False
-        yellow9.Visible = True
-    End Sub
-
-    Private Sub btntpk11_SelectedIndexChanged(sender As Object, e As EventArgs) Handles btntpk11.SelectedIndexChanged
-        gray11.Visible = False
-        green11.Visible = True
-        yellow11.Visible = False
-        yellow10.Visible = True
+        If drop5.Visible = False Then
+            drop5.Visible = True
+        ElseIf drop5.Visible = True Then
+            drop5.Visible = False
+        End If
     End Sub
 End Class
