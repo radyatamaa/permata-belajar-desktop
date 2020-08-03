@@ -82,6 +82,25 @@ Public Class Ringkasan
         Return result
 
     End Function
+    Public Function SubmitRingkasanMateri(idContent As Integer, IdRingkasanMateri As Integer, IdPelanggan As String)
+        Dim myrequest As HttpWebRequest = HttpWebRequest.Create("https://api.permatamall.com/api/v2/belajar/home/ringkasan-materi/submit/read?id_content=" + idContent.ToString() + "&id_ringkasan_materi=" + IdRingkasanMateri.ToString() + "&id_pelanggan=" + IdPelanggan)
+        myrequest.Method = "POST"
+        myrequest.Headers.Add("Authorization", "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjMsImlhdCI6MTU5NTI5ODMwN30.i4GWwTPyp853fcwO4f71qJTmQzu06qcSrh2_vw71tYE")
+        'myrequest.Timeout = reqtimeout
+        Try
+            Dim resp As System.Net.HttpWebResponse = myrequest.GetResponse()
+            Dim sr As New System.IO.StreamReader(resp.GetResponseStream())
+            Dim response = sr.ReadToEnd()
+            sr.Close()
+        Catch ex As WebException
+            If ex.Status = WebExceptionStatus.Timeout Then
+                'result = "Error: The request has timed out"
+            Else
+                'result = "Error: " + ex.Message
+            End If
+        End Try
+
+    End Function
 
     Public Function ShowRingkasan(idKelas As Integer, idFeature As Integer, idJurusan As Integer)
         Dim materiPelajaran As List(Of RingkasanMataPelajaran) = GetMataPelajaran(idKelas, idFeature, idJurusan)
@@ -137,15 +156,26 @@ Public Class Ringkasan
     Public Function ShowRingkasanTopik(idJurusan As Integer, idFeature As Integer, idKelas As Integer, idBidangStudi As Integer, idPelanggan As String)
         Dim topik As List(Of RingkasanMateriTopik) = GetTopik(idJurusan, idFeature, idKelas, idBidangStudi, idPelanggan)
         Dim lastIndex As Integer = 0
-
+        Dim lastIndexDrop As New List(Of Integer)
         For i As Integer = 0 To 5
             Dim tpkButton As Control() = Me.Controls.Find("btntpk" + i.ToString(), True)
 
             Try
 
                 tpkButton.FirstOrDefault().Text = topik(i).Topik
+                tpkButton.FirstOrDefault().Tag = topik(i).Id_Content
                 tpkButton.FirstOrDefault().Show()
                 lastIndex = lastIndex + 1
+                For idrop As Integer = 0 To 4
+                    Dim dtopButton As Control() = Me.Controls.Find("btndrop" + idrop.ToString() + i.ToString(), True)
+
+                    dtopButton.FirstOrDefault().Text = topik(i).File(idrop).Title
+                    dtopButton.FirstOrDefault().Tag = topik(i).File(idrop).Id_Ringkasan_Materi
+                    dtopButton.FirstOrDefault().Show()
+                    Dim last = idrop
+                    lastIndexDrop.Add(last)
+
+                Next idrop
             Catch ex As Exception
 
             End Try
@@ -154,12 +184,20 @@ Public Class Ringkasan
 
         Dim test As Integer = (lastIndex + 2)
         For i As Integer = (lastIndex) To 5
-            'If lastIndex <> DataKelas.Count Then
             Dim kelasButton As Control() = Me.Controls.Find("btntpk" + i.ToString(), True)
 
             kelasButton.FirstOrDefault().Hide()
-            'End If
-        Next
+
+        Next i
+
+        'For i As Integer = 0 To 5
+        '    For Each item As Integer In lastIndexDrop
+        '        For idRop As Integer = item To 4
+        '            Dim dtopButton As Control() = Me.Controls.Find("btndrop" + idRop.ToString() + i.ToString(), True)
+        '            dtopButton.FirstOrDefault().Hide()
+        '        Next idRop
+        '    Next item
+        'Next i
 
         If topik.Count = 0 Then
             For i As Integer = 0 To 5
@@ -168,6 +206,7 @@ Public Class Ringkasan
 
 
                 kelasButton.FirstOrDefault().Hide()
+
 
             Next i
         End If
@@ -294,5 +333,17 @@ Public Class Ringkasan
         ElseIf drop5.Visible = True Then
             drop5.Visible = False
         End If
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btndrop00.Click
+        SubmitRingkasanMateri(Integer.Parse(Me.btntpk0.Tag), Integer.Parse(Me.btndrop00.Tag), Me.Label1.Tag)
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+
+    End Sub
+
+    Private Sub btndrop25_Click(sender As Object, e As EventArgs) Handles btndrop05.Click
+
     End Sub
 End Class
