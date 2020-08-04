@@ -339,11 +339,119 @@ Public Class Ringkasan
         SubmitRingkasanMateri(Integer.Parse(Me.btntpk0.Tag), Integer.Parse(Me.btndrop00.Tag), Me.Label1.Tag)
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub btndrop10_Click(sender As Object, e As EventArgs) Handles btndrop10.Click
 
     End Sub
 
-    Private Sub btndrop25_Click(sender As Object, e As EventArgs) Handles btndrop05.Click
+    Private Sub btndrop20_Click(sender As Object, e As EventArgs) Handles btndrop20.Click
 
     End Sub
+
+    Private Sub btndrop30_Click(sender As Object, e As EventArgs) Handles btndrop30.Click
+
+    End Sub
+
+    Private Sub btndrop40_Click(sender As Object, e As EventArgs) Handles btndrop30.Click
+
+    End Sub
+
+    Private Sub btndrop01_Click(sender As Object, e As EventArgs) Handles btndrop01.Click
+
+    End Sub
+
+    Private Sub btndrop11_Click(sender As Object, e As EventArgs) Handles btndrop11.Click
+
+    End Sub
+
+    Private Sub btndrop21_Click(sender As Object, e As EventArgs) Handles btndrop21.Click
+
+    End Sub
+
+    Private Sub btndrop31_Click(sender As Object, e As EventArgs) Handles btndrop31.Click
+
+    End Sub
+
+    Private Sub btndrop41_Click(sender As Object, e As EventArgs) Handles btndrop41.Click
+
+    End Sub
+
+    Private Sub btndrop02_Click(sender As Object, e As EventArgs) Handles btndrop02.Click
+
+    End Sub
+
+    Private Sub btndrop12_Click(sender As Object, e As EventArgs) Handles btndrop12.Click
+
+    End Sub
+
+    Private Sub btndrop22_Click(sender As Object, e As EventArgs) Handles btndrop22.Click
+
+    End Sub
+
+    Private Sub btndrop32_Click(sender As Object, e As EventArgs) Handles btndrop32.Click
+
+    End Sub
+
+    Private Sub btndrop42_Click(sender As Object, e As EventArgs) Handles btndrop42.Click
+
+    End Sub
+
+    Private Sub btndrop03_Click(sender As Object, e As EventArgs) Handles btndrop03.Click
+
+    End Sub
+
+    Private Sub btndrop13_Click(sender As Object, e As EventArgs) Handles btndrop13.Click
+
+    End Sub
+
+    Private Sub btndrop23_Click(sender As Object, e As EventArgs) Handles btndrop23.Click
+
+    End Sub
+
+    Private Sub btndrop33_Click(sender As Object, e As EventArgs) Handles btndrop33.Click
+
+    End Sub
+    Private Sub btndrop43_Click(sender As Object, e As EventArgs) Handles btndrop43.Click
+
+    End Sub
+
+    Private Sub btndrop04_Click(sender As Object, e As EventArgs) Handles btndrop04.Click
+
+    End Sub
+
+    Private Sub btndrop14_Click(sender As Object, e As EventArgs) Handles btndrop14.Click
+
+    End Sub
+
+    Private Sub btndrop24_Click(sender As Object, e As EventArgs) Handles btndrop24.Click
+
+    End Sub
+
+    Private Sub btndrop34_Click(sender As Object, e As EventArgs) Handles btndrop34.Click
+
+    End Sub
+
+    Private Sub btndrop44_Click(sender As Object, e As EventArgs) Handles btndrop44.Click
+
+    End Sub
+
+    Private Sub btndrop05_Click(sender As Object, e As EventArgs) Handles btndrop05.Click
+
+    End Sub
+
+    Private Sub btndrop15_Click(sender As Object, e As EventArgs) Handles btndrop15.Click
+
+    End Sub
+
+    Private Sub btndrop25_Click(sender As Object, e As EventArgs) Handles btndrop25.Click
+
+    End Sub
+
+    Private Sub btndrop35_Click(sender As Object, e As EventArgs) Handles btndrop35.Click
+
+    End Sub
+
+    Private Sub btndrop45_Click(sender As Object, e As EventArgs) Handles btndrop45.Click
+
+    End Sub
+
 End Class
