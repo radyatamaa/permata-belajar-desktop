@@ -26,9 +26,10 @@ Partial Class IsiRIngkasan
         '
         'IsiRIngkasan
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1575, 822)
+        Me.ClientSize = New System.Drawing.Size(1181, 609)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "IsiRIngkasan"
         Me.Text = "IsiRIngkasan"
         Me.ResumeLayout(False)
