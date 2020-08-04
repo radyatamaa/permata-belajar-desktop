@@ -79,6 +79,12 @@ Public Class MenuUtama
                 'ShowFeature(Integer.Parse(Me.btnkelas1.Tag))
             Case "videoPages"
                 Form2.Show()
+                Form2.Label26.Text = Me.Label26.Text
+                Form2.Label26.Tag = Me.Label26.Tag
+                Form2.Label2.Text = Me.Label13.Tag
+                Form2.Label2.Tag = Me.lblfeature2.Tag
+                Form2.Label1.Tag = Me.Guna2PictureBox3.Tag
+                Me.Hide()
             Case "latihansoalPages"
                 Soal.Show()
                 'Case Me.btnkelas3.Tag
@@ -103,6 +109,12 @@ Public Class MenuUtama
                 'ShowFeature(Integer.Parse(Me.btnkelas1.Tag))
             Case "videoPages"
                 Form2.Show()
+                Form2.Label26.Text = Me.Label26.Text
+                Form2.Label26.Tag = Me.Label26.Tag
+                Form2.Label2.Text = Me.Label13.Tag
+                Form2.Label2.Tag = Me.lblfeature2.Tag
+                Form2.Label1.Tag = Me.Guna2PictureBox3.Tag
+                Me.Hide()
             Case "latihansoalPages"
                 Soal.Show()
                 'Case Me.btnkelas3.Tag
@@ -127,6 +139,12 @@ Public Class MenuUtama
                 'ShowFeature(Integer.Parse(Me.btnkelas1.Tag))
             Case "videoPages"
                 Form2.Show()
+                Form2.Label26.Text = Me.Label26.Text
+                Form2.Label26.Tag = Me.Label26.Tag
+                Form2.Label2.Text = Me.Label13.Tag
+                Form2.Label2.Tag = Me.lblfeature2.Tag
+                Form2.Label1.Tag = Me.Guna2PictureBox3.Tag
+                Me.Hide()
             Case "latihansoalPages"
                 Soal.Show()
                 'Case Me.btnkelas3.Tag
@@ -407,6 +425,12 @@ Public Class MenuUtama
                 'ShowFeature(Integer.Parse(Me.btnkelas1.Tag))
             Case "videoPages"
                 Form2.Show()
+                Form2.Label26.Text = Me.Label26.Text
+                Form2.Label26.Tag = Me.Label26.Tag
+                Form2.Label2.Text = Me.Label13.Tag
+                Form2.Label2.Tag = Me.lblfeature2.Tag
+                Form2.Label1.Tag = Me.Guna2PictureBox3.Tag
+                Me.Hide()
             Case "latihansoalPages"
                 Soal.Show()
                 'Case Me.btnkelas3.Tag
