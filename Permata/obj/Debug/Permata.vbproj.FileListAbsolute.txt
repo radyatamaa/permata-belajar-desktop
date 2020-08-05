@@ -107,3 +107,7 @@ E:\radya\project\pribadi\permata-belajar-desktop\Permata\obj\Debug\Permata.Form3
 E:\radya\project\pribadi\permata-belajar-desktop\Permata\obj\Debug\Permata.Form4.resources
 C:\Users\Asus\Documents\Github\permata-belajar-desktop\Permata\obj\Debug\Permata.IsiRIngkasan.resources
 E:\radya\project\pribadi\permata-belajar-desktop\Permata\obj\Debug\Permata.IsiRIngkasan.resources
+E:\radya\project\pribadi\permata-belajar-desktop\Permata\bin\Debug\Permata.exe.manifest
+E:\radya\project\pribadi\permata-belajar-desktop\Permata\bin\Debug\Permata.application
+E:\radya\project\pribadi\permata-belajar-desktop\Permata\obj\Debug\Permata.exe.manifest
+E:\radya\project\pribadi\permata-belajar-desktop\Permata\obj\Debug\Permata.application
