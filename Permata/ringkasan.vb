@@ -3,65 +3,6 @@ Imports System.Net
 Imports Newtonsoft.Json
 
 Public Class Ringkasan
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
-
-    Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles btntpk0.Click
-        lblbab1.Visible = True
-        lblbab2.Visible = False
-        lblbab3.Visible = False
-        lblbab4.Visible = False
-        lblbab5.Visible = False
-        lblbab6.Visible = False
-
-    End Sub
-
-    Private Sub Guna2Button2_Click(sender As Object, e As EventArgs) Handles btntpk1.Click
-        lblbab1.Visible = False
-        lblbab2.Visible = True
-        lblbab3.Visible = False
-        lblbab4.Visible = False
-        lblbab5.Visible = False
-        lblbab6.Visible = False
-    End Sub
-
-    Private Sub Guna2Button3_Click(sender As Object, e As EventArgs) Handles btntpk2.Click
-        lblbab1.Visible = False
-        lblbab2.Visible = False
-        lblbab3.Visible = True
-        lblbab4.Visible = False
-        lblbab5.Visible = False
-        lblbab6.Visible = False
-    End Sub
-
-    Private Sub Guna2Button4_Click(sender As Object, e As EventArgs) Handles btntpk3.Click
-        lblbab1.Visible = False
-        lblbab2.Visible = False
-        lblbab3.Visible = False
-        lblbab4.Visible = True
-        lblbab5.Visible = False
-        lblbab6.Visible = False
-    End Sub
-
-    Private Sub Guna2Button5_Click(sender As Object, e As EventArgs) Handles btntpk4.Click
-        lblbab1.Visible = False
-        lblbab2.Visible = False
-        lblbab3.Visible = False
-        lblbab4.Visible = False
-        lblbab5.Visible = True
-        lblbab6.Visible = False
-    End Sub
-
-    Private Sub Guna2Button6_Click(sender As Object, e As EventArgs) Handles btntpk5.Click
-        lblbab1.Visible = False
-        lblbab2.Visible = False
-        lblbab3.Visible = False
-        lblbab4.Visible = False
-        lblbab5.Visible = False
-        lblbab6.Visible = True
-    End Sub
-
     Private Sub Guna2Button7_Click(sender As Object, e As EventArgs) Handles Guna2Button7.Click
         MenuUtama.Show()
         MenuUtama.Panel5.Visible = False
@@ -141,6 +82,25 @@ Public Class Ringkasan
         Return result
 
     End Function
+    Public Function SubmitRingkasanMateri(idContent As Integer, IdRingkasanMateri As Integer, IdPelanggan As String)
+        Dim myrequest As HttpWebRequest = HttpWebRequest.Create("https://api.permatamall.com/api/v2/belajar/home/ringkasan-materi/submit/read?id_content=" + idContent.ToString() + "&id_ringkasan_materi=" + IdRingkasanMateri.ToString() + "&id_pelanggan=" + IdPelanggan)
+        myrequest.Method = "POST"
+        myrequest.Headers.Add("Authorization", "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjMsImlhdCI6MTU5NTI5ODMwN30.i4GWwTPyp853fcwO4f71qJTmQzu06qcSrh2_vw71tYE")
+        'myrequest.Timeout = reqtimeout
+        Try
+            Dim resp As System.Net.HttpWebResponse = myrequest.GetResponse()
+            Dim sr As New System.IO.StreamReader(resp.GetResponseStream())
+            Dim response = sr.ReadToEnd()
+            sr.Close()
+        Catch ex As WebException
+            If ex.Status = WebExceptionStatus.Timeout Then
+                'result = "Error: The request has timed out"
+            Else
+                'result = "Error: " + ex.Message
+            End If
+        End Try
+
+    End Function
 
     Public Function ShowRingkasan(idKelas As Integer, idFeature As Integer, idJurusan As Integer)
         Dim materiPelajaran As List(Of RingkasanMataPelajaran) = GetMataPelajaran(idKelas, idFeature, idJurusan)
@@ -196,15 +156,26 @@ Public Class Ringkasan
     Public Function ShowRingkasanTopik(idJurusan As Integer, idFeature As Integer, idKelas As Integer, idBidangStudi As Integer, idPelanggan As String)
         Dim topik As List(Of RingkasanMateriTopik) = GetTopik(idJurusan, idFeature, idKelas, idBidangStudi, idPelanggan)
         Dim lastIndex As Integer = 0
-
+        Dim lastIndexDrop As New List(Of Integer)
         For i As Integer = 0 To 5
             Dim tpkButton As Control() = Me.Controls.Find("btntpk" + i.ToString(), True)
 
             Try
 
                 tpkButton.FirstOrDefault().Text = topik(i).Topik
+                tpkButton.FirstOrDefault().Tag = topik(i).Id_Content
                 tpkButton.FirstOrDefault().Show()
                 lastIndex = lastIndex + 1
+                For idrop As Integer = 0 To 4
+                    Dim dtopButton As Control() = Me.Controls.Find("btndrop" + idrop.ToString() + i.ToString(), True)
+
+                    dtopButton.FirstOrDefault().Text = topik(i).File(idrop).Title
+                    dtopButton.FirstOrDefault().Tag = topik(i).File(idrop).Id_Ringkasan_Materi
+                    dtopButton.FirstOrDefault().Show()
+                    Dim last = idrop + 1
+                    lastIndexDrop.Add(last)
+
+                Next idrop
             Catch ex As Exception
 
             End Try
@@ -213,12 +184,20 @@ Public Class Ringkasan
 
         Dim test As Integer = (lastIndex + 2)
         For i As Integer = (lastIndex) To 5
-            'If lastIndex <> DataKelas.Count Then
             Dim kelasButton As Control() = Me.Controls.Find("btntpk" + i.ToString(), True)
 
             kelasButton.FirstOrDefault().Hide()
-            'End If
-        Next
+
+        Next i
+
+        For i As Integer = 0 To 5
+            For Each item As Integer In lastIndexDrop
+                For idRop As Integer = item To 4
+                    Dim dtopButton As Control() = Me.Controls.Find("btndrop" + idRop.ToString() + i.ToString(), True)
+                    dtopButton.FirstOrDefault().Hide()
+                Next idRop
+            Next item
+        Next i
 
         If topik.Count = 0 Then
             For i As Integer = 0 To 5
@@ -227,6 +206,7 @@ Public Class Ringkasan
 
 
                 kelasButton.FirstOrDefault().Hide()
+
 
             Next i
         End If
@@ -250,7 +230,7 @@ Public Class Ringkasan
         Panel3.Visible = True
     End Sub
 
-    Private Sub Panel3_Paint(sender As Object, e As PaintEventArgs) Handles Panel3.Paint
+    Private Sub Panel3_Paint(sender As Object, e As PaintEventArgs)
 
     End Sub
 
@@ -298,4 +278,190 @@ Public Class Ringkasan
         ShowRingkasanTopik(0, Integer.Parse(Me.Label2.Tag), Integer.Parse(Me.Label26.Tag), Me.btnrm11.Tag, Me.Label1.Tag)
         Panel3.Visible = True
     End Sub
+
+
+    Private Sub btntpk0_Click(sender As Object, e As EventArgs) Handles btntpk0.Click
+        green0.Visible = True
+
+        If drop0.Visible = False Then
+            drop0.Visible = True
+        ElseIf drop0.Visible = True Then
+            drop0.Visible = False
+        End If
+    End Sub
+
+    Private Sub btntpk1_Click(sender As Object, e As EventArgs) Handles btntpk1.Click
+        green1.Visible = True
+        If drop1.Visible = False Then
+            drop1.Visible = True
+        ElseIf drop1.Visible = True Then
+            drop1.Visible = False
+        End If
+    End Sub
+
+    Private Sub btntpk2_Click(sender As Object, e As EventArgs) Handles btntpk2.Click
+        green2.Visible = True
+        If drop2.Visible = False Then
+            drop2.Visible = True
+        ElseIf drop2.Visible = True Then
+            drop2.Visible = False
+        End If
+    End Sub
+
+    Private Sub btntpk3_Click(sender As Object, e As EventArgs) Handles btntpk3.Click
+        green3.Visible = True
+        If drop3.Visible = False Then
+            drop3.Visible = True
+        ElseIf drop3.Visible = True Then
+            drop3.Visible = False
+        End If
+    End Sub
+
+    Private Sub btntpk4_Click(sender As Object, e As EventArgs) Handles btntpk4.Click
+        green4.Visible = True
+        If drop4.Visible = False Then
+            drop4.Visible = True
+        ElseIf drop4.Visible = True Then
+            drop4.Visible = False
+        End If
+    End Sub
+
+    Private Sub btntpk5_Click(sender As Object, e As EventArgs) Handles btntpk5.Click
+        green5.Visible = True
+        If drop5.Visible = False Then
+            drop5.Visible = True
+        ElseIf drop5.Visible = True Then
+            drop5.Visible = False
+        End If
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btndrop00.Click
+        SubmitRingkasanMateri(Integer.Parse(Me.btntpk0.Tag), Integer.Parse(Me.btndrop00.Tag), Me.Label1.Tag)
+        Dim topik As List(Of RingkasanMateriTopik) = GetTopik(0, Integer.Parse(Me.Label2.Tag), Integer.Parse(Me.Label26.Tag), Me.btnrm0.Tag, Me.Label1.Tag)
+        Dim imagePath As RingkasanMateriTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btntpk0.Tag)).FirstOrDefault()
+        If imagePath IsNot Nothing Then
+            Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop00.Tag)).FirstOrDefault()
+            Dim tClient As WebClient = New WebClient
+            Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
+            IsiRIngkasan.BackgroundImage = downloadImage
+        End If
+
+        IsiRIngkasan.Show()
+    End Sub
+
+    Private Sub btndrop10_Click(sender As Object, e As EventArgs) Handles btndrop10.Click
+        SubmitRingkasanMateri(Integer.Parse(Me.btntpk1.Tag), Integer.Parse(Me.btndrop10.Tag), Me.Label1.Tag)
+    End Sub
+
+    Private Sub btndrop20_Click(sender As Object, e As EventArgs) Handles btndrop20.Click
+        SubmitRingkasanMateri(Integer.Parse(Me.btntpk2.Tag), Integer.Parse(Me.btndrop20.Tag), Me.Label1.Tag)
+    End Sub
+
+    Private Sub btndrop30_Click(sender As Object, e As EventArgs) Handles btndrop30.Click
+        SubmitRingkasanMateri(Integer.Parse(Me.btntpk3.Tag), Integer.Parse(Me.btndrop30.Tag), Me.Label1.Tag)
+    End Sub
+
+    Private Sub btndrop40_Click(sender As Object, e As EventArgs) Handles btndrop30.Click
+        SubmitRingkasanMateri(Integer.Parse(Me.btntpk3.Tag), Integer.Parse(Me.btndrop30.Tag), Me.Label1.Tag)
+    End Sub
+
+    Private Sub btndrop01_Click(sender As Object, e As EventArgs) Handles btndrop01.Click
+        SubmitRingkasanMateri(Integer.Parse(Me.btntpk0.Tag), Integer.Parse(Me.btndrop01.Tag), Me.Label1.Tag)
+    End Sub
+
+    Private Sub btndrop11_Click(sender As Object, e As EventArgs) Handles btndrop11.Click
+        SubmitRingkasanMateri(Integer.Parse(Me.btntpk1.Tag), Integer.Parse(Me.btndrop11.Tag), Me.Label1.Tag)
+    End Sub
+
+    Private Sub btndrop21_Click(sender As Object, e As EventArgs) Handles btndrop21.Click
+        SubmitRingkasanMateri(Integer.Parse(Me.btntpk2.Tag), Integer.Parse(Me.btndrop21.Tag), Me.Label1.Tag)
+    End Sub
+
+    Private Sub btndrop31_Click(sender As Object, e As EventArgs) Handles btndrop31.Click
+        SubmitRingkasanMateri(Integer.Parse(Me.btntpk3.Tag), Integer.Parse(Me.btndrop31.Tag), Me.Label1.Tag)
+    End Sub
+
+    Private Sub btndrop41_Click(sender As Object, e As EventArgs) Handles btndrop41.Click
+        SubmitRingkasanMateri(Integer.Parse(Me.btntpk4.Tag), Integer.Parse(Me.btndrop41.Tag), Me.Label1.Tag)
+    End Sub
+
+    Private Sub btndrop02_Click(sender As Object, e As EventArgs) Handles btndrop02.Click
+        SubmitRingkasanMateri(Integer.Parse(Me.btntpk0.Tag), Integer.Parse(Me.btndrop02.Tag), Me.Label1.Tag)
+    End Sub
+
+    Private Sub btndrop12_Click(sender As Object, e As EventArgs) Handles btndrop12.Click
+        SubmitRingkasanMateri(Integer.Parse(Me.btntpk1.Tag), Integer.Parse(Me.btndrop12.Tag), Me.Label1.Tag)
+    End Sub
+
+    Private Sub btndrop22_Click(sender As Object, e As EventArgs) Handles btndrop22.Click
+        SubmitRingkasanMateri(Integer.Parse(Me.btntpk2.Tag), Integer.Parse(Me.btndrop22.Tag), Me.Label1.Tag)
+    End Sub
+
+    Private Sub btndrop32_Click(sender As Object, e As EventArgs) Handles btndrop32.Click
+        SubmitRingkasanMateri(Integer.Parse(Me.btntpk3.Tag), Integer.Parse(Me.btndrop32.Tag), Me.Label1.Tag)
+    End Sub
+
+    Private Sub btndrop42_Click(sender As Object, e As EventArgs) Handles btndrop42.Click
+        SubmitRingkasanMateri(Integer.Parse(Me.btntpk4.Tag), Integer.Parse(Me.btndrop42.Tag), Me.Label1.Tag)
+    End Sub
+
+    Private Sub btndrop03_Click(sender As Object, e As EventArgs) Handles btndrop03.Click
+        SubmitRingkasanMateri(Integer.Parse(Me.btntpk0.Tag), Integer.Parse(Me.btndrop03.Tag), Me.Label1.Tag)
+    End Sub
+
+    Private Sub btndrop13_Click(sender As Object, e As EventArgs) Handles btndrop13.Click
+        SubmitRingkasanMateri(Integer.Parse(Me.btntpk1.Tag), Integer.Parse(Me.btndrop13.Tag), Me.Label1.Tag)
+    End Sub
+
+    Private Sub btndrop23_Click(sender As Object, e As EventArgs) Handles btndrop23.Click
+        SubmitRingkasanMateri(Integer.Parse(Me.btntpk2.Tag), Integer.Parse(Me.btndrop23.Tag), Me.Label1.Tag)
+    End Sub
+
+    Private Sub btndrop33_Click(sender As Object, e As EventArgs) Handles btndrop33.Click
+        SubmitRingkasanMateri(Integer.Parse(Me.btntpk3.Tag), Integer.Parse(Me.btndrop33.Tag), Me.Label1.Tag)
+    End Sub
+    Private Sub btndrop43_Click(sender As Object, e As EventArgs) Handles btndrop43.Click
+        SubmitRingkasanMateri(Integer.Parse(Me.btntpk4.Tag), Integer.Parse(Me.btndrop43.Tag), Me.Label1.Tag)
+    End Sub
+
+    Private Sub btndrop04_Click(sender As Object, e As EventArgs) Handles btndrop04.Click
+        SubmitRingkasanMateri(Integer.Parse(Me.btntpk0.Tag), Integer.Parse(Me.btndrop04.Tag), Me.Label1.Tag)
+    End Sub
+
+    Private Sub btndrop14_Click(sender As Object, e As EventArgs) Handles btndrop14.Click
+        SubmitRingkasanMateri(Integer.Parse(Me.btntpk1.Tag), Integer.Parse(Me.btndrop14.Tag), Me.Label1.Tag)
+    End Sub
+
+    Private Sub btndrop24_Click(sender As Object, e As EventArgs) Handles btndrop24.Click
+        SubmitRingkasanMateri(Integer.Parse(Me.btntpk2.Tag), Integer.Parse(Me.btndrop24.Tag), Me.Label1.Tag)
+    End Sub
+
+    Private Sub btndrop34_Click(sender As Object, e As EventArgs) Handles btndrop34.Click
+        SubmitRingkasanMateri(Integer.Parse(Me.btntpk3.Tag), Integer.Parse(Me.btndrop34.Tag), Me.Label1.Tag)
+    End Sub
+
+    Private Sub btndrop44_Click(sender As Object, e As EventArgs) Handles btndrop44.Click
+        SubmitRingkasanMateri(Integer.Parse(Me.btntpk4.Tag), Integer.Parse(Me.btndrop44.Tag), Me.Label1.Tag)
+    End Sub
+
+    Private Sub btndrop05_Click(sender As Object, e As EventArgs) Handles btndrop05.Click
+        SubmitRingkasanMateri(Integer.Parse(Me.btntpk0.Tag), Integer.Parse(Me.btndrop05.Tag), Me.Label1.Tag)
+    End Sub
+
+    Private Sub btndrop15_Click(sender As Object, e As EventArgs) Handles btndrop15.Click
+        SubmitRingkasanMateri(Integer.Parse(Me.btntpk1.Tag), Integer.Parse(Me.btndrop15.Tag), Me.Label1.Tag)
+    End Sub
+
+    Private Sub btndrop25_Click(sender As Object, e As EventArgs) Handles btndrop25.Click
+        SubmitRingkasanMateri(Integer.Parse(Me.btntpk2.Tag), Integer.Parse(Me.btndrop25.Tag), Me.Label1.Tag)
+    End Sub
+
+    Private Sub btndrop35_Click(sender As Object, e As EventArgs) Handles btndrop35.Click
+        SubmitRingkasanMateri(Integer.Parse(Me.btntpk3.Tag), Integer.Parse(Me.btndrop35.Tag), Me.Label1.Tag)
+    End Sub
+
+    Private Sub btndrop45_Click(sender As Object, e As EventArgs) Handles btndrop45.Click
+        SubmitRingkasanMateri(Integer.Parse(Me.btntpk4.Tag), Integer.Parse(Me.btndrop45.Tag), Me.Label1.Tag)
+    End Sub
+
 End Class
