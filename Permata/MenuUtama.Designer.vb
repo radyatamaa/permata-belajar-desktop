@@ -684,7 +684,7 @@ Partial Class MenuUtama
         Me.Panel4.Location = New System.Drawing.Point(399, 0)
         Me.Panel4.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(1088, 81)
+        Me.Panel4.Size = New System.Drawing.Size(1356, 81)
         Me.Panel4.TabIndex = 1
         '
         'Guna2Panel6
@@ -699,7 +699,7 @@ Partial Class MenuUtama
         Me.Guna2Panel6.Controls.Add(Me.Label18)
         Me.Guna2Panel6.Controls.Add(Me.Label19)
         Me.Guna2Panel6.Controls.Add(Me.Button2)
-        Me.Guna2Panel6.Location = New System.Drawing.Point(321, 2)
+        Me.Guna2Panel6.Location = New System.Drawing.Point(589, 2)
         Me.Guna2Panel6.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Panel6.Name = "Guna2Panel6"
         Me.Guna2Panel6.ShadowDecoration.Parent = Me.Guna2Panel6
@@ -833,13 +833,14 @@ Partial Class MenuUtama
         '
         'Panel5
         '
-        Me.Panel5.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Panel5.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Panel5.AutoScroll = True
         Me.Panel5.BackColor = System.Drawing.SystemColors.ControlLight
         Me.Panel5.Controls.Add(Me.Panel7)
         Me.Panel5.Controls.Add(Me.Panel6)
         Me.Panel5.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Panel5.Location = New System.Drawing.Point(399, 97)
+        Me.Panel5.Location = New System.Drawing.Point(401, 82)
         Me.Panel5.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(1088, 590)
@@ -860,7 +861,7 @@ Partial Class MenuUtama
         Me.Panel7.Controls.Add(Me.btnfeature0)
         Me.Panel7.Controls.Add(Me.btnfeature2)
         Me.Panel7.Controls.Add(Me.btnfeature1)
-        Me.Panel7.Location = New System.Drawing.Point(62, 277)
+        Me.Panel7.Location = New System.Drawing.Point(6, 277)
         Me.Panel7.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel7.Name = "Panel7"
         Me.Panel7.Size = New System.Drawing.Size(994, 179)
@@ -1011,7 +1012,7 @@ Partial Class MenuUtama
         Me.Panel6.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel6.Controls.Add(Me.Guna2PictureBox2)
-        Me.Panel6.Location = New System.Drawing.Point(62, 16)
+        Me.Panel6.Location = New System.Drawing.Point(6, 16)
         Me.Panel6.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(994, 188)
@@ -1038,7 +1039,7 @@ Partial Class MenuUtama
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1028, 609)
+        Me.ClientSize = New System.Drawing.Size(1296, 609)
         Me.Controls.Add(Me.Panel5)
         Me.Controls.Add(Me.Panel4)
         Me.Controls.Add(Me.Panel1)

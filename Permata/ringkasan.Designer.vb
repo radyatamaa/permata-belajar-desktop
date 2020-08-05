@@ -38,6 +38,8 @@ Partial Class Ringkasan
         Me.btntpk0 = New Guna.UI2.WinForms.Guna2Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.lblrm11 = New System.Windows.Forms.Label()
+        Me.btnrm11 = New System.Windows.Forms.Button()
         Me.lblrm10 = New System.Windows.Forms.Label()
         Me.lblrm9 = New System.Windows.Forms.Label()
         Me.Label23 = New System.Windows.Forms.Label()
@@ -67,8 +69,6 @@ Partial Class Ringkasan
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label26 = New System.Windows.Forms.Label()
         Me.Label22 = New System.Windows.Forms.Label()
-        Me.btnrm11 = New System.Windows.Forms.Button()
-        Me.lblrm11 = New System.Windows.Forms.Label()
         Me.Panel3.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel4.SuspendLayout()
@@ -90,7 +90,7 @@ Partial Class Ringkasan
         Me.Panel3.Controls.Add(Me.btntpk1)
         Me.Panel3.Controls.Add(Me.btntpk0)
         Me.Panel3.Location = New System.Drawing.Point(418, 0)
-        Me.Panel3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(728, 566)
         Me.Panel3.TabIndex = 2
@@ -174,7 +174,7 @@ Partial Class Ringkasan
         Me.btntpk5.Image = CType(resources.GetObject("btntpk5.Image"), System.Drawing.Image)
         Me.btntpk5.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.btntpk5.Location = New System.Drawing.Point(79, 336)
-        Me.btntpk5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btntpk5.Margin = New System.Windows.Forms.Padding(2)
         Me.btntpk5.Name = "btntpk5"
         Me.btntpk5.Padding = New System.Windows.Forms.Padding(11, 0, 0, 0)
         Me.btntpk5.ShadowDecoration.Parent = Me.btntpk5
@@ -195,7 +195,7 @@ Partial Class Ringkasan
         Me.btntpk4.Image = CType(resources.GetObject("btntpk4.Image"), System.Drawing.Image)
         Me.btntpk4.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.btntpk4.Location = New System.Drawing.Point(79, 282)
-        Me.btntpk4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btntpk4.Margin = New System.Windows.Forms.Padding(2)
         Me.btntpk4.Name = "btntpk4"
         Me.btntpk4.Padding = New System.Windows.Forms.Padding(11, 0, 0, 0)
         Me.btntpk4.ShadowDecoration.Parent = Me.btntpk4
@@ -216,7 +216,7 @@ Partial Class Ringkasan
         Me.btntpk3.Image = CType(resources.GetObject("btntpk3.Image"), System.Drawing.Image)
         Me.btntpk3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.btntpk3.Location = New System.Drawing.Point(77, 233)
-        Me.btntpk3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btntpk3.Margin = New System.Windows.Forms.Padding(2)
         Me.btntpk3.Name = "btntpk3"
         Me.btntpk3.Padding = New System.Windows.Forms.Padding(11, 0, 0, 0)
         Me.btntpk3.ShadowDecoration.Parent = Me.btntpk3
@@ -237,7 +237,7 @@ Partial Class Ringkasan
         Me.btntpk2.Image = CType(resources.GetObject("btntpk2.Image"), System.Drawing.Image)
         Me.btntpk2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.btntpk2.Location = New System.Drawing.Point(77, 176)
-        Me.btntpk2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btntpk2.Margin = New System.Windows.Forms.Padding(2)
         Me.btntpk2.Name = "btntpk2"
         Me.btntpk2.Padding = New System.Windows.Forms.Padding(11, 0, 0, 0)
         Me.btntpk2.ShadowDecoration.Parent = Me.btntpk2
@@ -258,7 +258,7 @@ Partial Class Ringkasan
         Me.btntpk1.Image = CType(resources.GetObject("btntpk1.Image"), System.Drawing.Image)
         Me.btntpk1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.btntpk1.Location = New System.Drawing.Point(77, 122)
-        Me.btntpk1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btntpk1.Margin = New System.Windows.Forms.Padding(2)
         Me.btntpk1.Name = "btntpk1"
         Me.btntpk1.Padding = New System.Windows.Forms.Padding(11, 0, 0, 0)
         Me.btntpk1.ShadowDecoration.Parent = Me.btntpk1
@@ -279,7 +279,7 @@ Partial Class Ringkasan
         Me.btntpk0.Image = CType(resources.GetObject("btntpk0.Image"), System.Drawing.Image)
         Me.btntpk0.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.btntpk0.Location = New System.Drawing.Point(77, 67)
-        Me.btntpk0.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btntpk0.Margin = New System.Windows.Forms.Padding(2)
         Me.btntpk0.Name = "btntpk0"
         Me.btntpk0.Padding = New System.Windows.Forms.Padding(11, 0, 0, 0)
         Me.btntpk0.ShadowDecoration.Parent = Me.btntpk0
@@ -295,7 +295,7 @@ Partial Class Ringkasan
         Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(418, 566)
         Me.Panel1.TabIndex = 0
@@ -332,10 +332,39 @@ Partial Class Ringkasan
         Me.Panel4.Controls.Add(Me.btnrm0)
         Me.Panel4.Controls.Add(Me.btnrm1)
         Me.Panel4.Location = New System.Drawing.Point(0, 176)
-        Me.Panel4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel4.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(418, 390)
         Me.Panel4.TabIndex = 2
+        '
+        'lblrm11
+        '
+        Me.lblrm11.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lblrm11.AutoSize = True
+        Me.lblrm11.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblrm11.Location = New System.Drawing.Point(293, 349)
+        Me.lblrm11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblrm11.Name = "lblrm11"
+        Me.lblrm11.Size = New System.Drawing.Size(85, 13)
+        Me.lblrm11.TabIndex = 52
+        Me.lblrm11.Text = "Tes Masuk PTN" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        '
+        'btnrm11
+        '
+        Me.btnrm11.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnrm11.AutoEllipsis = True
+        Me.btnrm11.BackgroundImage = CType(resources.GetObject("btnrm11.BackgroundImage"), System.Drawing.Image)
+        Me.btnrm11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnrm11.FlatAppearance.BorderSize = 0
+        Me.btnrm11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnrm11.Location = New System.Drawing.Point(286, 293)
+        Me.btnrm11.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnrm11.Name = "btnrm11"
+        Me.btnrm11.Size = New System.Drawing.Size(92, 52)
+        Me.btnrm11.TabIndex = 51
+        Me.btnrm11.UseVisualStyleBackColor = True
         '
         'lblrm10
         '
@@ -500,7 +529,7 @@ Partial Class Ringkasan
         Me.btnrm9.FlatAppearance.BorderSize = 0
         Me.btnrm9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnrm9.Location = New System.Drawing.Point(39, 293)
-        Me.btnrm9.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnrm9.Margin = New System.Windows.Forms.Padding(2)
         Me.btnrm9.Name = "btnrm9"
         Me.btnrm9.Size = New System.Drawing.Size(92, 52)
         Me.btnrm9.TabIndex = 38
@@ -516,7 +545,7 @@ Partial Class Ringkasan
         Me.btnrm10.FlatAppearance.BorderSize = 0
         Me.btnrm10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnrm10.Location = New System.Drawing.Point(162, 293)
-        Me.btnrm10.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnrm10.Margin = New System.Windows.Forms.Padding(2)
         Me.btnrm10.Name = "btnrm10"
         Me.btnrm10.Size = New System.Drawing.Size(92, 52)
         Me.btnrm10.TabIndex = 37
@@ -531,7 +560,7 @@ Partial Class Ringkasan
         Me.btnrm8.FlatAppearance.BorderSize = 0
         Me.btnrm8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnrm8.Location = New System.Drawing.Point(286, 211)
-        Me.btnrm8.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnrm8.Margin = New System.Windows.Forms.Padding(2)
         Me.btnrm8.Name = "btnrm8"
         Me.btnrm8.Size = New System.Drawing.Size(92, 52)
         Me.btnrm8.TabIndex = 36
@@ -546,7 +575,7 @@ Partial Class Ringkasan
         Me.btnrm6.FlatAppearance.BorderSize = 0
         Me.btnrm6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnrm6.Location = New System.Drawing.Point(39, 211)
-        Me.btnrm6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnrm6.Margin = New System.Windows.Forms.Padding(2)
         Me.btnrm6.Name = "btnrm6"
         Me.btnrm6.Size = New System.Drawing.Size(92, 52)
         Me.btnrm6.TabIndex = 35
@@ -561,7 +590,7 @@ Partial Class Ringkasan
         Me.btnrm7.FlatAppearance.BorderSize = 0
         Me.btnrm7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnrm7.Location = New System.Drawing.Point(162, 211)
-        Me.btnrm7.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnrm7.Margin = New System.Windows.Forms.Padding(2)
         Me.btnrm7.Name = "btnrm7"
         Me.btnrm7.Size = New System.Drawing.Size(92, 52)
         Me.btnrm7.TabIndex = 34
@@ -576,7 +605,7 @@ Partial Class Ringkasan
         Me.btnrm5.FlatAppearance.BorderSize = 0
         Me.btnrm5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnrm5.Location = New System.Drawing.Point(286, 124)
-        Me.btnrm5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnrm5.Margin = New System.Windows.Forms.Padding(2)
         Me.btnrm5.Name = "btnrm5"
         Me.btnrm5.Size = New System.Drawing.Size(92, 52)
         Me.btnrm5.TabIndex = 33
@@ -591,7 +620,7 @@ Partial Class Ringkasan
         Me.btnrm3.FlatAppearance.BorderSize = 0
         Me.btnrm3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnrm3.Location = New System.Drawing.Point(39, 124)
-        Me.btnrm3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnrm3.Margin = New System.Windows.Forms.Padding(2)
         Me.btnrm3.Name = "btnrm3"
         Me.btnrm3.Size = New System.Drawing.Size(92, 52)
         Me.btnrm3.TabIndex = 32
@@ -606,7 +635,7 @@ Partial Class Ringkasan
         Me.btnrm4.FlatAppearance.BorderSize = 0
         Me.btnrm4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnrm4.Location = New System.Drawing.Point(162, 124)
-        Me.btnrm4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnrm4.Margin = New System.Windows.Forms.Padding(2)
         Me.btnrm4.Name = "btnrm4"
         Me.btnrm4.Size = New System.Drawing.Size(92, 52)
         Me.btnrm4.TabIndex = 31
@@ -621,7 +650,7 @@ Partial Class Ringkasan
         Me.btnrm2.FlatAppearance.BorderSize = 0
         Me.btnrm2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnrm2.Location = New System.Drawing.Point(286, 43)
-        Me.btnrm2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnrm2.Margin = New System.Windows.Forms.Padding(2)
         Me.btnrm2.Name = "btnrm2"
         Me.btnrm2.Size = New System.Drawing.Size(92, 52)
         Me.btnrm2.TabIndex = 30
@@ -636,7 +665,7 @@ Partial Class Ringkasan
         Me.btnrm0.FlatAppearance.BorderSize = 0
         Me.btnrm0.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnrm0.Location = New System.Drawing.Point(39, 43)
-        Me.btnrm0.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnrm0.Margin = New System.Windows.Forms.Padding(2)
         Me.btnrm0.Name = "btnrm0"
         Me.btnrm0.Size = New System.Drawing.Size(92, 52)
         Me.btnrm0.TabIndex = 29
@@ -652,7 +681,7 @@ Partial Class Ringkasan
         Me.btnrm1.FlatAppearance.BorderSize = 0
         Me.btnrm1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnrm1.Location = New System.Drawing.Point(162, 43)
-        Me.btnrm1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnrm1.Margin = New System.Windows.Forms.Padding(2)
         Me.btnrm1.Name = "btnrm1"
         Me.btnrm1.Size = New System.Drawing.Size(92, 52)
         Me.btnrm1.TabIndex = 28
@@ -669,7 +698,7 @@ Partial Class Ringkasan
         Me.Panel2.Controls.Add(Me.Label26)
         Me.Panel2.Controls.Add(Me.Label22)
         Me.Panel2.Location = New System.Drawing.Point(2, 0)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(416, 175)
         Me.Panel2.TabIndex = 1
@@ -688,7 +717,7 @@ Partial Class Ringkasan
         Me.Guna2Button7.Image = CType(resources.GetObject("Guna2Button7.Image"), System.Drawing.Image)
         Me.Guna2Button7.ImageSize = New System.Drawing.Size(30, 30)
         Me.Guna2Button7.Location = New System.Drawing.Point(32, 27)
-        Me.Guna2Button7.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Button7.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Button7.Name = "Guna2Button7"
         Me.Guna2Button7.PressedColor = System.Drawing.Color.White
         Me.Guna2Button7.ShadowDecoration.Parent = Me.Guna2Button7
@@ -749,35 +778,6 @@ Partial Class Ringkasan
         Me.Label22.Size = New System.Drawing.Size(400, 2)
         Me.Label22.TabIndex = 3
         '
-        'btnrm11
-        '
-        Me.btnrm11.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnrm11.AutoEllipsis = True
-        Me.btnrm11.BackgroundImage = CType(resources.GetObject("btnrm11.BackgroundImage"), System.Drawing.Image)
-        Me.btnrm11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnrm11.FlatAppearance.BorderSize = 0
-        Me.btnrm11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnrm11.Location = New System.Drawing.Point(286, 293)
-        Me.btnrm11.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnrm11.Name = "btnrm11"
-        Me.btnrm11.Size = New System.Drawing.Size(92, 52)
-        Me.btnrm11.TabIndex = 51
-        Me.btnrm11.UseVisualStyleBackColor = True
-        '
-        'lblrm11
-        '
-        Me.lblrm11.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblrm11.AutoSize = True
-        Me.lblrm11.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblrm11.Location = New System.Drawing.Point(293, 349)
-        Me.lblrm11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.lblrm11.Name = "lblrm11"
-        Me.lblrm11.Size = New System.Drawing.Size(85, 13)
-        Me.lblrm11.TabIndex = 52
-        Me.lblrm11.Text = "Tes Masuk PTN" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        '
         'Ringkasan
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -786,7 +786,7 @@ Partial Class Ringkasan
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Ringkasan"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
