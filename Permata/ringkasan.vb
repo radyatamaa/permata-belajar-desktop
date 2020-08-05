@@ -344,7 +344,7 @@ Public Class Ringkasan
                 Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop00.Tag)).FirstOrDefault()
                 Dim tClient As WebClient = New WebClient
                 Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
-                IsiRIngkasan.BackgroundImage = downloadImage
+                IsiRIngkasan.PictureBox0.Image = downloadImage
                 IsiRIngkasan.Show()
             Else
                 MsgBox("File dalam ringkasan Tersebut Kosong!")

@@ -73,7 +73,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>MDBI/LeHHdpUdr6ExxojHJvbIHK6anIqxDDKaYFRpqU=</dsig:DigestValue>
+        <dsig:DigestValue>cUd/op04hKo+jMLKTxH++TaM+jJewcfSGrM4VEXalAU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -90,14 +90,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Permata.exe" size="5957080">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Permata.exe" size="5958104">
       <assemblyIdentity name="Permata" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>f87yRk5YFBvk4l/DVc43k2XeCVCwqmeOyUlZk+1pGTM=</dsig:DigestValue>
+        <dsig:DigestValue>EcZTI76ip22a4smYLK0vPols9hhjbpRPB9nhYcfX/Y4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
