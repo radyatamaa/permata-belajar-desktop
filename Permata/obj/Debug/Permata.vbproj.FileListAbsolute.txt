@@ -111,3 +111,38 @@ E:\radya\project\pribadi\permata-belajar-desktop\Permata\bin\Debug\Permata.exe.m
 E:\radya\project\pribadi\permata-belajar-desktop\Permata\bin\Debug\Permata.application
 E:\radya\project\pribadi\permata-belajar-desktop\Permata\obj\Debug\Permata.exe.manifest
 E:\radya\project\pribadi\permata-belajar-desktop\Permata\obj\Debug\Permata.application
+C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\bin\Debug\Permata.exe.config
+C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\bin\Debug\Permata.exe.manifest
+C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\bin\Debug\Permata.application
+C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\bin\Debug\Permata.exe
+C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\bin\Debug\Permata.pdb
+C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\bin\Debug\Permata.xml
+C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\bin\Debug\Interop.WMPLib.dll
+C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\obj\Debug\Permata.vbprojAssemblyReference.cache
+C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\obj\Debug\Interop.WMPLib.dll
+C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\obj\Debug\Permata.vbproj.ResolveComReference.cache
+C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\obj\Debug\Permata.Form2.resources
+C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\obj\Debug\Permata.Form3.resources
+C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\obj\Debug\Permata.Form4.resources
+C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\obj\Debug\Permata.IsiRIngkasan.resources
+C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\obj\Debug\Permata.Lainnya.resources
+C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\obj\Debug\Permata.Prestasi.resources
+C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\obj\Debug\Permata.Profil.resources
+C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\obj\Debug\Permata.Ringkasan.resources
+C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\obj\Debug\Permata.MenuUtama.resources
+C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\obj\Debug\Permata.Resources.resources
+C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\obj\Debug\Permata.Signin.resources
+C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\obj\Debug\Permata.Soal.resources
+C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\obj\Debug\Permata.Soaljawaban.resources
+C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\obj\Debug\Permata.vbproj.GenerateResource.cache
+C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\obj\Debug\Permata.vbproj.CoreCompileInputs.cache
+C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\obj\Debug\Permata.exe.manifest
+C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\obj\Debug\Permata.application
+C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\obj\Debug\Permata.vbproj.CopyComplete
+C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\obj\Debug\Permata.exe
+C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\obj\Debug\Permata.xml
+C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\obj\Debug\Permata.pdb
