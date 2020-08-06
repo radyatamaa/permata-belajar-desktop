@@ -14,6 +14,7 @@ Public Class RingkasanMateriTopikFile
     Public Property Title As String
     Public Property File As String
     Public Property Free As String
+    Public Property Url As String
     Public Property Access As Boolean
     Public Property Read As String
 End Class
