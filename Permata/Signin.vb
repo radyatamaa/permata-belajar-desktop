@@ -78,4 +78,14 @@ Public Class Signin
             MsgBox("Email dan Password Salah!")
         End If
     End Sub
+
+    Private Sub Guna2Button5_Click(sender As Object, e As EventArgs) Handles Guna2Button5.Click
+        If Guna2TextBox2.UseSystemPasswordChar = True Then
+            Guna2TextBox2.UseSystemPasswordChar = False
+            Guna2Button5.Text = "Show"
+        Else
+            Guna2TextBox2.UseSystemPasswordChar = True
+            Guna2Button5.Text = "Hide"
+        End If
+    End Sub
 End Class
