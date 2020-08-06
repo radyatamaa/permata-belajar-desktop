@@ -146,3 +146,7 @@ C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\obj\Debug\P
 C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\obj\Debug\Permata.exe
 C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\obj\Debug\Permata.xml
 C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\obj\Debug\Permata.pdb
+C:\Users\Asus\Documents\Github\permata-belajar-desktop\Permata\bin\Debug\Permata.exe.manifest
+C:\Users\Asus\Documents\Github\permata-belajar-desktop\Permata\bin\Debug\Permata.application
+C:\Users\Asus\Documents\Github\permata-belajar-desktop\Permata\obj\Debug\Permata.exe.manifest
+C:\Users\Asus\Documents\Github\permata-belajar-desktop\Permata\obj\Debug\Permata.application
