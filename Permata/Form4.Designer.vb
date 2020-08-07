@@ -26,9 +26,11 @@ Partial Class Form4
         '
         'Form4
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1516, 831)
+        Me.AutoScroll = True
+        Me.ClientSize = New System.Drawing.Size(1028, 609)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "Form4"
         Me.Text = "Form4"
         Me.ResumeLayout(False)
