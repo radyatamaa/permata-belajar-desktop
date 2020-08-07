@@ -27,6 +27,8 @@ Partial Class Form2
         Me.lblvb6 = New System.Windows.Forms.Label()
         Me.Label23 = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.lblvb8 = New System.Windows.Forms.Label()
+        Me.btnvb8 = New System.Windows.Forms.Button()
         Me.lblvb5 = New System.Windows.Forms.Label()
         Me.lblvb4 = New System.Windows.Forms.Label()
         Me.lblvb3 = New System.Windows.Forms.Label()
@@ -60,8 +62,6 @@ Partial Class Form2
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label26 = New System.Windows.Forms.Label()
         Me.Label22 = New System.Windows.Forms.Label()
-        Me.btnvb8 = New System.Windows.Forms.Button()
-        Me.lblvb8 = New System.Windows.Forms.Label()
         Me.Panel4.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.Panel7.SuspendLayout()
@@ -134,10 +134,38 @@ Partial Class Form2
         Me.Panel4.Controls.Add(Me.btnvb0)
         Me.Panel4.Controls.Add(Me.btnvb1)
         Me.Panel4.Location = New System.Drawing.Point(0, 176)
-        Me.Panel4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel4.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(418, 390)
         Me.Panel4.TabIndex = 2
+        '
+        'lblvb8
+        '
+        Me.lblvb8.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lblvb8.AutoSize = True
+        Me.lblvb8.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblvb8.Location = New System.Drawing.Point(298, 324)
+        Me.lblvb8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblvb8.Name = "lblvb8"
+        Me.lblvb8.Size = New System.Drawing.Size(73, 13)
+        Me.lblvb8.TabIndex = 52
+        Me.lblvb8.Text = "Sejarah Wajib"
+        '
+        'btnvb8
+        '
+        Me.btnvb8.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnvb8.BackgroundImage = CType(resources.GetObject("btnvb8.BackgroundImage"), System.Drawing.Image)
+        Me.btnvb8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnvb8.FlatAppearance.BorderSize = 0
+        Me.btnvb8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnvb8.Location = New System.Drawing.Point(286, 270)
+        Me.btnvb8.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnvb8.Name = "btnvb8"
+        Me.btnvb8.Size = New System.Drawing.Size(92, 52)
+        Me.btnvb8.TabIndex = 51
+        Me.btnvb8.UseVisualStyleBackColor = True
         '
         'lblvb5
         '
@@ -226,7 +254,7 @@ Partial Class Form2
         Me.btnvb6.FlatAppearance.BorderSize = 0
         Me.btnvb6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnvb6.Location = New System.Drawing.Point(39, 270)
-        Me.btnvb6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnvb6.Margin = New System.Windows.Forms.Padding(2)
         Me.btnvb6.Name = "btnvb6"
         Me.btnvb6.Size = New System.Drawing.Size(92, 52)
         Me.btnvb6.TabIndex = 38
@@ -242,7 +270,7 @@ Partial Class Form2
         Me.btnvb7.FlatAppearance.BorderSize = 0
         Me.btnvb7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnvb7.Location = New System.Drawing.Point(162, 270)
-        Me.btnvb7.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnvb7.Margin = New System.Windows.Forms.Padding(2)
         Me.btnvb7.Name = "btnvb7"
         Me.btnvb7.Size = New System.Drawing.Size(92, 52)
         Me.btnvb7.TabIndex = 37
@@ -257,7 +285,7 @@ Partial Class Form2
         Me.btnvb5.FlatAppearance.BorderSize = 0
         Me.btnvb5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnvb5.Location = New System.Drawing.Point(286, 172)
-        Me.btnvb5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnvb5.Margin = New System.Windows.Forms.Padding(2)
         Me.btnvb5.Name = "btnvb5"
         Me.btnvb5.Size = New System.Drawing.Size(92, 52)
         Me.btnvb5.TabIndex = 33
@@ -272,7 +300,7 @@ Partial Class Form2
         Me.btnvb3.FlatAppearance.BorderSize = 0
         Me.btnvb3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnvb3.Location = New System.Drawing.Point(39, 172)
-        Me.btnvb3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnvb3.Margin = New System.Windows.Forms.Padding(2)
         Me.btnvb3.Name = "btnvb3"
         Me.btnvb3.Size = New System.Drawing.Size(92, 52)
         Me.btnvb3.TabIndex = 32
@@ -287,7 +315,7 @@ Partial Class Form2
         Me.btnvb4.FlatAppearance.BorderSize = 0
         Me.btnvb4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnvb4.Location = New System.Drawing.Point(162, 172)
-        Me.btnvb4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnvb4.Margin = New System.Windows.Forms.Padding(2)
         Me.btnvb4.Name = "btnvb4"
         Me.btnvb4.Size = New System.Drawing.Size(92, 52)
         Me.btnvb4.TabIndex = 31
@@ -302,7 +330,7 @@ Partial Class Form2
         Me.btnvb2.FlatAppearance.BorderSize = 0
         Me.btnvb2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnvb2.Location = New System.Drawing.Point(286, 62)
-        Me.btnvb2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnvb2.Margin = New System.Windows.Forms.Padding(2)
         Me.btnvb2.Name = "btnvb2"
         Me.btnvb2.Size = New System.Drawing.Size(92, 52)
         Me.btnvb2.TabIndex = 30
@@ -317,7 +345,7 @@ Partial Class Form2
         Me.btnvb0.FlatAppearance.BorderSize = 0
         Me.btnvb0.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnvb0.Location = New System.Drawing.Point(39, 62)
-        Me.btnvb0.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnvb0.Margin = New System.Windows.Forms.Padding(2)
         Me.btnvb0.Name = "btnvb0"
         Me.btnvb0.Size = New System.Drawing.Size(92, 52)
         Me.btnvb0.TabIndex = 29
@@ -333,7 +361,7 @@ Partial Class Form2
         Me.btnvb1.FlatAppearance.BorderSize = 0
         Me.btnvb1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnvb1.Location = New System.Drawing.Point(162, 62)
-        Me.btnvb1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnvb1.Margin = New System.Windows.Forms.Padding(2)
         Me.btnvb1.Name = "btnvb1"
         Me.btnvb1.Size = New System.Drawing.Size(92, 52)
         Me.btnvb1.TabIndex = 28
@@ -347,7 +375,7 @@ Partial Class Form2
         Me.Panel3.Controls.Add(Me.lblbab2)
         Me.Panel3.Controls.Add(Me.lblbab1)
         Me.Panel3.Location = New System.Drawing.Point(418, 0)
-        Me.Panel3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(728, 566)
         Me.Panel3.TabIndex = 4
@@ -359,7 +387,7 @@ Partial Class Form2
         Me.Panel7.Controls.Add(Me.video2)
         Me.Panel7.Controls.Add(Me.Button3)
         Me.Panel7.Location = New System.Drawing.Point(145, 387)
-        Me.Panel7.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel7.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel7.Name = "Panel7"
         Me.Panel7.Size = New System.Drawing.Size(470, 148)
         Me.Panel7.TabIndex = 10
@@ -367,7 +395,7 @@ Partial Class Form2
         'video2
         '
         Me.video2.Location = New System.Drawing.Point(36, 16)
-        Me.video2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.video2.Margin = New System.Windows.Forms.Padding(2)
         Me.video2.MinimumSize = New System.Drawing.Size(15, 16)
         Me.video2.Name = "video2"
         Me.video2.Size = New System.Drawing.Size(200, 76)
@@ -381,7 +409,7 @@ Partial Class Form2
         Me.Button3.Image = CType(resources.GetObject("Button3.Image"), System.Drawing.Image)
         Me.Button3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Button3.Location = New System.Drawing.Point(100, 107)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(2)
         Me.Button3.Name = "Button3"
         Me.Button3.Padding = New System.Windows.Forms.Padding(30, 0, 0, 0)
         Me.Button3.Size = New System.Drawing.Size(329, 32)
@@ -397,7 +425,7 @@ Partial Class Form2
         Me.Panel6.Controls.Add(Me.video1)
         Me.Panel6.Controls.Add(Me.Button1)
         Me.Panel6.Location = New System.Drawing.Point(145, 211)
-        Me.Panel6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel6.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(470, 148)
         Me.Panel6.TabIndex = 10
@@ -405,7 +433,7 @@ Partial Class Form2
         'video1
         '
         Me.video1.Location = New System.Drawing.Point(36, 20)
-        Me.video1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.video1.Margin = New System.Windows.Forms.Padding(2)
         Me.video1.MinimumSize = New System.Drawing.Size(15, 16)
         Me.video1.Name = "video1"
         Me.video1.Size = New System.Drawing.Size(200, 76)
@@ -420,7 +448,7 @@ Partial Class Form2
         Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Button1.Location = New System.Drawing.Point(100, 104)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2)
         Me.Button1.Name = "Button1"
         Me.Button1.Padding = New System.Windows.Forms.Padding(30, 0, 0, 0)
         Me.Button1.Size = New System.Drawing.Size(329, 32)
@@ -436,7 +464,7 @@ Partial Class Form2
         Me.Panel5.Controls.Add(Me.video0)
         Me.Panel5.Controls.Add(Me.Button2)
         Me.Panel5.Location = New System.Drawing.Point(145, 39)
-        Me.Panel5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel5.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(470, 148)
         Me.Panel5.TabIndex = 9
@@ -444,7 +472,7 @@ Partial Class Form2
         'video0
         '
         Me.video0.Location = New System.Drawing.Point(36, 17)
-        Me.video0.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.video0.Margin = New System.Windows.Forms.Padding(2)
         Me.video0.MinimumSize = New System.Drawing.Size(15, 16)
         Me.video0.Name = "video0"
         Me.video0.Size = New System.Drawing.Size(200, 76)
@@ -459,7 +487,7 @@ Partial Class Form2
         Me.Button2.Image = CType(resources.GetObject("Button2.Image"), System.Drawing.Image)
         Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Button2.Location = New System.Drawing.Point(100, 106)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(2)
         Me.Button2.Name = "Button2"
         Me.Button2.Padding = New System.Windows.Forms.Padding(30, 0, 0, 0)
         Me.Button2.Size = New System.Drawing.Size(329, 32)
@@ -497,7 +525,7 @@ Partial Class Form2
         Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(418, 566)
         Me.Panel1.TabIndex = 3
@@ -513,7 +541,7 @@ Partial Class Form2
         Me.Panel2.Controls.Add(Me.Label26)
         Me.Panel2.Controls.Add(Me.Label22)
         Me.Panel2.Location = New System.Drawing.Point(2, 0)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(416, 175)
         Me.Panel2.TabIndex = 1
@@ -532,7 +560,7 @@ Partial Class Form2
         Me.Guna2Button7.Image = CType(resources.GetObject("Guna2Button7.Image"), System.Drawing.Image)
         Me.Guna2Button7.ImageSize = New System.Drawing.Size(30, 30)
         Me.Guna2Button7.Location = New System.Drawing.Point(32, 27)
-        Me.Guna2Button7.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Button7.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Button7.Name = "Guna2Button7"
         Me.Guna2Button7.PressedColor = System.Drawing.Color.White
         Me.Guna2Button7.ShadowDecoration.Parent = Me.Guna2Button7
@@ -593,34 +621,6 @@ Partial Class Form2
         Me.Label22.Size = New System.Drawing.Size(400, 2)
         Me.Label22.TabIndex = 3
         '
-        'btnvb8
-        '
-        Me.btnvb8.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnvb8.BackgroundImage = CType(resources.GetObject("btnvb8.BackgroundImage"), System.Drawing.Image)
-        Me.btnvb8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnvb8.FlatAppearance.BorderSize = 0
-        Me.btnvb8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnvb8.Location = New System.Drawing.Point(286, 270)
-        Me.btnvb8.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnvb8.Name = "btnvb8"
-        Me.btnvb8.Size = New System.Drawing.Size(92, 52)
-        Me.btnvb8.TabIndex = 51
-        Me.btnvb8.UseVisualStyleBackColor = True
-        '
-        'lblvb8
-        '
-        Me.lblvb8.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblvb8.AutoSize = True
-        Me.lblvb8.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblvb8.Location = New System.Drawing.Point(298, 324)
-        Me.lblvb8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.lblvb8.Name = "lblvb8"
-        Me.lblvb8.Size = New System.Drawing.Size(73, 13)
-        Me.lblvb8.TabIndex = 52
-        Me.lblvb8.Text = "Sejarah Wajib"
-        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -628,10 +628,11 @@ Partial Class Form2
         Me.ClientSize = New System.Drawing.Size(1052, 566)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel1)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Form2"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form2"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Panel4.ResumeLayout(False)
         Me.Panel4.PerformLayout()
         Me.Panel3.ResumeLayout(False)

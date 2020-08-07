@@ -393,7 +393,11 @@ Public Class Ringkasan
     End Sub
 
     Private Sub btndrop02_Click(sender As Object, e As EventArgs) Handles btndrop02.Click
-        SubmitRingkasanMateri(Integer.Parse(Me.btntpk0.Tag), Integer.Parse(Me.btndrop02.Tag), Me.Label1.Tag)
+        If Me.btndrop02.Tag IsNot Nothing Then
+            SubmitRingkasanMateri(Integer.Parse(Me.btntpk0.Tag), Integer.Parse(Me.btndrop02.Tag), Me.Label1.Tag)
+        Else
+            MsgBox("File dalam ringkasan Tersebut Kosong/Masih dalam tahap Pengembangan")
+        End If
     End Sub
 
     Private Sub btndrop12_Click(sender As Object, e As EventArgs) Handles btndrop12.Click
@@ -413,7 +417,11 @@ Public Class Ringkasan
     End Sub
 
     Private Sub btndrop03_Click(sender As Object, e As EventArgs) Handles btndrop03.Click
-        SubmitRingkasanMateri(Integer.Parse(Me.btntpk0.Tag), Integer.Parse(Me.btndrop03.Tag), Me.Label1.Tag)
+        If Me.btndrop03.Tag IsNot Nothing Then
+            SubmitRingkasanMateri(Integer.Parse(Me.btntpk0.Tag), Integer.Parse(Me.btndrop03.Tag), Me.Label1.Tag)
+        Else
+            MsgBox("File dalam ringkasan Tersebut Kosong/Masih dalam tahap Pengembangan")
+        End If
     End Sub
 
     Private Sub btndrop13_Click(sender As Object, e As EventArgs) Handles btndrop13.Click
@@ -432,7 +440,11 @@ Public Class Ringkasan
     End Sub
 
     Private Sub btndrop04_Click(sender As Object, e As EventArgs) Handles btndrop04.Click
-        SubmitRingkasanMateri(Integer.Parse(Me.btntpk0.Tag), Integer.Parse(Me.btndrop04.Tag), Me.Label1.Tag)
+        If Me.btndrop04.Tag IsNot Nothing Then
+            SubmitRingkasanMateri(Integer.Parse(Me.btntpk0.Tag), Integer.Parse(Me.btndrop04.Tag), Me.Label1.Tag)
+        Else
+            MsgBox("File dalam ringkasan Tersebut Kosong/Masih dalam tahap Pengembangan")
+        End If
     End Sub
 
     Private Sub btndrop14_Click(sender As Object, e As EventArgs) Handles btndrop14.Click
@@ -455,7 +467,7 @@ Public Class Ringkasan
         If Me.btndrop05.Tag IsNot Nothing Then
             SubmitRingkasanMateri(Integer.Parse(Me.btntpk0.Tag), Integer.Parse(Me.btndrop05.Tag), Me.Label1.Tag)
         Else
-            MsgBox("File dalam ringkasan Tersebut Kosong!")
+            MsgBox("File dalam ringkasan Tersebut Kosong/Masih dalam tahap Pengembangan")
         End If
     End Sub
 

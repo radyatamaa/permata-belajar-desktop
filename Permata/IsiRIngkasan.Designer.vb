@@ -71,6 +71,7 @@ Partial Class IsiRIngkasan
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "IsiRIngkasan"
         Me.Text = "IsiRIngkasan"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.PictureBox0, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
