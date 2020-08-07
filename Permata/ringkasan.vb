@@ -12,7 +12,8 @@ Public Class Ringkasan
 
     Public Function GetTopik(idJurusan As Integer, idFeature As Integer, idKelas As Integer, idBidangStudi As Integer, idPelanggan As String) As List(Of RingkasanMateriTopik)
         Dim result As New List(Of RingkasanMateriTopik)
-        Dim myrequest As HttpWebRequest = HttpWebRequest.Create("https://api.permatamall.com/api/v2/belajar/home/ringkasan-materi/topik-belajar?id_jurusan=" + idJurusan.ToString + "&id_feature=" + idFeature.ToString + "&id_kelas=" + idKelas.ToString + "&id_bidang_studi=" + idBidangStudi.ToString + "&id_pelanggan=" + idPelanggan)
+        Dim baseUrl As String = "https://api.permatamall.com/api/v2/belajar/home/ringkasan-materi/topik-belajar?id_jurusan=" + idJurusan.ToString + "&id_feature=" + idFeature.ToString + "&id_kelas=" + idKelas.ToString + "&id_bidang_studi=" + idBidangStudi.ToString + "&id_pelanggan=" + idPelanggan
+        Dim myrequest As HttpWebRequest = HttpWebRequest.Create(baseUrl)
         myrequest.Method = "POST"
         myrequest.Headers.Add("Authorization", "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjMsImlhdCI6MTU5NTI5ODMwN30.i4GWwTPyp853fcwO4f71qJTmQzu06qcSrh2_vw71tYE")
         'myrequest.Timeout = reqtimeout
@@ -83,7 +84,8 @@ Public Class Ringkasan
 
     End Function
     Public Function SubmitRingkasanMateri(idContent As Integer, IdRingkasanMateri As Integer, IdPelanggan As String)
-        Dim myrequest As HttpWebRequest = HttpWebRequest.Create("https://api.permatamall.com/api/v2/belajar/home/ringkasan-materi/submit/read?id_content=" + idContent.ToString() + "&id_ringkasan_materi=" + IdRingkasanMateri.ToString() + "&id_pelanggan=" + IdPelanggan)
+        Dim baseUrl As String = "https://api.permatamall.com/api/v2/belajar/home/ringkasan-materi/submit/read?id_content=" + idContent.ToString() + "&id_ringkasan_materi=" + IdRingkasanMateri.ToString() + "&id_pelanggan=" + IdPelanggan
+        Dim myrequest As HttpWebRequest = HttpWebRequest.Create(baseUrl)
         myrequest.Method = "POST"
         myrequest.Headers.Add("Authorization", "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjMsImlhdCI6MTU5NTI5ODMwN30.i4GWwTPyp853fcwO4f71qJTmQzu06qcSrh2_vw71tYE")
         'myrequest.Timeout = reqtimeout
@@ -168,9 +170,14 @@ Public Class Ringkasan
                 lastIndex = lastIndex + 1
                 For idrop As Integer = 0 To 4
                     Dim dtopButton As Control() = Me.Controls.Find("btndrop" + idrop.ToString() + i.ToString(), True)
-
                     dtopButton.FirstOrDefault().Text = topik(i).File(idrop).Title
-                    dtopButton.FirstOrDefault().Tag = topik(i).File(idrop).Id_Ringkasan_Materi
+                    Dim anonymousEvent = New With
+                    {
+                        .Id_Ringkasan_Materi = topik(i).File(idrop).Id_Ringkasan_Materi,
+                        .Id_Bidang_studi = idBidangStudi
+                        }
+
+                    dtopButton.FirstOrDefault().Tag = anonymousEvent
                     dtopButton.FirstOrDefault().Show()
                     Dim last = idrop + 1
                     lastIndexDrop.Add(last)
@@ -336,12 +343,13 @@ Public Class Ringkasan
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btndrop00.Click
-        If Me.btndrop00.Tag IsNot Nothing Then
-            SubmitRingkasanMateri(Integer.Parse(Me.btntpk0.Tag), Integer.Parse(Me.btndrop00.Tag), Me.Label1.Tag)
-            Dim topik As List(Of RingkasanMateriTopik) = GetTopik(0, Integer.Parse(Me.Label2.Tag), Integer.Parse(Me.Label26.Tag), Me.btnrm0.Tag, Me.Label1.Tag)
+
+        If Me.btndrop00.Tag IsNot Nothing And Me.btndrop00.Tag.Id_Ringkasan_Materi IsNot Nothing Then
+            SubmitRingkasanMateri(Integer.Parse(Me.btntpk0.Tag), Integer.Parse(Me.btndrop00.Tag.Id_Ringkasan_Materi), Me.Label1.Tag)
+            Dim topik As List(Of RingkasanMateriTopik) = GetTopik(0, Integer.Parse(Me.Label2.Tag), Integer.Parse(Me.Label26.Tag), Me.btndrop00.Tag.Id_Bidang_studi, Me.Label1.Tag)
             Dim imagePath As RingkasanMateriTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btntpk0.Tag)).FirstOrDefault()
             If imagePath IsNot Nothing Then
-                Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop00.Tag)).FirstOrDefault()
+                Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop00.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
                 Dim tClient As WebClient = New WebClient
                 Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
                 IsiRIngkasan.PictureBox0.Image = downloadImage
@@ -357,134 +365,582 @@ Public Class Ringkasan
     End Sub
 
     Private Sub btndrop10_Click(sender As Object, e As EventArgs) Handles btndrop10.Click
-        SubmitRingkasanMateri(Integer.Parse(Me.btntpk1.Tag), Integer.Parse(Me.btndrop10.Tag), Me.Label1.Tag)
+        If Me.btndrop10.Tag IsNot Nothing And Me.btndrop10.Tag.Id_Ringkasan_Materi IsNot Nothing Then
+            SubmitRingkasanMateri(Integer.Parse(Me.btntpk0.Tag), Integer.Parse(Me.btndrop10.Tag.Id_Ringkasan_Materi), Me.Label1.Tag)
+            Dim topik As List(Of RingkasanMateriTopik) = GetTopik(0, Integer.Parse(Me.Label2.Tag), Integer.Parse(Me.Label26.Tag), Me.btndrop10.Tag.Id_Bidang_studi, Me.Label1.Tag)
+            Dim imagePath As RingkasanMateriTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btntpk0.Tag)).FirstOrDefault()
+            If imagePath IsNot Nothing Then
+                Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop10.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
+                Dim tClient As WebClient = New WebClient
+                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
+                IsiRIngkasan.PictureBox0.Image = downloadImage
+                IsiRIngkasan.Show()
+            Else
+                MsgBox("File dalam ringkasan Tersebut Kosong!")
+            End If
+
+        Else
+            MsgBox("File dalam ringkasan Tersebut Kosong!")
+        End If
     End Sub
 
     Private Sub btndrop20_Click(sender As Object, e As EventArgs) Handles btndrop20.Click
-        SubmitRingkasanMateri(Integer.Parse(Me.btntpk2.Tag), Integer.Parse(Me.btndrop20.Tag), Me.Label1.Tag)
+        If Me.btndrop20.Tag IsNot Nothing And Me.btndrop20.Tag.Id_Ringkasan_Materi IsNot Nothing Then
+            SubmitRingkasanMateri(Integer.Parse(Me.btntpk0.Tag), Integer.Parse(Me.btndrop20.Tag.Id_Ringkasan_Materi), Me.Label1.Tag)
+            Dim topik As List(Of RingkasanMateriTopik) = GetTopik(0, Integer.Parse(Me.Label2.Tag), Integer.Parse(Me.Label26.Tag), Me.btndrop20.Tag.Id_Bidang_studi, Me.Label1.Tag)
+            Dim imagePath As RingkasanMateriTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btntpk0.Tag)).FirstOrDefault()
+            If imagePath IsNot Nothing Then
+                Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop20.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
+                Dim tClient As WebClient = New WebClient
+                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
+                IsiRIngkasan.PictureBox0.Image = downloadImage
+                IsiRIngkasan.Show()
+            Else
+                MsgBox("File dalam ringkasan Tersebut Kosong!")
+            End If
+
+        Else
+            MsgBox("File dalam ringkasan Tersebut Kosong!")
+        End If
     End Sub
 
     Private Sub btndrop30_Click(sender As Object, e As EventArgs) Handles btndrop30.Click
-        SubmitRingkasanMateri(Integer.Parse(Me.btntpk3.Tag), Integer.Parse(Me.btndrop30.Tag), Me.Label1.Tag)
+        If Me.btndrop30.Tag IsNot Nothing And Me.btndrop30.Tag.Id_Ringkasan_Materi IsNot Nothing Then
+            SubmitRingkasanMateri(Integer.Parse(Me.btntpk0.Tag), Integer.Parse(Me.btndrop30.Tag.Id_Ringkasan_Materi), Me.Label1.Tag)
+            Dim topik As List(Of RingkasanMateriTopik) = GetTopik(0, Integer.Parse(Me.Label2.Tag), Integer.Parse(Me.Label26.Tag), Me.btndrop30.Tag.Id_Bidang_studi, Me.Label1.Tag)
+            Dim imagePath As RingkasanMateriTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btntpk0.Tag)).FirstOrDefault()
+            If imagePath IsNot Nothing Then
+                Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop30.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
+                Dim tClient As WebClient = New WebClient
+                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
+                IsiRIngkasan.PictureBox0.Image = downloadImage
+                IsiRIngkasan.Show()
+            Else
+                MsgBox("File dalam ringkasan Tersebut Kosong!")
+            End If
+
+        Else
+            MsgBox("File dalam ringkasan Tersebut Kosong!")
+        End If
     End Sub
 
     Private Sub btndrop40_Click(sender As Object, e As EventArgs) Handles btndrop30.Click
-        SubmitRingkasanMateri(Integer.Parse(Me.btntpk3.Tag), Integer.Parse(Me.btndrop30.Tag), Me.Label1.Tag)
+        If Me.btndrop30.Tag IsNot Nothing And Me.btndrop30.Tag.Id_Ringkasan_Materi IsNot Nothing Then
+            SubmitRingkasanMateri(Integer.Parse(Me.btntpk0.Tag), Integer.Parse(Me.btndrop30.Tag.Id_Ringkasan_Materi), Me.Label1.Tag)
+            Dim topik As List(Of RingkasanMateriTopik) = GetTopik(0, Integer.Parse(Me.Label2.Tag), Integer.Parse(Me.Label26.Tag), Me.btndrop30.Tag.Id_Bidang_studi, Me.Label1.Tag)
+            Dim imagePath As RingkasanMateriTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btntpk0.Tag)).FirstOrDefault()
+            If imagePath IsNot Nothing Then
+                Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop30.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
+                Dim tClient As WebClient = New WebClient
+                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
+                IsiRIngkasan.PictureBox0.Image = downloadImage
+                IsiRIngkasan.Show()
+            Else
+                MsgBox("File dalam ringkasan Tersebut Kosong!")
+            End If
+
+        Else
+            MsgBox("File dalam ringkasan Tersebut Kosong!")
+        End If
     End Sub
 
     Private Sub btndrop01_Click(sender As Object, e As EventArgs) Handles btndrop01.Click
-        SubmitRingkasanMateri(Integer.Parse(Me.btntpk0.Tag), Integer.Parse(Me.btndrop01.Tag), Me.Label1.Tag)
+        If Me.btndrop01.Tag IsNot Nothing And Me.btndrop01.Tag.Id_Ringkasan_Materi IsNot Nothing Then
+            SubmitRingkasanMateri(Integer.Parse(Me.btntpk1.Tag), Integer.Parse(Me.btndrop01.Tag.Id_Ringkasan_Materi), Me.Label1.Tag)
+            Dim topik As List(Of RingkasanMateriTopik) = GetTopik(0, Integer.Parse(Me.Label2.Tag), Integer.Parse(Me.Label26.Tag), Me.btndrop01.Tag.Id_Bidang_studi, Me.Label1.Tag)
+            Dim imagePath As RingkasanMateriTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btntpk1.Tag)).FirstOrDefault()
+            If imagePath IsNot Nothing Then
+                Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop01.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
+                Dim tClient As WebClient = New WebClient
+                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
+                IsiRIngkasan.PictureBox0.Image = downloadImage
+                IsiRIngkasan.Show()
+            Else
+                MsgBox("File dalam ringkasan Tersebut Kosong!")
+            End If
+
+        Else
+            MsgBox("File dalam ringkasan Tersebut Kosong!")
+        End If
     End Sub
 
     Private Sub btndrop11_Click(sender As Object, e As EventArgs) Handles btndrop11.Click
-        SubmitRingkasanMateri(Integer.Parse(Me.btntpk1.Tag), Integer.Parse(Me.btndrop11.Tag), Me.Label1.Tag)
+        If Me.btndrop11.Tag IsNot Nothing And Me.btndrop11.Tag.Id_Ringkasan_Materi IsNot Nothing Then
+            SubmitRingkasanMateri(Integer.Parse(Me.btntpk1.Tag), Integer.Parse(Me.btndrop11.Tag.Id_Ringkasan_Materi), Me.Label1.Tag)
+            Dim topik As List(Of RingkasanMateriTopik) = GetTopik(0, Integer.Parse(Me.Label2.Tag), Integer.Parse(Me.Label26.Tag), Me.btndrop11.Tag.Id_Bidang_studi, Me.Label1.Tag)
+            Dim imagePath As RingkasanMateriTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btntpk1.Tag)).FirstOrDefault()
+            If imagePath IsNot Nothing Then
+                Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop11.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
+                Dim tClient As WebClient = New WebClient
+                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
+                IsiRIngkasan.PictureBox0.Image = downloadImage
+                IsiRIngkasan.Show()
+            Else
+                MsgBox("File dalam ringkasan Tersebut Kosong!")
+            End If
+
+        Else
+            MsgBox("File dalam ringkasan Tersebut Kosong!")
+        End If
     End Sub
 
     Private Sub btndrop21_Click(sender As Object, e As EventArgs) Handles btndrop21.Click
-        SubmitRingkasanMateri(Integer.Parse(Me.btntpk2.Tag), Integer.Parse(Me.btndrop21.Tag), Me.Label1.Tag)
+        If Me.btndrop21.Tag IsNot Nothing And Me.btndrop21.Tag.Id_Ringkasan_Materi IsNot Nothing Then
+            SubmitRingkasanMateri(Integer.Parse(Me.btntpk1.Tag), Integer.Parse(Me.btndrop21.Tag.Id_Ringkasan_Materi), Me.Label1.Tag)
+            Dim topik As List(Of RingkasanMateriTopik) = GetTopik(0, Integer.Parse(Me.Label2.Tag), Integer.Parse(Me.Label26.Tag), Me.btndrop21.Tag.Id_Bidang_studi, Me.Label1.Tag)
+            Dim imagePath As RingkasanMateriTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btntpk1.Tag)).FirstOrDefault()
+            If imagePath IsNot Nothing Then
+                Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop21.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
+                Dim tClient As WebClient = New WebClient
+                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
+                IsiRIngkasan.PictureBox0.Image = downloadImage
+                IsiRIngkasan.Show()
+            Else
+                MsgBox("File dalam ringkasan Tersebut Kosong!")
+            End If
+
+        Else
+            MsgBox("File dalam ringkasan Tersebut Kosong!")
+        End If
     End Sub
 
     Private Sub btndrop31_Click(sender As Object, e As EventArgs) Handles btndrop31.Click
-        SubmitRingkasanMateri(Integer.Parse(Me.btntpk3.Tag), Integer.Parse(Me.btndrop31.Tag), Me.Label1.Tag)
+        If Me.btndrop31.Tag IsNot Nothing And Me.btndrop31.Tag.Id_Ringkasan_Materi IsNot Nothing Then
+            SubmitRingkasanMateri(Integer.Parse(Me.btntpk1.Tag), Integer.Parse(Me.btndrop31.Tag.Id_Ringkasan_Materi), Me.Label1.Tag)
+            Dim topik As List(Of RingkasanMateriTopik) = GetTopik(0, Integer.Parse(Me.Label2.Tag), Integer.Parse(Me.Label26.Tag), Me.btndrop31.Tag.Id_Bidang_studi, Me.Label1.Tag)
+            Dim imagePath As RingkasanMateriTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btntpk1.Tag)).FirstOrDefault()
+            If imagePath IsNot Nothing Then
+                Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop31.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
+                Dim tClient As WebClient = New WebClient
+                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
+                IsiRIngkasan.PictureBox0.Image = downloadImage
+                IsiRIngkasan.Show()
+            Else
+                MsgBox("File dalam ringkasan Tersebut Kosong!")
+            End If
+
+        Else
+            MsgBox("File dalam ringkasan Tersebut Kosong!")
+        End If
     End Sub
 
     Private Sub btndrop41_Click(sender As Object, e As EventArgs) Handles btndrop41.Click
-        SubmitRingkasanMateri(Integer.Parse(Me.btntpk4.Tag), Integer.Parse(Me.btndrop41.Tag), Me.Label1.Tag)
+        If Me.btndrop41.Tag IsNot Nothing And Me.btndrop41.Tag.Id_Ringkasan_Materi IsNot Nothing Then
+            SubmitRingkasanMateri(Integer.Parse(Me.btntpk1.Tag), Integer.Parse(Me.btndrop41.Tag.Id_Ringkasan_Materi), Me.Label1.Tag)
+            Dim topik As List(Of RingkasanMateriTopik) = GetTopik(0, Integer.Parse(Me.Label2.Tag), Integer.Parse(Me.Label26.Tag), Me.btndrop41.Tag.Id_Bidang_studi, Me.Label1.Tag)
+            Dim imagePath As RingkasanMateriTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btntpk1.Tag)).FirstOrDefault()
+            If imagePath IsNot Nothing Then
+                Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop41.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
+                Dim tClient As WebClient = New WebClient
+                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
+                IsiRIngkasan.PictureBox0.Image = downloadImage
+                IsiRIngkasan.Show()
+            Else
+                MsgBox("File dalam ringkasan Tersebut Kosong!")
+            End If
+
+        Else
+            MsgBox("File dalam ringkasan Tersebut Kosong!")
+        End If
     End Sub
 
     Private Sub btndrop02_Click(sender As Object, e As EventArgs) Handles btndrop02.Click
-        If Me.btndrop02.Tag IsNot Nothing Then
-            SubmitRingkasanMateri(Integer.Parse(Me.btntpk0.Tag), Integer.Parse(Me.btndrop02.Tag), Me.Label1.Tag)
+        If Me.btndrop02.Tag IsNot Nothing And Me.btndrop02.Tag.Id_Ringkasan_Materi IsNot Nothing Then
+            SubmitRingkasanMateri(Integer.Parse(Me.btntpk2.Tag), Integer.Parse(Me.btndrop02.Tag.Id_Ringkasan_Materi), Me.Label1.Tag)
+            Dim topik As List(Of RingkasanMateriTopik) = GetTopik(0, Integer.Parse(Me.Label2.Tag), Integer.Parse(Me.Label26.Tag), Me.btndrop02.Tag.Id_Bidang_studi, Me.Label1.Tag)
+            Dim imagePath As RingkasanMateriTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btntpk2.Tag)).FirstOrDefault()
+            If imagePath IsNot Nothing Then
+                Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop02.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
+                Dim tClient As WebClient = New WebClient
+                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
+                IsiRIngkasan.PictureBox0.Image = downloadImage
+                IsiRIngkasan.Show()
+            Else
+                MsgBox("File dalam ringkasan Tersebut Kosong!")
+            End If
+
         Else
-            MsgBox("File dalam ringkasan Tersebut Kosong/Masih dalam tahap Pengembangan")
+            MsgBox("File dalam ringkasan Tersebut Kosong!")
         End If
     End Sub
 
     Private Sub btndrop12_Click(sender As Object, e As EventArgs) Handles btndrop12.Click
-        SubmitRingkasanMateri(Integer.Parse(Me.btntpk1.Tag), Integer.Parse(Me.btndrop12.Tag), Me.Label1.Tag)
+        If Me.btndrop12.Tag IsNot Nothing And Me.btndrop12.Tag.Id_Ringkasan_Materi IsNot Nothing Then
+            SubmitRingkasanMateri(Integer.Parse(Me.btntpk2.Tag), Integer.Parse(Me.btndrop12.Tag.Id_Ringkasan_Materi), Me.Label1.Tag)
+            Dim topik As List(Of RingkasanMateriTopik) = GetTopik(0, Integer.Parse(Me.Label2.Tag), Integer.Parse(Me.Label26.Tag), Me.btndrop12.Tag.Id_Bidang_studi, Me.Label1.Tag)
+            Dim imagePath As RingkasanMateriTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btntpk2.Tag)).FirstOrDefault()
+            If imagePath IsNot Nothing Then
+                Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop12.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
+                Dim tClient As WebClient = New WebClient
+                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
+                IsiRIngkasan.PictureBox0.Image = downloadImage
+                IsiRIngkasan.Show()
+            Else
+                MsgBox("File dalam ringkasan Tersebut Kosong!")
+            End If
+
+        Else
+            MsgBox("File dalam ringkasan Tersebut Kosong!")
+        End If
     End Sub
 
     Private Sub btndrop22_Click(sender As Object, e As EventArgs) Handles btndrop22.Click
-        SubmitRingkasanMateri(Integer.Parse(Me.btntpk2.Tag), Integer.Parse(Me.btndrop22.Tag), Me.Label1.Tag)
+        If Me.btndrop22.Tag IsNot Nothing And Me.btndrop22.Tag.Id_Ringkasan_Materi IsNot Nothing Then
+            SubmitRingkasanMateri(Integer.Parse(Me.btntpk2.Tag), Integer.Parse(Me.btndrop22.Tag.Id_Ringkasan_Materi), Me.Label1.Tag)
+            Dim topik As List(Of RingkasanMateriTopik) = GetTopik(0, Integer.Parse(Me.Label2.Tag), Integer.Parse(Me.Label26.Tag), Me.btndrop22.Tag.Id_Bidang_studi, Me.Label1.Tag)
+            Dim imagePath As RingkasanMateriTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btntpk2.Tag)).FirstOrDefault()
+            If imagePath IsNot Nothing Then
+                Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop22.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
+                Dim tClient As WebClient = New WebClient
+                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
+                IsiRIngkasan.PictureBox0.Image = downloadImage
+                IsiRIngkasan.Show()
+            Else
+                MsgBox("File dalam ringkasan Tersebut Kosong!")
+            End If
+
+        Else
+            MsgBox("File dalam ringkasan Tersebut Kosong!")
+        End If
     End Sub
 
     Private Sub btndrop32_Click(sender As Object, e As EventArgs) Handles btndrop32.Click
-        SubmitRingkasanMateri(Integer.Parse(Me.btntpk3.Tag), Integer.Parse(Me.btndrop32.Tag), Me.Label1.Tag)
+        If Me.btndrop32.Tag IsNot Nothing And Me.btndrop32.Tag.Id_Ringkasan_Materi IsNot Nothing Then
+            SubmitRingkasanMateri(Integer.Parse(Me.btntpk2.Tag), Integer.Parse(Me.btndrop32.Tag.Id_Ringkasan_Materi), Me.Label1.Tag)
+            Dim topik As List(Of RingkasanMateriTopik) = GetTopik(0, Integer.Parse(Me.Label2.Tag), Integer.Parse(Me.Label26.Tag), Me.btndrop32.Tag.Id_Bidang_studi, Me.Label1.Tag)
+            Dim imagePath As RingkasanMateriTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btntpk2.Tag)).FirstOrDefault()
+            If imagePath IsNot Nothing Then
+                Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop32.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
+                Dim tClient As WebClient = New WebClient
+                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
+                IsiRIngkasan.PictureBox0.Image = downloadImage
+                IsiRIngkasan.Show()
+            Else
+                MsgBox("File dalam ringkasan Tersebut Kosong!")
+            End If
+
+        Else
+            MsgBox("File dalam ringkasan Tersebut Kosong!")
+        End If
     End Sub
 
     Private Sub btndrop42_Click(sender As Object, e As EventArgs) Handles btndrop42.Click
-        SubmitRingkasanMateri(Integer.Parse(Me.btntpk4.Tag), Integer.Parse(Me.btndrop42.Tag), Me.Label1.Tag)
+        If Me.btndrop42.Tag IsNot Nothing And Me.btndrop42.Tag.Id_Ringkasan_Materi IsNot Nothing Then
+            SubmitRingkasanMateri(Integer.Parse(Me.btntpk2.Tag), Integer.Parse(Me.btndrop42.Tag.Id_Ringkasan_Materi), Me.Label1.Tag)
+            Dim topik As List(Of RingkasanMateriTopik) = GetTopik(0, Integer.Parse(Me.Label2.Tag), Integer.Parse(Me.Label26.Tag), Me.btndrop42.Tag.Id_Bidang_studi, Me.Label1.Tag)
+            Dim imagePath As RingkasanMateriTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btntpk2.Tag)).FirstOrDefault()
+            If imagePath IsNot Nothing Then
+                Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop42.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
+                Dim tClient As WebClient = New WebClient
+                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
+                IsiRIngkasan.PictureBox0.Image = downloadImage
+                IsiRIngkasan.Show()
+            Else
+                MsgBox("File dalam ringkasan Tersebut Kosong!")
+            End If
+
+        Else
+            MsgBox("File dalam ringkasan Tersebut Kosong!")
+        End If
     End Sub
 
     Private Sub btndrop03_Click(sender As Object, e As EventArgs) Handles btndrop03.Click
-        If Me.btndrop03.Tag IsNot Nothing Then
-            SubmitRingkasanMateri(Integer.Parse(Me.btntpk0.Tag), Integer.Parse(Me.btndrop03.Tag), Me.Label1.Tag)
+        If Me.btndrop03.Tag IsNot Nothing And Me.btndrop03.Tag.Id_Ringkasan_Materi IsNot Nothing Then
+            SubmitRingkasanMateri(Integer.Parse(Me.btntpk3.Tag), Integer.Parse(Me.btndrop03.Tag.Id_Ringkasan_Materi), Me.Label1.Tag)
+            Dim topik As List(Of RingkasanMateriTopik) = GetTopik(0, Integer.Parse(Me.Label2.Tag), Integer.Parse(Me.Label26.Tag), Me.btndrop03.Tag.Id_Bidang_studi, Me.Label1.Tag)
+            Dim imagePath As RingkasanMateriTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btntpk3.Tag)).FirstOrDefault()
+            If imagePath IsNot Nothing Then
+                Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop03.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
+                Dim tClient As WebClient = New WebClient
+                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
+                IsiRIngkasan.PictureBox0.Image = downloadImage
+                IsiRIngkasan.Show()
+            Else
+                MsgBox("File dalam ringkasan Tersebut Kosong!")
+            End If
+
         Else
-            MsgBox("File dalam ringkasan Tersebut Kosong/Masih dalam tahap Pengembangan")
+            MsgBox("File dalam ringkasan Tersebut Kosong!")
         End If
     End Sub
 
     Private Sub btndrop13_Click(sender As Object, e As EventArgs) Handles btndrop13.Click
-        SubmitRingkasanMateri(Integer.Parse(Me.btntpk1.Tag), Integer.Parse(Me.btndrop13.Tag), Me.Label1.Tag)
+        If Me.btndrop13.Tag IsNot Nothing And Me.btndrop13.Tag.Id_Ringkasan_Materi IsNot Nothing Then
+            SubmitRingkasanMateri(Integer.Parse(Me.btntpk3.Tag), Integer.Parse(Me.btndrop13.Tag.Id_Ringkasan_Materi), Me.Label1.Tag)
+            Dim topik As List(Of RingkasanMateriTopik) = GetTopik(0, Integer.Parse(Me.Label2.Tag), Integer.Parse(Me.Label26.Tag), Me.btndrop13.Tag.Id_Bidang_studi, Me.Label1.Tag)
+            Dim imagePath As RingkasanMateriTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btntpk3.Tag)).FirstOrDefault()
+            If imagePath IsNot Nothing Then
+                Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop13.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
+                Dim tClient As WebClient = New WebClient
+                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
+                IsiRIngkasan.PictureBox0.Image = downloadImage
+                IsiRIngkasan.Show()
+            Else
+                MsgBox("File dalam ringkasan Tersebut Kosong!")
+            End If
+
+        Else
+            MsgBox("File dalam ringkasan Tersebut Kosong!")
+        End If
     End Sub
 
     Private Sub btndrop23_Click(sender As Object, e As EventArgs) Handles btndrop23.Click
-        SubmitRingkasanMateri(Integer.Parse(Me.btntpk2.Tag), Integer.Parse(Me.btndrop23.Tag), Me.Label1.Tag)
+        If Me.btndrop23.Tag IsNot Nothing And Me.btndrop23.Tag.Id_Ringkasan_Materi IsNot Nothing Then
+            SubmitRingkasanMateri(Integer.Parse(Me.btntpk3.Tag), Integer.Parse(Me.btndrop23.Tag.Id_Ringkasan_Materi), Me.Label1.Tag)
+            Dim topik As List(Of RingkasanMateriTopik) = GetTopik(0, Integer.Parse(Me.Label2.Tag), Integer.Parse(Me.Label26.Tag), Me.btndrop23.Tag.Id_Bidang_studi, Me.Label1.Tag)
+            Dim imagePath As RingkasanMateriTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btntpk3.Tag)).FirstOrDefault()
+            If imagePath IsNot Nothing Then
+                Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop23.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
+                Dim tClient As WebClient = New WebClient
+                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
+                IsiRIngkasan.PictureBox0.Image = downloadImage
+                IsiRIngkasan.Show()
+            Else
+                MsgBox("File dalam ringkasan Tersebut Kosong!")
+            End If
+
+        Else
+            MsgBox("File dalam ringkasan Tersebut Kosong!")
+        End If
     End Sub
 
     Private Sub btndrop33_Click(sender As Object, e As EventArgs) Handles btndrop33.Click
-        SubmitRingkasanMateri(Integer.Parse(Me.btntpk3.Tag), Integer.Parse(Me.btndrop33.Tag), Me.Label1.Tag)
+        If Me.btndrop33.Tag IsNot Nothing And Me.btndrop33.Tag.Id_Ringkasan_Materi IsNot Nothing Then
+            SubmitRingkasanMateri(Integer.Parse(Me.btntpk3.Tag), Integer.Parse(Me.btndrop33.Tag.Id_Ringkasan_Materi), Me.Label1.Tag)
+            Dim topik As List(Of RingkasanMateriTopik) = GetTopik(0, Integer.Parse(Me.Label2.Tag), Integer.Parse(Me.Label26.Tag), Me.btndrop33.Tag.Id_Bidang_studi, Me.Label1.Tag)
+            Dim imagePath As RingkasanMateriTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btntpk3.Tag)).FirstOrDefault()
+            If imagePath IsNot Nothing Then
+                Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop33.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
+                Dim tClient As WebClient = New WebClient
+                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
+                IsiRIngkasan.PictureBox0.Image = downloadImage
+                IsiRIngkasan.Show()
+            Else
+                MsgBox("File dalam ringkasan Tersebut Kosong!")
+            End If
+
+        Else
+            MsgBox("File dalam ringkasan Tersebut Kosong!")
+        End If
     End Sub
     Private Sub btndrop43_Click(sender As Object, e As EventArgs) Handles btndrop43.Click
-        SubmitRingkasanMateri(Integer.Parse(Me.btntpk4.Tag), Integer.Parse(Me.btndrop43.Tag), Me.Label1.Tag)
+        If Me.btndrop43.Tag IsNot Nothing And Me.btndrop43.Tag.Id_Ringkasan_Materi IsNot Nothing Then
+            SubmitRingkasanMateri(Integer.Parse(Me.btntpk3.Tag), Integer.Parse(Me.btndrop43.Tag.Id_Ringkasan_Materi), Me.Label1.Tag)
+            Dim topik As List(Of RingkasanMateriTopik) = GetTopik(0, Integer.Parse(Me.Label2.Tag), Integer.Parse(Me.Label26.Tag), Me.btndrop43.Tag.Id_Bidang_studi, Me.Label1.Tag)
+            Dim imagePath As RingkasanMateriTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btntpk3.Tag)).FirstOrDefault()
+            If imagePath IsNot Nothing Then
+                Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop43.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
+                Dim tClient As WebClient = New WebClient
+                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
+                IsiRIngkasan.PictureBox0.Image = downloadImage
+                IsiRIngkasan.Show()
+            Else
+                MsgBox("File dalam ringkasan Tersebut Kosong!")
+            End If
+
+        Else
+            MsgBox("File dalam ringkasan Tersebut Kosong!")
+        End If
     End Sub
 
     Private Sub btndrop04_Click(sender As Object, e As EventArgs) Handles btndrop04.Click
-        If Me.btndrop04.Tag IsNot Nothing Then
-            SubmitRingkasanMateri(Integer.Parse(Me.btntpk0.Tag), Integer.Parse(Me.btndrop04.Tag), Me.Label1.Tag)
+        If Me.btndrop04.Tag IsNot Nothing And Me.btndrop04.Tag.Id_Ringkasan_Materi IsNot Nothing Then
+            SubmitRingkasanMateri(Integer.Parse(Me.btntpk4.Tag), Integer.Parse(Me.btndrop04.Tag.Id_Ringkasan_Materi), Me.Label1.Tag)
+            Dim topik As List(Of RingkasanMateriTopik) = GetTopik(0, Integer.Parse(Me.Label2.Tag), Integer.Parse(Me.Label26.Tag), Me.btndrop04.Tag.Id_Bidang_studi, Me.Label1.Tag)
+            Dim imagePath As RingkasanMateriTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btntpk4.Tag)).FirstOrDefault()
+            If imagePath IsNot Nothing Then
+                Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop04.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
+                Dim tClient As WebClient = New WebClient
+                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
+                IsiRIngkasan.PictureBox0.Image = downloadImage
+                IsiRIngkasan.Show()
+            Else
+                MsgBox("File dalam ringkasan Tersebut Kosong!")
+            End If
+
         Else
-            MsgBox("File dalam ringkasan Tersebut Kosong/Masih dalam tahap Pengembangan")
+            MsgBox("File dalam ringkasan Tersebut Kosong!")
         End If
     End Sub
 
     Private Sub btndrop14_Click(sender As Object, e As EventArgs) Handles btndrop14.Click
-        SubmitRingkasanMateri(Integer.Parse(Me.btntpk1.Tag), Integer.Parse(Me.btndrop14.Tag), Me.Label1.Tag)
+        If Me.btndrop14.Tag IsNot Nothing And Me.btndrop14.Tag.Id_Ringkasan_Materi IsNot Nothing Then
+            SubmitRingkasanMateri(Integer.Parse(Me.btntpk4.Tag), Integer.Parse(Me.btndrop14.Tag.Id_Ringkasan_Materi), Me.Label1.Tag)
+            Dim topik As List(Of RingkasanMateriTopik) = GetTopik(0, Integer.Parse(Me.Label2.Tag), Integer.Parse(Me.Label26.Tag), Me.btndrop14.Tag.Id_Bidang_studi, Me.Label1.Tag)
+            Dim imagePath As RingkasanMateriTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btntpk4.Tag)).FirstOrDefault()
+            If imagePath IsNot Nothing Then
+                Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop14.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
+                Dim tClient As WebClient = New WebClient
+                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
+                IsiRIngkasan.PictureBox0.Image = downloadImage
+                IsiRIngkasan.Show()
+            Else
+                MsgBox("File dalam ringkasan Tersebut Kosong!")
+            End If
+
+        Else
+            MsgBox("File dalam ringkasan Tersebut Kosong!")
+        End If
     End Sub
 
     Private Sub btndrop24_Click(sender As Object, e As EventArgs) Handles btndrop24.Click
-        SubmitRingkasanMateri(Integer.Parse(Me.btntpk2.Tag), Integer.Parse(Me.btndrop24.Tag), Me.Label1.Tag)
+        If Me.btndrop24.Tag IsNot Nothing And Me.btndrop24.Tag.Id_Ringkasan_Materi IsNot Nothing Then
+            SubmitRingkasanMateri(Integer.Parse(Me.btntpk4.Tag), Integer.Parse(Me.btndrop24.Tag.Id_Ringkasan_Materi), Me.Label1.Tag)
+            Dim topik As List(Of RingkasanMateriTopik) = GetTopik(0, Integer.Parse(Me.Label2.Tag), Integer.Parse(Me.Label26.Tag), Me.btndrop24.Tag.Id_Bidang_studi, Me.Label1.Tag)
+            Dim imagePath As RingkasanMateriTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btntpk4.Tag)).FirstOrDefault()
+            If imagePath IsNot Nothing Then
+                Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop24.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
+                Dim tClient As WebClient = New WebClient
+                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
+                IsiRIngkasan.PictureBox0.Image = downloadImage
+                IsiRIngkasan.Show()
+            Else
+                MsgBox("File dalam ringkasan Tersebut Kosong!")
+            End If
+
+        Else
+            MsgBox("File dalam ringkasan Tersebut Kosong!")
+        End If
     End Sub
 
     Private Sub btndrop34_Click(sender As Object, e As EventArgs) Handles btndrop34.Click
-        SubmitRingkasanMateri(Integer.Parse(Me.btntpk3.Tag), Integer.Parse(Me.btndrop34.Tag), Me.Label1.Tag)
+        If Me.btndrop34.Tag IsNot Nothing And Me.btndrop34.Tag.Id_Ringkasan_Materi IsNot Nothing Then
+            SubmitRingkasanMateri(Integer.Parse(Me.btntpk4.Tag), Integer.Parse(Me.btndrop34.Tag.Id_Ringkasan_Materi), Me.Label1.Tag)
+            Dim topik As List(Of RingkasanMateriTopik) = GetTopik(0, Integer.Parse(Me.Label2.Tag), Integer.Parse(Me.Label26.Tag), Me.btndrop34.Tag.Id_Bidang_studi, Me.Label1.Tag)
+            Dim imagePath As RingkasanMateriTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btntpk4.Tag)).FirstOrDefault()
+            If imagePath IsNot Nothing Then
+                Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop34.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
+                Dim tClient As WebClient = New WebClient
+                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
+                IsiRIngkasan.PictureBox0.Image = downloadImage
+                IsiRIngkasan.Show()
+            Else
+                MsgBox("File dalam ringkasan Tersebut Kosong!")
+            End If
+
+        Else
+            MsgBox("File dalam ringkasan Tersebut Kosong!")
+        End If
     End Sub
 
     Private Sub btndrop44_Click(sender As Object, e As EventArgs) Handles btndrop44.Click
-        SubmitRingkasanMateri(Integer.Parse(Me.btntpk4.Tag), Integer.Parse(Me.btndrop44.Tag), Me.Label1.Tag)
+        If Me.btndrop44.Tag IsNot Nothing And Me.btndrop44.Tag.Id_Ringkasan_Materi IsNot Nothing Then
+            SubmitRingkasanMateri(Integer.Parse(Me.btntpk4.Tag), Integer.Parse(Me.btndrop44.Tag.Id_Ringkasan_Materi), Me.Label1.Tag)
+            Dim topik As List(Of RingkasanMateriTopik) = GetTopik(0, Integer.Parse(Me.Label2.Tag), Integer.Parse(Me.Label26.Tag), Me.btndrop44.Tag.Id_Bidang_studi, Me.Label1.Tag)
+            Dim imagePath As RingkasanMateriTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btntpk4.Tag)).FirstOrDefault()
+            If imagePath IsNot Nothing Then
+                Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop44.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
+                Dim tClient As WebClient = New WebClient
+                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
+                IsiRIngkasan.PictureBox0.Image = downloadImage
+                IsiRIngkasan.Show()
+            Else
+                MsgBox("File dalam ringkasan Tersebut Kosong!")
+            End If
+
+        Else
+            MsgBox("File dalam ringkasan Tersebut Kosong!")
+        End If
     End Sub
 
     Private Sub btndrop05_Click(sender As Object, e As EventArgs) Handles btndrop05.Click
-        If Me.btndrop05.Tag IsNot Nothing Then
-            SubmitRingkasanMateri(Integer.Parse(Me.btntpk0.Tag), Integer.Parse(Me.btndrop05.Tag), Me.Label1.Tag)
+        If Me.btndrop05.Tag IsNot Nothing And Me.btndrop05.Tag.Id_Ringkasan_Materi IsNot Nothing Then
+            SubmitRingkasanMateri(Integer.Parse(Me.btntpk5.Tag), Integer.Parse(Me.btndrop05.Tag.Id_Ringkasan_Materi), Me.Label1.Tag)
+            Dim topik As List(Of RingkasanMateriTopik) = GetTopik(0, Integer.Parse(Me.Label2.Tag), Integer.Parse(Me.Label26.Tag), Me.btndrop05.Tag.Id_Bidang_studi, Me.Label1.Tag)
+            Dim imagePath As RingkasanMateriTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btntpk5.Tag)).FirstOrDefault()
+            If imagePath IsNot Nothing Then
+                Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop05.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
+                Dim tClient As WebClient = New WebClient
+                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
+                IsiRIngkasan.PictureBox0.Image = downloadImage
+                IsiRIngkasan.Show()
+            Else
+                MsgBox("File dalam ringkasan Tersebut Kosong!")
+            End If
+
         Else
-            MsgBox("File dalam ringkasan Tersebut Kosong/Masih dalam tahap Pengembangan")
+            MsgBox("File dalam ringkasan Tersebut Kosong!")
         End If
     End Sub
 
     Private Sub btndrop15_Click(sender As Object, e As EventArgs) Handles btndrop15.Click
-        SubmitRingkasanMateri(Integer.Parse(Me.btntpk1.Tag), Integer.Parse(Me.btndrop15.Tag), Me.Label1.Tag)
+        If Me.btndrop15.Tag IsNot Nothing And Me.btndrop15.Tag.Id_Ringkasan_Materi IsNot Nothing Then
+            SubmitRingkasanMateri(Integer.Parse(Me.btntpk5.Tag), Integer.Parse(Me.btndrop15.Tag.Id_Ringkasan_Materi), Me.Label1.Tag)
+            Dim topik As List(Of RingkasanMateriTopik) = GetTopik(0, Integer.Parse(Me.Label2.Tag), Integer.Parse(Me.Label26.Tag), Me.btndrop15.Tag.Id_Bidang_studi, Me.Label1.Tag)
+            Dim imagePath As RingkasanMateriTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btntpk5.Tag)).FirstOrDefault()
+            If imagePath IsNot Nothing Then
+                Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop15.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
+                Dim tClient As WebClient = New WebClient
+                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
+                IsiRIngkasan.PictureBox0.Image = downloadImage
+                IsiRIngkasan.Show()
+            Else
+                MsgBox("File dalam ringkasan Tersebut Kosong!")
+            End If
+
+        Else
+            MsgBox("File dalam ringkasan Tersebut Kosong!")
+        End If
     End Sub
 
     Private Sub btndrop25_Click(sender As Object, e As EventArgs) Handles btndrop25.Click
-        SubmitRingkasanMateri(Integer.Parse(Me.btntpk2.Tag), Integer.Parse(Me.btndrop25.Tag), Me.Label1.Tag)
+        If Me.btndrop25.Tag IsNot Nothing And Me.btndrop25.Tag.Id_Ringkasan_Materi IsNot Nothing Then
+            SubmitRingkasanMateri(Integer.Parse(Me.btntpk5.Tag), Integer.Parse(Me.btndrop25.Tag.Id_Ringkasan_Materi), Me.Label1.Tag)
+            Dim topik As List(Of RingkasanMateriTopik) = GetTopik(0, Integer.Parse(Me.Label2.Tag), Integer.Parse(Me.Label26.Tag), Me.btndrop25.Tag.Id_Bidang_studi, Me.Label1.Tag)
+            Dim imagePath As RingkasanMateriTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btntpk5.Tag)).FirstOrDefault()
+            If imagePath IsNot Nothing Then
+                Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop25.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
+                Dim tClient As WebClient = New WebClient
+                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
+                IsiRIngkasan.PictureBox0.Image = downloadImage
+                IsiRIngkasan.Show()
+            Else
+                MsgBox("File dalam ringkasan Tersebut Kosong!")
+            End If
+
+        Else
+            MsgBox("File dalam ringkasan Tersebut Kosong!")
+        End If
     End Sub
 
     Private Sub btndrop35_Click(sender As Object, e As EventArgs) Handles btndrop35.Click
-        SubmitRingkasanMateri(Integer.Parse(Me.btntpk3.Tag), Integer.Parse(Me.btndrop35.Tag), Me.Label1.Tag)
+        If Me.btndrop35.Tag IsNot Nothing And Me.btndrop35.Tag.Id_Ringkasan_Materi IsNot Nothing Then
+            SubmitRingkasanMateri(Integer.Parse(Me.btntpk5.Tag), Integer.Parse(Me.btndrop35.Tag.Id_Ringkasan_Materi), Me.Label1.Tag)
+            Dim topik As List(Of RingkasanMateriTopik) = GetTopik(0, Integer.Parse(Me.Label2.Tag), Integer.Parse(Me.Label26.Tag), Me.btndrop35.Tag.Id_Bidang_studi, Me.Label1.Tag)
+            Dim imagePath As RingkasanMateriTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btntpk5.Tag)).FirstOrDefault()
+            If imagePath IsNot Nothing Then
+                Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop35.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
+                Dim tClient As WebClient = New WebClient
+                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
+                IsiRIngkasan.PictureBox0.Image = downloadImage
+                IsiRIngkasan.Show()
+            Else
+                MsgBox("File dalam ringkasan Tersebut Kosong!")
+            End If
+
+        Else
+            MsgBox("File dalam ringkasan Tersebut Kosong!")
+        End If
     End Sub
 
     Private Sub btndrop45_Click(sender As Object, e As EventArgs) Handles btndrop45.Click
-        SubmitRingkasanMateri(Integer.Parse(Me.btntpk4.Tag), Integer.Parse(Me.btndrop45.Tag), Me.Label1.Tag)
+        If Me.btndrop45.Tag IsNot Nothing And Me.btndrop45.Tag.Id_Ringkasan_Materi IsNot Nothing Then
+            SubmitRingkasanMateri(Integer.Parse(Me.btntpk5.Tag), Integer.Parse(Me.btndrop45.Tag.Id_Ringkasan_Materi), Me.Label1.Tag)
+            Dim topik As List(Of RingkasanMateriTopik) = GetTopik(0, Integer.Parse(Me.Label2.Tag), Integer.Parse(Me.Label26.Tag), Me.btndrop45.Tag.Id_Bidang_studi, Me.Label1.Tag)
+            Dim imagePath As RingkasanMateriTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btntpk5.Tag)).FirstOrDefault()
+            If imagePath IsNot Nothing Then
+                Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop45.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
+                Dim tClient As WebClient = New WebClient
+                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
+                IsiRIngkasan.PictureBox0.Image = downloadImage
+                IsiRIngkasan.Show()
+            Else
+                MsgBox("File dalam ringkasan Tersebut Kosong!")
+            End If
+
+        Else
+            MsgBox("File dalam ringkasan Tersebut Kosong!")
+        End If
     End Sub
 
 End Class
