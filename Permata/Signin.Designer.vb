@@ -25,6 +25,7 @@ Partial Class Signin
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Signin))
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2Button5 = New Guna.UI2.WinForms.Guna2Button()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -38,7 +39,6 @@ Partial Class Signin
         Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
-        Me.Guna2Button5 = New Guna.UI2.WinForms.Guna2Button()
         Me.Panel2.SuspendLayout()
         Me.Guna2Panel1.SuspendLayout()
         Me.Panel1.SuspendLayout()
@@ -61,7 +61,7 @@ Partial Class Signin
         'Guna2Panel1
         '
         Me.Guna2Panel1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Guna2Panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Guna2Panel1.Controls.Add(Me.Guna2Button5)
         Me.Guna2Panel1.Controls.Add(Me.Label4)
@@ -75,12 +75,28 @@ Partial Class Signin
         Me.Guna2Panel1.Controls.Add(Me.Label1)
         Me.Guna2Panel1.Controls.Add(Me.Guna2Button2)
         Me.Guna2Panel1.Controls.Add(Me.Guna2Button1)
-        Me.Guna2Panel1.Location = New System.Drawing.Point(136, 107)
+        Me.Guna2Panel1.Location = New System.Drawing.Point(105, 107)
         Me.Guna2Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Panel1.Name = "Guna2Panel1"
         Me.Guna2Panel1.ShadowDecoration.Parent = Me.Guna2Panel1
         Me.Guna2Panel1.Size = New System.Drawing.Size(318, 401)
         Me.Guna2Panel1.TabIndex = 0
+        '
+        'Guna2Button5
+        '
+        Me.Guna2Button5.CheckedState.Parent = Me.Guna2Button5
+        Me.Guna2Button5.CustomImages.Parent = Me.Guna2Button5
+        Me.Guna2Button5.FillColor = System.Drawing.SystemColors.ActiveBorder
+        Me.Guna2Button5.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2Button5.ForeColor = System.Drawing.Color.White
+        Me.Guna2Button5.HoverState.Parent = Me.Guna2Button5
+        Me.Guna2Button5.Location = New System.Drawing.Point(249, 251)
+        Me.Guna2Button5.Margin = New System.Windows.Forms.Padding(2)
+        Me.Guna2Button5.Name = "Guna2Button5"
+        Me.Guna2Button5.ShadowDecoration.Parent = Me.Guna2Button5
+        Me.Guna2Button5.Size = New System.Drawing.Size(40, 30)
+        Me.Guna2Button5.TabIndex = 11
+        Me.Guna2Button5.Text = "Show"
         '
         'Label4
         '
@@ -280,22 +296,6 @@ Partial Class Signin
         Me.Guna2PictureBox1.TabStop = False
         Me.Guna2PictureBox1.UseTransparentBackground = True
         '
-        'Guna2Button5
-        '
-        Me.Guna2Button5.CheckedState.Parent = Me.Guna2Button5
-        Me.Guna2Button5.CustomImages.Parent = Me.Guna2Button5
-        Me.Guna2Button5.FillColor = System.Drawing.SystemColors.ActiveBorder
-        Me.Guna2Button5.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2Button5.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button5.HoverState.Parent = Me.Guna2Button5
-        Me.Guna2Button5.Location = New System.Drawing.Point(249, 251)
-        Me.Guna2Button5.Margin = New System.Windows.Forms.Padding(2)
-        Me.Guna2Button5.Name = "Guna2Button5"
-        Me.Guna2Button5.ShadowDecoration.Parent = Me.Guna2Button5
-        Me.Guna2Button5.Size = New System.Drawing.Size(40, 30)
-        Me.Guna2Button5.TabIndex = 11
-        Me.Guna2Button5.Text = "Show"
-        '
         'Signin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -306,6 +306,7 @@ Partial Class Signin
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Signin"
         Me.Text = "Signin"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Panel2.ResumeLayout(False)
         Me.Guna2Panel1.ResumeLayout(False)
         Me.Guna2Panel1.PerformLayout()
