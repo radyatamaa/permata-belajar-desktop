@@ -82,7 +82,7 @@ Public Class MenuUtama
                 Form2.Label26.Text = Me.Label26.Text
                 Form2.Label26.Tag = Me.Label26.Tag
                 Form2.Label2.Text = Me.Label13.Tag
-                Form2.Label2.Tag = Me.lblfeature2.Tag
+                Form2.Label2.Tag = Me.lblfeature0.Tag
                 Form2.Label1.Tag = Me.Guna2PictureBox3.Tag
                 Me.Hide()
             Case "latihansoalPages"
@@ -112,7 +112,7 @@ Public Class MenuUtama
                 Form2.Label26.Text = Me.Label26.Text
                 Form2.Label26.Tag = Me.Label26.Tag
                 Form2.Label2.Text = Me.Label13.Tag
-                Form2.Label2.Tag = Me.lblfeature2.Tag
+                Form2.Label2.Tag = Me.lblfeature1.Tag
                 Form2.Label1.Tag = Me.Guna2PictureBox3.Tag
                 Me.Hide()
             Case "latihansoalPages"
@@ -428,7 +428,7 @@ Public Class MenuUtama
                 Form2.Label26.Text = Me.Label26.Text
                 Form2.Label26.Tag = Me.Label26.Tag
                 Form2.Label2.Text = Me.Label13.Tag
-                Form2.Label2.Tag = Me.lblfeature2.Tag
+                Form2.Label2.Tag = Me.lblfeature3.Tag
                 Form2.Label1.Tag = Me.Guna2PictureBox3.Tag
                 Me.Hide()
             Case "latihansoalPages"

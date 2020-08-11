@@ -90,6 +90,7 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Management" />
     <Reference Include="System.Numerics" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -124,10 +125,10 @@
     <Compile Include="Form3.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form4.Designer.vb">
-      <DependentUpon>Form4.vb</DependentUpon>
+    <Compile Include="IsiVideo.Designer.vb">
+      <DependentUpon>IsiVideo.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form4.vb">
+    <Compile Include="IsiVideo.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="IsiRIngkasan.Designer.vb">
@@ -153,6 +154,8 @@
     <Compile Include="Model\RingkasanMateriResponse.vb" />
     <Compile Include="Model\RingkasanMateriTopik.vb" />
     <Compile Include="Model\RingkasanMateriTopikResponse.vb" />
+    <Compile Include="Model\VideoTopik.vb" />
+    <Compile Include="Model\VideoTopikResponse.vb" />
     <Compile Include="Prestasi.Designer.vb">
       <DependentUpon>Prestasi.vb</DependentUpon>
     </Compile>
@@ -220,8 +223,8 @@
     <EmbeddedResource Include="Form3.resx">
       <DependentUpon>Form3.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form4.resx">
-      <DependentUpon>Form4.vb</DependentUpon>
+    <EmbeddedResource Include="IsiVideo.resx">
+      <DependentUpon>IsiVideo.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="IsiRIngkasan.resx">
       <DependentUpon>IsiRIngkasan.vb</DependentUpon>
