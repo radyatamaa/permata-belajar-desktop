@@ -946,4 +946,8 @@ Public Class Ringkasan
     Private Sub Panel3_Paint_1(sender As Object, e As PaintEventArgs) Handles Panel3.Paint
 
     End Sub
+
+    Private Sub lblrm0_Click(sender As Object, e As EventArgs) Handles lblrm0.Click
+
+    End Sub
 End Class
