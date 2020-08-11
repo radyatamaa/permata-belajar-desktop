@@ -182,14 +182,14 @@ Partial Class Ringkasan
         '
         Me.lblrm11.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblrm11.AutoSize = True
         Me.lblrm11.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblrm11.Location = New System.Drawing.Point(293, 349)
+        Me.lblrm11.Location = New System.Drawing.Point(251, 349)
         Me.lblrm11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblrm11.Name = "lblrm11"
-        Me.lblrm11.Size = New System.Drawing.Size(85, 13)
+        Me.lblrm11.Size = New System.Drawing.Size(145, 13)
         Me.lblrm11.TabIndex = 52
         Me.lblrm11.Text = "Tes Masuk PTN" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.lblrm11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'btnrm11
         '
@@ -203,7 +203,7 @@ Partial Class Ringkasan
         Me.btnrm11.Location = New System.Drawing.Point(286, 293)
         Me.btnrm11.Margin = New System.Windows.Forms.Padding(2)
         Me.btnrm11.Name = "btnrm11"
-        Me.btnrm11.Size = New System.Drawing.Size(92, 52)
+        Me.btnrm11.Size = New System.Drawing.Size(74, 52)
         Me.btnrm11.TabIndex = 51
         Me.btnrm11.UseVisualStyleBackColor = True
         '
@@ -211,27 +211,27 @@ Partial Class Ringkasan
         '
         Me.lblrm10.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblrm10.AutoSize = True
         Me.lblrm10.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblrm10.Location = New System.Drawing.Point(170, 348)
+        Me.lblrm10.Location = New System.Drawing.Point(127, 348)
         Me.lblrm10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblrm10.Name = "lblrm10"
-        Me.lblrm10.Size = New System.Drawing.Size(85, 13)
+        Me.lblrm10.Size = New System.Drawing.Size(145, 13)
         Me.lblrm10.TabIndex = 50
         Me.lblrm10.Text = "Tes Masuk PTN" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.lblrm10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblrm9
         '
         Me.lblrm9.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblrm9.AutoSize = True
         Me.lblrm9.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblrm9.Location = New System.Drawing.Point(53, 349)
+        Me.lblrm9.Location = New System.Drawing.Point(5, 349)
         Me.lblrm9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblrm9.Name = "lblrm9"
-        Me.lblrm9.Size = New System.Drawing.Size(68, 13)
+        Me.lblrm9.Size = New System.Drawing.Size(145, 13)
         Me.lblrm9.TabIndex = 49
         Me.lblrm9.Text = "Kelas 12 IPS"
+        Me.lblrm9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label23
         '
@@ -248,118 +248,118 @@ Partial Class Ringkasan
         '
         Me.lblrm8.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblrm8.AutoSize = True
         Me.lblrm8.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblrm8.Location = New System.Drawing.Point(298, 266)
+        Me.lblrm8.Location = New System.Drawing.Point(254, 268)
         Me.lblrm8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblrm8.Name = "lblrm8"
-        Me.lblrm8.Size = New System.Drawing.Size(68, 13)
+        Me.lblrm8.Size = New System.Drawing.Size(145, 13)
         Me.lblrm8.TabIndex = 47
         Me.lblrm8.Text = "Kelas 12 IPA"
+        Me.lblrm8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblrm7
         '
         Me.lblrm7.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblrm7.AutoSize = True
         Me.lblrm7.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblrm7.Location = New System.Drawing.Point(184, 266)
+        Me.lblrm7.Location = New System.Drawing.Point(130, 268)
         Me.lblrm7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblrm7.Name = "lblrm7"
-        Me.lblrm7.Size = New System.Drawing.Size(48, 13)
+        Me.lblrm7.Size = New System.Drawing.Size(145, 13)
         Me.lblrm7.TabIndex = 46
         Me.lblrm7.Text = "Kelas 11"
+        Me.lblrm7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblrm6
         '
         Me.lblrm6.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblrm6.AutoSize = True
         Me.lblrm6.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblrm6.Location = New System.Drawing.Point(59, 266)
+        Me.lblrm6.Location = New System.Drawing.Point(4, 268)
         Me.lblrm6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblrm6.Name = "lblrm6"
-        Me.lblrm6.Size = New System.Drawing.Size(48, 13)
+        Me.lblrm6.Size = New System.Drawing.Size(145, 13)
         Me.lblrm6.TabIndex = 45
         Me.lblrm6.Text = "Kelas 10"
+        Me.lblrm6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblrm5
         '
         Me.lblrm5.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblrm5.AutoSize = True
         Me.lblrm5.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblrm5.Location = New System.Drawing.Point(310, 179)
+        Me.lblrm5.Location = New System.Drawing.Point(254, 184)
         Me.lblrm5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblrm5.Name = "lblrm5"
-        Me.lblrm5.Size = New System.Drawing.Size(42, 13)
+        Me.lblrm5.Size = New System.Drawing.Size(145, 13)
         Me.lblrm5.TabIndex = 44
         Me.lblrm5.Text = "Kelas 9"
+        Me.lblrm5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblrm4
         '
         Me.lblrm4.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblrm4.AutoSize = True
         Me.lblrm4.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblrm4.Location = New System.Drawing.Point(184, 184)
+        Me.lblrm4.Location = New System.Drawing.Point(129, 184)
         Me.lblrm4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblrm4.Name = "lblrm4"
-        Me.lblrm4.Size = New System.Drawing.Size(42, 13)
+        Me.lblrm4.Size = New System.Drawing.Size(145, 13)
         Me.lblrm4.TabIndex = 43
         Me.lblrm4.Text = "Kelas 8"
+        Me.lblrm4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblrm3
         '
         Me.lblrm3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblrm3.AutoSize = True
         Me.lblrm3.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblrm3.Location = New System.Drawing.Point(59, 184)
+        Me.lblrm3.Location = New System.Drawing.Point(3, 184)
         Me.lblrm3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblrm3.Name = "lblrm3"
-        Me.lblrm3.Size = New System.Drawing.Size(42, 13)
+        Me.lblrm3.Size = New System.Drawing.Size(145, 13)
         Me.lblrm3.TabIndex = 42
         Me.lblrm3.Text = "Kelas 7"
+        Me.lblrm3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblrm2
         '
         Me.lblrm2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblrm2.AutoSize = True
         Me.lblrm2.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblrm2.Location = New System.Drawing.Point(310, 98)
+        Me.lblrm2.Location = New System.Drawing.Point(252, 98)
         Me.lblrm2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblrm2.Name = "lblrm2"
-        Me.lblrm2.Size = New System.Drawing.Size(42, 13)
+        Me.lblrm2.Size = New System.Drawing.Size(145, 13)
         Me.lblrm2.TabIndex = 41
         Me.lblrm2.Text = "Kelas 6"
+        Me.lblrm2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblrm1
         '
         Me.lblrm1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblrm1.AutoSize = True
         Me.lblrm1.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblrm1.Location = New System.Drawing.Point(184, 98)
+        Me.lblrm1.Location = New System.Drawing.Point(128, 98)
         Me.lblrm1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblrm1.Name = "lblrm1"
-        Me.lblrm1.Size = New System.Drawing.Size(42, 13)
+        Me.lblrm1.Size = New System.Drawing.Size(145, 13)
         Me.lblrm1.TabIndex = 40
         Me.lblrm1.Text = "Kelas 5"
+        Me.lblrm1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblrm0
         '
         Me.lblrm0.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblrm0.AutoSize = True
         Me.lblrm0.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblrm0.Location = New System.Drawing.Point(59, 98)
+        Me.lblrm0.Location = New System.Drawing.Point(4, 98)
         Me.lblrm0.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblrm0.Name = "lblrm0"
-        Me.lblrm0.Size = New System.Drawing.Size(42, 13)
+        Me.lblrm0.Size = New System.Drawing.Size(145, 13)
         Me.lblrm0.TabIndex = 39
         Me.lblrm0.Text = "Kelas 4"
+        Me.lblrm0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'btnrm9
         '
@@ -372,7 +372,7 @@ Partial Class Ringkasan
         Me.btnrm9.Location = New System.Drawing.Point(39, 293)
         Me.btnrm9.Margin = New System.Windows.Forms.Padding(2)
         Me.btnrm9.Name = "btnrm9"
-        Me.btnrm9.Size = New System.Drawing.Size(92, 52)
+        Me.btnrm9.Size = New System.Drawing.Size(74, 52)
         Me.btnrm9.TabIndex = 38
         Me.btnrm9.UseVisualStyleBackColor = True
         '
@@ -388,7 +388,7 @@ Partial Class Ringkasan
         Me.btnrm10.Location = New System.Drawing.Point(162, 293)
         Me.btnrm10.Margin = New System.Windows.Forms.Padding(2)
         Me.btnrm10.Name = "btnrm10"
-        Me.btnrm10.Size = New System.Drawing.Size(92, 52)
+        Me.btnrm10.Size = New System.Drawing.Size(74, 52)
         Me.btnrm10.TabIndex = 37
         Me.btnrm10.UseVisualStyleBackColor = True
         '
@@ -403,7 +403,7 @@ Partial Class Ringkasan
         Me.btnrm8.Location = New System.Drawing.Point(286, 211)
         Me.btnrm8.Margin = New System.Windows.Forms.Padding(2)
         Me.btnrm8.Name = "btnrm8"
-        Me.btnrm8.Size = New System.Drawing.Size(92, 52)
+        Me.btnrm8.Size = New System.Drawing.Size(74, 52)
         Me.btnrm8.TabIndex = 36
         Me.btnrm8.UseVisualStyleBackColor = True
         '
@@ -418,7 +418,7 @@ Partial Class Ringkasan
         Me.btnrm6.Location = New System.Drawing.Point(39, 211)
         Me.btnrm6.Margin = New System.Windows.Forms.Padding(2)
         Me.btnrm6.Name = "btnrm6"
-        Me.btnrm6.Size = New System.Drawing.Size(92, 52)
+        Me.btnrm6.Size = New System.Drawing.Size(74, 52)
         Me.btnrm6.TabIndex = 35
         Me.btnrm6.UseVisualStyleBackColor = True
         '
@@ -433,7 +433,7 @@ Partial Class Ringkasan
         Me.btnrm7.Location = New System.Drawing.Point(162, 211)
         Me.btnrm7.Margin = New System.Windows.Forms.Padding(2)
         Me.btnrm7.Name = "btnrm7"
-        Me.btnrm7.Size = New System.Drawing.Size(92, 52)
+        Me.btnrm7.Size = New System.Drawing.Size(74, 52)
         Me.btnrm7.TabIndex = 34
         Me.btnrm7.UseVisualStyleBackColor = True
         '
@@ -448,7 +448,7 @@ Partial Class Ringkasan
         Me.btnrm5.Location = New System.Drawing.Point(286, 124)
         Me.btnrm5.Margin = New System.Windows.Forms.Padding(2)
         Me.btnrm5.Name = "btnrm5"
-        Me.btnrm5.Size = New System.Drawing.Size(92, 52)
+        Me.btnrm5.Size = New System.Drawing.Size(74, 52)
         Me.btnrm5.TabIndex = 33
         Me.btnrm5.UseVisualStyleBackColor = True
         '
@@ -463,7 +463,7 @@ Partial Class Ringkasan
         Me.btnrm3.Location = New System.Drawing.Point(39, 124)
         Me.btnrm3.Margin = New System.Windows.Forms.Padding(2)
         Me.btnrm3.Name = "btnrm3"
-        Me.btnrm3.Size = New System.Drawing.Size(92, 52)
+        Me.btnrm3.Size = New System.Drawing.Size(74, 52)
         Me.btnrm3.TabIndex = 32
         Me.btnrm3.UseVisualStyleBackColor = True
         '
@@ -478,7 +478,7 @@ Partial Class Ringkasan
         Me.btnrm4.Location = New System.Drawing.Point(162, 124)
         Me.btnrm4.Margin = New System.Windows.Forms.Padding(2)
         Me.btnrm4.Name = "btnrm4"
-        Me.btnrm4.Size = New System.Drawing.Size(92, 52)
+        Me.btnrm4.Size = New System.Drawing.Size(74, 52)
         Me.btnrm4.TabIndex = 31
         Me.btnrm4.UseVisualStyleBackColor = True
         '
@@ -493,7 +493,7 @@ Partial Class Ringkasan
         Me.btnrm2.Location = New System.Drawing.Point(286, 43)
         Me.btnrm2.Margin = New System.Windows.Forms.Padding(2)
         Me.btnrm2.Name = "btnrm2"
-        Me.btnrm2.Size = New System.Drawing.Size(92, 52)
+        Me.btnrm2.Size = New System.Drawing.Size(74, 52)
         Me.btnrm2.TabIndex = 30
         Me.btnrm2.UseVisualStyleBackColor = True
         '
@@ -508,7 +508,7 @@ Partial Class Ringkasan
         Me.btnrm0.Location = New System.Drawing.Point(39, 43)
         Me.btnrm0.Margin = New System.Windows.Forms.Padding(2)
         Me.btnrm0.Name = "btnrm0"
-        Me.btnrm0.Size = New System.Drawing.Size(92, 52)
+        Me.btnrm0.Size = New System.Drawing.Size(74, 52)
         Me.btnrm0.TabIndex = 29
         Me.btnrm0.UseVisualStyleBackColor = True
         '
@@ -524,7 +524,7 @@ Partial Class Ringkasan
         Me.btnrm1.Location = New System.Drawing.Point(162, 43)
         Me.btnrm1.Margin = New System.Windows.Forms.Padding(2)
         Me.btnrm1.Name = "btnrm1"
-        Me.btnrm1.Size = New System.Drawing.Size(92, 52)
+        Me.btnrm1.Size = New System.Drawing.Size(74, 52)
         Me.btnrm1.TabIndex = 28
         Me.btnrm1.UseVisualStyleBackColor = True
         '
@@ -602,7 +602,7 @@ Partial Class Ringkasan
         Me.Label26.BackColor = System.Drawing.Color.Transparent
         Me.Label26.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label26.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label26.Location = New System.Drawing.Point(62, 123)
+        Me.Label26.Location = New System.Drawing.Point(22, 123)
         Me.Label26.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label26.Name = "Label26"
         Me.Label26.Size = New System.Drawing.Size(370, 40)
@@ -839,7 +839,7 @@ Partial Class Ringkasan
         Me.Panel3.Location = New System.Drawing.Point(422, 0)
         Me.Panel3.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(723, 747)
+        Me.Panel3.Size = New System.Drawing.Size(722, 747)
         Me.Panel3.TabIndex = 4
         Me.Panel3.Visible = False
         '
