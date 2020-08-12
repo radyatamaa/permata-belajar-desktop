@@ -126,7 +126,6 @@ C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\obj\Debug\A
 C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\obj\Debug\Permata.vbproj.ResolveComReference.cache
 C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\obj\Debug\Permata.Form2.resources
 C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\obj\Debug\Permata.Form3.resources
-C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\obj\Debug\Permata.Form4.resources
 C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\obj\Debug\Permata.IsiRIngkasan.resources
 C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\obj\Debug\Permata.Lainnya.resources
 C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\obj\Debug\Permata.Prestasi.resources
@@ -146,3 +145,4 @@ C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\obj\Debug\P
 C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\obj\Debug\Permata.xml
 C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\obj\Debug\Permata.pdb
 E:\radya\project\pribadi\permata-belajar-desktop\Permata\obj\Debug\Permata.IsiVideo.resources
+C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\obj\Debug\Permata.IsiVideo.resources

@@ -29,11 +29,14 @@ Partial Class IsiVideo
         '
         'videoplay
         '
+        Me.videoplay.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.videoplay.Enabled = True
-        Me.videoplay.Location = New System.Drawing.Point(9, 12)
+        Me.videoplay.Location = New System.Drawing.Point(1, 1)
         Me.videoplay.Name = "videoplay"
         Me.videoplay.OcxState = CType(resources.GetObject("videoplay.OcxState"), System.Windows.Forms.AxHost.State)
-        Me.videoplay.Size = New System.Drawing.Size(1008, 499)
+        Me.videoplay.Size = New System.Drawing.Size(1058, 529)
         Me.videoplay.TabIndex = 0
         '
         'IsiVideo
@@ -41,11 +44,11 @@ Partial Class IsiVideo
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
-        Me.ClientSize = New System.Drawing.Size(1028, 609)
+        Me.ClientSize = New System.Drawing.Size(1060, 532)
         Me.Controls.Add(Me.videoplay)
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "IsiVideo"
-        Me.Text = "Form4"
+        Me.Text = "IsiVideo"
         CType(Me.videoplay, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
