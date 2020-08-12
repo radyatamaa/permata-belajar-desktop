@@ -91,7 +91,7 @@ Partial Class Soal
         Me.Guna2Button2.Image = CType(resources.GetObject("Guna2Button2.Image"), System.Drawing.Image)
         Me.Guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.Guna2Button2.Location = New System.Drawing.Point(108, 176)
-        Me.Guna2Button2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Button2.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Button2.Name = "Guna2Button2"
         Me.Guna2Button2.Padding = New System.Windows.Forms.Padding(11, 0, 0, 0)
         Me.Guna2Button2.ShadowDecoration.Parent = Me.Guna2Button2
@@ -111,7 +111,7 @@ Partial Class Soal
         Me.Panel2.Controls.Add(Me.Label26)
         Me.Panel2.Controls.Add(Me.Label22)
         Me.Panel2.Location = New System.Drawing.Point(2, 0)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(416, 177)
         Me.Panel2.TabIndex = 4
@@ -130,7 +130,7 @@ Partial Class Soal
         Me.Guna2Button7.Image = CType(resources.GetObject("Guna2Button7.Image"), System.Drawing.Image)
         Me.Guna2Button7.ImageSize = New System.Drawing.Size(30, 30)
         Me.Guna2Button7.Location = New System.Drawing.Point(32, 27)
-        Me.Guna2Button7.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Button7.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Button7.Name = "Guna2Button7"
         Me.Guna2Button7.PressedColor = System.Drawing.Color.White
         Me.Guna2Button7.ShadowDecoration.Parent = Me.Guna2Button7
@@ -195,27 +195,27 @@ Partial Class Soal
         '
         Me.Label25.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label25.AutoSize = True
         Me.Label25.Font = New System.Drawing.Font("Ubuntu Condensed", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label25.Location = New System.Drawing.Point(170, 348)
+        Me.Label25.Location = New System.Drawing.Point(126, 348)
         Me.Label25.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(68, 16)
+        Me.Label25.Size = New System.Drawing.Size(145, 13)
         Me.Label25.TabIndex = 50
         Me.Label25.Text = "Tes Masuk PTN" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.Label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label24
         '
         Me.Label24.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label24.AutoSize = True
         Me.Label24.Font = New System.Drawing.Font("Ubuntu Condensed", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label24.Location = New System.Drawing.Point(53, 349)
+        Me.Label24.Location = New System.Drawing.Point(7, 349)
         Me.Label24.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(57, 16)
+        Me.Label24.Size = New System.Drawing.Size(145, 13)
         Me.Label24.TabIndex = 49
         Me.Label24.Text = "Kelas 12 IPS"
+        Me.Label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label23
         '
@@ -232,105 +232,105 @@ Partial Class Soal
         '
         Me.Label11.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Ubuntu Condensed", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(298, 266)
+        Me.Label11.Location = New System.Drawing.Point(250, 266)
         Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(58, 16)
+        Me.Label11.Size = New System.Drawing.Size(145, 13)
         Me.Label11.TabIndex = 47
         Me.Label11.Text = "Kelas 12 IPA"
+        Me.Label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label10
         '
         Me.Label10.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Ubuntu Condensed", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(184, 266)
+        Me.Label10.Location = New System.Drawing.Point(127, 266)
         Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(43, 16)
+        Me.Label10.Size = New System.Drawing.Size(145, 13)
         Me.Label10.TabIndex = 46
         Me.Label10.Text = "Kelas 11"
+        Me.Label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label9
         '
         Me.Label9.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Ubuntu Condensed", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(59, 266)
+        Me.Label9.Location = New System.Drawing.Point(6, 266)
         Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(43, 16)
+        Me.Label9.Size = New System.Drawing.Size(145, 13)
         Me.Label9.TabIndex = 45
         Me.Label9.Text = "Kelas 10"
+        Me.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label8
         '
         Me.Label8.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Ubuntu Condensed", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(310, 179)
+        Me.Label8.Location = New System.Drawing.Point(255, 182)
         Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(38, 16)
+        Me.Label8.Size = New System.Drawing.Size(145, 13)
         Me.Label8.TabIndex = 44
         Me.Label8.Text = "Kelas 9"
+        Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label7
         '
         Me.Label7.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Ubuntu Condensed", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(184, 184)
+        Me.Label7.Location = New System.Drawing.Point(127, 184)
         Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(38, 16)
+        Me.Label7.Size = New System.Drawing.Size(145, 13)
         Me.Label7.TabIndex = 43
         Me.Label7.Text = "Kelas 8"
+        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label6
         '
         Me.Label6.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Ubuntu Condensed", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(59, 184)
+        Me.Label6.Location = New System.Drawing.Point(6, 184)
         Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(38, 16)
+        Me.Label6.Size = New System.Drawing.Size(145, 13)
         Me.Label6.TabIndex = 42
         Me.Label6.Text = "Kelas 7"
+        Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label4
         '
         Me.Label4.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Ubuntu Condensed", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(184, 98)
+        Me.Label4.Location = New System.Drawing.Point(127, 98)
         Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(38, 16)
+        Me.Label4.Size = New System.Drawing.Size(145, 13)
         Me.Label4.TabIndex = 40
         Me.Label4.Text = "Kelas 5"
+        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label3
         '
         Me.Label3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Ubuntu Condensed", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(59, 98)
+        Me.Label3.Location = New System.Drawing.Point(6, 98)
         Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(38, 16)
+        Me.Label3.Size = New System.Drawing.Size(145, 13)
         Me.Label3.TabIndex = 39
         Me.Label3.Text = "Kelas 4"
+        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Button7
         '
@@ -341,9 +341,9 @@ Partial Class Soal
         Me.Button7.FlatAppearance.BorderSize = 0
         Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button7.Location = New System.Drawing.Point(39, 43)
-        Me.Button7.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button7.Margin = New System.Windows.Forms.Padding(2)
         Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(92, 52)
+        Me.Button7.Size = New System.Drawing.Size(74, 52)
         Me.Button7.TabIndex = 29
         Me.Button7.UseVisualStyleBackColor = True
         '
@@ -356,9 +356,9 @@ Partial Class Soal
         Me.Button19.FlatAppearance.BorderSize = 0
         Me.Button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button19.Location = New System.Drawing.Point(39, 293)
-        Me.Button19.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button19.Margin = New System.Windows.Forms.Padding(2)
         Me.Button19.Name = "Button19"
-        Me.Button19.Size = New System.Drawing.Size(92, 52)
+        Me.Button19.Size = New System.Drawing.Size(74, 52)
         Me.Button19.TabIndex = 38
         Me.Button19.UseVisualStyleBackColor = True
         '
@@ -372,9 +372,9 @@ Partial Class Soal
         Me.Button20.FlatAppearance.BorderSize = 0
         Me.Button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button20.Location = New System.Drawing.Point(162, 293)
-        Me.Button20.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button20.Margin = New System.Windows.Forms.Padding(2)
         Me.Button20.Name = "Button20"
-        Me.Button20.Size = New System.Drawing.Size(92, 52)
+        Me.Button20.Size = New System.Drawing.Size(74, 52)
         Me.Button20.TabIndex = 37
         Me.Button20.UseVisualStyleBackColor = True
         '
@@ -387,9 +387,9 @@ Partial Class Soal
         Me.Button13.FlatAppearance.BorderSize = 0
         Me.Button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button13.Location = New System.Drawing.Point(286, 211)
-        Me.Button13.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button13.Margin = New System.Windows.Forms.Padding(2)
         Me.Button13.Name = "Button13"
-        Me.Button13.Size = New System.Drawing.Size(92, 52)
+        Me.Button13.Size = New System.Drawing.Size(74, 52)
         Me.Button13.TabIndex = 36
         Me.Button13.UseVisualStyleBackColor = True
         '
@@ -402,9 +402,9 @@ Partial Class Soal
         Me.Button15.FlatAppearance.BorderSize = 0
         Me.Button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button15.Location = New System.Drawing.Point(39, 211)
-        Me.Button15.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button15.Margin = New System.Windows.Forms.Padding(2)
         Me.Button15.Name = "Button15"
-        Me.Button15.Size = New System.Drawing.Size(92, 52)
+        Me.Button15.Size = New System.Drawing.Size(74, 52)
         Me.Button15.TabIndex = 35
         Me.Button15.UseVisualStyleBackColor = True
         '
@@ -417,9 +417,9 @@ Partial Class Soal
         Me.Button16.FlatAppearance.BorderSize = 0
         Me.Button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button16.Location = New System.Drawing.Point(162, 211)
-        Me.Button16.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button16.Margin = New System.Windows.Forms.Padding(2)
         Me.Button16.Name = "Button16"
-        Me.Button16.Size = New System.Drawing.Size(92, 52)
+        Me.Button16.Size = New System.Drawing.Size(74, 52)
         Me.Button16.TabIndex = 34
         Me.Button16.UseVisualStyleBackColor = True
         '
@@ -432,9 +432,9 @@ Partial Class Soal
         Me.Button9.FlatAppearance.BorderSize = 0
         Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button9.Location = New System.Drawing.Point(286, 124)
-        Me.Button9.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button9.Margin = New System.Windows.Forms.Padding(2)
         Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(92, 52)
+        Me.Button9.Size = New System.Drawing.Size(74, 52)
         Me.Button9.TabIndex = 33
         Me.Button9.UseVisualStyleBackColor = True
         '
@@ -447,9 +447,9 @@ Partial Class Soal
         Me.Button11.FlatAppearance.BorderSize = 0
         Me.Button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button11.Location = New System.Drawing.Point(39, 124)
-        Me.Button11.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button11.Margin = New System.Windows.Forms.Padding(2)
         Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(92, 52)
+        Me.Button11.Size = New System.Drawing.Size(74, 52)
         Me.Button11.TabIndex = 32
         Me.Button11.UseVisualStyleBackColor = True
         '
@@ -462,9 +462,9 @@ Partial Class Soal
         Me.Button12.FlatAppearance.BorderSize = 0
         Me.Button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button12.Location = New System.Drawing.Point(162, 124)
-        Me.Button12.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button12.Margin = New System.Windows.Forms.Padding(2)
         Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(92, 52)
+        Me.Button12.Size = New System.Drawing.Size(74, 52)
         Me.Button12.TabIndex = 31
         Me.Button12.UseVisualStyleBackColor = True
         '
@@ -477,9 +477,9 @@ Partial Class Soal
         Me.Button5.FlatAppearance.BorderSize = 0
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button5.Location = New System.Drawing.Point(286, 43)
-        Me.Button5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button5.Margin = New System.Windows.Forms.Padding(2)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(92, 52)
+        Me.Button5.Size = New System.Drawing.Size(74, 52)
         Me.Button5.TabIndex = 30
         Me.Button5.UseVisualStyleBackColor = True
         '
@@ -495,7 +495,7 @@ Partial Class Soal
         Me.Guna2Button1.Image = CType(resources.GetObject("Guna2Button1.Image"), System.Drawing.Image)
         Me.Guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.Guna2Button1.Location = New System.Drawing.Point(108, 122)
-        Me.Guna2Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Button1.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Button1.Name = "Guna2Button1"
         Me.Guna2Button1.Padding = New System.Windows.Forms.Padding(11, 0, 0, 0)
         Me.Guna2Button1.ShadowDecoration.Parent = Me.Guna2Button1
@@ -508,14 +508,14 @@ Partial Class Soal
         '
         Me.Label5.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Ubuntu Condensed", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(310, 98)
+        Me.Label5.Location = New System.Drawing.Point(253, 98)
         Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(38, 16)
+        Me.Label5.Size = New System.Drawing.Size(145, 13)
         Me.Label5.TabIndex = 41
         Me.Label5.Text = "Kelas 6"
+        Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Button8
         '
@@ -527,9 +527,9 @@ Partial Class Soal
         Me.Button8.FlatAppearance.BorderSize = 0
         Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button8.Location = New System.Drawing.Point(162, 43)
-        Me.Button8.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button8.Margin = New System.Windows.Forms.Padding(2)
         Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(92, 52)
+        Me.Button8.Size = New System.Drawing.Size(74, 52)
         Me.Button8.TabIndex = 28
         Me.Button8.UseVisualStyleBackColor = True
         '
@@ -543,7 +543,7 @@ Partial Class Soal
         Me.Guna2Button8.ForeColor = System.Drawing.Color.Black
         Me.Guna2Button8.HoverState.Parent = Me.Guna2Button8
         Me.Guna2Button8.Location = New System.Drawing.Point(0, 0)
-        Me.Guna2Button8.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Button8.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Button8.Name = "Guna2Button8"
         Me.Guna2Button8.ShadowDecoration.Parent = Me.Guna2Button8
         Me.Guna2Button8.Size = New System.Drawing.Size(242, 73)
@@ -571,7 +571,7 @@ Partial Class Soal
         Me.Panel3.Controls.Add(Me.Guna2Button2)
         Me.Panel3.Controls.Add(Me.Guna2Button1)
         Me.Panel3.Location = New System.Drawing.Point(418, 0)
-        Me.Panel3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(728, 566)
         Me.Panel3.TabIndex = 6
@@ -619,7 +619,7 @@ Partial Class Soal
         Me.Guna2Button10.ForeColor = System.Drawing.Color.Black
         Me.Guna2Button10.HoverState.Parent = Me.Guna2Button10
         Me.Guna2Button10.Location = New System.Drawing.Point(488, 0)
-        Me.Guna2Button10.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Button10.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Button10.Name = "Guna2Button10"
         Me.Guna2Button10.ShadowDecoration.Parent = Me.Guna2Button10
         Me.Guna2Button10.Size = New System.Drawing.Size(239, 73)
@@ -636,7 +636,7 @@ Partial Class Soal
         Me.Guna2Button9.ForeColor = System.Drawing.Color.Black
         Me.Guna2Button9.HoverState.Parent = Me.Guna2Button9
         Me.Guna2Button9.Location = New System.Drawing.Point(237, 0)
-        Me.Guna2Button9.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Button9.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Button9.Name = "Guna2Button9"
         Me.Guna2Button9.ShadowDecoration.Parent = Me.Guna2Button9
         Me.Guna2Button9.Size = New System.Drawing.Size(252, 73)
@@ -721,7 +721,7 @@ Partial Class Soal
         Me.Guna2Button6.Image = CType(resources.GetObject("Guna2Button6.Image"), System.Drawing.Image)
         Me.Guna2Button6.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.Guna2Button6.Location = New System.Drawing.Point(110, 391)
-        Me.Guna2Button6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Button6.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Button6.Name = "Guna2Button6"
         Me.Guna2Button6.Padding = New System.Windows.Forms.Padding(11, 0, 0, 0)
         Me.Guna2Button6.ShadowDecoration.Parent = Me.Guna2Button6
@@ -742,7 +742,7 @@ Partial Class Soal
         Me.Guna2Button5.Image = CType(resources.GetObject("Guna2Button5.Image"), System.Drawing.Image)
         Me.Guna2Button5.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.Guna2Button5.Location = New System.Drawing.Point(110, 336)
-        Me.Guna2Button5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Button5.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Button5.Name = "Guna2Button5"
         Me.Guna2Button5.Padding = New System.Windows.Forms.Padding(11, 0, 0, 0)
         Me.Guna2Button5.ShadowDecoration.Parent = Me.Guna2Button5
@@ -763,7 +763,7 @@ Partial Class Soal
         Me.Guna2Button4.Image = CType(resources.GetObject("Guna2Button4.Image"), System.Drawing.Image)
         Me.Guna2Button4.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.Guna2Button4.Location = New System.Drawing.Point(108, 288)
-        Me.Guna2Button4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Button4.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Button4.Name = "Guna2Button4"
         Me.Guna2Button4.Padding = New System.Windows.Forms.Padding(11, 0, 0, 0)
         Me.Guna2Button4.ShadowDecoration.Parent = Me.Guna2Button4
@@ -784,7 +784,7 @@ Partial Class Soal
         Me.Guna2Button3.Image = CType(resources.GetObject("Guna2Button3.Image"), System.Drawing.Image)
         Me.Guna2Button3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.Guna2Button3.Location = New System.Drawing.Point(108, 230)
-        Me.Guna2Button3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Button3.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Button3.Name = "Guna2Button3"
         Me.Guna2Button3.Padding = New System.Windows.Forms.Padding(11, 0, 0, 0)
         Me.Guna2Button3.ShadowDecoration.Parent = Me.Guna2Button3
@@ -800,7 +800,7 @@ Partial Class Soal
         Me.Panel1.Controls.Add(Me.Panel4)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(418, 566)
         Me.Panel1.TabIndex = 5
@@ -835,7 +835,7 @@ Partial Class Soal
         Me.Panel4.Controls.Add(Me.Button7)
         Me.Panel4.Controls.Add(Me.Button8)
         Me.Panel4.Location = New System.Drawing.Point(2, 176)
-        Me.Panel4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel4.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(418, 390)
         Me.Panel4.TabIndex = 3
@@ -847,7 +847,7 @@ Partial Class Soal
         Me.ClientSize = New System.Drawing.Size(1028, 566)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel1)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Soal"
         Me.Text = "Soal"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
