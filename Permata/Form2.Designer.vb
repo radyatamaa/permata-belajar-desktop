@@ -28,13 +28,23 @@ Partial Class Form2
         Me.Label23 = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.lblvb8 = New System.Windows.Forms.Label()
-        Me.btnvb8 = New System.Windows.Forms.Button()
         Me.lblvb5 = New System.Windows.Forms.Label()
         Me.lblvb4 = New System.Windows.Forms.Label()
         Me.lblvb3 = New System.Windows.Forms.Label()
         Me.lblvb2 = New System.Windows.Forms.Label()
         Me.lblvb1 = New System.Windows.Forms.Label()
         Me.lblvb0 = New System.Windows.Forms.Label()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Pnlvb2 = New System.Windows.Forms.Panel()
+        Me.Pnlvb1 = New System.Windows.Forms.Panel()
+        Me.Pnlvb0 = New System.Windows.Forms.Panel()
+        Me.lblbab2 = New System.Windows.Forms.Label()
+        Me.lblbab1 = New System.Windows.Forms.Label()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnvb8 = New System.Windows.Forms.Button()
         Me.btnvb6 = New System.Windows.Forms.Button()
         Me.btnvb7 = New System.Windows.Forms.Button()
         Me.btnvb5 = New System.Windows.Forms.Button()
@@ -43,30 +53,24 @@ Partial Class Form2
         Me.btnvb2 = New System.Windows.Forms.Button()
         Me.btnvb0 = New System.Windows.Forms.Button()
         Me.btnvb1 = New System.Windows.Forms.Button()
-        Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.Panel7 = New System.Windows.Forms.Panel()
-        Me.video2 = New System.Windows.Forms.WebBrowser()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.video1 = New System.Windows.Forms.WebBrowser()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.video0 = New System.Windows.Forms.WebBrowser()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.lblbab2 = New System.Windows.Forms.Label()
-        Me.lblbab1 = New System.Windows.Forms.Label()
-        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Guna2Button7 = New Guna.UI2.WinForms.Guna2Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label26 = New System.Windows.Forms.Label()
         Me.Label22 = New System.Windows.Forms.Label()
+        Me.btnvideo0 = New Guna.UI2.WinForms.Guna2Button()
+        Me.btnvideo1 = New Guna.UI2.WinForms.Guna2Button()
+        Me.btnvideo2 = New Guna.UI2.WinForms.Guna2Button()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.lblvideo0 = New System.Windows.Forms.Label()
+        Me.lblvideo1 = New System.Windows.Forms.Label()
+        Me.lblvideo2 = New System.Windows.Forms.Label()
         Me.Panel4.SuspendLayout()
         Me.Panel3.SuspendLayout()
-        Me.Panel7.SuspendLayout()
-        Me.Panel6.SuspendLayout()
-        Me.Panel5.SuspendLayout()
+        Me.Pnlvb2.SuspendLayout()
+        Me.Pnlvb1.SuspendLayout()
+        Me.Pnlvb0.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
@@ -152,21 +156,6 @@ Partial Class Form2
         Me.lblvb8.Text = "Sejarah Wajib"
         Me.lblvb8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'btnvb8
-        '
-        Me.btnvb8.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnvb8.BackgroundImage = CType(resources.GetObject("btnvb8.BackgroundImage"), System.Drawing.Image)
-        Me.btnvb8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnvb8.FlatAppearance.BorderSize = 0
-        Me.btnvb8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnvb8.Location = New System.Drawing.Point(286, 270)
-        Me.btnvb8.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnvb8.Name = "btnvb8"
-        Me.btnvb8.Size = New System.Drawing.Size(74, 52)
-        Me.btnvb8.TabIndex = 51
-        Me.btnvb8.UseVisualStyleBackColor = True
-        '
         'lblvb5
         '
         Me.lblvb5.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
@@ -244,6 +233,162 @@ Partial Class Form2
         Me.lblvb0.TabIndex = 39
         Me.lblvb0.Text = "Bahasa Indonesia"
         Me.lblvb0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Panel3
+        '
+        Me.Panel3.Controls.Add(Me.Pnlvb2)
+        Me.Panel3.Controls.Add(Me.Pnlvb1)
+        Me.Panel3.Controls.Add(Me.Pnlvb0)
+        Me.Panel3.Controls.Add(Me.lblbab2)
+        Me.Panel3.Controls.Add(Me.lblbab1)
+        Me.Panel3.Location = New System.Drawing.Point(418, 0)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(2)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(728, 566)
+        Me.Panel3.TabIndex = 4
+        Me.Panel3.Visible = False
+        '
+        'Pnlvb2
+        '
+        Me.Pnlvb2.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Pnlvb2.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Pnlvb2.Controls.Add(Me.lblvideo2)
+        Me.Pnlvb2.Controls.Add(Me.btnvideo2)
+        Me.Pnlvb2.Controls.Add(Me.Button3)
+        Me.Pnlvb2.Location = New System.Drawing.Point(145, 387)
+        Me.Pnlvb2.Margin = New System.Windows.Forms.Padding(2)
+        Me.Pnlvb2.Name = "Pnlvb2"
+        Me.Pnlvb2.Size = New System.Drawing.Size(470, 148)
+        Me.Pnlvb2.TabIndex = 10
+        '
+        'Pnlvb1
+        '
+        Me.Pnlvb1.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Pnlvb1.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Pnlvb1.Controls.Add(Me.lblvideo1)
+        Me.Pnlvb1.Controls.Add(Me.btnvideo1)
+        Me.Pnlvb1.Controls.Add(Me.Button1)
+        Me.Pnlvb1.Location = New System.Drawing.Point(145, 211)
+        Me.Pnlvb1.Margin = New System.Windows.Forms.Padding(2)
+        Me.Pnlvb1.Name = "Pnlvb1"
+        Me.Pnlvb1.Size = New System.Drawing.Size(470, 148)
+        Me.Pnlvb1.TabIndex = 10
+        '
+        'Pnlvb0
+        '
+        Me.Pnlvb0.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Pnlvb0.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Pnlvb0.Controls.Add(Me.lblvideo0)
+        Me.Pnlvb0.Controls.Add(Me.Label3)
+        Me.Pnlvb0.Controls.Add(Me.btnvideo0)
+        Me.Pnlvb0.Controls.Add(Me.Button2)
+        Me.Pnlvb0.Location = New System.Drawing.Point(145, 39)
+        Me.Pnlvb0.Margin = New System.Windows.Forms.Padding(2)
+        Me.Pnlvb0.Name = "Pnlvb0"
+        Me.Pnlvb0.Size = New System.Drawing.Size(470, 148)
+        Me.Pnlvb0.TabIndex = 9
+        '
+        'lblbab2
+        '
+        Me.lblbab2.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lblbab2.BackColor = System.Drawing.Color.LimeGreen
+        Me.lblbab2.Location = New System.Drawing.Point(161, 359)
+        Me.lblbab2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblbab2.Name = "lblbab2"
+        Me.lblbab2.Size = New System.Drawing.Size(26, 30)
+        Me.lblbab2.TabIndex = 7
+        Me.lblbab2.Visible = False
+        '
+        'lblbab1
+        '
+        Me.lblbab1.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.lblbab1.BackColor = System.Drawing.Color.LimeGreen
+        Me.lblbab1.Location = New System.Drawing.Point(161, 186)
+        Me.lblbab1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblbab1.Name = "lblbab1"
+        Me.lblbab1.Size = New System.Drawing.Size(26, 28)
+        Me.lblbab1.TabIndex = 6
+        Me.lblbab1.Visible = False
+        '
+        'Panel1
+        '
+        Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel1.Controls.Add(Me.Panel4)
+        Me.Panel1.Controls.Add(Me.Panel2)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(418, 566)
+        Me.Panel1.TabIndex = 3
+        '
+        'Button3
+        '
+        Me.Button3.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button3.Image = CType(resources.GetObject("Button3.Image"), System.Drawing.Image)
+        Me.Button3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Button3.Location = New System.Drawing.Point(100, 107)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Padding = New System.Windows.Forms.Padding(30, 0, 0, 0)
+        Me.Button3.Size = New System.Drawing.Size(329, 32)
+        Me.Button3.TabIndex = 2
+        Me.Button3.Text = "Uji Pemahaman"
+        Me.Button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button3.UseVisualStyleBackColor = False
+        '
+        'Button1
+        '
+        Me.Button1.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Button1.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
+        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Button1.Location = New System.Drawing.Point(100, 104)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Padding = New System.Windows.Forms.Padding(30, 0, 0, 0)
+        Me.Button1.Size = New System.Drawing.Size(329, 32)
+        Me.Button1.TabIndex = 3
+        Me.Button1.Text = "Uji Pemahaman"
+        Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'Button2
+        '
+        Me.Button2.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Button2.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button2.Image = CType(resources.GetObject("Button2.Image"), System.Drawing.Image)
+        Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Button2.Location = New System.Drawing.Point(100, 106)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Padding = New System.Windows.Forms.Padding(30, 0, 0, 0)
+        Me.Button2.Size = New System.Drawing.Size(329, 32)
+        Me.Button2.TabIndex = 4
+        Me.Button2.Text = "Uji Pemahaman"
+        Me.Button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button2.UseVisualStyleBackColor = False
+        '
+        'btnvb8
+        '
+        Me.btnvb8.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnvb8.BackgroundImage = CType(resources.GetObject("btnvb8.BackgroundImage"), System.Drawing.Image)
+        Me.btnvb8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnvb8.FlatAppearance.BorderSize = 0
+        Me.btnvb8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnvb8.Location = New System.Drawing.Point(286, 270)
+        Me.btnvb8.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnvb8.Name = "btnvb8"
+        Me.btnvb8.Size = New System.Drawing.Size(74, 52)
+        Me.btnvb8.TabIndex = 51
+        Me.btnvb8.UseVisualStyleBackColor = True
         '
         'btnvb6
         '
@@ -367,169 +512,6 @@ Partial Class Form2
         Me.btnvb1.TabIndex = 28
         Me.btnvb1.UseVisualStyleBackColor = True
         '
-        'Panel3
-        '
-        Me.Panel3.Controls.Add(Me.Panel7)
-        Me.Panel3.Controls.Add(Me.Panel6)
-        Me.Panel3.Controls.Add(Me.Panel5)
-        Me.Panel3.Controls.Add(Me.lblbab2)
-        Me.Panel3.Controls.Add(Me.lblbab1)
-        Me.Panel3.Location = New System.Drawing.Point(418, 0)
-        Me.Panel3.Margin = New System.Windows.Forms.Padding(2)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(728, 566)
-        Me.Panel3.TabIndex = 4
-        '
-        'Panel7
-        '
-        Me.Panel7.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Panel7.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Panel7.Controls.Add(Me.video2)
-        Me.Panel7.Controls.Add(Me.Button3)
-        Me.Panel7.Location = New System.Drawing.Point(145, 387)
-        Me.Panel7.Margin = New System.Windows.Forms.Padding(2)
-        Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(470, 148)
-        Me.Panel7.TabIndex = 10
-        '
-        'video2
-        '
-        Me.video2.Location = New System.Drawing.Point(36, 16)
-        Me.video2.Margin = New System.Windows.Forms.Padding(2)
-        Me.video2.MinimumSize = New System.Drawing.Size(15, 16)
-        Me.video2.Name = "video2"
-        Me.video2.Size = New System.Drawing.Size(200, 76)
-        Me.video2.TabIndex = 7
-        '
-        'Button3
-        '
-        Me.Button3.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button3.Image = CType(resources.GetObject("Button3.Image"), System.Drawing.Image)
-        Me.Button3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button3.Location = New System.Drawing.Point(100, 107)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(2)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Padding = New System.Windows.Forms.Padding(30, 0, 0, 0)
-        Me.Button3.Size = New System.Drawing.Size(329, 32)
-        Me.Button3.TabIndex = 2
-        Me.Button3.Text = "Uji Pemahaman"
-        Me.Button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button3.UseVisualStyleBackColor = False
-        '
-        'Panel6
-        '
-        Me.Panel6.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Panel6.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Panel6.Controls.Add(Me.video1)
-        Me.Panel6.Controls.Add(Me.Button1)
-        Me.Panel6.Location = New System.Drawing.Point(145, 211)
-        Me.Panel6.Margin = New System.Windows.Forms.Padding(2)
-        Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(470, 148)
-        Me.Panel6.TabIndex = 10
-        '
-        'video1
-        '
-        Me.video1.Location = New System.Drawing.Point(36, 20)
-        Me.video1.Margin = New System.Windows.Forms.Padding(2)
-        Me.video1.MinimumSize = New System.Drawing.Size(15, 16)
-        Me.video1.Name = "video1"
-        Me.video1.Size = New System.Drawing.Size(200, 76)
-        Me.video1.TabIndex = 6
-        '
-        'Button1
-        '
-        Me.Button1.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Button1.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
-        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button1.Location = New System.Drawing.Point(100, 104)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(2)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Padding = New System.Windows.Forms.Padding(30, 0, 0, 0)
-        Me.Button1.Size = New System.Drawing.Size(329, 32)
-        Me.Button1.TabIndex = 3
-        Me.Button1.Text = "Uji Pemahaman"
-        Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button1.UseVisualStyleBackColor = False
-        '
-        'Panel5
-        '
-        Me.Panel5.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Panel5.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Panel5.Controls.Add(Me.video0)
-        Me.Panel5.Controls.Add(Me.Button2)
-        Me.Panel5.Location = New System.Drawing.Point(145, 39)
-        Me.Panel5.Margin = New System.Windows.Forms.Padding(2)
-        Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(470, 148)
-        Me.Panel5.TabIndex = 9
-        '
-        'video0
-        '
-        Me.video0.Location = New System.Drawing.Point(36, 17)
-        Me.video0.Margin = New System.Windows.Forms.Padding(2)
-        Me.video0.MinimumSize = New System.Drawing.Size(15, 16)
-        Me.video0.Name = "video0"
-        Me.video0.Size = New System.Drawing.Size(200, 76)
-        Me.video0.TabIndex = 5
-        '
-        'Button2
-        '
-        Me.Button2.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Button2.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button2.Image = CType(resources.GetObject("Button2.Image"), System.Drawing.Image)
-        Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button2.Location = New System.Drawing.Point(100, 106)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(2)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Padding = New System.Windows.Forms.Padding(30, 0, 0, 0)
-        Me.Button2.Size = New System.Drawing.Size(329, 32)
-        Me.Button2.TabIndex = 4
-        Me.Button2.Text = "Uji Pemahaman"
-        Me.Button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button2.UseVisualStyleBackColor = False
-        '
-        'lblbab2
-        '
-        Me.lblbab2.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblbab2.BackColor = System.Drawing.Color.LimeGreen
-        Me.lblbab2.Location = New System.Drawing.Point(161, 359)
-        Me.lblbab2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.lblbab2.Name = "lblbab2"
-        Me.lblbab2.Size = New System.Drawing.Size(26, 30)
-        Me.lblbab2.TabIndex = 7
-        Me.lblbab2.Visible = False
-        '
-        'lblbab1
-        '
-        Me.lblbab1.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.lblbab1.BackColor = System.Drawing.Color.LimeGreen
-        Me.lblbab1.Location = New System.Drawing.Point(161, 186)
-        Me.lblbab1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.lblbab1.Name = "lblbab1"
-        Me.lblbab1.Size = New System.Drawing.Size(26, 28)
-        Me.lblbab1.TabIndex = 6
-        Me.lblbab1.Visible = False
-        '
-        'Panel1
-        '
-        Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Panel1.Controls.Add(Me.Panel4)
-        Me.Panel1.Controls.Add(Me.Panel2)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(418, 566)
-        Me.Panel1.TabIndex = 3
-        '
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.SystemColors.ActiveCaption
@@ -621,6 +603,96 @@ Partial Class Form2
         Me.Label22.Size = New System.Drawing.Size(400, 2)
         Me.Label22.TabIndex = 3
         '
+        'btnvideo0
+        '
+        Me.btnvideo0.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.btnvideo0.CheckedState.Parent = Me.btnvideo0
+        Me.btnvideo0.CustomImages.Parent = Me.btnvideo0
+        Me.btnvideo0.FillColor = System.Drawing.Color.White
+        Me.btnvideo0.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.btnvideo0.ForeColor = System.Drawing.Color.White
+        Me.btnvideo0.HoverState.Parent = Me.btnvideo0
+        Me.btnvideo0.Image = Global.Permata.My.Resources.Resources.ringkasan
+        Me.btnvideo0.ImageSize = New System.Drawing.Size(180, 125)
+        Me.btnvideo0.Location = New System.Drawing.Point(2, 0)
+        Me.btnvideo0.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnvideo0.Name = "btnvideo0"
+        Me.btnvideo0.ShadowDecoration.Parent = Me.btnvideo0
+        Me.btnvideo0.Size = New System.Drawing.Size(212, 102)
+        Me.btnvideo0.TabIndex = 11
+        '
+        'btnvideo1
+        '
+        Me.btnvideo1.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.btnvideo1.CheckedState.Parent = Me.btnvideo1
+        Me.btnvideo1.CustomImages.Parent = Me.btnvideo1
+        Me.btnvideo1.FillColor = System.Drawing.Color.White
+        Me.btnvideo1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.btnvideo1.ForeColor = System.Drawing.Color.White
+        Me.btnvideo1.HoverState.Parent = Me.btnvideo1
+        Me.btnvideo1.Image = Global.Permata.My.Resources.Resources.ringkasan
+        Me.btnvideo1.ImageSize = New System.Drawing.Size(180, 125)
+        Me.btnvideo1.Location = New System.Drawing.Point(2, 5)
+        Me.btnvideo1.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnvideo1.Name = "btnvideo1"
+        Me.btnvideo1.ShadowDecoration.Parent = Me.btnvideo1
+        Me.btnvideo1.Size = New System.Drawing.Size(212, 102)
+        Me.btnvideo1.TabIndex = 12
+        '
+        'btnvideo2
+        '
+        Me.btnvideo2.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.btnvideo2.CheckedState.Parent = Me.btnvideo2
+        Me.btnvideo2.CustomImages.Parent = Me.btnvideo2
+        Me.btnvideo2.FillColor = System.Drawing.Color.White
+        Me.btnvideo2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.btnvideo2.ForeColor = System.Drawing.Color.White
+        Me.btnvideo2.HoverState.Parent = Me.btnvideo2
+        Me.btnvideo2.Image = Global.Permata.My.Resources.Resources.ringkasan
+        Me.btnvideo2.ImageSize = New System.Drawing.Size(180, 125)
+        Me.btnvideo2.Location = New System.Drawing.Point(2, 4)
+        Me.btnvideo2.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnvideo2.Name = "btnvideo2"
+        Me.btnvideo2.ShadowDecoration.Parent = Me.btnvideo2
+        Me.btnvideo2.Size = New System.Drawing.Size(212, 102)
+        Me.btnvideo2.TabIndex = 12
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(221, -61)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(39, 13)
+        Me.Label3.TabIndex = 12
+        Me.Label3.Text = "Label3"
+        '
+        'lblvideo0
+        '
+        Me.lblvideo0.AutoSize = True
+        Me.lblvideo0.Location = New System.Drawing.Point(302, 47)
+        Me.lblvideo0.Name = "lblvideo0"
+        Me.lblvideo0.Size = New System.Drawing.Size(39, 13)
+        Me.lblvideo0.TabIndex = 13
+        Me.lblvideo0.Text = "Label4"
+        '
+        'lblvideo1
+        '
+        Me.lblvideo1.AutoSize = True
+        Me.lblvideo1.Location = New System.Drawing.Point(302, 47)
+        Me.lblvideo1.Name = "lblvideo1"
+        Me.lblvideo1.Size = New System.Drawing.Size(39, 13)
+        Me.lblvideo1.TabIndex = 14
+        Me.lblvideo1.Text = "Label5"
+        '
+        'lblvideo2
+        '
+        Me.lblvideo2.AutoSize = True
+        Me.lblvideo2.Location = New System.Drawing.Point(302, 59)
+        Me.lblvideo2.Name = "lblvideo2"
+        Me.lblvideo2.Size = New System.Drawing.Size(39, 13)
+        Me.lblvideo2.TabIndex = 15
+        Me.lblvideo2.Text = "Label6"
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -636,9 +708,12 @@ Partial Class Form2
         Me.Panel4.ResumeLayout(False)
         Me.Panel4.PerformLayout()
         Me.Panel3.ResumeLayout(False)
-        Me.Panel7.ResumeLayout(False)
-        Me.Panel6.ResumeLayout(False)
-        Me.Panel5.ResumeLayout(False)
+        Me.Pnlvb2.ResumeLayout(False)
+        Me.Pnlvb2.PerformLayout()
+        Me.Pnlvb1.ResumeLayout(False)
+        Me.Pnlvb1.PerformLayout()
+        Me.Pnlvb0.ResumeLayout(False)
+        Me.Pnlvb0.PerformLayout()
         Me.Panel1.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
@@ -674,15 +749,19 @@ Partial Class Form2
     Friend WithEvents lblbab2 As Label
     Friend WithEvents lblbab1 As Label
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents Panel7 As Panel
+    Friend WithEvents Pnlvb2 As Panel
     Friend WithEvents Button3 As Button
-    Friend WithEvents Panel6 As Panel
+    Friend WithEvents Pnlvb1 As Panel
     Friend WithEvents Button1 As Button
-    Friend WithEvents Panel5 As Panel
+    Friend WithEvents Pnlvb0 As Panel
     Friend WithEvents Button2 As Button
-    Friend WithEvents video2 As WebBrowser
-    Friend WithEvents video1 As WebBrowser
-    Friend WithEvents video0 As WebBrowser
     Friend WithEvents btnvb8 As Button
     Friend WithEvents lblvb8 As Label
+    Friend WithEvents btnvideo2 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents btnvideo1 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents lblvideo0 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents btnvideo0 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents lblvideo2 As Label
+    Friend WithEvents lblvideo1 As Label
 End Class

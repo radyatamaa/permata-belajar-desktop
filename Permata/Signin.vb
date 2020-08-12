@@ -88,4 +88,8 @@ Public Class Signin
             Guna2Button5.Text = "Hide"
         End If
     End Sub
+
+    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
+        System.Diagnostics.Process.Start("https://permatabelajar.com/registrasi")
+    End Sub
 End Class
