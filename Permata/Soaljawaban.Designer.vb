@@ -331,7 +331,7 @@ Partial Class Soaljawaban
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "Soaljawaban"
-        Me.Text = "Soaljawaban"
+        Me.Text = "Soal dan Jawaban"
         Me.Panel2.ResumeLayout(False)
         Me.Panel9.ResumeLayout(False)
         Me.Panel5.ResumeLayout(False)

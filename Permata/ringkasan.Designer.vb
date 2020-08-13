@@ -117,8 +117,6 @@ Partial Class Ringkasan
         Me.btntpk2 = New System.Windows.Forms.Button()
         Me.btntpk1 = New System.Windows.Forms.Button()
         Me.btntpk0 = New System.Windows.Forms.Button()
-        Me.Panel8 = New System.Windows.Forms.Panel()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -129,20 +127,18 @@ Partial Class Ringkasan
         Me.drop2.SuspendLayout()
         Me.drop1.SuspendLayout()
         Me.drop0.SuspendLayout()
-        Me.Panel8.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
         '
-        Me.Panel1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Panel1.Controls.Add(Me.Panel4)
         Me.Panel1.Controls.Add(Me.Panel2)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(557, 950)
+        Me.Panel1.Size = New System.Drawing.Size(557, 919)
         Me.Panel1.TabIndex = 0
         '
         'Panel4
@@ -179,7 +175,7 @@ Partial Class Ringkasan
         Me.Panel4.Location = New System.Drawing.Point(0, 217)
         Me.Panel4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(557, 731)
+        Me.Panel4.Size = New System.Drawing.Size(557, 700)
         Me.Panel4.TabIndex = 2
         '
         'lblrm11
@@ -808,7 +804,7 @@ Partial Class Ringkasan
         Me.Panel3.Location = New System.Drawing.Point(563, 0)
         Me.Panel3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(1314, 950)
+        Me.Panel3.Size = New System.Drawing.Size(963, 919)
         Me.Panel3.TabIndex = 4
         Me.Panel3.Visible = False
         '
@@ -1322,35 +1318,12 @@ Partial Class Ringkasan
         Me.btntpk0.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btntpk0.UseVisualStyleBackColor = False
         '
-        'Panel8
-        '
-        Me.Panel8.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Panel8.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Panel8.Controls.Add(Me.Label3)
-        Me.Panel8.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Panel8.Location = New System.Drawing.Point(0, 955)
-        Me.Panel8.Name = "Panel8"
-        Me.Panel8.Size = New System.Drawing.Size(1902, 78)
-        Me.Panel8.TabIndex = 41
-        '
-        'Label3
-        '
-        Me.Label3.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(491, 25)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(1006, 23)
-        Me.Label3.TabIndex = 0
-        Me.Label3.Text = "Suupport@permatabelajar.com, Phone/Whatsapp: 0811811306,"
-        '
         'Ringkasan
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
-        Me.ClientSize = New System.Drawing.Size(1902, 1033)
-        Me.Controls.Add(Me.Panel8)
+        Me.ClientSize = New System.Drawing.Size(1551, 755)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
@@ -1371,7 +1344,6 @@ Partial Class Ringkasan
         Me.drop2.ResumeLayout(False)
         Me.drop1.ResumeLayout(False)
         Me.drop0.ResumeLayout(False)
-        Me.Panel8.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1470,6 +1442,4 @@ Partial Class Ringkasan
     Friend WithEvents btndrop25 As Button
     Friend WithEvents btndrop15 As Button
     Friend WithEvents btndrop05 As Button
-    Friend WithEvents Panel8 As Panel
-    Friend WithEvents Label3 As Label
 End Class
