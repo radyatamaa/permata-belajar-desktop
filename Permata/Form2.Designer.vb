@@ -385,7 +385,6 @@ Partial Class Form2
         '
         'Pnlvb2
         '
-        Me.Pnlvb2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Pnlvb2.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Pnlvb2.Controls.Add(Me.lblvideo2)
         Me.Pnlvb2.Controls.Add(Me.btnvideo2)
@@ -442,7 +441,6 @@ Partial Class Form2
         '
         'Pnlvb1
         '
-        Me.Pnlvb1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Pnlvb1.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Pnlvb1.Controls.Add(Me.lblvideo1)
         Me.Pnlvb1.Controls.Add(Me.btnvideo1)
@@ -500,7 +498,6 @@ Partial Class Form2
         '
         'Pnlvb0
         '
-        Me.Pnlvb0.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Pnlvb0.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Pnlvb0.Controls.Add(Me.lblvideo0)
         Me.Pnlvb0.Controls.Add(Me.Label3)
