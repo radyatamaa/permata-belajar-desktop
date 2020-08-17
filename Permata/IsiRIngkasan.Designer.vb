@@ -67,7 +67,7 @@ Partial Class IsiRIngkasan
         Me.AutoScroll = True
         Me.AutoSize = True
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.ClientSize = New System.Drawing.Size(1924, 740)
+        Me.ClientSize = New System.Drawing.Size(1282, 740)
         Me.Controls.Add(Me.Guna2Button7)
         Me.Controls.Add(Me.PictureBox0)
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
