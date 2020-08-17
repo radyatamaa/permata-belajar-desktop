@@ -830,7 +830,7 @@ Partial Class MenuUtama
         Me.Panel7.Controls.Add(Me.btnfeature0)
         Me.Panel7.Controls.Add(Me.btnfeature2)
         Me.Panel7.Controls.Add(Me.btnfeature1)
-        Me.Panel7.Location = New System.Drawing.Point(3, 219)
+        Me.Panel7.Location = New System.Drawing.Point(3, 256)
         Me.Panel7.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel7.Name = "Panel7"
         Me.Panel7.Size = New System.Drawing.Size(615, 197)
@@ -982,10 +982,10 @@ Partial Class MenuUtama
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel6.Controls.Add(Me.Guna2PictureBox2)
-        Me.Panel6.Location = New System.Drawing.Point(3, 2)
+        Me.Panel6.Location = New System.Drawing.Point(3, 1)
         Me.Panel6.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(611, 213)
+        Me.Panel6.Size = New System.Drawing.Size(615, 251)
         Me.Panel6.TabIndex = 1
         '
         'Guna2PictureBox2
@@ -995,14 +995,14 @@ Partial Class MenuUtama
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Guna2PictureBox2.AutoRoundedCorners = True
         Me.Guna2PictureBox2.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2PictureBox2.BorderRadius = 91
+        Me.Guna2PictureBox2.BorderRadius = 84
         Me.Guna2PictureBox2.Image = CType(resources.GetObject("Guna2PictureBox2.Image"), System.Drawing.Image)
-        Me.Guna2PictureBox2.Location = New System.Drawing.Point(38, 10)
+        Me.Guna2PictureBox2.Location = New System.Drawing.Point(83, 16)
         Me.Guna2PictureBox2.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
         Me.Guna2PictureBox2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
         Me.Guna2PictureBox2.ShadowDecoration.Parent = Me.Guna2PictureBox2
-        Me.Guna2PictureBox2.Size = New System.Drawing.Size(545, 184)
+        Me.Guna2PictureBox2.Size = New System.Drawing.Size(463, 170)
         Me.Guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.Guna2PictureBox2.TabIndex = 0
         Me.Guna2PictureBox2.TabStop = False
