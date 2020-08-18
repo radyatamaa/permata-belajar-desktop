@@ -30,8 +30,7 @@ Partial Class IsiRIngkasan
         '
         'PictureBox0
         '
-        Me.PictureBox0.Location = New System.Drawing.Point(3, 1)
-        Me.PictureBox0.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox0.Location = New System.Drawing.Point(2, 1)
         Me.PictureBox0.Name = "PictureBox0"
         Me.PictureBox0.Size = New System.Drawing.Size(197, 58)
         Me.PictureBox0.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -42,7 +41,7 @@ Partial Class IsiRIngkasan
         '
         Me.Guna2Button7.AutoRoundedCorners = True
         Me.Guna2Button7.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2Button7.BorderRadius = 34
+        Me.Guna2Button7.BorderRadius = 25
         Me.Guna2Button7.CheckedState.Parent = Me.Guna2Button7
         Me.Guna2Button7.CustomImages.Parent = Me.Guna2Button7
         Me.Guna2Button7.FillColor = System.Drawing.Color.Transparent
@@ -51,26 +50,25 @@ Partial Class IsiRIngkasan
         Me.Guna2Button7.HoverState.Parent = Me.Guna2Button7
         Me.Guna2Button7.Image = CType(resources.GetObject("Guna2Button7.Image"), System.Drawing.Image)
         Me.Guna2Button7.ImageSize = New System.Drawing.Size(30, 30)
-        Me.Guna2Button7.Location = New System.Drawing.Point(3, 1)
-        Me.Guna2Button7.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Guna2Button7.Location = New System.Drawing.Point(2, 1)
+        Me.Guna2Button7.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Guna2Button7.Name = "Guna2Button7"
         Me.Guna2Button7.PressedColor = System.Drawing.Color.White
         Me.Guna2Button7.ShadowDecoration.Parent = Me.Guna2Button7
-        Me.Guna2Button7.Size = New System.Drawing.Size(71, 71)
+        Me.Guna2Button7.Size = New System.Drawing.Size(53, 58)
         Me.Guna2Button7.TabIndex = 55
         Me.Guna2Button7.UseTransparentBackground = True
         '
         'IsiRIngkasan
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
-        Me.AutoSize = True
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.ClientSize = New System.Drawing.Size(1282, 740)
+        Me.ClientSize = New System.Drawing.Size(884, 601)
         Me.Controls.Add(Me.Guna2Button7)
         Me.Controls.Add(Me.PictureBox0)
-        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "IsiRIngkasan"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "IsiRIngkasan"
