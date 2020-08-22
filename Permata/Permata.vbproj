@@ -155,6 +155,8 @@
     <Compile Include="Model\RingkasanMateriTopik.vb" />
     <Compile Include="Model\RingkasanMateriTopikResponse.vb" />
     <Compile Include="Model\SemesterResponse.vb" />
+    <Compile Include="Model\SoalTopik.vb" />
+    <Compile Include="Model\SoalTopikResponse.vb" />
     <Compile Include="Model\VideoTopik.vb" />
     <Compile Include="Model\VideoTopikResponse.vb" />
     <Compile Include="Prestasi.Designer.vb">

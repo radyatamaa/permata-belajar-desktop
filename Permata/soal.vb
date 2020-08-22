@@ -92,6 +92,93 @@ Public Class Soal
         End Try
         Return result
     End Function
+    Public Function GetTopik(idContent As Integer, idPelanggan As String) As List(Of SoalTopik)
+        Dim result As New List(Of SoalTopik)
+        Dim request = New With
+       {
+            .id_content = idContent,
+            .id_pelanggan = idPelanggan
+        }
+
+        Dim myrequest As HttpWebRequest = HttpWebRequest.Create("https://api.permatamall.com/api/v2/belajar/home/soal/topik-belajar")
+        myrequest.Method = "POST"
+        myrequest.Headers.Add("Authorization", "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjMsImlhdCI6MTU5NTI5ODMwN30.i4GWwTPyp853fcwO4f71qJTmQzu06qcSrh2_vw71tYE")
+        'myrequest.Headers("content-type") = "application/json"
+        myrequest.ContentType = "application/json"
+        Dim reqString = JsonConvert.SerializeObject(request, Formatting.Indented)
+        myrequest.ContentLength = reqString.Length
+        myrequest.CookieContainer = New CookieContainer()
+
+        ' Post to the login form.
+        Dim swRequestWriter As StreamWriter = New StreamWriter(myrequest.GetRequestStream())
+        swRequestWriter.Write(reqString)
+        swRequestWriter.Close()
+
+        'myrequest.Timeout = reqtimeout
+        Try
+            Dim resp As System.Net.HttpWebResponse = myrequest.GetResponse()
+            Dim sr As New System.IO.StreamReader(resp.GetResponseStream())
+            Dim response = sr.ReadToEnd()
+            Dim responseConvert = JsonConvert.DeserializeObject(Of SoalTopikResponse)(response)
+            For Each item As SoalTopik In responseConvert.Data
+                Dim videoTopik As New SoalTopik
+                With videoTopik
+                    .Id_Content = item.Id_Content
+                    .Topik = item.Topik
+                    .Limit = item.Limit
+                    .Sort = item.Sort
+                    .Free = item.Free
+                    .Available = item.Available
+                    .Title = item.Title
+                End With
+                result.Add(videoTopik)
+                'Do something with "item" here
+            Next
+            sr.Close()
+        Catch ex As WebException
+            If ex.Status = WebExceptionStatus.Timeout Then
+                'result = "Error: The request has timed out"
+            Else
+                'result = "Error: " + ex.Message
+            End If
+        End Try
+        Return result
+    End Function
+    Public Function SubmitSoal(idContent As Integer, IdPelanggan As String)
+        Dim baseUrl As String = "https://api.permatamall.com/api/v2/belajar/home/soal/submit/request"
+        Dim request = New With
+       {
+            .id_content = idContent,
+            .id_pelanggan = IdPelanggan
+        }
+        Dim myrequest As HttpWebRequest = HttpWebRequest.Create(baseUrl)
+        myrequest.Method = "POST"
+        myrequest.Headers.Add("Authorization", "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjMsImlhdCI6MTU5NTI5ODMwN30.i4GWwTPyp853fcwO4f71qJTmQzu06qcSrh2_vw71tYE")
+        'myrequest.Timeout = reqtimeout
+        myrequest.ContentType = "application/json"
+        Dim reqString = JsonConvert.SerializeObject(request, Formatting.Indented)
+        myrequest.ContentLength = reqString.Length
+        myrequest.CookieContainer = New CookieContainer()
+
+        ' Post to the login form.
+        Dim swRequestWriter As StreamWriter = New StreamWriter(myrequest.GetRequestStream())
+        swRequestWriter.Write(reqString)
+        swRequestWriter.Close()
+
+        Try
+            Dim resp As System.Net.HttpWebResponse = myrequest.GetResponse()
+            Dim sr As New System.IO.StreamReader(resp.GetResponseStream())
+            Dim response = sr.ReadToEnd()
+            sr.Close()
+        Catch ex As WebException
+            If ex.Status = WebExceptionStatus.Timeout Then
+                'result = "Error: The request has timed out"
+            Else
+                'result = "Error: " + ex.Message
+            End If
+        End Try
+
+    End Function
     Public Function ShowSoal(idKelas As Integer, idFeature As Integer, idJurusan As Integer)
         Dim materiPelajaran As List(Of RingkasanMataPelajaran) = GetMatapelajaranSoal(idKelas, idFeature, idJurusan)
         Dim lastIndex As Integer = 0
@@ -147,12 +234,75 @@ Public Class Soal
         Dim topik As List(Of DataSemester) = GetSemester(idKelas, idFeature, idJurusan, idbidangStudi)
         Dim lastIndex As Integer = 0
         Dim lastIndexDrop As New List(Of Integer)
+        For i As Integer = 0 To 2
+            Dim tpkButton As Control() = Me.Controls.Find("btnsmstr" + i.ToString(), True)
+
+            Try
+
+                tpkButton.FirstOrDefault().Text = topik(i).Semester
+                tpkButton.FirstOrDefault().Tag = topik(i).Id_Content
+                tpkButton.FirstOrDefault().Show()
+                lastIndex = lastIndex + 1
+                'For idrop As Integer = 0 To 4
+                '    Dim dtopButton As Control() = Me.Controls.Find("btndrop" + idrop.ToString() + i.ToString(), True)
+                '    dtopButton.FirstOrDefault().Text = topik(i).File(idrop).Title
+                '    Dim anonymousEvent = New With
+                '    {
+                '        .Id_Ringkasan_Materi = topik(i).File(idrop).Id_Ringkasan_Materi,
+                '        .Id_Bidang_studi = idbidangStudi
+                '        }
+
+                '    dtopButton.FirstOrDefault().Tag = anonymousEvent
+                '    dtopButton.FirstOrDefault().Show()
+                '    Dim last = idrop + 1
+                '    lastIndexDrop.Add(last)
+
+                'Next idrop
+            Catch ex As Exception
+
+            End Try
+
+        Next i
+
+        Dim test As Integer = (lastIndex + 2)
+        For i As Integer = (lastIndex) To 2
+            Dim kelasButton As Control() = Me.Controls.Find("btnsmstr" + i.ToString(), True)
+
+            kelasButton.FirstOrDefault().Hide()
+
+        Next i
+
+        'For i As Integer = 0 To 5
+        '    For Each item As Integer In lastIndexDrop
+        '        For idRop As Integer = item To 4
+        '            Dim dtopButton As Control() = Me.Controls.Find("btndrop" + idRop.ToString() + i.ToString(), True)
+        '            dtopButton.FirstOrDefault().Hide()
+        '        Next idRop
+        '    Next item
+        'Next i
+
+        If topik.Count = 0 Then
+            For i As Integer = 0 To 2
+
+                Dim kelasButton As Control() = Me.Controls.Find("btnsmstr" + i.ToString(), True)
+
+
+                kelasButton.FirstOrDefault().Hide()
+
+
+            Next i
+        End If
+    End Function
+    Public Function ShowSoalTopik(idContent As Integer, idPelanggan As String)
+        Dim topik As List(Of SoalTopik) = GetTopik(idContent, idPelanggan)
+        Dim lastIndex As Integer = 0
+        Dim lastIndexDrop As New List(Of Integer)
         For i As Integer = 0 To 5
             Dim tpkButton As Control() = Me.Controls.Find("btntpk" + i.ToString(), True)
 
             Try
 
-                tpkButton.FirstOrDefault().Text = topik(i).Semester
+                tpkButton.FirstOrDefault().Text = topik(i).Title
                 tpkButton.FirstOrDefault().Tag = topik(i).Id_Content
                 tpkButton.FirstOrDefault().Show()
                 lastIndex = lastIndex + 1
@@ -206,13 +356,17 @@ Public Class Soal
             Next i
         End If
     End Function
-    Private Sub Guna2Button9_Click(sender As Object, e As EventArgs) Handles Guna2Button9.Click
 
+
+    Private Sub Guna2Button9_Click(sender As Object, e As EventArgs) Handles btnsmstr1.Click
+        ShowSoalTopik(btnsmstr1.Tag, Me.Label1.Tag)
+        Panel3.Visible = True
     End Sub
 
     Private Sub Guna2Button7_Click(sender As Object, e As EventArgs) Handles Guna2Button7.Click
         MenuUtama.Show()
         MenuUtama.Panel5.Visible = False
+        Panel5.Visible = False
         Panel3.Visible = False
         Me.Hide()
     End Sub
@@ -222,91 +376,133 @@ Public Class Soal
     End Sub
 
     Private Sub Guna2Button3_Click(sender As Object, e As EventArgs) Handles btntpk2.Click
+        Soaljawaban.Show()
 
+        SubmitSoal(btntpk2.Tag, Me.Label1.Tag)
+        Me.Hide()
     End Sub
 
     Private Sub btnsl8_Click(sender As Object, e As EventArgs) Handles btnsl8.Click
         '0 = id jurusan , Integer.Parse(Me.Label2.Tag = idFeature , Integer.Parse(Me.Label26.Tag) = id kelas
         'Me.btnrm3.Tag = id bidang studi,Me.Label1.Tag = id Pelanggan
         ShowSemester(Integer.Parse(Me.Label26.Tag), Integer.Parse(Me.Label2.Tag), 0, Me.btnsl8.Tag)
-        Panel3.Visible = True
+        Panel5.Visible = True
     End Sub
 
     Private Sub btnsl0_Click(sender As Object, e As EventArgs) Handles btnsl0.Click
         '0 = id jurusan , Integer.Parse(Me.Label2.Tag = idFeature , Integer.Parse(Me.Label26.Tag) = id kelas
         'Me.btnrm3.Tag = id bidang studi,Me.Label1.Tag = id Pelanggan
         ShowSemester(Integer.Parse(Me.Label26.Tag), Integer.Parse(Me.Label2.Tag), 0, Me.btnsl0.Tag)
-        Panel3.Visible = True
+        Panel5.Visible = True
     End Sub
 
     Private Sub btnsl1_Click(sender As Object, e As EventArgs) Handles btnsl1.Click
         '0 = id jurusan , Integer.Parse(Me.Label2.Tag = idFeature , Integer.Parse(Me.Label26.Tag) = id kelas
         'Me.btnrm3.Tag = id bidang studi,Me.Label1.Tag = id Pelanggan
         ShowSemester(Integer.Parse(Me.Label26.Tag), Integer.Parse(Me.Label2.Tag), 0, Me.btnsl1.Tag)
-        Panel3.Visible = True
+        Panel5.Visible = True
     End Sub
 
     Private Sub btnsl2_Click(sender As Object, e As EventArgs) Handles btnsl2.Click
         '0 = id jurusan , Integer.Parse(Me.Label2.Tag = idFeature , Integer.Parse(Me.Label26.Tag) = id kelas
         'Me.btnrm3.Tag = id bidang studi,Me.Label1.Tag = id Pelanggan
         ShowSemester(Integer.Parse(Me.Label26.Tag), Integer.Parse(Me.Label2.Tag), 0, Me.btnsl2.Tag)
-        Panel3.Visible = True
+        Panel5.Visible = True
     End Sub
 
     Private Sub btnsl3_Click(sender As Object, e As EventArgs) Handles btnsl3.Click
         '0 = id jurusan , Integer.Parse(Me.Label2.Tag = idFeature , Integer.Parse(Me.Label26.Tag) = id kelas
         'Me.btnrm3.Tag = id bidang studi,Me.Label1.Tag = id Pelanggan
         ShowSemester(Integer.Parse(Me.Label26.Tag), Integer.Parse(Me.Label2.Tag), 0, Me.btnsl3.Tag)
-        Panel3.Visible = True
+        Panel5.Visible = True
     End Sub
 
     Private Sub btnsl4_Click(sender As Object, e As EventArgs) Handles btnsl4.Click
         '0 = id jurusan , Integer.Parse(Me.Label2.Tag = idFeature , Integer.Parse(Me.Label26.Tag) = id kelas
         'Me.btnrm3.Tag = id bidang studi,Me.Label1.Tag = id Pelanggan
         ShowSemester(Integer.Parse(Me.Label26.Tag), Integer.Parse(Me.Label2.Tag), 0, Me.btnsl4.Tag)
-        Panel3.Visible = True
+        Panel5.Visible = True
     End Sub
 
     Private Sub btnsl5_Click(sender As Object, e As EventArgs) Handles btnsl5.Click
         '0 = id jurusan , Integer.Parse(Me.Label2.Tag = idFeature , Integer.Parse(Me.Label26.Tag) = id kelas
         'Me.btnrm3.Tag = id bidang studi,Me.Label1.Tag = id Pelanggan
         ShowSemester(Integer.Parse(Me.Label26.Tag), Integer.Parse(Me.Label2.Tag), 0, Me.btnsl5.Tag)
-        Panel3.Visible = True
+        Panel5.Visible = True
     End Sub
 
     Private Sub btnsl6_Click(sender As Object, e As EventArgs) Handles btnsl6.Click
         '0 = id jurusan , Integer.Parse(Me.Label2.Tag = idFeature , Integer.Parse(Me.Label26.Tag) = id kelas
         'Me.btnrm3.Tag = id bidang studi,Me.Label1.Tag = id Pelanggan
         ShowSemester(Integer.Parse(Me.Label26.Tag), Integer.Parse(Me.Label2.Tag), 0, Me.btnsl6.Tag)
-        Panel3.Visible = True
+        Panel5.Visible = True
     End Sub
 
     Private Sub btnsl7_Click(sender As Object, e As EventArgs) Handles btnsl7.Click
         '0 = id jurusan , Integer.Parse(Me.Label2.Tag = idFeature , Integer.Parse(Me.Label26.Tag) = id kelas
         'Me.btnrm3.Tag = id bidang studi,Me.Label1.Tag = id Pelanggan
         ShowSemester(Integer.Parse(Me.Label26.Tag), Integer.Parse(Me.Label2.Tag), 0, Me.btnsl7.Tag)
-        Panel3.Visible = True
+        Panel5.Visible = True
     End Sub
 
     Private Sub btnsl9_Click(sender As Object, e As EventArgs) Handles btnsl9.Click
         '0 = id jurusan , Integer.Parse(Me.Label2.Tag = idFeature , Integer.Parse(Me.Label26.Tag) = id kelas
         'Me.btnrm3.Tag = id bidang studi,Me.Label1.Tag = id Pelanggan
         ShowSemester(Integer.Parse(Me.Label26.Tag), Integer.Parse(Me.Label2.Tag), 0, Me.btnsl9.Tag)
-        Panel3.Visible = True
+        Panel5.Visible = True
     End Sub
 
     Private Sub btnsl10_Click(sender As Object, e As EventArgs) Handles btnsl10.Click
         '0 = id jurusan , Integer.Parse(Me.Label2.Tag = idFeature , Integer.Parse(Me.Label26.Tag) = id kelas
         'Me.btnrm3.Tag = id bidang studi,Me.Label1.Tag = id Pelanggan
         ShowSemester(Integer.Parse(Me.Label26.Tag), Integer.Parse(Me.Label2.Tag), 0, Me.btnsl10.Tag)
-        Panel3.Visible = True
+        Panel5.Visible = True
     End Sub
 
     Private Sub btntpk0_Click(sender As Object, e As EventArgs) Handles btntpk0.Click
+        Soaljawaban.Show()
+        SubmitSoal(btntpk0.Tag, Me.Label1.Tag)
+        Me.Hide()
+    End Sub
+
+    Private Sub Panel5_Paint(sender As Object, e As PaintEventArgs) Handles Panel5.Paint
 
     End Sub
 
-    Private Sub Panel3_Paint(sender As Object, e As PaintEventArgs) Handles Panel3.Paint
+    Private Sub btntpk1_Click(sender As Object, e As EventArgs) Handles btntpk1.Click
+        Soaljawaban.Show()
+        SubmitSoal(btntpk1.Tag, Me.Label1.Tag)
+        Me.Hide()
+    End Sub
 
+    Private Sub btntpk3_Click(sender As Object, e As EventArgs) Handles btntpk3.Click
+        Soaljawaban.Show()
+
+        SubmitSoal(btntpk3.Tag, Me.Label1.Tag)
+        Me.Hide()
+    End Sub
+
+    Private Sub btntpk4_Click(sender As Object, e As EventArgs) Handles btntpk4.Click
+        Soaljawaban.Show()
+
+        SubmitSoal(btntpk4.Tag, Me.Label1.Tag)
+        Me.Hide()
+    End Sub
+
+    Private Sub btntpk5_Click(sender As Object, e As EventArgs) Handles btntpk5.Click
+        Soaljawaban.Show()
+
+        SubmitSoal(btntpk5.Tag, Me.Label1.Tag)
+        Me.Hide()
+    End Sub
+
+    Private Sub Guna2Button8_Click(sender As Object, e As EventArgs) Handles btnsmstr0.Click
+        ShowSoalTopik(btnsmstr0.Tag, Me.Label1.Tag)
+        Panel3.Visible = True
+    End Sub
+
+    Private Sub btnsmstr2_Click(sender As Object, e As EventArgs) Handles btnsmstr2.Click
+        ShowSoalTopik(btnsmstr2.Tag, Me.Label1.Tag)
+        Panel3.Visible = True
     End Sub
 End Class

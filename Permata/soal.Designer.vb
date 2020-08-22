@@ -54,13 +54,8 @@ Partial Class Soal
         Me.btntpk0 = New Guna.UI2.WinForms.Guna2Button()
         Me.lblsl2 = New System.Windows.Forms.Label()
         Me.btnsl1 = New System.Windows.Forms.Button()
-        Me.Guna2Button8 = New Guna.UI2.WinForms.Guna2Button()
+        Me.btnsmstr0 = New Guna.UI2.WinForms.Guna2Button()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.Label15 = New System.Windows.Forms.Label()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.Guna2Button10 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2Button9 = New Guna.UI2.WinForms.Guna2Button()
         Me.lblbab6 = New System.Windows.Forms.Label()
         Me.lblbab5 = New System.Windows.Forms.Label()
         Me.lblbab4 = New System.Windows.Forms.Label()
@@ -71,15 +66,22 @@ Partial Class Soal
         Me.btntpk4 = New Guna.UI2.WinForms.Guna2Button()
         Me.btntpk3 = New Guna.UI2.WinForms.Guna2Button()
         Me.btntpk2 = New Guna.UI2.WinForms.Guna2Button()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.btnsmstr2 = New Guna.UI2.WinForms.Guna2Button()
+        Me.btnsmstr1 = New Guna.UI2.WinForms.Guna2Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Panel8 = New System.Windows.Forms.Panel()
         Me.Label12 = New System.Windows.Forms.Label()
+        Me.Panel5 = New System.Windows.Forms.Panel()
         Me.Panel2.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.Panel8.SuspendLayout()
+        Me.Panel5.SuspendLayout()
         Me.SuspendLayout()
         '
         'btntpk1
@@ -93,7 +95,7 @@ Partial Class Soal
         Me.btntpk1.HoverState.Parent = Me.btntpk1
         Me.btntpk1.Image = CType(resources.GetObject("btntpk1.Image"), System.Drawing.Image)
         Me.btntpk1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.btntpk1.Location = New System.Drawing.Point(108, 176)
+        Me.btntpk1.Location = New System.Drawing.Point(31, 122)
         Me.btntpk1.Margin = New System.Windows.Forms.Padding(2)
         Me.btntpk1.Name = "btntpk1"
         Me.btntpk1.Padding = New System.Windows.Forms.Padding(11, 0, 0, 0)
@@ -497,8 +499,9 @@ Partial Class Soal
         Me.btntpk0.HoverState.Parent = Me.btntpk0
         Me.btntpk0.Image = CType(resources.GetObject("btntpk0.Image"), System.Drawing.Image)
         Me.btntpk0.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.btntpk0.Location = New System.Drawing.Point(108, 122)
+        Me.btntpk0.Location = New System.Drawing.Point(31, 68)
         Me.btntpk0.Margin = New System.Windows.Forms.Padding(2)
+        Me.btntpk0.MinimumSize = New System.Drawing.Size(571, 30)
         Me.btntpk0.Name = "btntpk0"
         Me.btntpk0.Padding = New System.Windows.Forms.Padding(11, 0, 0, 0)
         Me.btntpk0.ShadowDecoration.Parent = Me.btntpk0
@@ -536,31 +539,25 @@ Partial Class Soal
         Me.btnsl1.TabIndex = 28
         Me.btnsl1.UseVisualStyleBackColor = True
         '
-        'Guna2Button8
+        'btnsmstr0
         '
-        Me.Guna2Button8.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.Guna2Button8.CheckedState.Parent = Me.Guna2Button8
-        Me.Guna2Button8.CustomImages.Parent = Me.Guna2Button8
-        Me.Guna2Button8.FillColor = System.Drawing.Color.White
-        Me.Guna2Button8.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2Button8.ForeColor = System.Drawing.Color.Black
-        Me.Guna2Button8.HoverState.Parent = Me.Guna2Button8
-        Me.Guna2Button8.Location = New System.Drawing.Point(0, 0)
-        Me.Guna2Button8.Margin = New System.Windows.Forms.Padding(2)
-        Me.Guna2Button8.Name = "Guna2Button8"
-        Me.Guna2Button8.ShadowDecoration.Parent = Me.Guna2Button8
-        Me.Guna2Button8.Size = New System.Drawing.Size(242, 73)
-        Me.Guna2Button8.TabIndex = 12
-        Me.Guna2Button8.Text = "Bab Pembelajaran"
+        Me.btnsmstr0.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.btnsmstr0.CheckedState.Parent = Me.btnsmstr0
+        Me.btnsmstr0.CustomImages.Parent = Me.btnsmstr0
+        Me.btnsmstr0.FillColor = System.Drawing.Color.White
+        Me.btnsmstr0.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnsmstr0.ForeColor = System.Drawing.Color.Black
+        Me.btnsmstr0.HoverState.Parent = Me.btnsmstr0
+        Me.btnsmstr0.Location = New System.Drawing.Point(2, 17)
+        Me.btnsmstr0.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnsmstr0.Name = "btnsmstr0"
+        Me.btnsmstr0.ShadowDecoration.Parent = Me.btnsmstr0
+        Me.btnsmstr0.Size = New System.Drawing.Size(198, 73)
+        Me.btnsmstr0.TabIndex = 12
+        Me.btnsmstr0.Text = "Bab Pembelajaran"
         '
         'Panel3
         '
-        Me.Panel3.Controls.Add(Me.Label15)
-        Me.Panel3.Controls.Add(Me.Label14)
-        Me.Panel3.Controls.Add(Me.Label13)
-        Me.Panel3.Controls.Add(Me.Guna2Button10)
-        Me.Panel3.Controls.Add(Me.Guna2Button9)
-        Me.Panel3.Controls.Add(Me.Guna2Button8)
         Me.Panel3.Controls.Add(Me.lblbab6)
         Me.Panel3.Controls.Add(Me.lblbab5)
         Me.Panel3.Controls.Add(Me.lblbab4)
@@ -573,85 +570,18 @@ Partial Class Soal
         Me.Panel3.Controls.Add(Me.btntpk2)
         Me.Panel3.Controls.Add(Me.btntpk1)
         Me.Panel3.Controls.Add(Me.btntpk0)
-        Me.Panel3.Location = New System.Drawing.Point(418, 0)
+        Me.Panel3.Location = New System.Drawing.Point(418, 107)
         Me.Panel3.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(728, 566)
+        Me.Panel3.Size = New System.Drawing.Size(728, 459)
         Me.Panel3.TabIndex = 6
         Me.Panel3.Visible = False
-        '
-        'Label15
-        '
-        Me.Label15.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.Label15.BackColor = System.Drawing.Color.RoyalBlue
-        Me.Label15.Location = New System.Drawing.Point(489, 72)
-        Me.Label15.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(238, 2)
-        Me.Label15.TabIndex = 17
-        Me.Label15.Visible = False
-        '
-        'Label14
-        '
-        Me.Label14.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.Label14.BackColor = System.Drawing.Color.RoyalBlue
-        Me.Label14.Location = New System.Drawing.Point(235, 72)
-        Me.Label14.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(255, 2)
-        Me.Label14.TabIndex = 16
-        Me.Label14.Visible = False
-        '
-        'Label13
-        '
-        Me.Label13.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.Label13.BackColor = System.Drawing.Color.RoyalBlue
-        Me.Label13.Location = New System.Drawing.Point(-2, 72)
-        Me.Label13.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(242, 2)
-        Me.Label13.TabIndex = 15
-        Me.Label13.Visible = False
-        '
-        'Guna2Button10
-        '
-        Me.Guna2Button10.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.Guna2Button10.CheckedState.Parent = Me.Guna2Button10
-        Me.Guna2Button10.CustomImages.Parent = Me.Guna2Button10
-        Me.Guna2Button10.FillColor = System.Drawing.Color.White
-        Me.Guna2Button10.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2Button10.ForeColor = System.Drawing.Color.Black
-        Me.Guna2Button10.HoverState.Parent = Me.Guna2Button10
-        Me.Guna2Button10.Location = New System.Drawing.Point(488, 0)
-        Me.Guna2Button10.Margin = New System.Windows.Forms.Padding(2)
-        Me.Guna2Button10.Name = "Guna2Button10"
-        Me.Guna2Button10.ShadowDecoration.Parent = Me.Guna2Button10
-        Me.Guna2Button10.Size = New System.Drawing.Size(239, 73)
-        Me.Guna2Button10.TabIndex = 14
-        Me.Guna2Button10.Text = "UAS"
-        '
-        'Guna2Button9
-        '
-        Me.Guna2Button9.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.Guna2Button9.CheckedState.Parent = Me.Guna2Button9
-        Me.Guna2Button9.CustomImages.Parent = Me.Guna2Button9
-        Me.Guna2Button9.FillColor = System.Drawing.Color.White
-        Me.Guna2Button9.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2Button9.ForeColor = System.Drawing.Color.Black
-        Me.Guna2Button9.HoverState.Parent = Me.Guna2Button9
-        Me.Guna2Button9.Location = New System.Drawing.Point(237, 0)
-        Me.Guna2Button9.Margin = New System.Windows.Forms.Padding(2)
-        Me.Guna2Button9.Name = "Guna2Button9"
-        Me.Guna2Button9.ShadowDecoration.Parent = Me.Guna2Button9
-        Me.Guna2Button9.Size = New System.Drawing.Size(252, 73)
-        Me.Guna2Button9.TabIndex = 13
-        Me.Guna2Button9.Text = "UTS"
         '
         'lblbab6
         '
         Me.lblbab6.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lblbab6.BackColor = System.Drawing.Color.LimeGreen
-        Me.lblbab6.Location = New System.Drawing.Point(103, 391)
+        Me.lblbab6.Location = New System.Drawing.Point(31, 337)
         Me.lblbab6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblbab6.Name = "lblbab6"
         Me.lblbab6.Size = New System.Drawing.Size(8, 30)
@@ -662,7 +592,7 @@ Partial Class Soal
         '
         Me.lblbab5.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lblbab5.BackColor = System.Drawing.Color.LimeGreen
-        Me.lblbab5.Location = New System.Drawing.Point(103, 336)
+        Me.lblbab5.Location = New System.Drawing.Point(31, 282)
         Me.lblbab5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblbab5.Name = "lblbab5"
         Me.lblbab5.Size = New System.Drawing.Size(8, 30)
@@ -673,7 +603,7 @@ Partial Class Soal
         '
         Me.lblbab4.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lblbab4.BackColor = System.Drawing.Color.LimeGreen
-        Me.lblbab4.Location = New System.Drawing.Point(103, 288)
+        Me.lblbab4.Location = New System.Drawing.Point(31, 234)
         Me.lblbab4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblbab4.Name = "lblbab4"
         Me.lblbab4.Size = New System.Drawing.Size(8, 30)
@@ -684,7 +614,7 @@ Partial Class Soal
         '
         Me.lblbab3.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lblbab3.BackColor = System.Drawing.Color.LimeGreen
-        Me.lblbab3.Location = New System.Drawing.Point(103, 230)
+        Me.lblbab3.Location = New System.Drawing.Point(31, 176)
         Me.lblbab3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblbab3.Name = "lblbab3"
         Me.lblbab3.Size = New System.Drawing.Size(8, 30)
@@ -695,7 +625,7 @@ Partial Class Soal
         '
         Me.lblbab2.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lblbab2.BackColor = System.Drawing.Color.LimeGreen
-        Me.lblbab2.Location = New System.Drawing.Point(103, 176)
+        Me.lblbab2.Location = New System.Drawing.Point(31, 122)
         Me.lblbab2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblbab2.Name = "lblbab2"
         Me.lblbab2.Size = New System.Drawing.Size(8, 30)
@@ -706,7 +636,7 @@ Partial Class Soal
         '
         Me.lblbab1.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lblbab1.BackColor = System.Drawing.Color.LimeGreen
-        Me.lblbab1.Location = New System.Drawing.Point(103, 122)
+        Me.lblbab1.Location = New System.Drawing.Point(31, 68)
         Me.lblbab1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblbab1.Name = "lblbab1"
         Me.lblbab1.Size = New System.Drawing.Size(8, 30)
@@ -724,7 +654,7 @@ Partial Class Soal
         Me.btntpk5.HoverState.Parent = Me.btntpk5
         Me.btntpk5.Image = CType(resources.GetObject("btntpk5.Image"), System.Drawing.Image)
         Me.btntpk5.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.btntpk5.Location = New System.Drawing.Point(110, 391)
+        Me.btntpk5.Location = New System.Drawing.Point(33, 337)
         Me.btntpk5.Margin = New System.Windows.Forms.Padding(2)
         Me.btntpk5.Name = "btntpk5"
         Me.btntpk5.Padding = New System.Windows.Forms.Padding(11, 0, 0, 0)
@@ -745,7 +675,7 @@ Partial Class Soal
         Me.btntpk4.HoverState.Parent = Me.btntpk4
         Me.btntpk4.Image = CType(resources.GetObject("btntpk4.Image"), System.Drawing.Image)
         Me.btntpk4.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.btntpk4.Location = New System.Drawing.Point(110, 336)
+        Me.btntpk4.Location = New System.Drawing.Point(33, 282)
         Me.btntpk4.Margin = New System.Windows.Forms.Padding(2)
         Me.btntpk4.Name = "btntpk4"
         Me.btntpk4.Padding = New System.Windows.Forms.Padding(11, 0, 0, 0)
@@ -766,7 +696,7 @@ Partial Class Soal
         Me.btntpk3.HoverState.Parent = Me.btntpk3
         Me.btntpk3.Image = CType(resources.GetObject("btntpk3.Image"), System.Drawing.Image)
         Me.btntpk3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.btntpk3.Location = New System.Drawing.Point(108, 288)
+        Me.btntpk3.Location = New System.Drawing.Point(31, 234)
         Me.btntpk3.Margin = New System.Windows.Forms.Padding(2)
         Me.btntpk3.Name = "btntpk3"
         Me.btntpk3.Padding = New System.Windows.Forms.Padding(11, 0, 0, 0)
@@ -787,7 +717,7 @@ Partial Class Soal
         Me.btntpk2.HoverState.Parent = Me.btntpk2
         Me.btntpk2.Image = CType(resources.GetObject("btntpk2.Image"), System.Drawing.Image)
         Me.btntpk2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.btntpk2.Location = New System.Drawing.Point(108, 230)
+        Me.btntpk2.Location = New System.Drawing.Point(31, 176)
         Me.btntpk2.Margin = New System.Windows.Forms.Padding(2)
         Me.btntpk2.Name = "btntpk2"
         Me.btntpk2.Padding = New System.Windows.Forms.Padding(11, 0, 0, 0)
@@ -796,6 +726,73 @@ Partial Class Soal
         Me.btntpk2.TabIndex = 2
         Me.btntpk2.Text = "Bab"
         Me.btntpk2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        '
+        'Label15
+        '
+        Me.Label15.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.Label15.BackColor = System.Drawing.Color.RoyalBlue
+        Me.Label15.Location = New System.Drawing.Point(393, 92)
+        Me.Label15.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(238, 2)
+        Me.Label15.TabIndex = 17
+        Me.Label15.Visible = False
+        '
+        'Label14
+        '
+        Me.Label14.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.Label14.BackColor = System.Drawing.Color.RoyalBlue
+        Me.Label14.Location = New System.Drawing.Point(201, 92)
+        Me.Label14.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(255, 10)
+        Me.Label14.TabIndex = 16
+        Me.Label14.Visible = False
+        '
+        'Label13
+        '
+        Me.Label13.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.Label13.BackColor = System.Drawing.Color.RoyalBlue
+        Me.Label13.Location = New System.Drawing.Point(-4, 92)
+        Me.Label13.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(242, 2)
+        Me.Label13.TabIndex = 15
+        Me.Label13.Visible = False
+        '
+        'btnsmstr2
+        '
+        Me.btnsmstr2.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.btnsmstr2.CheckedState.Parent = Me.btnsmstr2
+        Me.btnsmstr2.CustomImages.Parent = Me.btnsmstr2
+        Me.btnsmstr2.FillColor = System.Drawing.Color.White
+        Me.btnsmstr2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnsmstr2.ForeColor = System.Drawing.Color.Black
+        Me.btnsmstr2.HoverState.Parent = Me.btnsmstr2
+        Me.btnsmstr2.Location = New System.Drawing.Point(396, 17)
+        Me.btnsmstr2.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnsmstr2.Name = "btnsmstr2"
+        Me.btnsmstr2.ShadowDecoration.Parent = Me.btnsmstr2
+        Me.btnsmstr2.Size = New System.Drawing.Size(203, 73)
+        Me.btnsmstr2.TabIndex = 14
+        Me.btnsmstr2.Text = "UAS"
+        '
+        'btnsmstr1
+        '
+        Me.btnsmstr1.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.btnsmstr1.CheckedState.Parent = Me.btnsmstr1
+        Me.btnsmstr1.CustomImages.Parent = Me.btnsmstr1
+        Me.btnsmstr1.FillColor = System.Drawing.Color.White
+        Me.btnsmstr1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnsmstr1.ForeColor = System.Drawing.Color.Black
+        Me.btnsmstr1.HoverState.Parent = Me.btnsmstr1
+        Me.btnsmstr1.Location = New System.Drawing.Point(204, 17)
+        Me.btnsmstr1.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnsmstr1.Name = "btnsmstr1"
+        Me.btnsmstr1.ShadowDecoration.Parent = Me.btnsmstr1
+        Me.btnsmstr1.Size = New System.Drawing.Size(188, 73)
+        Me.btnsmstr1.TabIndex = 13
+        Me.btnsmstr1.Text = "UTS"
         '
         'Panel1
         '
@@ -869,16 +866,32 @@ Partial Class Soal
         Me.Label12.TabIndex = 0
         Me.Label12.Text = "Suupport@permatabelajar.com, Phone/Whatsapp: 0811811306,"
         '
+        'Panel5
+        '
+        Me.Panel5.Controls.Add(Me.Label15)
+        Me.Panel5.Controls.Add(Me.btnsmstr0)
+        Me.Panel5.Controls.Add(Me.Label14)
+        Me.Panel5.Controls.Add(Me.btnsmstr1)
+        Me.Panel5.Controls.Add(Me.Label13)
+        Me.Panel5.Controls.Add(Me.btnsmstr2)
+        Me.Panel5.Location = New System.Drawing.Point(419, 0)
+        Me.Panel5.Name = "Panel5"
+        Me.Panel5.Size = New System.Drawing.Size(608, 102)
+        Me.Panel5.TabIndex = 42
+        Me.Panel5.Visible = False
+        '
         'Soal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1028, 634)
+        Me.Controls.Add(Me.Panel5)
         Me.Controls.Add(Me.Panel8)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel1)
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Soal"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Soal"
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
@@ -887,6 +900,7 @@ Partial Class Soal
         Me.Panel4.ResumeLayout(False)
         Me.Panel4.PerformLayout()
         Me.Panel8.ResumeLayout(False)
+        Me.Panel5.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -922,13 +936,13 @@ Partial Class Soal
     Friend WithEvents btntpk0 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents lblsl2 As Label
     Friend WithEvents btnsl1 As Button
-    Friend WithEvents Guna2Button8 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents btnsmstr0 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Panel3 As Panel
     Friend WithEvents Label15 As Label
     Friend WithEvents Label14 As Label
     Friend WithEvents Label13 As Label
-    Friend WithEvents Guna2Button10 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2Button9 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents btnsmstr2 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents btnsmstr1 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents lblbab6 As Label
     Friend WithEvents lblbab5 As Label
     Friend WithEvents lblbab4 As Label
@@ -943,4 +957,5 @@ Partial Class Soal
     Friend WithEvents Panel4 As Panel
     Friend WithEvents Panel8 As Panel
     Friend WithEvents Label12 As Label
+    Friend WithEvents Panel5 As Panel
 End Class
