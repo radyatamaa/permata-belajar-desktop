@@ -119,7 +119,6 @@ C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\bin\Debug\N
 C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\bin\Debug\Newtonsoft.Json.xml
 C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\bin\Debug\Interop.WMPLib.dll
 C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\bin\Debug\AxInterop.WMPLib.dll
-C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\obj\Debug\Permata.vbprojAssemblyReference.cache
 C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\obj\Debug\Interop.WMPLib.dll
 C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\obj\Debug\AxInterop.WMPLib.dll
 C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\obj\Debug\Permata.vbproj.ResolveComReference.cache

@@ -37,7 +37,6 @@ Partial Class Soaljawaban
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Button3 = New System.Windows.Forms.Button()
@@ -48,74 +47,96 @@ Partial Class Soaljawaban
         Me.Guna2Button7 = New Guna.UI2.WinForms.Guna2Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Button11 = New System.Windows.Forms.Button()
         Me.Panel2.SuspendLayout()
         Me.Panel9.SuspendLayout()
+        Me.Panel6.SuspendLayout()
         Me.Panel5.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.Panel1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel2
         '
+        Me.Panel2.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Panel2.AutoScroll = True
         Me.Panel2.Controls.Add(Me.Panel9)
         Me.Panel2.Controls.Add(Me.Panel8)
         Me.Panel2.Controls.Add(Me.Panel6)
         Me.Panel2.Controls.Add(Me.Panel5)
         Me.Panel2.Controls.Add(Me.Panel4)
         Me.Panel2.Controls.Add(Me.Panel3)
-        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel2.Location = New System.Drawing.Point(595, 0)
+        Me.Panel2.Location = New System.Drawing.Point(315, 0)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(932, 803)
+        Me.Panel2.Size = New System.Drawing.Size(713, 634)
         Me.Panel2.TabIndex = 6
         '
         'Panel9
         '
+        Me.Panel9.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel9.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Panel9.Controls.Add(Me.Button10)
         Me.Panel9.Controls.Add(Me.Button9)
-        Me.Panel9.Location = New System.Drawing.Point(0, 703)
+        Me.Panel9.Location = New System.Drawing.Point(0, 695)
+        Me.Panel9.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Panel9.Name = "Panel9"
-        Me.Panel9.Size = New System.Drawing.Size(932, 100)
+        Me.Panel9.Size = New System.Drawing.Size(713, 67)
         Me.Panel9.TabIndex = 5
         '
         'Button10
         '
-        Me.Button10.Location = New System.Drawing.Point(534, 14)
+        Me.Button10.Location = New System.Drawing.Point(358, 4)
+        Me.Button10.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(281, 73)
+        Me.Button10.Size = New System.Drawing.Size(211, 59)
         Me.Button10.TabIndex = 1
         Me.Button10.Text = "Selanjutnya"
         Me.Button10.UseVisualStyleBackColor = True
         '
         'Button9
         '
-        Me.Button9.Location = New System.Drawing.Point(134, 15)
+        Me.Button9.Location = New System.Drawing.Point(58, 5)
+        Me.Button9.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(281, 73)
+        Me.Button9.Size = New System.Drawing.Size(211, 59)
         Me.Button9.TabIndex = 0
         Me.Button9.Text = "Sebelumnya"
         Me.Button9.UseVisualStyleBackColor = True
         '
         'Panel8
         '
+        Me.Panel8.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel8.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Panel8.Location = New System.Drawing.Point(0, 570)
+        Me.Panel8.Location = New System.Drawing.Point(0, 612)
+        Me.Panel8.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Panel8.Name = "Panel8"
-        Me.Panel8.Size = New System.Drawing.Size(929, 94)
+        Me.Panel8.Size = New System.Drawing.Size(713, 76)
         Me.Panel8.TabIndex = 4
         '
         'Panel6
         '
+        Me.Panel6.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel6.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Panel6.Location = New System.Drawing.Point(0, 510)
+        Me.Panel6.Controls.Add(Me.Button11)
+        Me.Panel6.Location = New System.Drawing.Point(0, 572)
+        Me.Panel6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(932, 45)
+        Me.Panel6.Size = New System.Drawing.Size(713, 37)
         Me.Panel6.TabIndex = 3
         '
         'Panel5
         '
+        Me.Panel5.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel5.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Panel5.Controls.Add(Me.Button8)
         Me.Panel5.Controls.Add(Me.Button7)
@@ -123,52 +144,58 @@ Partial Class Soaljawaban
         Me.Panel5.Controls.Add(Me.Button5)
         Me.Panel5.Controls.Add(Me.Button4)
         Me.Panel5.Controls.Add(Me.Label5)
-        Me.Panel5.Location = New System.Drawing.Point(0, 400)
+        Me.Panel5.Location = New System.Drawing.Point(0, 489)
+        Me.Panel5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(932, 100)
+        Me.Panel5.Size = New System.Drawing.Size(713, 81)
         Me.Panel5.TabIndex = 2
         '
         'Button8
         '
-        Me.Button8.Location = New System.Drawing.Point(396, 49)
+        Me.Button8.Location = New System.Drawing.Point(297, 40)
+        Me.Button8.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(60, 38)
+        Me.Button8.Size = New System.Drawing.Size(45, 31)
         Me.Button8.TabIndex = 5
         Me.Button8.Text = "E"
         Me.Button8.UseVisualStyleBackColor = True
         '
         'Button7
         '
-        Me.Button7.Location = New System.Drawing.Point(314, 49)
+        Me.Button7.Location = New System.Drawing.Point(236, 40)
+        Me.Button7.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(60, 38)
+        Me.Button7.Size = New System.Drawing.Size(45, 31)
         Me.Button7.TabIndex = 4
         Me.Button7.Text = "D"
         Me.Button7.UseVisualStyleBackColor = True
         '
         'Button6
         '
-        Me.Button6.Location = New System.Drawing.Point(224, 49)
+        Me.Button6.Location = New System.Drawing.Point(168, 40)
+        Me.Button6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(60, 38)
+        Me.Button6.Size = New System.Drawing.Size(45, 31)
         Me.Button6.TabIndex = 3
         Me.Button6.Text = "C"
         Me.Button6.UseVisualStyleBackColor = True
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(134, 49)
+        Me.Button5.Location = New System.Drawing.Point(100, 40)
+        Me.Button5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(60, 38)
+        Me.Button5.Size = New System.Drawing.Size(45, 31)
         Me.Button5.TabIndex = 2
         Me.Button5.Text = "B"
         Me.Button5.UseVisualStyleBackColor = True
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(45, 49)
+        Me.Button4.Location = New System.Drawing.Point(34, 40)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(60, 38)
+        Me.Button4.Size = New System.Drawing.Size(45, 31)
         Me.Button4.TabIndex = 1
         Me.Button4.Text = "A"
         Me.Button4.UseVisualStyleBackColor = True
@@ -176,30 +203,26 @@ Partial Class Soaljawaban
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(42, 16)
+        Me.Label5.Location = New System.Drawing.Point(32, 13)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(173, 17)
+        Me.Label5.Size = New System.Drawing.Size(131, 13)
         Me.Label5.TabIndex = 0
         Me.Label5.Text = "Pilihalah Jawaban Terbaik"
         '
         'Panel4
         '
+        Me.Panel4.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Panel4.AutoScroll = True
         Me.Panel4.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Panel4.Controls.Add(Me.Label4)
-        Me.Panel4.Location = New System.Drawing.Point(0, 82)
+        Me.Panel4.Controls.Add(Me.PictureBox1)
+        Me.Panel4.Location = New System.Drawing.Point(0, 67)
+        Me.Panel4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(932, 310)
+        Me.Panel4.Size = New System.Drawing.Size(713, 418)
         Me.Panel4.TabIndex = 1
-        '
-        'Label4
-        '
-        Me.Label4.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label4.Font = New System.Drawing.Font("Ubuntu Condensed", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(18, 16)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(407, 286)
-        Me.Label4.TabIndex = 1
-        Me.Label4.Text = resources.GetString("Label4.Text")
         '
         'Panel3
         '
@@ -208,17 +231,19 @@ Partial Class Soaljawaban
         Me.Panel3.Controls.Add(Me.Button3)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel3.Location = New System.Drawing.Point(0, 0)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(932, 76)
+        Me.Panel3.Size = New System.Drawing.Size(696, 62)
         Me.Panel3.TabIndex = 0
         '
         'Label3
         '
-        Me.Label3.Font = New System.Drawing.Font("Ubuntu", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.DimGray
-        Me.Label3.Location = New System.Drawing.Point(172, 24)
+        Me.Label3.Location = New System.Drawing.Point(129, 20)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(159, 23)
+        Me.Label3.Size = New System.Drawing.Size(119, 19)
         Me.Label3.TabIndex = 1
         Me.Label3.Text = "Topik Pelajaran"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -226,11 +251,12 @@ Partial Class Soaljawaban
         'Button3
         '
         Me.Button3.BackColor = System.Drawing.Color.ForestGreen
-        Me.Button3.Font = New System.Drawing.Font("Ubuntu Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button3.Location = New System.Drawing.Point(7, 13)
+        Me.Button3.Location = New System.Drawing.Point(5, 11)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(158, 43)
+        Me.Button3.Size = New System.Drawing.Size(118, 35)
         Me.Button3.TabIndex = 0
         Me.Button3.Text = "Pelajaran"
         Me.Button3.UseVisualStyleBackColor = False
@@ -247,31 +273,35 @@ Partial Class Soaljawaban
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(595, 803)
+        Me.Panel1.Size = New System.Drawing.Size(311, 634)
         Me.Panel1.TabIndex = 5
         '
         'Panel7
         '
-        Me.Panel7.Location = New System.Drawing.Point(595, 638)
+        Me.Panel7.Location = New System.Drawing.Point(446, 518)
+        Me.Panel7.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(932, 73)
+        Me.Panel7.Size = New System.Drawing.Size(699, 59)
         Me.Panel7.TabIndex = 4
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(165, 439)
+        Me.Button2.Location = New System.Drawing.Point(50, 357)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(248, 56)
+        Me.Button2.Size = New System.Drawing.Size(186, 46)
         Me.Button2.TabIndex = 58
         Me.Button2.Text = "Laporkan Masalah"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(165, 361)
+        Me.Button1.Location = New System.Drawing.Point(50, 293)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(248, 56)
+        Me.Button1.Size = New System.Drawing.Size(186, 46)
         Me.Button1.TabIndex = 57
         Me.Button1.Text = "Selasai"
         Me.Button1.UseVisualStyleBackColor = True
@@ -280,7 +310,7 @@ Partial Class Soaljawaban
         '
         Me.Guna2Button7.AutoRoundedCorners = True
         Me.Guna2Button7.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2Button7.BorderRadius = 34
+        Me.Guna2Button7.BorderRadius = 25
         Me.Guna2Button7.CheckedState.Parent = Me.Guna2Button7
         Me.Guna2Button7.CustomImages.Parent = Me.Guna2Button7
         Me.Guna2Button7.FillColor = System.Drawing.Color.Transparent
@@ -289,11 +319,12 @@ Partial Class Soaljawaban
         Me.Guna2Button7.HoverState.Parent = Me.Guna2Button7
         Me.Guna2Button7.Image = CType(resources.GetObject("Guna2Button7.Image"), System.Drawing.Image)
         Me.Guna2Button7.ImageSize = New System.Drawing.Size(30, 30)
-        Me.Guna2Button7.Location = New System.Drawing.Point(28, 39)
+        Me.Guna2Button7.Location = New System.Drawing.Point(21, 32)
+        Me.Guna2Button7.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Guna2Button7.Name = "Guna2Button7"
         Me.Guna2Button7.PressedColor = System.Drawing.Color.White
         Me.Guna2Button7.ShadowDecoration.Parent = Me.Guna2Button7
-        Me.Guna2Button7.Size = New System.Drawing.Size(71, 72)
+        Me.Guna2Button7.Size = New System.Drawing.Size(53, 58)
         Me.Guna2Button7.TabIndex = 56
         Me.Guna2Button7.UseTransparentBackground = True
         '
@@ -302,11 +333,12 @@ Partial Class Soaljawaban
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label2.Font = New System.Drawing.Font("Meiryo UI", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(228, 163)
+        Me.Label2.Location = New System.Drawing.Point(97, 132)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(112, 30)
+        Me.Label2.Size = New System.Drawing.Size(81, 24)
         Me.Label2.TabIndex = 55
         Me.Label2.Text = "Kelas 12"
         '
@@ -315,31 +347,59 @@ Partial Class Soaljawaban
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label1.Font = New System.Drawing.Font("Ubuntu", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(168, 125)
+        Me.Label1.Location = New System.Drawing.Point(52, 102)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(255, 37)
+        Me.Label1.Size = New System.Drawing.Size(207, 29)
         Me.Label1.TabIndex = 54
         Me.Label1.Text = "Soal dan Latihan" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox1.Location = New System.Drawing.Point(5, 6)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(692, 409)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
+        '
+        'Button11
+        '
+        Me.Button11.Location = New System.Drawing.Point(34, 3)
+        Me.Button11.Name = "Button11"
+        Me.Button11.Size = New System.Drawing.Size(118, 31)
+        Me.Button11.TabIndex = 0
+        Me.Button11.Text = "Lihat Jawaban"
+        Me.Button11.UseVisualStyleBackColor = True
+        '
         'Soaljawaban
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1527, 803)
+        Me.AutoScroll = True
+        Me.ClientSize = New System.Drawing.Size(1028, 634)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "Soaljawaban"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Soal dan Jawaban"
         Me.Panel2.ResumeLayout(False)
         Me.Panel9.ResumeLayout(False)
+        Me.Panel6.ResumeLayout(False)
         Me.Panel5.ResumeLayout(False)
         Me.Panel5.PerformLayout()
         Me.Panel4.ResumeLayout(False)
         Me.Panel3.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -368,5 +428,6 @@ Partial Class Soaljawaban
     Friend WithEvents Button4 As Button
     Friend WithEvents Label5 As Label
     Friend WithEvents Panel4 As Panel
-    Friend WithEvents Label4 As Label
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Button11 As Button
 End Class
