@@ -230,10 +230,10 @@ Partial Class Form2
         Me.lblvb1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lblvb1.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblvb1.Location = New System.Drawing.Point(109, 116)
+        Me.lblvb1.Location = New System.Drawing.Point(121, 116)
         Me.lblvb1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblvb1.Name = "lblvb1"
-        Me.lblvb1.Size = New System.Drawing.Size(145, 13)
+        Me.lblvb1.Size = New System.Drawing.Size(140, 13)
         Me.lblvb1.TabIndex = 40
         Me.lblvb1.Text = "Bahasa Inggris"
         Me.lblvb1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -243,10 +243,10 @@ Partial Class Form2
         Me.lblvb0.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lblvb0.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblvb0.Location = New System.Drawing.Point(-12, 116)
+        Me.lblvb0.Location = New System.Drawing.Point(-2, 116)
         Me.lblvb0.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblvb0.Name = "lblvb0"
-        Me.lblvb0.Size = New System.Drawing.Size(158, 13)
+        Me.lblvb0.Size = New System.Drawing.Size(140, 13)
         Me.lblvb0.TabIndex = 39
         Me.lblvb0.Text = "Bahasa Indonesia"
         Me.lblvb0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter

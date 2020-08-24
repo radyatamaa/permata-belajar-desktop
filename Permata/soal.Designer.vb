@@ -316,10 +316,10 @@ Partial Class Soal
         Me.lblsl1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lblsl1.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblsl1.Location = New System.Drawing.Point(116, 98)
+        Me.lblsl1.Location = New System.Drawing.Point(121, 98)
         Me.lblsl1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblsl1.Name = "lblsl1"
-        Me.lblsl1.Size = New System.Drawing.Size(145, 13)
+        Me.lblsl1.Size = New System.Drawing.Size(140, 13)
         Me.lblsl1.TabIndex = 40
         Me.lblsl1.Text = "Kelas 5"
         Me.lblsl1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -329,10 +329,10 @@ Partial Class Soal
         Me.lblsl0.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lblsl0.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblsl0.Location = New System.Drawing.Point(-5, 98)
+        Me.lblsl0.Location = New System.Drawing.Point(-3, 98)
         Me.lblsl0.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblsl0.Name = "lblsl0"
-        Me.lblsl0.Size = New System.Drawing.Size(145, 13)
+        Me.lblsl0.Size = New System.Drawing.Size(140, 13)
         Me.lblsl0.TabIndex = 39
         Me.lblsl0.Text = "Kelas 4"
         Me.lblsl0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
