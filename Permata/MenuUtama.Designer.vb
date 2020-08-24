@@ -159,7 +159,7 @@ Partial Class MenuUtama
         Me.Panel3.Location = New System.Drawing.Point(0, 175)
         Me.Panel3.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(400, 399)
+        Me.Panel3.Size = New System.Drawing.Size(400, 392)
         Me.Panel3.TabIndex = 1
         '
         'lblkelas11
