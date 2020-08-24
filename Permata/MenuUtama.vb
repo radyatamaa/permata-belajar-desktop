@@ -87,9 +87,12 @@ Public Class MenuUtama
                 Me.Hide()
             Case "latihansoalPages"
                 Soal.Show()
-                'Case Me.btnkelas3.Tag
-                '    ShowFeature(Integer.Parse(Me.btnkelas3.Tag))
-
+                Soal.Label26.Text = Me.Label26.Text
+                Soal.Label26.Tag = Me.Label26.Tag
+                Soal.Label2.Text = Me.Label13.Tag
+                Soal.Label2.Tag = Me.lblfeature0.Tag
+                Soal.Label1.Tag = Me.Guna2PictureBox3.Tag
+                Me.Hide()
         End Select
         Me.Hide()
     End Sub
@@ -117,9 +120,12 @@ Public Class MenuUtama
                 Me.Hide()
             Case "latihansoalPages"
                 Soal.Show()
-                'Case Me.btnkelas3.Tag
-                '    ShowFeature(Integer.Parse(Me.btnkelas3.Tag))
-
+                Soal.Label26.Text = Me.Label26.Text
+                Soal.Label26.Tag = Me.Label26.Tag
+                Soal.Label2.Text = Me.Label13.Tag
+                Soal.Label2.Tag = Me.lblfeature1.Tag
+                Soal.Label1.Tag = Me.Guna2PictureBox3.Tag
+                Me.Hide()
         End Select
         Me.Hide()
     End Sub
@@ -147,9 +153,12 @@ Public Class MenuUtama
                 Me.Hide()
             Case "latihansoalPages"
                 Soal.Show()
-                'Case Me.btnkelas3.Tag
-                '    ShowFeature(Integer.Parse(Me.btnkelas3.Tag))
-
+                Soal.Label26.Text = Me.Label26.Text
+                Soal.Label26.Tag = Me.Label26.Tag
+                Soal.Label2.Text = Me.Label13.Tag
+                Soal.Label2.Tag = Me.lblfeature2.Tag
+                Soal.Label1.Tag = Me.Guna2PictureBox3.Tag
+                Me.Hide()
         End Select
         Me.Hide()
     End Sub
@@ -433,9 +442,12 @@ Public Class MenuUtama
                 Me.Hide()
             Case "latihansoalPages"
                 Soal.Show()
-                'Case Me.btnkelas3.Tag
-                '    ShowFeature(Integer.Parse(Me.btnkelas3.Tag))
-
+                Soal.Label26.Text = Me.Label26.Text
+                Soal.Label26.Tag = Me.Label26.Tag
+                Soal.Label2.Text = Me.Label13.Tag
+                Soal.Label2.Tag = Me.lblfeature3.Tag
+                Soal.Label1.Tag = Me.Guna2PictureBox3.Tag
+                Me.Hide()
         End Select
     End Sub
 
