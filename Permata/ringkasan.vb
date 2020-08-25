@@ -7,6 +7,7 @@ Public Class Ringkasan
         MenuUtama.Show()
         MenuUtama.Panel5.Visible = False
         Panel3.Visible = False
+        'Panel6.Visible = True
         Me.Hide()
     End Sub
 
@@ -949,5 +950,13 @@ Public Class Ringkasan
 
     Private Sub lblrm0_Click(sender As Object, e As EventArgs) Handles lblrm0.Click
 
+    End Sub
+
+    Private Sub Label3_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub Ringkasan_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'Panel6.Visible = True
     End Sub
 End Class

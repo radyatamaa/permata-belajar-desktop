@@ -201,9 +201,14 @@ Public Class Soal
             Dim resp As System.Net.HttpWebResponse = myrequest.GetResponse()
             Dim sr As New System.IO.StreamReader(resp.GetResponseStream())
             Dim response = sr.ReadToEnd()
-            Dim responseConvert = JsonConvert.DeserializeObject(Of SoalLatihanResponse)(response)
-            result = responseConvert
-            sr.Close()
+            Try
+                Dim responseConvert = JsonConvert.DeserializeObject(Of SoalLatihanResponse)(response)
+
+                result = responseConvert
+                sr.Close()
+            Catch ex As Exception
+                'MsgBox("Soal Tersebut kosong")
+            End Try
         Catch ex As WebException
             If ex.Status = WebExceptionStatus.Timeout Then
                 'result = "Error: The request has timed out"
@@ -440,6 +445,7 @@ Public Class Soal
         'Me.btnrm3.Tag = id bidang studi,Me.Label1.Tag = id Pelanggan
         ShowSemester(Integer.Parse(Me.Label26.Tag), Integer.Parse(Me.Label2.Tag), 0, Me.btnsl8.Tag)
         Panel5.Visible = True
+        Panel3.Visible = False
     End Sub
 
     Private Sub btnsl0_Click(sender As Object, e As EventArgs) Handles btnsl0.Click
@@ -447,6 +453,7 @@ Public Class Soal
         'Me.btnrm3.Tag = id bidang studi,Me.Label1.Tag = id Pelanggan
         ShowSemester(Integer.Parse(Me.Label26.Tag), Integer.Parse(Me.Label2.Tag), 0, Me.btnsl0.Tag)
         Panel5.Visible = True
+        Panel3.Visible = False
     End Sub
 
     Private Sub btnsl1_Click(sender As Object, e As EventArgs) Handles btnsl1.Click
@@ -454,6 +461,7 @@ Public Class Soal
         'Me.btnrm3.Tag = id bidang studi,Me.Label1.Tag = id Pelanggan
         ShowSemester(Integer.Parse(Me.Label26.Tag), Integer.Parse(Me.Label2.Tag), 0, Me.btnsl1.Tag)
         Panel5.Visible = True
+        Panel3.Visible = False
     End Sub
 
     Private Sub btnsl2_Click(sender As Object, e As EventArgs) Handles btnsl2.Click
@@ -461,6 +469,7 @@ Public Class Soal
         'Me.btnrm3.Tag = id bidang studi,Me.Label1.Tag = id Pelanggan
         ShowSemester(Integer.Parse(Me.Label26.Tag), Integer.Parse(Me.Label2.Tag), 0, Me.btnsl2.Tag)
         Panel5.Visible = True
+        Panel3.Visible = False
     End Sub
 
     Private Sub btnsl3_Click(sender As Object, e As EventArgs) Handles btnsl3.Click
@@ -468,6 +477,7 @@ Public Class Soal
         'Me.btnrm3.Tag = id bidang studi,Me.Label1.Tag = id Pelanggan
         ShowSemester(Integer.Parse(Me.Label26.Tag), Integer.Parse(Me.Label2.Tag), 0, Me.btnsl3.Tag)
         Panel5.Visible = True
+        Panel3.Visible = False
     End Sub
 
     Private Sub btnsl4_Click(sender As Object, e As EventArgs) Handles btnsl4.Click
@@ -475,6 +485,7 @@ Public Class Soal
         'Me.btnrm3.Tag = id bidang studi,Me.Label1.Tag = id Pelanggan
         ShowSemester(Integer.Parse(Me.Label26.Tag), Integer.Parse(Me.Label2.Tag), 0, Me.btnsl4.Tag)
         Panel5.Visible = True
+        Panel3.Visible = False
     End Sub
 
     Private Sub btnsl5_Click(sender As Object, e As EventArgs) Handles btnsl5.Click
@@ -482,6 +493,7 @@ Public Class Soal
         'Me.btnrm3.Tag = id bidang studi,Me.Label1.Tag = id Pelanggan
         ShowSemester(Integer.Parse(Me.Label26.Tag), Integer.Parse(Me.Label2.Tag), 0, Me.btnsl5.Tag)
         Panel5.Visible = True
+        Panel3.Visible = False
     End Sub
 
     Private Sub btnsl6_Click(sender As Object, e As EventArgs) Handles btnsl6.Click
@@ -489,6 +501,7 @@ Public Class Soal
         'Me.btnrm3.Tag = id bidang studi,Me.Label1.Tag = id Pelanggan
         ShowSemester(Integer.Parse(Me.Label26.Tag), Integer.Parse(Me.Label2.Tag), 0, Me.btnsl6.Tag)
         Panel5.Visible = True
+        Panel3.Visible = False
     End Sub
 
     Private Sub btnsl7_Click(sender As Object, e As EventArgs) Handles btnsl7.Click
@@ -496,6 +509,7 @@ Public Class Soal
         'Me.btnrm3.Tag = id bidang studi,Me.Label1.Tag = id Pelanggan
         ShowSemester(Integer.Parse(Me.Label26.Tag), Integer.Parse(Me.Label2.Tag), 0, Me.btnsl7.Tag)
         Panel5.Visible = True
+        Panel3.Visible = False
     End Sub
 
     Private Sub btnsl9_Click(sender As Object, e As EventArgs) Handles btnsl9.Click
@@ -503,6 +517,7 @@ Public Class Soal
         'Me.btnrm3.Tag = id bidang studi,Me.Label1.Tag = id Pelanggan
         ShowSemester(Integer.Parse(Me.Label26.Tag), Integer.Parse(Me.Label2.Tag), 0, Me.btnsl9.Tag)
         Panel5.Visible = True
+        Panel3.Visible = False
     End Sub
 
     Private Sub btnsl10_Click(sender As Object, e As EventArgs) Handles btnsl10.Click
@@ -510,6 +525,7 @@ Public Class Soal
         'Me.btnrm3.Tag = id bidang studi,Me.Label1.Tag = id Pelanggan
         ShowSemester(Integer.Parse(Me.Label26.Tag), Integer.Parse(Me.Label2.Tag), 0, Me.btnsl10.Tag)
         Panel5.Visible = True
+        Panel3.Visible = False
     End Sub
 
     Private Sub btntpk0_Click(sender As Object, e As EventArgs) Handles btntpk0.Click
