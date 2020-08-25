@@ -149,3 +149,4 @@ C:\Users\Asus\Documents\Github\permata-belajar-desktop\Permata\bin\Debug\Permata
 C:\Users\Asus\Documents\Github\permata-belajar-desktop\Permata\obj\Debug\Permata.IsiVideo.resources
 C:\Users\Asus\Documents\Github\permata-belajar-desktop\Permata\obj\Debug\Permata.exe.manifest
 C:\Users\Asus\Documents\Github\permata-belajar-desktop\Permata\obj\Debug\Permata.application
+C:\Users\ASUS A441U\Documents\GitHub\permata-belajar-desktop\Permata\obj\Debug\Permata.vbprojAssemblyReference.cache

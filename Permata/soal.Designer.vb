@@ -849,7 +849,7 @@ Partial Class Soal
         Me.Panel8.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Panel8.Controls.Add(Me.Label12)
         Me.Panel8.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Panel8.Location = New System.Drawing.Point(0, 614)
+        Me.Panel8.Location = New System.Drawing.Point(0, 569)
         Me.Panel8.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel8.Name = "Panel8"
         Me.Panel8.Size = New System.Drawing.Size(1027, 63)
