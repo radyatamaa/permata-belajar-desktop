@@ -180,7 +180,7 @@ Partial Class Ringkasan
         Me.Panel4.Location = New System.Drawing.Point(0, 176)
         Me.Panel4.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(418, 373)
+        Me.Panel4.Size = New System.Drawing.Size(418, 368)
         Me.Panel4.TabIndex = 2
         '
         'lblrm11
@@ -832,7 +832,7 @@ Partial Class Ringkasan
         Me.Panel3.Location = New System.Drawing.Point(422, 0)
         Me.Panel3.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(623, 564)
+        Me.Panel3.Size = New System.Drawing.Size(623, 542)
         Me.Panel3.TabIndex = 4
         Me.Panel3.Visible = False
         '
