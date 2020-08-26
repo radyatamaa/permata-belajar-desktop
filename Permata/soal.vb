@@ -400,6 +400,9 @@ Public Class Soal
     Private Sub Guna2Button9_Click(sender As Object, e As EventArgs) Handles btnsmstr1.Click
         ShowSoalTopik(btnsmstr1.Tag, Me.Label1.Tag)
         Panel3.Visible = True
+        Label13.Visible = False
+        Label14.Visible = True
+        Label15.Visible = False
     End Sub
 
     Private Sub Guna2Button7_Click(sender As Object, e As EventArgs) Handles Guna2Button7.Click
@@ -664,10 +667,16 @@ Public Class Soal
     Private Sub Guna2Button8_Click(sender As Object, e As EventArgs) Handles btnsmstr0.Click
         ShowSoalTopik(btnsmstr0.Tag, Me.Label1.Tag)
         Panel3.Visible = True
+        Label13.Visible = True
+        Label14.Visible = False
+        Label15.Visible = False
     End Sub
 
     Private Sub btnsmstr2_Click(sender As Object, e As EventArgs) Handles btnsmstr2.Click
         ShowSoalTopik(btnsmstr2.Tag, Me.Label1.Tag)
         Panel3.Visible = True
+        Label13.Visible = False
+        Label14.Visible = False
+        Label15.Visible = True
     End Sub
 End Class
