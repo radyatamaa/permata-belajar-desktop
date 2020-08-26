@@ -421,21 +421,26 @@ Public Class Soal
         Dim latihan As SoalLatihanResponse = GetLatihanSoal(btntpk2.Tag, Me.Label1.Tag, 1)
         If latihan IsNot Nothing And latihan.Responses = "200" Then
             For Each item As SoalLatihan In latihan.Data.Data
-                Dim tClient As WebClient = New WebClient
-                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(item.Soal)))
-                Soaljawaban.PictureBox1.BackgroundImage = downloadImage
-                Soaljawaban.Label2.Text = Me.Label2.Text
-                Soaljawaban.IdPelanggan = Me.Label1.Tag
-                Soaljawaban.IdContent = btntpk2.Tag
-                Soaljawaban.CurrentPage = 1
-                Soaljawaban.Label3.Text = latihan.Data.Data(0).Title
-                Soaljawaban.PembahasanJawaban = latihan.Data.Data(0).Pembahasan
-                Soaljawaban.IdExecute = latihan.Data.Data(0).Id_Execute
-                Soaljawaban.IdExamp = latihan.Data.Data(0).Id_Examp
-                Soaljawaban.PictureBox2.BackgroundImage = Nothing
-                Soaljawaban.Show()
-                SubmitSoal(btntpk2.Tag, Me.Label1.Tag)
-                Me.Hide()
+                If item.Free = "false" Then
+                    MsgBox("Hanya Untuk User Berlanggan")
+                Else
+                    Dim tClient As WebClient = New WebClient
+                    Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(item.Soal)))
+                    Soaljawaban.PictureBox1.BackgroundImage = downloadImage
+                    Soaljawaban.Label2.Text = Me.Label2.Text
+                    Soaljawaban.IdPelanggan = Me.Label1.Tag
+                    Soaljawaban.IdContent = btntpk2.Tag
+                    Soaljawaban.CurrentPage = 1
+                    Soaljawaban.Label3.Text = latihan.Data.Data(0).Title
+                    Soaljawaban.PembahasanJawaban = latihan.Data.Data(0).Pembahasan
+                    Soaljawaban.IdExecute = latihan.Data.Data(0).Id_Execute
+                    Soaljawaban.IdExamp = latihan.Data.Data(0).Id_Examp
+                    Soaljawaban.PictureBox2.BackgroundImage = Nothing
+                    Soaljawaban.Show()
+                    SubmitSoal(btntpk2.Tag, Me.Label1.Tag)
+                    Me.Hide()
+                End If
+
             Next
         Else
             MsgBox("Soal Tidak Tersedia!")
@@ -535,21 +540,26 @@ Public Class Soal
         Dim latihan As SoalLatihanResponse = GetLatihanSoal(btntpk0.Tag, Me.Label1.Tag, 1)
         If latihan IsNot Nothing And latihan.Responses = "200" Then
             For Each item As SoalLatihan In latihan.Data.Data
-                Dim tClient As WebClient = New WebClient
-                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(item.Soal)))
-                Soaljawaban.PictureBox1.BackgroundImage = downloadImage
-                Soaljawaban.Label2.Text = Me.Label2.Text
-                Soaljawaban.IdPelanggan = Me.Label1.Tag
-                Soaljawaban.IdContent = btntpk0.Tag
-                Soaljawaban.CurrentPage = 1
-                Soaljawaban.Label3.Text = latihan.Data.Data(0).Title
-                Soaljawaban.PembahasanJawaban = latihan.Data.Data(0).Pembahasan
-                Soaljawaban.IdExecute = latihan.Data.Data(0).Id_Execute
-                Soaljawaban.IdExamp = latihan.Data.Data(0).Id_Examp
-                Soaljawaban.PictureBox2.BackgroundImage = Nothing
-                Soaljawaban.Show()
-                SubmitSoal(btntpk0.Tag, Me.Label1.Tag)
-                Me.Hide()
+                If item.Free = "false" Then
+                    MsgBox("Hanya Untuk User Berlanggan")
+                Else
+                    Dim tClient As WebClient = New WebClient
+                    Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(item.Soal)))
+                    Soaljawaban.PictureBox1.BackgroundImage = downloadImage
+                    Soaljawaban.Label2.Text = Me.Label2.Text
+                    Soaljawaban.IdPelanggan = Me.Label1.Tag
+                    Soaljawaban.IdContent = btntpk0.Tag
+                    Soaljawaban.CurrentPage = 1
+                    Soaljawaban.Label3.Text = latihan.Data.Data(0).Title
+                    Soaljawaban.PembahasanJawaban = latihan.Data.Data(0).Pembahasan
+                    Soaljawaban.IdExecute = latihan.Data.Data(0).Id_Execute
+                    Soaljawaban.IdExamp = latihan.Data.Data(0).Id_Examp
+                    Soaljawaban.PictureBox2.BackgroundImage = Nothing
+                    Soaljawaban.Show()
+                    SubmitSoal(btntpk0.Tag, Me.Label1.Tag)
+                    Me.Hide()
+                End If
+
             Next
         Else
             MsgBox("Soal Tidak Tersedia!")
@@ -564,21 +574,26 @@ Public Class Soal
         Dim latihan As SoalLatihanResponse = GetLatihanSoal(btntpk1.Tag, Me.Label1.Tag, 1)
         If latihan IsNot Nothing And latihan.Responses = "200" Then
             For Each item As SoalLatihan In latihan.Data.Data
-                Dim tClient As WebClient = New WebClient
-                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(item.Soal)))
-                Soaljawaban.PictureBox1.BackgroundImage = downloadImage
-                Soaljawaban.Label2.Text = Me.Label2.Text
-                Soaljawaban.IdPelanggan = Me.Label1.Tag
-                Soaljawaban.IdContent = btntpk1.Tag
-                Soaljawaban.CurrentPage = 1
-                Soaljawaban.Label3.Text = latihan.Data.Data(0).Title
-                Soaljawaban.PembahasanJawaban = latihan.Data.Data(0).Pembahasan
-                Soaljawaban.IdExecute = latihan.Data.Data(0).Id_Execute
-                Soaljawaban.IdExamp = latihan.Data.Data(0).Id_Examp
-                Soaljawaban.PictureBox2.BackgroundImage = Nothing
-                Soaljawaban.Show()
-                SubmitSoal(btntpk1.Tag, Me.Label1.Tag)
-                Me.Hide()
+                If item.Free = "false" Then
+                    MsgBox("Hanya Untuk User Berlanggan")
+                Else
+                    Dim tClient As WebClient = New WebClient
+                    Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(item.Soal)))
+                    Soaljawaban.PictureBox1.BackgroundImage = downloadImage
+                    Soaljawaban.Label2.Text = Me.Label2.Text
+                    Soaljawaban.IdPelanggan = Me.Label1.Tag
+                    Soaljawaban.IdContent = btntpk1.Tag
+                    Soaljawaban.CurrentPage = 1
+                    Soaljawaban.Label3.Text = latihan.Data.Data(0).Title
+                    Soaljawaban.PembahasanJawaban = latihan.Data.Data(0).Pembahasan
+                    Soaljawaban.IdExecute = latihan.Data.Data(0).Id_Execute
+                    Soaljawaban.IdExamp = latihan.Data.Data(0).Id_Examp
+                    Soaljawaban.PictureBox2.BackgroundImage = Nothing
+                    Soaljawaban.Show()
+                    SubmitSoal(btntpk1.Tag, Me.Label1.Tag)
+                    Me.Hide()
+                End If
+
             Next
         Else
             MsgBox("Soal Tidak Tersedia!")
@@ -589,21 +604,26 @@ Public Class Soal
         Dim latihan As SoalLatihanResponse = GetLatihanSoal(btntpk3.Tag, Me.Label1.Tag, 1)
         If latihan IsNot Nothing And latihan.Responses = "200" Then
             For Each item As SoalLatihan In latihan.Data.Data
-                Dim tClient As WebClient = New WebClient
-                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(item.Soal)))
-                Soaljawaban.PictureBox1.BackgroundImage = downloadImage
-                Soaljawaban.Label2.Text = Me.Label2.Text
-                Soaljawaban.IdPelanggan = Me.Label1.Tag
-                Soaljawaban.IdContent = btntpk3.Tag
-                Soaljawaban.CurrentPage = 1
-                Soaljawaban.Label3.Text = latihan.Data.Data(0).Title
-                Soaljawaban.PembahasanJawaban = latihan.Data.Data(0).Pembahasan
-                Soaljawaban.IdExecute = latihan.Data.Data(0).Id_Execute
-                Soaljawaban.IdExamp = latihan.Data.Data(0).Id_Examp
-                Soaljawaban.PictureBox2.BackgroundImage = Nothing
-                Soaljawaban.Show()
-                SubmitSoal(btntpk3.Tag, Me.Label1.Tag)
-                Me.Hide()
+                If item.Free = "false" Then
+                    MsgBox("Hanya Untuk User Berlanggan")
+                Else
+                    Dim tClient As WebClient = New WebClient
+                    Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(item.Soal)))
+                    Soaljawaban.PictureBox1.BackgroundImage = downloadImage
+                    Soaljawaban.Label2.Text = Me.Label2.Text
+                    Soaljawaban.IdPelanggan = Me.Label1.Tag
+                    Soaljawaban.IdContent = btntpk3.Tag
+                    Soaljawaban.CurrentPage = 1
+                    Soaljawaban.Label3.Text = latihan.Data.Data(0).Title
+                    Soaljawaban.PembahasanJawaban = latihan.Data.Data(0).Pembahasan
+                    Soaljawaban.IdExecute = latihan.Data.Data(0).Id_Execute
+                    Soaljawaban.IdExamp = latihan.Data.Data(0).Id_Examp
+                    Soaljawaban.PictureBox2.BackgroundImage = Nothing
+                    Soaljawaban.Show()
+                    SubmitSoal(btntpk3.Tag, Me.Label1.Tag)
+                    Me.Hide()
+                End If
+
             Next
         Else
             MsgBox("Soal Tidak Tersedia!")
@@ -616,21 +636,26 @@ Public Class Soal
         Dim latihan As SoalLatihanResponse = GetLatihanSoal(btntpk4.Tag, Me.Label1.Tag, 1)
         If latihan IsNot Nothing And latihan.Responses = "200" Then
             For Each item As SoalLatihan In latihan.Data.Data
-                Dim tClient As WebClient = New WebClient
-                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(item.Soal)))
-                Soaljawaban.PictureBox1.BackgroundImage = downloadImage
-                Soaljawaban.Label2.Text = Me.Label2.Text
-                Soaljawaban.IdPelanggan = Me.Label1.Tag
-                Soaljawaban.IdContent = btntpk4.Tag
-                Soaljawaban.CurrentPage = 1
-                Soaljawaban.Label3.Text = latihan.Data.Data(0).Title
-                Soaljawaban.PembahasanJawaban = latihan.Data.Data(0).Pembahasan
-                Soaljawaban.IdExecute = latihan.Data.Data(0).Id_Execute
-                Soaljawaban.IdExamp = latihan.Data.Data(0).Id_Examp
-                Soaljawaban.PictureBox2.BackgroundImage = Nothing
-                Soaljawaban.Show()
-                SubmitSoal(btntpk4.Tag, Me.Label1.Tag)
-                Me.Hide()
+                If item.Free = "false" Then
+                    MsgBox("Hanya Untuk User Berlanggan")
+                Else
+                    Dim tClient As WebClient = New WebClient
+                    Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(item.Soal)))
+                    Soaljawaban.PictureBox1.BackgroundImage = downloadImage
+                    Soaljawaban.Label2.Text = Me.Label2.Text
+                    Soaljawaban.IdPelanggan = Me.Label1.Tag
+                    Soaljawaban.IdContent = btntpk4.Tag
+                    Soaljawaban.CurrentPage = 1
+                    Soaljawaban.Label3.Text = latihan.Data.Data(0).Title
+                    Soaljawaban.PembahasanJawaban = latihan.Data.Data(0).Pembahasan
+                    Soaljawaban.IdExecute = latihan.Data.Data(0).Id_Execute
+                    Soaljawaban.IdExamp = latihan.Data.Data(0).Id_Examp
+                    Soaljawaban.PictureBox2.BackgroundImage = Nothing
+                    Soaljawaban.Show()
+                    SubmitSoal(btntpk4.Tag, Me.Label1.Tag)
+                    Me.Hide()
+                End If
+
             Next
         Else
             MsgBox("Soal Tidak Tersedia!")
@@ -642,21 +667,26 @@ Public Class Soal
         Dim latihan As SoalLatihanResponse = GetLatihanSoal(btntpk5.Tag, Me.Label1.Tag, 1)
         If latihan IsNot Nothing And latihan.Responses = "200" Then
             For Each item As SoalLatihan In latihan.Data.Data
-                Dim tClient As WebClient = New WebClient
-                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(item.Soal)))
-                Soaljawaban.PictureBox1.BackgroundImage = downloadImage
-                Soaljawaban.Label2.Text = Me.Label2.Text
-                Soaljawaban.IdPelanggan = Me.Label1.Tag
-                Soaljawaban.IdContent = btntpk5.Tag
-                Soaljawaban.CurrentPage = 1
-                Soaljawaban.Label3.Text = latihan.Data.Data(0).Title
-                Soaljawaban.PembahasanJawaban = latihan.Data.Data(0).Pembahasan
-                Soaljawaban.IdExecute = latihan.Data.Data(0).Id_Execute
-                Soaljawaban.IdExamp = latihan.Data.Data(0).Id_Examp
-                Soaljawaban.PictureBox2.BackgroundImage = Nothing
-                Soaljawaban.Show()
-                SubmitSoal(btntpk5.Tag, Me.Label1.Tag)
-                Me.Hide()
+                If item.Free = "false" Then
+                    MsgBox("Hanya Untuk User Berlanggan")
+                Else
+                    Dim tClient As WebClient = New WebClient
+                    Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(item.Soal)))
+                    Soaljawaban.PictureBox1.BackgroundImage = downloadImage
+                    Soaljawaban.Label2.Text = Me.Label2.Text
+                    Soaljawaban.IdPelanggan = Me.Label1.Tag
+                    Soaljawaban.IdContent = btntpk5.Tag
+                    Soaljawaban.CurrentPage = 1
+                    Soaljawaban.Label3.Text = latihan.Data.Data(0).Title
+                    Soaljawaban.PembahasanJawaban = latihan.Data.Data(0).Pembahasan
+                    Soaljawaban.IdExecute = latihan.Data.Data(0).Id_Execute
+                    Soaljawaban.IdExamp = latihan.Data.Data(0).Id_Examp
+                    Soaljawaban.PictureBox2.BackgroundImage = Nothing
+                    Soaljawaban.Show()
+                    SubmitSoal(btntpk5.Tag, Me.Label1.Tag)
+                    Me.Hide()
+                End If
+
             Next
         Else
             MsgBox("Soal Tidak Tersedia!")
