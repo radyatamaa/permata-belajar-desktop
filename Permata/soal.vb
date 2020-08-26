@@ -341,7 +341,7 @@ Public Class Soal
 
             Try
 
-                tpkButton.FirstOrDefault().Text = topik(i).Title
+                tpkButton.FirstOrDefault().Text = topik(i).Topik
                 tpkButton.FirstOrDefault().Tag = topik(i).Id_Content
                 tpkButton.FirstOrDefault().Show()
                 lastIndex = lastIndex + 1

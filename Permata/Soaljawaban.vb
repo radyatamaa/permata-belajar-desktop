@@ -116,6 +116,41 @@ Public Class Soaljawaban
         End Try
         Return result
     End Function
+    Public Function SubmitSoal(idContent As Integer, IdPelanggan As String)
+        Dim baseUrl As String = "https://api.permatamall.com/api/v2/belajar/home/soal/submit/request"
+        Dim request = New With
+       {
+            .id_content = idContent,
+            .id_pelanggan = IdPelanggan
+        }
+        Dim myrequest As HttpWebRequest = HttpWebRequest.Create(baseUrl)
+        myrequest.Method = "POST"
+        myrequest.Headers.Add("Authorization", "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjMsImlhdCI6MTU5NTI5ODMwN30.i4GWwTPyp853fcwO4f71qJTmQzu06qcSrh2_vw71tYE")
+        'myrequest.Timeout = reqtimeout
+        myrequest.ContentType = "application/json"
+        Dim reqString = JsonConvert.SerializeObject(request, Formatting.Indented)
+        myrequest.ContentLength = reqString.Length
+        myrequest.CookieContainer = New CookieContainer()
+
+        ' Post to the login form.
+        Dim swRequestWriter As StreamWriter = New StreamWriter(myrequest.GetRequestStream())
+        swRequestWriter.Write(reqString)
+        swRequestWriter.Close()
+
+        Try
+            Dim resp As System.Net.HttpWebResponse = myrequest.GetResponse()
+            Dim sr As New System.IO.StreamReader(resp.GetResponseStream())
+            Dim response = sr.ReadToEnd()
+            sr.Close()
+        Catch ex As WebException
+            If ex.Status = WebExceptionStatus.Timeout Then
+                'result = "Error: The request has timed out"
+            Else
+                'result = "Error: " + ex.Message
+            End If
+        End Try
+
+    End Function
     Private Sub Guna2Button7_Click(sender As Object, e As EventArgs) Handles Guna2Button7.Click
         Soal.Show()
         Me.Hide()
@@ -127,10 +162,15 @@ Public Class Soaljawaban
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim finish As FinishSoalResponse = SubmitFinishSelesai(IdExamp)
+        Prestasi.Label2.Text = Me.Label2.Text
+        Prestasi.IdContent = IdContent
+        Prestasi.IdPelanggan = IdPelanggan
         Prestasi.jawaban_benar.Text = finish.Data.Betul
         Prestasi.jawaban_kosong.Text = finish.Data.Blank
         Prestasi.jawaban_salah.Text = finish.Data.Salah
         Prestasi.Show()
+        SubmitSoal(IdContent, IdPelanggan)
+        Me.Hide()
     End Sub
 
     Private Sub Soaljawaban_Load(sender As Object, e As EventArgs) Handles MyBase.Load

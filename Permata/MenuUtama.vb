@@ -220,6 +220,7 @@ Public Class MenuUtama
                         .Image = itemFeature.Image
                         .Active = itemFeature.Active
                         .Paket = responseConvert.Data.Paket
+                        .DataBerlangganan = responseConvert.Data.DataLangganan
                     End With
                     result.Add(feature)
                 Next
@@ -296,6 +297,7 @@ Public Class MenuUtama
         Me.Label13.Tag = kelasName
         If Datafeature.Count <> 0 Then
             Me.Label26.Text = Datafeature(0).Paket
+            Me.btn_expired.Text = Datafeature(0).DataBerlangganan.Title
         End If
 
         For i As Integer = 0 To Datafeature.Count

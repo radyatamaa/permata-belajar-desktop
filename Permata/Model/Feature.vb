@@ -7,4 +7,5 @@
     Public Property Image As String
     Public Property Active As Integer
     Public Property Paket As String
+    Public Property DataBerlangganan As DataLangganan
 End Class

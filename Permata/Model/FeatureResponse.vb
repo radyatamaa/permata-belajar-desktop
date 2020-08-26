@@ -4,6 +4,7 @@
     Public Property Data As DataFeature
 End Class
 Public Class DataFeature
+    Public Property DataLangganan As DataLangganan
     Public Property Paket As String
     Public Property Langganan As Boolean
     Public Property Feature As List(Of FeatureWithPage)
