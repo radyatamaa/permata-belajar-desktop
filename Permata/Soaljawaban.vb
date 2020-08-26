@@ -217,4 +217,12 @@ Public Class Soaljawaban
         SubmitAnswerJawaban(IdExecute, Button8.Text)
         MsgBox("Jawaban Telah Di pilih " + Button8.Text)
     End Sub
+
+    Private Sub Panel9_Paint(sender As Object, e As PaintEventArgs) Handles Panel9.Paint
+
+    End Sub
+
+    Private Sub Panel6_Paint(sender As Object, e As PaintEventArgs)
+
+    End Sub
 End Class
