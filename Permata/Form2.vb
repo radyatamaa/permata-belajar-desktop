@@ -321,8 +321,12 @@ Public Class Form2
             Dim imagePath As VideoTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btnvideo0.Tag.Id_Content)).FirstOrDefault()
             If imagePath IsNot Nothing Then
                 Dim url As VideoTopikFile = imagePath.File.Where(Function(x) x.Id_Video = Integer.Parse(Me.btnvideo0.Tag.Id_Video)).FirstOrDefault()
-                IsiVideo.videoplay.URL = url.File
-                IsiVideo.Show()
+                If url.Free = "false" Then
+                    MsgBox("Hanya Untuk User Berlanggan")
+                Else
+                    IsiVideo.videoplay.URL = url.File
+                    IsiVideo.Show()
+                End If
             Else
                 MsgBox("File dalam Video Tersebut Kosong!")
             End If
@@ -339,8 +343,13 @@ Public Class Form2
             Dim imagePath As VideoTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btnvideo1.Tag.Id_Content)).FirstOrDefault()
             If imagePath IsNot Nothing Then
                 Dim url As VideoTopikFile = imagePath.File.Where(Function(x) x.Id_Video = Integer.Parse(Me.btnvideo1.Tag.Id_Video)).FirstOrDefault()
-                IsiVideo.videoplay.URL = url.File
-                IsiVideo.Show()
+                If url.Free = "false" Then
+                    MsgBox("Hanya Untuk User Berlanggan")
+                Else
+
+                    IsiVideo.videoplay.URL = url.File
+                    IsiVideo.Show()
+                End If
             Else
                 MsgBox("File dalam Video Tersebut Kosong!")
             End If
@@ -357,8 +366,13 @@ Public Class Form2
             Dim imagePath As VideoTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btnvideo2.Tag.Id_Content)).FirstOrDefault()
             If imagePath IsNot Nothing Then
                 Dim url As VideoTopikFile = imagePath.File.Where(Function(x) x.Id_Video = Integer.Parse(Me.btnvideo2.Tag.Id_Video)).FirstOrDefault()
-                IsiVideo.videoplay.URL = url.File
-                IsiVideo.Show()
+                If url.Free = "false" Then
+                    MsgBox("Hanya Untuk User Berlanggan")
+                Else
+
+                    IsiVideo.videoplay.URL = url.File
+                    IsiVideo.Show()
+                End If
             Else
                 MsgBox("File dalam Video Tersebut Kosong!")
             End If

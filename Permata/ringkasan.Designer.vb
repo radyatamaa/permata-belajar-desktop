@@ -1319,7 +1319,7 @@ Partial Class Ringkasan
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(781, 23)
         Me.Label4.TabIndex = 0
-        Me.Label4.Text = "Suupport@permatabelajar.com, Phone/Whatsapp: 0811811306,"
+        Me.Label4.Text = "Support@permatabelajar.com, Phone/Whatsapp: 0811811306,"
         '
         'Panel9
         '
