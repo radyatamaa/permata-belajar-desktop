@@ -418,6 +418,7 @@ Public Class Soal
     End Sub
 
     Private Sub Guna2Button3_Click(sender As Object, e As EventArgs) Handles btntpk2.Click
+        SubmitSoal(btntpk2.Tag, Me.Label1.Tag)
         Dim latihan As SoalLatihanResponse = GetLatihanSoal(btntpk2.Tag, Me.Label1.Tag, 1)
         If latihan IsNot Nothing And latihan.Responses = "200" Then
             For Each item As SoalLatihan In latihan.Data.Data
@@ -437,7 +438,7 @@ Public Class Soal
                     Soaljawaban.IdExamp = latihan.Data.Data(0).Id_Examp
                     Soaljawaban.PictureBox2.BackgroundImage = Nothing
                     Soaljawaban.Show()
-                    SubmitSoal(btntpk2.Tag, Me.Label1.Tag)
+
                     Me.Hide()
                 End If
 
@@ -537,6 +538,7 @@ Public Class Soal
     End Sub
 
     Private Sub btntpk0_Click(sender As Object, e As EventArgs) Handles btntpk0.Click
+        SubmitSoal(btntpk0.Tag, Me.Label1.Tag)
         Dim latihan As SoalLatihanResponse = GetLatihanSoal(btntpk0.Tag, Me.Label1.Tag, 1)
         If latihan IsNot Nothing And latihan.Responses = "200" Then
             For Each item As SoalLatihan In latihan.Data.Data
@@ -556,7 +558,7 @@ Public Class Soal
                     Soaljawaban.IdExamp = latihan.Data.Data(0).Id_Examp
                     Soaljawaban.PictureBox2.BackgroundImage = Nothing
                     Soaljawaban.Show()
-                    SubmitSoal(btntpk0.Tag, Me.Label1.Tag)
+
                     Me.Hide()
                 End If
 
@@ -571,6 +573,7 @@ Public Class Soal
     End Sub
 
     Private Sub btntpk1_Click(sender As Object, e As EventArgs) Handles btntpk1.Click
+        SubmitSoal(btntpk1.Tag, Me.Label1.Tag)
         Dim latihan As SoalLatihanResponse = GetLatihanSoal(btntpk1.Tag, Me.Label1.Tag, 1)
         If latihan IsNot Nothing And latihan.Responses = "200" Then
             For Each item As SoalLatihan In latihan.Data.Data
@@ -590,7 +593,7 @@ Public Class Soal
                     Soaljawaban.IdExamp = latihan.Data.Data(0).Id_Examp
                     Soaljawaban.PictureBox2.BackgroundImage = Nothing
                     Soaljawaban.Show()
-                    SubmitSoal(btntpk1.Tag, Me.Label1.Tag)
+
                     Me.Hide()
                 End If
 
@@ -601,6 +604,7 @@ Public Class Soal
     End Sub
 
     Private Sub btntpk3_Click(sender As Object, e As EventArgs) Handles btntpk3.Click
+        SubmitSoal(btntpk3.Tag, Me.Label1.Tag)
         Dim latihan As SoalLatihanResponse = GetLatihanSoal(btntpk3.Tag, Me.Label1.Tag, 1)
         If latihan IsNot Nothing And latihan.Responses = "200" Then
             For Each item As SoalLatihan In latihan.Data.Data
@@ -620,7 +624,7 @@ Public Class Soal
                     Soaljawaban.IdExamp = latihan.Data.Data(0).Id_Examp
                     Soaljawaban.PictureBox2.BackgroundImage = Nothing
                     Soaljawaban.Show()
-                    SubmitSoal(btntpk3.Tag, Me.Label1.Tag)
+
                     Me.Hide()
                 End If
 
@@ -633,6 +637,7 @@ Public Class Soal
     End Sub
 
     Private Sub btntpk4_Click(sender As Object, e As EventArgs) Handles btntpk4.Click
+        SubmitSoal(btntpk4.Tag, Me.Label1.Tag)
         Dim latihan As SoalLatihanResponse = GetLatihanSoal(btntpk4.Tag, Me.Label1.Tag, 1)
         If latihan IsNot Nothing And latihan.Responses = "200" Then
             For Each item As SoalLatihan In latihan.Data.Data
@@ -652,7 +657,7 @@ Public Class Soal
                     Soaljawaban.IdExamp = latihan.Data.Data(0).Id_Examp
                     Soaljawaban.PictureBox2.BackgroundImage = Nothing
                     Soaljawaban.Show()
-                    SubmitSoal(btntpk4.Tag, Me.Label1.Tag)
+
                     Me.Hide()
                 End If
 
@@ -664,6 +669,7 @@ Public Class Soal
     End Sub
 
     Private Sub btntpk5_Click(sender As Object, e As EventArgs) Handles btntpk5.Click
+        SubmitSoal(btntpk5.Tag, Me.Label1.Tag)
         Dim latihan As SoalLatihanResponse = GetLatihanSoal(btntpk5.Tag, Me.Label1.Tag, 1)
         If latihan IsNot Nothing And latihan.Responses = "200" Then
             For Each item As SoalLatihan In latihan.Data.Data
@@ -683,7 +689,7 @@ Public Class Soal
                     Soaljawaban.IdExamp = latihan.Data.Data(0).Id_Examp
                     Soaljawaban.PictureBox2.BackgroundImage = Nothing
                     Soaljawaban.Show()
-                    SubmitSoal(btntpk5.Tag, Me.Label1.Tag)
+
                     Me.Hide()
                 End If
 
