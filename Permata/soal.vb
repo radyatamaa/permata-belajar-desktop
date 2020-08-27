@@ -4,6 +4,7 @@ Imports System.Text
 Imports Newtonsoft.Json
 
 Public Class Soal
+    Dim listSoal As New List(Of SoalTopik)
     Public Function GetMatapelajaranSoal(idKelas As Integer, idFeature As Integer, idJurusan As Integer)
         Dim result As New List(Of RingkasanMataPelajaran)
         Dim myrequest As HttpWebRequest = HttpWebRequest.Create("https://api.permatamall.com/api/v2/belajar/home/soal/mata-pelajaran?id_kelas=" + idKelas.ToString + "&id_feature=" + idFeature.ToString + "&id_jurusan=" + idJurusan.ToString)
@@ -334,6 +335,7 @@ Public Class Soal
     End Function
     Public Function ShowSoalTopik(idContent As Integer, idPelanggan As String)
         Dim topik As List(Of SoalTopik) = GetTopik(idContent, idPelanggan)
+        listSoal = topik
         Dim lastIndex As Integer = 0
         Dim lastIndexDrop As New List(Of Integer)
         For i As Integer = 0 To 5
@@ -422,7 +424,8 @@ Public Class Soal
         Dim latihan As SoalLatihanResponse = GetLatihanSoal(btntpk2.Tag, Me.Label1.Tag, 1)
         If latihan IsNot Nothing And latihan.Responses = "200" Then
             For Each item As SoalLatihan In latihan.Data.Data
-                If item.Free = "false" Then
+                Dim soal = listSoal.Where(Function(x) x.Id_Content = btntpk2.Tag).FirstOrDefault()
+                If soal.Free = "false" Then
                     MsgBox("Hanya Untuk User Berlanggan")
                 Else
                     Dim tClient As WebClient = New WebClient
@@ -542,7 +545,8 @@ Public Class Soal
         Dim latihan As SoalLatihanResponse = GetLatihanSoal(btntpk0.Tag, Me.Label1.Tag, 1)
         If latihan IsNot Nothing And latihan.Responses = "200" Then
             For Each item As SoalLatihan In latihan.Data.Data
-                If item.Free = "false" Then
+                Dim soal = listSoal.Where(Function(x) x.Id_Content = btntpk0.Tag).FirstOrDefault()
+                If soal.Free = "false" Then
                     MsgBox("Hanya Untuk User Berlanggan")
                 Else
                     Dim tClient As WebClient = New WebClient
@@ -577,7 +581,8 @@ Public Class Soal
         Dim latihan As SoalLatihanResponse = GetLatihanSoal(btntpk1.Tag, Me.Label1.Tag, 1)
         If latihan IsNot Nothing And latihan.Responses = "200" Then
             For Each item As SoalLatihan In latihan.Data.Data
-                If item.Free = "false" Then
+                Dim soal = listSoal.Where(Function(x) x.Id_Content = btntpk1.Tag).FirstOrDefault()
+                If soal.Free = "false" Then
                     MsgBox("Hanya Untuk User Berlanggan")
                 Else
                     Dim tClient As WebClient = New WebClient
@@ -608,7 +613,8 @@ Public Class Soal
         Dim latihan As SoalLatihanResponse = GetLatihanSoal(btntpk3.Tag, Me.Label1.Tag, 1)
         If latihan IsNot Nothing And latihan.Responses = "200" Then
             For Each item As SoalLatihan In latihan.Data.Data
-                If item.Free = "false" Then
+                Dim soal = listSoal.Where(Function(x) x.Id_Content = btntpk3.Tag).FirstOrDefault()
+                If soal.Free = "false" Then
                     MsgBox("Hanya Untuk User Berlanggan")
                 Else
                     Dim tClient As WebClient = New WebClient
@@ -641,7 +647,8 @@ Public Class Soal
         Dim latihan As SoalLatihanResponse = GetLatihanSoal(btntpk4.Tag, Me.Label1.Tag, 1)
         If latihan IsNot Nothing And latihan.Responses = "200" Then
             For Each item As SoalLatihan In latihan.Data.Data
-                If item.Free = "false" Then
+                Dim soal = listSoal.Where(Function(x) x.Id_Content = btntpk4.Tag).FirstOrDefault()
+                If soal.Free = "false" Then
                     MsgBox("Hanya Untuk User Berlanggan")
                 Else
                     Dim tClient As WebClient = New WebClient
@@ -673,7 +680,8 @@ Public Class Soal
         Dim latihan As SoalLatihanResponse = GetLatihanSoal(btntpk5.Tag, Me.Label1.Tag, 1)
         If latihan IsNot Nothing And latihan.Responses = "200" Then
             For Each item As SoalLatihan In latihan.Data.Data
-                If item.Free = "false" Then
+                Dim soal = listSoal.Where(Function(x) x.Id_Content = btntpk5.Tag).FirstOrDefault()
+                If soal.Free = "false" Then
                     MsgBox("Hanya Untuk User Berlanggan")
                 Else
                     Dim tClient As WebClient = New WebClient
