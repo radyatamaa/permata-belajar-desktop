@@ -3,59 +3,60 @@ Imports System.Net
 Imports Newtonsoft.Json
 
 Public Class MenuUtama
+    Dim NamaKelas As String
     Private Sub btnkelas0_Click(sender As Object, e As EventArgs) Handles btnkelas0.Click
-        ShowFeature(Integer.Parse(Me.btnkelas0.Tag), Me.Guna2PictureBox3.Tag, Me.lblkelas0.Text)
+        ShowFeature(Integer.Parse(Me.btnkelas0.Tag), Me.Guna2PictureBox3.Tag, Me.lblkelas0.Text, 0)
         Panel5.Visible = True
     End Sub
 
     Private Sub Button8_Click(sender As Object, e As EventArgs) Handles btnkelas1.Click
-        ShowFeature(Integer.Parse(Me.btnkelas1.Tag), Me.Guna2PictureBox3.Tag, Me.lblkelas1.Text)
+        ShowFeature(Integer.Parse(Me.btnkelas1.Tag), Me.Guna2PictureBox3.Tag, Me.lblkelas1.Text, 1)
         Panel5.Visible = True
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles btnkelas2.Click
-        ShowFeature(Integer.Parse(Me.btnkelas2.Tag), Me.Guna2PictureBox3.Tag, Me.lblkelas2.Text)
+        ShowFeature(Integer.Parse(Me.btnkelas2.Tag), Me.Guna2PictureBox3.Tag, Me.lblkelas2.Text, 2)
         Panel5.Visible = True
     End Sub
 
     Private Sub Button11_Click(sender As Object, e As EventArgs) Handles btnkelas3.Click
-        ShowFeature(Integer.Parse(Me.btnkelas3.Tag), Me.Guna2PictureBox3.Tag, Me.lblkelas3.Text)
+        ShowFeature(Integer.Parse(Me.btnkelas3.Tag), Me.Guna2PictureBox3.Tag, Me.lblkelas3.Text, 3)
         Panel5.Visible = True
     End Sub
 
     Private Sub Button12_Click(sender As Object, e As EventArgs) Handles btnkelas4.Click
-        ShowFeature(Integer.Parse(Me.btnkelas4.Tag), Me.Guna2PictureBox3.Tag, Me.lblkelas4.Text)
+        ShowFeature(Integer.Parse(Me.btnkelas4.Tag), Me.Guna2PictureBox3.Tag, Me.lblkelas4.Text, 4)
         Panel5.Visible = True
     End Sub
 
     Private Sub Button9_Click(sender As Object, e As EventArgs) Handles btnkelas5.Click
-        ShowFeature(Integer.Parse(Me.btnkelas5.Tag), Me.Guna2PictureBox3.Tag, Me.lblkelas5.Text)
+        ShowFeature(Integer.Parse(Me.btnkelas5.Tag), Me.Guna2PictureBox3.Tag, Me.lblkelas5.Text, 5)
         Panel5.Visible = True
 
     End Sub
 
     Private Sub Button15_Click(sender As Object, e As EventArgs) Handles btnkelas6.Click
-        ShowFeature(Integer.Parse(Me.btnkelas6.Tag), Me.Guna2PictureBox3.Tag, Me.lblkelas6.Text)
+        ShowFeature(Integer.Parse(Me.btnkelas6.Tag), Me.Guna2PictureBox3.Tag, Me.lblkelas6.Text, 6)
         Panel5.Visible = True
     End Sub
 
     Private Sub Button16_Click(sender As Object, e As EventArgs) Handles btnkelas7.Click
-        ShowFeature(Integer.Parse(Me.btnkelas7.Tag), Me.Guna2PictureBox3.Tag, Me.lblkelas7.Text)
+        ShowFeature(Integer.Parse(Me.btnkelas7.Tag), Me.Guna2PictureBox3.Tag, Me.lblkelas7.Text, 7)
         Panel5.Visible = True
     End Sub
 
     Private Sub Button13_Click(sender As Object, e As EventArgs) Handles btnkelas8.Click
-        ShowFeature(Integer.Parse(Me.btnkelas8.Tag), Me.Guna2PictureBox3.Tag, Me.lblkelas8.Text)
+        ShowFeature(Integer.Parse(Me.btnkelas8.Tag), Me.Guna2PictureBox3.Tag, Me.lblkelas8.Text, 8)
         Panel5.Visible = True
     End Sub
 
     Private Sub Button19_Click(sender As Object, e As EventArgs) Handles btnkelas9.Click
-        ShowFeature(Integer.Parse(Me.btnkelas9.Tag), Me.Guna2PictureBox3.Tag, Me.lblkelas9.Text)
+        ShowFeature(Integer.Parse(Me.btnkelas9.Tag), Me.Guna2PictureBox3.Tag, Me.lblkelas9.Text, 9)
         Panel5.Visible = True
     End Sub
 
     Private Sub Button20_Click(sender As Object, e As EventArgs) Handles btnkelas10.Click
-        ShowFeature(Integer.Parse(Me.btnkelas10.Tag), Me.Guna2PictureBox3.Tag, Me.lblkelas10.Text)
+        ShowFeature(Integer.Parse(Me.btnkelas10.Tag), Me.Guna2PictureBox3.Tag, Me.lblkelas10.Text, 10)
         Panel5.Visible = True
     End Sub
 
@@ -290,8 +291,10 @@ Public Class MenuUtama
 
     End Function
 
-    Public Function ShowFeature(kelasId As Integer, pelangganId As String, kelasName As String)
+    Public Function ShowFeature(kelasId As Integer, pelangganId As String, kelasName As String, buttonIndex As Integer)
         Dim Datafeature As List(Of Feature) = GetFeatureByKelasId(kelasId, pelangganId)
+        Dim kelasLabel As Control() = Me.Controls.Find("lblkelas" + buttonIndex.ToString(), True)
+        Me.Label5.Text = kelasLabel.FirstOrDefault().Text
         Dim lastIndex As Integer = 0
         Me.Label26.Tag = kelasId
         Me.Label13.Tag = kelasName
@@ -402,22 +405,22 @@ Public Class MenuUtama
     End Sub
 
     Private Sub btnkelas11_Click(sender As Object, e As EventArgs) Handles btnkelas11.Click
-        ShowFeature(Integer.Parse(Me.btnkelas11.Tag), Me.Guna2PictureBox3.Tag, Me.lblkelas11.Text)
+        ShowFeature(Integer.Parse(Me.btnkelas11.Tag), Me.Guna2PictureBox3.Tag, Me.lblkelas11.Text, 11)
         Panel5.Visible = True
     End Sub
 
     Private Sub btnkelas12_Click(sender As Object, e As EventArgs) Handles btnkelas12.Click
-        ShowFeature(Integer.Parse(Me.btnkelas12.Tag), Me.Guna2PictureBox3.Tag, Me.lblkelas12.Text)
+        ShowFeature(Integer.Parse(Me.btnkelas12.Tag), Me.Guna2PictureBox3.Tag, Me.lblkelas12.Text, 12)
         Panel5.Visible = True
     End Sub
 
     Private Sub btnkelas13_Click(sender As Object, e As EventArgs) Handles btnkelas13.Click
-        ShowFeature(Integer.Parse(Me.btnkelas13.Tag), Me.Guna2PictureBox3.Tag, Me.lblkelas13.Text)
+        ShowFeature(Integer.Parse(Me.btnkelas13.Tag), Me.Guna2PictureBox3.Tag, Me.lblkelas13.Text, 13)
         Panel5.Visible = True
     End Sub
 
     Private Sub btnkelas14_Click(sender As Object, e As EventArgs) Handles btnkelas14.Click
-        ShowFeature(Integer.Parse(Me.btnkelas14.Tag), Me.Guna2PictureBox3.Tag, Me.lblkelas14.Text)
+        ShowFeature(Integer.Parse(Me.btnkelas14.Tag), Me.Guna2PictureBox3.Tag, Me.lblkelas14.Text, 14)
         Panel5.Visible = True
     End Sub
 
