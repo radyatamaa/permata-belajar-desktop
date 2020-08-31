@@ -36,6 +36,7 @@ Public Class Ringkasan
                     .Final = item.Final
                 End With
                 result.Add(ringkasanTopik)
+
                 'Do something with "item" here
             Next
             sr.Close()
@@ -181,6 +182,7 @@ Public Class Ringkasan
                     dtopButton.FirstOrDefault().Tag = anonymousEvent
                     dtopButton.FirstOrDefault().Show()
                     Dim last = idrop + 1
+
                     lastIndexDrop.Add(last)
 
                 Next idrop
@@ -351,17 +353,22 @@ Public Class Ringkasan
             Dim imagePath As RingkasanMateriTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btntpk0.Tag)).FirstOrDefault()
             If imagePath IsNot Nothing Then
                 Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop00.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
-                Dim tClient As WebClient = New WebClient
-                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
-                Dim width = downloadImage.Width
-                Dim height = downloadImage.Height
+                If url.Free = "false" Then
+                    MsgBox("Hanya Untuk User Berlanggan")
+                Else
+                    Dim tClient As WebClient = New WebClient
+                    Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
+                    Dim width = downloadImage.Width
+                    Dim height = downloadImage.Height
 
-                IsiRIngkasan.Width = width
-                IsiRIngkasan.Height = height
-                IsiRIngkasan.PictureBox0.Width = width
-                IsiRIngkasan.PictureBox0.Height = height
-                IsiRIngkasan.PictureBox0.Image = downloadImage
-                IsiRIngkasan.Show()
+                    IsiRIngkasan.Width = width
+                    IsiRIngkasan.Height = height
+                    IsiRIngkasan.PictureBox0.Width = width
+                    IsiRIngkasan.PictureBox0.Height = height
+                    IsiRIngkasan.PictureBox0.Image = downloadImage
+                    IsiRIngkasan.Show()
+                End If
+
             Else
                 MsgBox("File dalam ringkasan Tersebut Kosong!")
             End If
@@ -379,17 +386,22 @@ Public Class Ringkasan
             Dim imagePath As RingkasanMateriTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btntpk0.Tag)).FirstOrDefault()
             If imagePath IsNot Nothing Then
                 Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop10.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
-                Dim tClient As WebClient = New WebClient
-                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
-                Dim width = downloadImage.Width
-                Dim height = downloadImage.Height
+                If url.Free = "false" Then
+                    MsgBox("Hanya Untuk User Berlanggan")
+                Else
+                    Dim tClient As WebClient = New WebClient
+                    Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
+                    Dim width = downloadImage.Width
+                    Dim height = downloadImage.Height
 
-                IsiRIngkasan.Width = width
-                IsiRIngkasan.Height = height
-                IsiRIngkasan.PictureBox0.Width = width
-                IsiRIngkasan.PictureBox0.Height = height
-                IsiRIngkasan.PictureBox0.Image = downloadImage
-                IsiRIngkasan.Show()
+                    IsiRIngkasan.Width = width
+                    IsiRIngkasan.Height = height
+                    IsiRIngkasan.PictureBox0.Width = width
+                    IsiRIngkasan.PictureBox0.Height = height
+                    IsiRIngkasan.PictureBox0.Image = downloadImage
+                    IsiRIngkasan.Show()
+                End If
+
             Else
                 MsgBox("File dalam ringkasan Tersebut Kosong!")
             End If
@@ -406,17 +418,22 @@ Public Class Ringkasan
             Dim imagePath As RingkasanMateriTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btntpk0.Tag)).FirstOrDefault()
             If imagePath IsNot Nothing Then
                 Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop20.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
-                Dim tClient As WebClient = New WebClient
-                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
-                Dim width = downloadImage.Width
-                Dim height = downloadImage.Height
+                If url.Free = "false" Then
+                    MsgBox("Hanya Untuk User Berlanggan")
+                Else
+                    Dim tClient As WebClient = New WebClient
+                    Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
+                    Dim width = downloadImage.Width
+                    Dim height = downloadImage.Height
 
-                IsiRIngkasan.Width = width
-                IsiRIngkasan.Height = height
-                IsiRIngkasan.PictureBox0.Width = width
-                IsiRIngkasan.PictureBox0.Height = height
-                IsiRIngkasan.PictureBox0.Image = downloadImage
-                IsiRIngkasan.Show()
+                    IsiRIngkasan.Width = width
+                    IsiRIngkasan.Height = height
+                    IsiRIngkasan.PictureBox0.Width = width
+                    IsiRIngkasan.PictureBox0.Height = height
+                    IsiRIngkasan.PictureBox0.Image = downloadImage
+                    IsiRIngkasan.Show()
+                End If
+
             Else
                 MsgBox("File dalam ringkasan Tersebut Kosong!")
             End If
@@ -433,17 +450,22 @@ Public Class Ringkasan
             Dim imagePath As RingkasanMateriTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btntpk0.Tag)).FirstOrDefault()
             If imagePath IsNot Nothing Then
                 Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop30.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
-                Dim tClient As WebClient = New WebClient
-                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
-                Dim width = downloadImage.Width
-                Dim height = downloadImage.Height
+                If url.Free = "false" Then
+                    MsgBox("Hanya Untuk User Berlanggan")
+                Else
+                    Dim tClient As WebClient = New WebClient
+                    Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
+                    Dim width = downloadImage.Width
+                    Dim height = downloadImage.Height
 
-                IsiRIngkasan.Width = width
-                IsiRIngkasan.Height = height
-                IsiRIngkasan.PictureBox0.Width = width
-                IsiRIngkasan.PictureBox0.Height = height
-                IsiRIngkasan.PictureBox0.Image = downloadImage
-                IsiRIngkasan.Show()
+                    IsiRIngkasan.Width = width
+                    IsiRIngkasan.Height = height
+                    IsiRIngkasan.PictureBox0.Width = width
+                    IsiRIngkasan.PictureBox0.Height = height
+                    IsiRIngkasan.PictureBox0.Image = downloadImage
+                    IsiRIngkasan.Show()
+                End If
+
             Else
                 MsgBox("File dalam ringkasan Tersebut Kosong!")
             End If
@@ -460,10 +482,15 @@ Public Class Ringkasan
             Dim imagePath As RingkasanMateriTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btntpk0.Tag)).FirstOrDefault()
             If imagePath IsNot Nothing Then
                 Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop30.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
-                Dim tClient As WebClient = New WebClient
-                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
-                IsiRIngkasan.PictureBox0.Image = downloadImage
-                IsiRIngkasan.Show()
+                If url.Free = "false" Then
+                    MsgBox("Hanya Untuk User Berlanggan")
+                Else
+                    Dim tClient As WebClient = New WebClient
+                    Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
+                    IsiRIngkasan.PictureBox0.Image = downloadImage
+                    IsiRIngkasan.Show()
+                End If
+
             Else
                 MsgBox("File dalam ringkasan Tersebut Kosong!")
             End If
@@ -480,17 +507,22 @@ Public Class Ringkasan
             Dim imagePath As RingkasanMateriTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btntpk1.Tag)).FirstOrDefault()
             If imagePath IsNot Nothing Then
                 Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop01.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
-                Dim tClient As WebClient = New WebClient
-                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
-                Dim width = downloadImage.Width
-                Dim height = downloadImage.Height
+                If url.Free = "false" Then
+                    MsgBox("Hanya Untuk User Berlanggan")
+                Else
+                    Dim tClient As WebClient = New WebClient
+                    Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
+                    Dim width = downloadImage.Width
+                    Dim height = downloadImage.Height
 
-                IsiRIngkasan.Width = width
-                IsiRIngkasan.Height = height
-                IsiRIngkasan.PictureBox0.Width = width
-                IsiRIngkasan.PictureBox0.Height = height
-                IsiRIngkasan.PictureBox0.Image = downloadImage
-                IsiRIngkasan.Show()
+                    IsiRIngkasan.Width = width
+                    IsiRIngkasan.Height = height
+                    IsiRIngkasan.PictureBox0.Width = width
+                    IsiRIngkasan.PictureBox0.Height = height
+                    IsiRIngkasan.PictureBox0.Image = downloadImage
+                    IsiRIngkasan.Show()
+                End If
+
             Else
                 MsgBox("File dalam ringkasan Tersebut Kosong!")
             End If
@@ -507,17 +539,22 @@ Public Class Ringkasan
             Dim imagePath As RingkasanMateriTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btntpk1.Tag)).FirstOrDefault()
             If imagePath IsNot Nothing Then
                 Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop11.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
-                Dim tClient As WebClient = New WebClient
-                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
-                Dim width = downloadImage.Width
-                Dim height = downloadImage.Height
+                If url.Free = "false" Then
+                    MsgBox("Hanya Untuk User Berlanggan")
+                Else
+                    Dim tClient As WebClient = New WebClient
+                    Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
+                    Dim width = downloadImage.Width
+                    Dim height = downloadImage.Height
 
-                IsiRIngkasan.Width = width
-                IsiRIngkasan.Height = height
-                IsiRIngkasan.PictureBox0.Width = width
-                IsiRIngkasan.PictureBox0.Height = height
-                IsiRIngkasan.PictureBox0.Image = downloadImage
-                IsiRIngkasan.Show()
+                    IsiRIngkasan.Width = width
+                    IsiRIngkasan.Height = height
+                    IsiRIngkasan.PictureBox0.Width = width
+                    IsiRIngkasan.PictureBox0.Height = height
+                    IsiRIngkasan.PictureBox0.Image = downloadImage
+                    IsiRIngkasan.Show()
+                End If
+
             Else
                 MsgBox("File dalam ringkasan Tersebut Kosong!")
             End If
@@ -534,17 +571,22 @@ Public Class Ringkasan
             Dim imagePath As RingkasanMateriTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btntpk1.Tag)).FirstOrDefault()
             If imagePath IsNot Nothing Then
                 Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop21.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
-                Dim tClient As WebClient = New WebClient
-                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
-                Dim width = downloadImage.Width
-                Dim height = downloadImage.Height
+                If url.Free = "false" Then
+                    MsgBox("Hanya Untuk User Berlanggan")
+                Else
+                    Dim tClient As WebClient = New WebClient
+                    Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
+                    Dim width = downloadImage.Width
+                    Dim height = downloadImage.Height
 
-                IsiRIngkasan.Width = width
-                IsiRIngkasan.Height = height
-                IsiRIngkasan.PictureBox0.Width = width
-                IsiRIngkasan.PictureBox0.Height = height
-                IsiRIngkasan.PictureBox0.Image = downloadImage
-                IsiRIngkasan.Show()
+                    IsiRIngkasan.Width = width
+                    IsiRIngkasan.Height = height
+                    IsiRIngkasan.PictureBox0.Width = width
+                    IsiRIngkasan.PictureBox0.Height = height
+                    IsiRIngkasan.PictureBox0.Image = downloadImage
+                    IsiRIngkasan.Show()
+                End If
+
             Else
                 MsgBox("File dalam ringkasan Tersebut Kosong!")
             End If
@@ -561,17 +603,22 @@ Public Class Ringkasan
             Dim imagePath As RingkasanMateriTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btntpk1.Tag)).FirstOrDefault()
             If imagePath IsNot Nothing Then
                 Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop31.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
-                Dim tClient As WebClient = New WebClient
-                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
-                Dim width = downloadImage.Width
-                Dim height = downloadImage.Height
+                If url.Free = "false" Then
+                    MsgBox("Hanya Untuk User Berlanggan")
+                Else
+                    Dim tClient As WebClient = New WebClient
+                    Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
+                    Dim width = downloadImage.Width
+                    Dim height = downloadImage.Height
 
-                IsiRIngkasan.Width = width
-                IsiRIngkasan.Height = height
-                IsiRIngkasan.PictureBox0.Width = width
-                IsiRIngkasan.PictureBox0.Height = height
-                IsiRIngkasan.PictureBox0.Image = downloadImage
-                IsiRIngkasan.Show()
+                    IsiRIngkasan.Width = width
+                    IsiRIngkasan.Height = height
+                    IsiRIngkasan.PictureBox0.Width = width
+                    IsiRIngkasan.PictureBox0.Height = height
+                    IsiRIngkasan.PictureBox0.Image = downloadImage
+                    IsiRIngkasan.Show()
+                End If
+
             Else
                 MsgBox("File dalam ringkasan Tersebut Kosong!")
             End If
@@ -588,17 +635,22 @@ Public Class Ringkasan
             Dim imagePath As RingkasanMateriTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btntpk1.Tag)).FirstOrDefault()
             If imagePath IsNot Nothing Then
                 Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop41.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
-                Dim tClient As WebClient = New WebClient
-                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
-                Dim width = downloadImage.Width
-                Dim height = downloadImage.Height
+                If url.Free = "false" Then
+                    MsgBox("Hanya Untuk User Berlanggan")
+                Else
+                    Dim tClient As WebClient = New WebClient
+                    Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
+                    Dim width = downloadImage.Width
+                    Dim height = downloadImage.Height
 
-                IsiRIngkasan.Width = width
-                IsiRIngkasan.Height = height
-                IsiRIngkasan.PictureBox0.Width = width
-                IsiRIngkasan.PictureBox0.Height = height
-                IsiRIngkasan.PictureBox0.Image = downloadImage
-                IsiRIngkasan.Show()
+                    IsiRIngkasan.Width = width
+                    IsiRIngkasan.Height = height
+                    IsiRIngkasan.PictureBox0.Width = width
+                    IsiRIngkasan.PictureBox0.Height = height
+                    IsiRIngkasan.PictureBox0.Image = downloadImage
+                    IsiRIngkasan.Show()
+                End If
+
             Else
                 MsgBox("File dalam ringkasan Tersebut Kosong!")
             End If
@@ -615,17 +667,22 @@ Public Class Ringkasan
             Dim imagePath As RingkasanMateriTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btntpk2.Tag)).FirstOrDefault()
             If imagePath IsNot Nothing Then
                 Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop02.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
-                Dim tClient As WebClient = New WebClient
-                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
-                Dim width = downloadImage.Width
-                Dim height = downloadImage.Height
+                If url.Free = "false" Then
+                    MsgBox("Hanya Untuk User Berlanggan")
+                Else
+                    Dim tClient As WebClient = New WebClient
+                    Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
+                    Dim width = downloadImage.Width
+                    Dim height = downloadImage.Height
 
-                IsiRIngkasan.Width = width
-                IsiRIngkasan.Height = height
-                IsiRIngkasan.PictureBox0.Width = width
-                IsiRIngkasan.PictureBox0.Height = height
-                IsiRIngkasan.PictureBox0.Image = downloadImage
-                IsiRIngkasan.Show()
+                    IsiRIngkasan.Width = width
+                    IsiRIngkasan.Height = height
+                    IsiRIngkasan.PictureBox0.Width = width
+                    IsiRIngkasan.PictureBox0.Height = height
+                    IsiRIngkasan.PictureBox0.Image = downloadImage
+                    IsiRIngkasan.Show()
+                End If
+
             Else
                 MsgBox("File dalam ringkasan Tersebut Kosong!")
             End If
@@ -642,17 +699,22 @@ Public Class Ringkasan
             Dim imagePath As RingkasanMateriTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btntpk2.Tag)).FirstOrDefault()
             If imagePath IsNot Nothing Then
                 Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop12.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
-                Dim tClient As WebClient = New WebClient
-                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
-                Dim width = downloadImage.Width
-                Dim height = downloadImage.Height
+                If url.Free = "false" Then
+                    MsgBox("Hanya Untuk User Berlanggan")
+                Else
+                    Dim tClient As WebClient = New WebClient
+                    Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
+                    Dim width = downloadImage.Width
+                    Dim height = downloadImage.Height
 
-                IsiRIngkasan.Width = width
-                IsiRIngkasan.Height = height
-                IsiRIngkasan.PictureBox0.Width = width
-                IsiRIngkasan.PictureBox0.Height = height
-                IsiRIngkasan.PictureBox0.Image = downloadImage
-                IsiRIngkasan.Show()
+                    IsiRIngkasan.Width = width
+                    IsiRIngkasan.Height = height
+                    IsiRIngkasan.PictureBox0.Width = width
+                    IsiRIngkasan.PictureBox0.Height = height
+                    IsiRIngkasan.PictureBox0.Image = downloadImage
+                    IsiRIngkasan.Show()
+                End If
+
             Else
                 MsgBox("File dalam ringkasan Tersebut Kosong!")
             End If
@@ -669,17 +731,22 @@ Public Class Ringkasan
             Dim imagePath As RingkasanMateriTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btntpk2.Tag)).FirstOrDefault()
             If imagePath IsNot Nothing Then
                 Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop22.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
-                Dim tClient As WebClient = New WebClient
-                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
-                Dim width = downloadImage.Width
-                Dim height = downloadImage.Height
+                If url.Free = "false" Then
+                    MsgBox("Hanya Untuk User Berlanggan")
+                Else
+                    Dim tClient As WebClient = New WebClient
+                    Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
+                    Dim width = downloadImage.Width
+                    Dim height = downloadImage.Height
 
-                IsiRIngkasan.Width = width
-                IsiRIngkasan.Height = height
-                IsiRIngkasan.PictureBox0.Width = width
-                IsiRIngkasan.PictureBox0.Height = height
-                IsiRIngkasan.PictureBox0.Image = downloadImage
-                IsiRIngkasan.Show()
+                    IsiRIngkasan.Width = width
+                    IsiRIngkasan.Height = height
+                    IsiRIngkasan.PictureBox0.Width = width
+                    IsiRIngkasan.PictureBox0.Height = height
+                    IsiRIngkasan.PictureBox0.Image = downloadImage
+                    IsiRIngkasan.Show()
+                End If
+
             Else
                 MsgBox("File dalam ringkasan Tersebut Kosong!")
             End If
@@ -696,17 +763,22 @@ Public Class Ringkasan
             Dim imagePath As RingkasanMateriTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btntpk2.Tag)).FirstOrDefault()
             If imagePath IsNot Nothing Then
                 Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop32.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
-                Dim tClient As WebClient = New WebClient
-                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
-                Dim width = downloadImage.Width
-                Dim height = downloadImage.Height
+                If url.Free = "false" Then
+                    MsgBox("Hanya Untuk User Berlanggan")
+                Else
+                    Dim tClient As WebClient = New WebClient
+                    Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
+                    Dim width = downloadImage.Width
+                    Dim height = downloadImage.Height
 
-                IsiRIngkasan.Width = width
-                IsiRIngkasan.Height = height
-                IsiRIngkasan.PictureBox0.Width = width
-                IsiRIngkasan.PictureBox0.Height = height
-                IsiRIngkasan.PictureBox0.Image = downloadImage
-                IsiRIngkasan.Show()
+                    IsiRIngkasan.Width = width
+                    IsiRIngkasan.Height = height
+                    IsiRIngkasan.PictureBox0.Width = width
+                    IsiRIngkasan.PictureBox0.Height = height
+                    IsiRIngkasan.PictureBox0.Image = downloadImage
+                    IsiRIngkasan.Show()
+                End If
+
             Else
                 MsgBox("File dalam ringkasan Tersebut Kosong!")
             End If
@@ -723,17 +795,22 @@ Public Class Ringkasan
             Dim imagePath As RingkasanMateriTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btntpk2.Tag)).FirstOrDefault()
             If imagePath IsNot Nothing Then
                 Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop42.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
-                Dim tClient As WebClient = New WebClient
-                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
-                Dim width = downloadImage.Width
-                Dim height = downloadImage.Height
+                If url.Free = "false" Then
+                    MsgBox("Hanya Untuk User Berlanggan")
+                Else
+                    Dim tClient As WebClient = New WebClient
+                    Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
+                    Dim width = downloadImage.Width
+                    Dim height = downloadImage.Height
 
-                IsiRIngkasan.Width = width
-                IsiRIngkasan.Height = height
-                IsiRIngkasan.PictureBox0.Width = width
-                IsiRIngkasan.PictureBox0.Height = height
-                IsiRIngkasan.PictureBox0.Image = downloadImage
-                IsiRIngkasan.Show()
+                    IsiRIngkasan.Width = width
+                    IsiRIngkasan.Height = height
+                    IsiRIngkasan.PictureBox0.Width = width
+                    IsiRIngkasan.PictureBox0.Height = height
+                    IsiRIngkasan.PictureBox0.Image = downloadImage
+                    IsiRIngkasan.Show()
+                End If
+
             Else
                 MsgBox("File dalam ringkasan Tersebut Kosong!")
             End If
@@ -750,17 +827,22 @@ Public Class Ringkasan
             Dim imagePath As RingkasanMateriTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btntpk3.Tag)).FirstOrDefault()
             If imagePath IsNot Nothing Then
                 Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop03.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
-                Dim tClient As WebClient = New WebClient
-                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
-                Dim width = downloadImage.Width
-                Dim height = downloadImage.Height
+                If url.Free = "false" Then
+                    MsgBox("Hanya Untuk User Berlanggan")
+                Else
+                    Dim tClient As WebClient = New WebClient
+                    Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
+                    Dim width = downloadImage.Width
+                    Dim height = downloadImage.Height
 
-                IsiRIngkasan.Width = width
-                IsiRIngkasan.Height = height
-                IsiRIngkasan.PictureBox0.Width = width
-                IsiRIngkasan.PictureBox0.Height = height
-                IsiRIngkasan.PictureBox0.Image = downloadImage
-                IsiRIngkasan.Show()
+                    IsiRIngkasan.Width = width
+                    IsiRIngkasan.Height = height
+                    IsiRIngkasan.PictureBox0.Width = width
+                    IsiRIngkasan.PictureBox0.Height = height
+                    IsiRIngkasan.PictureBox0.Image = downloadImage
+                    IsiRIngkasan.Show()
+                End If
+
             Else
                 MsgBox("File dalam ringkasan Tersebut Kosong!")
             End If
@@ -777,17 +859,22 @@ Public Class Ringkasan
             Dim imagePath As RingkasanMateriTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btntpk3.Tag)).FirstOrDefault()
             If imagePath IsNot Nothing Then
                 Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop13.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
-                Dim tClient As WebClient = New WebClient
-                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
-                Dim width = downloadImage.Width
-                Dim height = downloadImage.Height
+                If url.Free = "false" Then
+                    MsgBox("Hanya Untuk User Berlanggan")
+                Else
+                    Dim tClient As WebClient = New WebClient
+                    Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
+                    Dim width = downloadImage.Width
+                    Dim height = downloadImage.Height
 
-                IsiRIngkasan.Width = width
-                IsiRIngkasan.Height = height
-                IsiRIngkasan.PictureBox0.Width = width
-                IsiRIngkasan.PictureBox0.Height = height
-                IsiRIngkasan.PictureBox0.Image = downloadImage
-                IsiRIngkasan.Show()
+                    IsiRIngkasan.Width = width
+                    IsiRIngkasan.Height = height
+                    IsiRIngkasan.PictureBox0.Width = width
+                    IsiRIngkasan.PictureBox0.Height = height
+                    IsiRIngkasan.PictureBox0.Image = downloadImage
+                    IsiRIngkasan.Show()
+                End If
+
             Else
                 MsgBox("File dalam ringkasan Tersebut Kosong!")
             End If
@@ -804,17 +891,22 @@ Public Class Ringkasan
             Dim imagePath As RingkasanMateriTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btntpk3.Tag)).FirstOrDefault()
             If imagePath IsNot Nothing Then
                 Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop23.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
-                Dim tClient As WebClient = New WebClient
-                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
-                Dim width = downloadImage.Width
-                Dim height = downloadImage.Height
+                If url.Free = "false" Then
+                    MsgBox("Hanya Untuk User Berlanggan")
+                Else
+                    Dim tClient As WebClient = New WebClient
+                    Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
+                    Dim width = downloadImage.Width
+                    Dim height = downloadImage.Height
 
-                IsiRIngkasan.Width = width
-                IsiRIngkasan.Height = height
-                IsiRIngkasan.PictureBox0.Width = width
-                IsiRIngkasan.PictureBox0.Height = height
-                IsiRIngkasan.PictureBox0.Image = downloadImage
-                IsiRIngkasan.Show()
+                    IsiRIngkasan.Width = width
+                    IsiRIngkasan.Height = height
+                    IsiRIngkasan.PictureBox0.Width = width
+                    IsiRIngkasan.PictureBox0.Height = height
+                    IsiRIngkasan.PictureBox0.Image = downloadImage
+                    IsiRIngkasan.Show()
+                End If
+
             Else
                 MsgBox("File dalam ringkasan Tersebut Kosong!")
             End If
@@ -831,17 +923,22 @@ Public Class Ringkasan
             Dim imagePath As RingkasanMateriTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btntpk3.Tag)).FirstOrDefault()
             If imagePath IsNot Nothing Then
                 Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop33.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
-                Dim tClient As WebClient = New WebClient
-                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
-                Dim width = downloadImage.Width
-                Dim height = downloadImage.Height
+                If url.Free = "false" Then
+                    MsgBox("Hanya Untuk User Berlanggan")
+                Else
+                    Dim tClient As WebClient = New WebClient
+                    Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
+                    Dim width = downloadImage.Width
+                    Dim height = downloadImage.Height
 
-                IsiRIngkasan.Width = width
-                IsiRIngkasan.Height = height
-                IsiRIngkasan.PictureBox0.Width = width
-                IsiRIngkasan.PictureBox0.Height = height
-                IsiRIngkasan.PictureBox0.Image = downloadImage
-                IsiRIngkasan.Show()
+                    IsiRIngkasan.Width = width
+                    IsiRIngkasan.Height = height
+                    IsiRIngkasan.PictureBox0.Width = width
+                    IsiRIngkasan.PictureBox0.Height = height
+                    IsiRIngkasan.PictureBox0.Image = downloadImage
+                    IsiRIngkasan.Show()
+                End If
+
             Else
                 MsgBox("File dalam ringkasan Tersebut Kosong!")
             End If
@@ -857,17 +954,22 @@ Public Class Ringkasan
             Dim imagePath As RingkasanMateriTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btntpk3.Tag)).FirstOrDefault()
             If imagePath IsNot Nothing Then
                 Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop43.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
-                Dim tClient As WebClient = New WebClient
-                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
-                Dim width = downloadImage.Width
-                Dim height = downloadImage.Height
+                If url.Free = "false" Then
+                    MsgBox("Hanya Untuk User Berlanggan")
+                Else
+                    Dim tClient As WebClient = New WebClient
+                    Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
+                    Dim width = downloadImage.Width
+                    Dim height = downloadImage.Height
 
-                IsiRIngkasan.Width = width
-                IsiRIngkasan.Height = height
-                IsiRIngkasan.PictureBox0.Width = width
-                IsiRIngkasan.PictureBox0.Height = height
-                IsiRIngkasan.PictureBox0.Image = downloadImage
-                IsiRIngkasan.Show()
+                    IsiRIngkasan.Width = width
+                    IsiRIngkasan.Height = height
+                    IsiRIngkasan.PictureBox0.Width = width
+                    IsiRIngkasan.PictureBox0.Height = height
+                    IsiRIngkasan.PictureBox0.Image = downloadImage
+                    IsiRIngkasan.Show()
+                End If
+
             Else
                 MsgBox("File dalam ringkasan Tersebut Kosong!")
             End If
@@ -884,17 +986,22 @@ Public Class Ringkasan
             Dim imagePath As RingkasanMateriTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btntpk4.Tag)).FirstOrDefault()
             If imagePath IsNot Nothing Then
                 Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop04.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
-                Dim tClient As WebClient = New WebClient
-                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
-                Dim width = downloadImage.Width
-                Dim height = downloadImage.Height
+                If url.Free = "false" Then
+                    MsgBox("Hanya Untuk User Berlanggan")
+                Else
+                    Dim tClient As WebClient = New WebClient
+                    Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
+                    Dim width = downloadImage.Width
+                    Dim height = downloadImage.Height
 
-                IsiRIngkasan.Width = width
-                IsiRIngkasan.Height = height
-                IsiRIngkasan.PictureBox0.Width = width
-                IsiRIngkasan.PictureBox0.Height = height
-                IsiRIngkasan.PictureBox0.Image = downloadImage
-                IsiRIngkasan.Show()
+                    IsiRIngkasan.Width = width
+                    IsiRIngkasan.Height = height
+                    IsiRIngkasan.PictureBox0.Width = width
+                    IsiRIngkasan.PictureBox0.Height = height
+                    IsiRIngkasan.PictureBox0.Image = downloadImage
+                    IsiRIngkasan.Show()
+                End If
+
             Else
                 MsgBox("File dalam ringkasan Tersebut Kosong!")
             End If
@@ -911,17 +1018,22 @@ Public Class Ringkasan
             Dim imagePath As RingkasanMateriTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btntpk4.Tag)).FirstOrDefault()
             If imagePath IsNot Nothing Then
                 Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop14.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
-                Dim tClient As WebClient = New WebClient
-                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
-                Dim width = downloadImage.Width
-                Dim height = downloadImage.Height
+                If url.Free = "false" Then
+                    MsgBox("Hanya Untuk User Berlanggan")
+                Else
+                    Dim tClient As WebClient = New WebClient
+                    Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
+                    Dim width = downloadImage.Width
+                    Dim height = downloadImage.Height
 
-                IsiRIngkasan.Width = width
-                IsiRIngkasan.Height = height
-                IsiRIngkasan.PictureBox0.Width = width
-                IsiRIngkasan.PictureBox0.Height = height
-                IsiRIngkasan.PictureBox0.Image = downloadImage
-                IsiRIngkasan.Show()
+                    IsiRIngkasan.Width = width
+                    IsiRIngkasan.Height = height
+                    IsiRIngkasan.PictureBox0.Width = width
+                    IsiRIngkasan.PictureBox0.Height = height
+                    IsiRIngkasan.PictureBox0.Image = downloadImage
+                    IsiRIngkasan.Show()
+                End If
+
             Else
                 MsgBox("File dalam ringkasan Tersebut Kosong!")
             End If
@@ -938,17 +1050,22 @@ Public Class Ringkasan
             Dim imagePath As RingkasanMateriTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btntpk4.Tag)).FirstOrDefault()
             If imagePath IsNot Nothing Then
                 Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop24.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
-                Dim tClient As WebClient = New WebClient
-                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
-                Dim width = downloadImage.Width
-                Dim height = downloadImage.Height
+                If url.Free = "false" Then
+                    MsgBox("Hanya Untuk User Berlanggan")
+                Else
+                    Dim tClient As WebClient = New WebClient
+                    Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
+                    Dim width = downloadImage.Width
+                    Dim height = downloadImage.Height
 
-                IsiRIngkasan.Width = width
-                IsiRIngkasan.Height = height
-                IsiRIngkasan.PictureBox0.Width = width
-                IsiRIngkasan.PictureBox0.Height = height
-                IsiRIngkasan.PictureBox0.Image = downloadImage
-                IsiRIngkasan.Show()
+                    IsiRIngkasan.Width = width
+                    IsiRIngkasan.Height = height
+                    IsiRIngkasan.PictureBox0.Width = width
+                    IsiRIngkasan.PictureBox0.Height = height
+                    IsiRIngkasan.PictureBox0.Image = downloadImage
+                    IsiRIngkasan.Show()
+                End If
+
             Else
                 MsgBox("File dalam ringkasan Tersebut Kosong!")
             End If
@@ -965,17 +1082,22 @@ Public Class Ringkasan
             Dim imagePath As RingkasanMateriTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btntpk4.Tag)).FirstOrDefault()
             If imagePath IsNot Nothing Then
                 Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop34.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
-                Dim tClient As WebClient = New WebClient
-                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
-                Dim width = downloadImage.Width
-                Dim height = downloadImage.Height
+                If url.Free = "false" Then
+                    MsgBox("Hanya Untuk User Berlanggan")
+                Else
+                    Dim tClient As WebClient = New WebClient
+                    Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
+                    Dim width = downloadImage.Width
+                    Dim height = downloadImage.Height
 
-                IsiRIngkasan.Width = width
-                IsiRIngkasan.Height = height
-                IsiRIngkasan.PictureBox0.Width = width
-                IsiRIngkasan.PictureBox0.Height = height
-                IsiRIngkasan.PictureBox0.Image = downloadImage
-                IsiRIngkasan.Show()
+                    IsiRIngkasan.Width = width
+                    IsiRIngkasan.Height = height
+                    IsiRIngkasan.PictureBox0.Width = width
+                    IsiRIngkasan.PictureBox0.Height = height
+                    IsiRIngkasan.PictureBox0.Image = downloadImage
+                    IsiRIngkasan.Show()
+                End If
+
             Else
                 MsgBox("File dalam ringkasan Tersebut Kosong!")
             End If
@@ -992,17 +1114,22 @@ Public Class Ringkasan
             Dim imagePath As RingkasanMateriTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btntpk4.Tag)).FirstOrDefault()
             If imagePath IsNot Nothing Then
                 Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop44.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
-                Dim tClient As WebClient = New WebClient
-                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
-                Dim width = downloadImage.Width
-                Dim height = downloadImage.Height
+                If url.Free = "false" Then
+                    MsgBox("Hanya Untuk User Berlanggan")
+                Else
+                    Dim tClient As WebClient = New WebClient
+                    Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
+                    Dim width = downloadImage.Width
+                    Dim height = downloadImage.Height
 
-                IsiRIngkasan.Width = width
-                IsiRIngkasan.Height = height
-                IsiRIngkasan.PictureBox0.Width = width
-                IsiRIngkasan.PictureBox0.Height = height
-                IsiRIngkasan.PictureBox0.Image = downloadImage
-                IsiRIngkasan.Show()
+                    IsiRIngkasan.Width = width
+                    IsiRIngkasan.Height = height
+                    IsiRIngkasan.PictureBox0.Width = width
+                    IsiRIngkasan.PictureBox0.Height = height
+                    IsiRIngkasan.PictureBox0.Image = downloadImage
+                    IsiRIngkasan.Show()
+                End If
+
             Else
                 MsgBox("File dalam ringkasan Tersebut Kosong!")
             End If
@@ -1019,17 +1146,22 @@ Public Class Ringkasan
             Dim imagePath As RingkasanMateriTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btntpk5.Tag)).FirstOrDefault()
             If imagePath IsNot Nothing Then
                 Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop05.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
-                Dim tClient As WebClient = New WebClient
-                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
-                Dim width = downloadImage.Width
-                Dim height = downloadImage.Height
+                If url.Free = "false" Then
+                    MsgBox("Hanya Untuk User Berlanggan")
+                Else
+                    Dim tClient As WebClient = New WebClient
+                    Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
+                    Dim width = downloadImage.Width
+                    Dim height = downloadImage.Height
 
-                IsiRIngkasan.Width = width
-                IsiRIngkasan.Height = height
-                IsiRIngkasan.PictureBox0.Width = width
-                IsiRIngkasan.PictureBox0.Height = height
-                IsiRIngkasan.PictureBox0.Image = downloadImage
-                IsiRIngkasan.Show()
+                    IsiRIngkasan.Width = width
+                    IsiRIngkasan.Height = height
+                    IsiRIngkasan.PictureBox0.Width = width
+                    IsiRIngkasan.PictureBox0.Height = height
+                    IsiRIngkasan.PictureBox0.Image = downloadImage
+                    IsiRIngkasan.Show()
+                End If
+
             Else
                 MsgBox("File dalam ringkasan Tersebut Kosong!")
             End If
@@ -1046,17 +1178,22 @@ Public Class Ringkasan
             Dim imagePath As RingkasanMateriTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btntpk5.Tag)).FirstOrDefault()
             If imagePath IsNot Nothing Then
                 Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop15.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
-                Dim tClient As WebClient = New WebClient
-                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
-                Dim width = downloadImage.Width
-                Dim height = downloadImage.Height
+                If url.Free = "false" Then
+                    MsgBox("Hanya Untuk User Berlanggan")
+                Else
+                    Dim tClient As WebClient = New WebClient
+                    Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
+                    Dim width = downloadImage.Width
+                    Dim height = downloadImage.Height
 
-                IsiRIngkasan.Width = width
-                IsiRIngkasan.Height = height
-                IsiRIngkasan.PictureBox0.Width = width
-                IsiRIngkasan.PictureBox0.Height = height
-                IsiRIngkasan.PictureBox0.Image = downloadImage
-                IsiRIngkasan.Show()
+                    IsiRIngkasan.Width = width
+                    IsiRIngkasan.Height = height
+                    IsiRIngkasan.PictureBox0.Width = width
+                    IsiRIngkasan.PictureBox0.Height = height
+                    IsiRIngkasan.PictureBox0.Image = downloadImage
+                    IsiRIngkasan.Show()
+                End If
+
             Else
                 MsgBox("File dalam ringkasan Tersebut Kosong!")
             End If
@@ -1073,17 +1210,22 @@ Public Class Ringkasan
             Dim imagePath As RingkasanMateriTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btntpk5.Tag)).FirstOrDefault()
             If imagePath IsNot Nothing Then
                 Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop25.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
-                Dim tClient As WebClient = New WebClient
-                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
-                Dim width = downloadImage.Width
-                Dim height = downloadImage.Height
+                If url.Free = "false" Then
+                    MsgBox("Hanya Untuk User Berlanggan")
+                Else
+                    Dim tClient As WebClient = New WebClient
+                    Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
+                    Dim width = downloadImage.Width
+                    Dim height = downloadImage.Height
 
-                IsiRIngkasan.Width = width
-                IsiRIngkasan.Height = height
-                IsiRIngkasan.PictureBox0.Width = width
-                IsiRIngkasan.PictureBox0.Height = height
-                IsiRIngkasan.PictureBox0.Image = downloadImage
-                IsiRIngkasan.Show()
+                    IsiRIngkasan.Width = width
+                    IsiRIngkasan.Height = height
+                    IsiRIngkasan.PictureBox0.Width = width
+                    IsiRIngkasan.PictureBox0.Height = height
+                    IsiRIngkasan.PictureBox0.Image = downloadImage
+                    IsiRIngkasan.Show()
+                End If
+
             Else
                 MsgBox("File dalam ringkasan Tersebut Kosong!")
             End If
@@ -1100,17 +1242,22 @@ Public Class Ringkasan
             Dim imagePath As RingkasanMateriTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btntpk5.Tag)).FirstOrDefault()
             If imagePath IsNot Nothing Then
                 Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop35.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
-                Dim tClient As WebClient = New WebClient
-                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
-                Dim width = downloadImage.Width
-                Dim height = downloadImage.Height
+                If url.Free = "false" Then
+                    MsgBox("Hanya Untuk User Berlanggan")
+                Else
+                    Dim tClient As WebClient = New WebClient
+                    Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
+                    Dim width = downloadImage.Width
+                    Dim height = downloadImage.Height
 
-                IsiRIngkasan.Width = width
-                IsiRIngkasan.Height = height
-                IsiRIngkasan.PictureBox0.Width = width
-                IsiRIngkasan.PictureBox0.Height = height
-                IsiRIngkasan.PictureBox0.Image = downloadImage
-                IsiRIngkasan.Show()
+                    IsiRIngkasan.Width = width
+                    IsiRIngkasan.Height = height
+                    IsiRIngkasan.PictureBox0.Width = width
+                    IsiRIngkasan.PictureBox0.Height = height
+                    IsiRIngkasan.PictureBox0.Image = downloadImage
+                    IsiRIngkasan.Show()
+                End If
+
             Else
                 MsgBox("File dalam ringkasan Tersebut Kosong!")
             End If
@@ -1127,17 +1274,22 @@ Public Class Ringkasan
             Dim imagePath As RingkasanMateriTopik = topik.Where(Function(x) x.Id_Content = Integer.Parse(Me.btntpk5.Tag)).FirstOrDefault()
             If imagePath IsNot Nothing Then
                 Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop45.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
-                Dim tClient As WebClient = New WebClient
-                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
-                Dim width = downloadImage.Width
-                Dim height = downloadImage.Height
+                If url.Free = "false" Then
+                    MsgBox("Hanya Untuk User Berlanggan")
+                Else
+                    Dim tClient As WebClient = New WebClient
+                    Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
+                    Dim width = downloadImage.Width
+                    Dim height = downloadImage.Height
 
-                IsiRIngkasan.Width = width
-                IsiRIngkasan.Height = height
-                IsiRIngkasan.PictureBox0.Width = width
-                IsiRIngkasan.PictureBox0.Height = height
-                IsiRIngkasan.PictureBox0.Image = downloadImage
-                IsiRIngkasan.Show()
+                    IsiRIngkasan.Width = width
+                    IsiRIngkasan.Height = height
+                    IsiRIngkasan.PictureBox0.Width = width
+                    IsiRIngkasan.PictureBox0.Height = height
+                    IsiRIngkasan.PictureBox0.Image = downloadImage
+                    IsiRIngkasan.Show()
+                End If
+
             Else
                 MsgBox("File dalam ringkasan Tersebut Kosong!")
             End If
