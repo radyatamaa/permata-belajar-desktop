@@ -118,6 +118,7 @@ Partial Class Prestasi
         Me.jawaban_kosong.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.jawaban_kosong.DisabledState.Parent = Me.jawaban_kosong
         Me.jawaban_kosong.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.jawaban_kosong.Enabled = False
         Me.jawaban_kosong.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.jawaban_kosong.FocusedState.Parent = Me.jawaban_kosong
         Me.jawaban_kosong.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
@@ -130,6 +131,7 @@ Partial Class Prestasi
         Me.jawaban_kosong.ShadowDecoration.Parent = Me.jawaban_kosong
         Me.jawaban_kosong.Size = New System.Drawing.Size(83, 60)
         Me.jawaban_kosong.TabIndex = 2
+        Me.jawaban_kosong.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Panel4
         '
@@ -163,6 +165,7 @@ Partial Class Prestasi
         Me.jawaban_salah.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.jawaban_salah.DisabledState.Parent = Me.jawaban_salah
         Me.jawaban_salah.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.jawaban_salah.Enabled = False
         Me.jawaban_salah.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.jawaban_salah.FocusedState.Parent = Me.jawaban_salah
         Me.jawaban_salah.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
@@ -175,6 +178,7 @@ Partial Class Prestasi
         Me.jawaban_salah.ShadowDecoration.Parent = Me.jawaban_salah
         Me.jawaban_salah.Size = New System.Drawing.Size(83, 60)
         Me.jawaban_salah.TabIndex = 1
+        Me.jawaban_salah.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Panel3
         '
@@ -208,6 +212,7 @@ Partial Class Prestasi
         Me.jawaban_benar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.jawaban_benar.DisabledState.Parent = Me.jawaban_benar
         Me.jawaban_benar.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.jawaban_benar.Enabled = False
         Me.jawaban_benar.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.jawaban_benar.FocusedState.Parent = Me.jawaban_benar
         Me.jawaban_benar.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
@@ -220,6 +225,7 @@ Partial Class Prestasi
         Me.jawaban_benar.ShadowDecoration.Parent = Me.jawaban_benar
         Me.jawaban_benar.Size = New System.Drawing.Size(83, 60)
         Me.jawaban_benar.TabIndex = 0
+        Me.jawaban_benar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label3
         '

@@ -141,7 +141,7 @@ Partial Class Form2
         Me.Panel4.Controls.Add(Me.btnvb0)
         Me.Panel4.Controls.Add(Me.btnvb1)
         Me.Panel4.Location = New System.Drawing.Point(0, 176)
-        Me.Panel4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel4.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(418, 364)
         Me.Panel4.TabIndex = 2
@@ -167,7 +167,7 @@ Partial Class Form2
         Me.btnvb8.FlatAppearance.BorderSize = 0
         Me.btnvb8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnvb8.Location = New System.Drawing.Point(286, 270)
-        Me.btnvb8.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnvb8.Margin = New System.Windows.Forms.Padding(2)
         Me.btnvb8.Name = "btnvb8"
         Me.btnvb8.Size = New System.Drawing.Size(60, 52)
         Me.btnvb8.TabIndex = 51
@@ -259,7 +259,7 @@ Partial Class Form2
         Me.btnvb6.FlatAppearance.BorderSize = 0
         Me.btnvb6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnvb6.Location = New System.Drawing.Point(39, 270)
-        Me.btnvb6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnvb6.Margin = New System.Windows.Forms.Padding(2)
         Me.btnvb6.Name = "btnvb6"
         Me.btnvb6.Size = New System.Drawing.Size(60, 52)
         Me.btnvb6.TabIndex = 38
@@ -274,7 +274,7 @@ Partial Class Form2
         Me.btnvb7.FlatAppearance.BorderSize = 0
         Me.btnvb7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnvb7.Location = New System.Drawing.Point(162, 270)
-        Me.btnvb7.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnvb7.Margin = New System.Windows.Forms.Padding(2)
         Me.btnvb7.Name = "btnvb7"
         Me.btnvb7.Size = New System.Drawing.Size(60, 52)
         Me.btnvb7.TabIndex = 37
@@ -288,7 +288,7 @@ Partial Class Form2
         Me.btnvb5.FlatAppearance.BorderSize = 0
         Me.btnvb5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnvb5.Location = New System.Drawing.Point(286, 172)
-        Me.btnvb5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnvb5.Margin = New System.Windows.Forms.Padding(2)
         Me.btnvb5.Name = "btnvb5"
         Me.btnvb5.Size = New System.Drawing.Size(60, 52)
         Me.btnvb5.TabIndex = 33
@@ -302,7 +302,7 @@ Partial Class Form2
         Me.btnvb3.FlatAppearance.BorderSize = 0
         Me.btnvb3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnvb3.Location = New System.Drawing.Point(39, 172)
-        Me.btnvb3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnvb3.Margin = New System.Windows.Forms.Padding(2)
         Me.btnvb3.Name = "btnvb3"
         Me.btnvb3.Size = New System.Drawing.Size(60, 52)
         Me.btnvb3.TabIndex = 32
@@ -316,7 +316,7 @@ Partial Class Form2
         Me.btnvb4.FlatAppearance.BorderSize = 0
         Me.btnvb4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnvb4.Location = New System.Drawing.Point(162, 172)
-        Me.btnvb4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnvb4.Margin = New System.Windows.Forms.Padding(2)
         Me.btnvb4.Name = "btnvb4"
         Me.btnvb4.Size = New System.Drawing.Size(60, 52)
         Me.btnvb4.TabIndex = 31
@@ -330,7 +330,7 @@ Partial Class Form2
         Me.btnvb2.FlatAppearance.BorderSize = 0
         Me.btnvb2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnvb2.Location = New System.Drawing.Point(286, 62)
-        Me.btnvb2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnvb2.Margin = New System.Windows.Forms.Padding(2)
         Me.btnvb2.Name = "btnvb2"
         Me.btnvb2.Size = New System.Drawing.Size(60, 52)
         Me.btnvb2.TabIndex = 30
@@ -344,7 +344,7 @@ Partial Class Form2
         Me.btnvb0.FlatAppearance.BorderSize = 0
         Me.btnvb0.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnvb0.Location = New System.Drawing.Point(39, 62)
-        Me.btnvb0.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnvb0.Margin = New System.Windows.Forms.Padding(2)
         Me.btnvb0.Name = "btnvb0"
         Me.btnvb0.Size = New System.Drawing.Size(60, 52)
         Me.btnvb0.TabIndex = 29
@@ -359,7 +359,7 @@ Partial Class Form2
         Me.btnvb1.FlatAppearance.BorderSize = 0
         Me.btnvb1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnvb1.Location = New System.Drawing.Point(162, 62)
-        Me.btnvb1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnvb1.Margin = New System.Windows.Forms.Padding(2)
         Me.btnvb1.Name = "btnvb1"
         Me.btnvb1.Size = New System.Drawing.Size(60, 52)
         Me.btnvb1.TabIndex = 28
@@ -377,7 +377,7 @@ Partial Class Form2
         Me.Panel3.Controls.Add(Me.lblbab2)
         Me.Panel3.Controls.Add(Me.lblbab1)
         Me.Panel3.Location = New System.Drawing.Point(418, 0)
-        Me.Panel3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(607, 540)
         Me.Panel3.TabIndex = 4
@@ -390,7 +390,7 @@ Partial Class Form2
         Me.Pnlvb2.Controls.Add(Me.btnvideo2)
         Me.Pnlvb2.Controls.Add(Me.Button3)
         Me.Pnlvb2.Location = New System.Drawing.Point(15, 389)
-        Me.Pnlvb2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Pnlvb2.Margin = New System.Windows.Forms.Padding(2)
         Me.Pnlvb2.Name = "Pnlvb2"
         Me.Pnlvb2.Size = New System.Drawing.Size(586, 148)
         Me.Pnlvb2.TabIndex = 10
@@ -416,7 +416,7 @@ Partial Class Form2
         Me.btnvideo2.Image = Global.Permata.My.Resources.Resources.ringkasan
         Me.btnvideo2.ImageSize = New System.Drawing.Size(180, 125)
         Me.btnvideo2.Location = New System.Drawing.Point(60, 4)
-        Me.btnvideo2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnvideo2.Margin = New System.Windows.Forms.Padding(2)
         Me.btnvideo2.Name = "btnvideo2"
         Me.btnvideo2.ShadowDecoration.Parent = Me.btnvideo2
         Me.btnvideo2.Size = New System.Drawing.Size(212, 102)
@@ -430,7 +430,7 @@ Partial Class Form2
         Me.Button3.Image = CType(resources.GetObject("Button3.Image"), System.Drawing.Image)
         Me.Button3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Button3.Location = New System.Drawing.Point(100, 107)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(2)
         Me.Button3.Name = "Button3"
         Me.Button3.Padding = New System.Windows.Forms.Padding(30, 0, 0, 0)
         Me.Button3.Size = New System.Drawing.Size(329, 32)
@@ -446,7 +446,7 @@ Partial Class Form2
         Me.Pnlvb1.Controls.Add(Me.btnvideo1)
         Me.Pnlvb1.Controls.Add(Me.Button1)
         Me.Pnlvb1.Location = New System.Drawing.Point(15, 214)
-        Me.Pnlvb1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Pnlvb1.Margin = New System.Windows.Forms.Padding(2)
         Me.Pnlvb1.Name = "Pnlvb1"
         Me.Pnlvb1.Size = New System.Drawing.Size(586, 148)
         Me.Pnlvb1.TabIndex = 10
@@ -472,7 +472,7 @@ Partial Class Form2
         Me.btnvideo1.Image = Global.Permata.My.Resources.Resources.ringkasan
         Me.btnvideo1.ImageSize = New System.Drawing.Size(180, 125)
         Me.btnvideo1.Location = New System.Drawing.Point(60, 2)
-        Me.btnvideo1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnvideo1.Margin = New System.Windows.Forms.Padding(2)
         Me.btnvideo1.Name = "btnvideo1"
         Me.btnvideo1.ShadowDecoration.Parent = Me.btnvideo1
         Me.btnvideo1.Size = New System.Drawing.Size(212, 102)
@@ -487,7 +487,7 @@ Partial Class Form2
         Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Button1.Location = New System.Drawing.Point(158, 104)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2)
         Me.Button1.Name = "Button1"
         Me.Button1.Padding = New System.Windows.Forms.Padding(30, 0, 0, 0)
         Me.Button1.Size = New System.Drawing.Size(329, 32)
@@ -504,7 +504,7 @@ Partial Class Form2
         Me.Pnlvb0.Controls.Add(Me.btnvideo0)
         Me.Pnlvb0.Controls.Add(Me.Button2)
         Me.Pnlvb0.Location = New System.Drawing.Point(15, 42)
-        Me.Pnlvb0.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Pnlvb0.Margin = New System.Windows.Forms.Padding(2)
         Me.Pnlvb0.Name = "Pnlvb0"
         Me.Pnlvb0.Size = New System.Drawing.Size(586, 148)
         Me.Pnlvb0.TabIndex = 9
@@ -539,7 +539,7 @@ Partial Class Form2
         Me.btnvideo0.Image = Global.Permata.My.Resources.Resources.ringkasan
         Me.btnvideo0.ImageSize = New System.Drawing.Size(180, 125)
         Me.btnvideo0.Location = New System.Drawing.Point(60, 2)
-        Me.btnvideo0.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnvideo0.Margin = New System.Windows.Forms.Padding(2)
         Me.btnvideo0.Name = "btnvideo0"
         Me.btnvideo0.ShadowDecoration.Parent = Me.btnvideo0
         Me.btnvideo0.Size = New System.Drawing.Size(212, 102)
@@ -554,7 +554,7 @@ Partial Class Form2
         Me.Button2.Image = CType(resources.GetObject("Button2.Image"), System.Drawing.Image)
         Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Button2.Location = New System.Drawing.Point(158, 106)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(2)
         Me.Button2.Name = "Button2"
         Me.Button2.Padding = New System.Windows.Forms.Padding(30, 0, 0, 0)
         Me.Button2.Size = New System.Drawing.Size(329, 32)
@@ -593,7 +593,7 @@ Partial Class Form2
         Me.Panel1.Controls.Add(Me.Panel4)
         Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(418, 571)
         Me.Panel1.TabIndex = 3
@@ -609,7 +609,7 @@ Partial Class Form2
         Me.Panel2.Controls.Add(Me.Label26)
         Me.Panel2.Controls.Add(Me.Label22)
         Me.Panel2.Location = New System.Drawing.Point(2, 0)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(416, 175)
         Me.Panel2.TabIndex = 1
@@ -628,7 +628,7 @@ Partial Class Form2
         Me.Guna2Button7.Image = CType(resources.GetObject("Guna2Button7.Image"), System.Drawing.Image)
         Me.Guna2Button7.ImageSize = New System.Drawing.Size(30, 30)
         Me.Guna2Button7.Location = New System.Drawing.Point(32, 27)
-        Me.Guna2Button7.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Button7.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Button7.Name = "Guna2Button7"
         Me.Guna2Button7.PressedColor = System.Drawing.Color.White
         Me.Guna2Button7.ShadowDecoration.Parent = Me.Guna2Button7
@@ -697,7 +697,7 @@ Partial Class Form2
         Me.Panel8.Controls.Add(Me.Label4)
         Me.Panel8.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Panel8.Location = New System.Drawing.Point(2, 544)
-        Me.Panel8.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel8.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel8.Name = "Panel8"
         Me.Panel8.Size = New System.Drawing.Size(1118, 63)
         Me.Panel8.TabIndex = 41
@@ -706,10 +706,10 @@ Partial Class Form2
         '
         Me.Label4.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(368, 20)
+        Me.Label4.Location = New System.Drawing.Point(332, 20)
         Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(446, 19)
+        Me.Label4.Size = New System.Drawing.Size(482, 19)
         Me.Label4.TabIndex = 0
         Me.Label4.Text = "Support@permatabelajar.com, Phone/Whatsapp: 0811811306,"
         '
@@ -721,7 +721,7 @@ Partial Class Form2
         Me.Controls.Add(Me.Panel8)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel1)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Form2"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Video Belajar"

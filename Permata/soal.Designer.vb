@@ -96,7 +96,7 @@ Partial Class Soal
         Me.btntpk1.Image = CType(resources.GetObject("btntpk1.Image"), System.Drawing.Image)
         Me.btntpk1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.btntpk1.Location = New System.Drawing.Point(31, 112)
-        Me.btntpk1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btntpk1.Margin = New System.Windows.Forms.Padding(2)
         Me.btntpk1.Name = "btntpk1"
         Me.btntpk1.Padding = New System.Windows.Forms.Padding(11, 0, 0, 0)
         Me.btntpk1.ShadowDecoration.Parent = Me.btntpk1
@@ -116,7 +116,7 @@ Partial Class Soal
         Me.Panel2.Controls.Add(Me.Label26)
         Me.Panel2.Controls.Add(Me.Label22)
         Me.Panel2.Location = New System.Drawing.Point(2, 0)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(416, 177)
         Me.Panel2.TabIndex = 4
@@ -135,7 +135,7 @@ Partial Class Soal
         Me.Guna2Button7.Image = CType(resources.GetObject("Guna2Button7.Image"), System.Drawing.Image)
         Me.Guna2Button7.ImageSize = New System.Drawing.Size(30, 30)
         Me.Guna2Button7.Location = New System.Drawing.Point(32, 27)
-        Me.Guna2Button7.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Button7.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Button7.Name = "Guna2Button7"
         Me.Guna2Button7.PressedColor = System.Drawing.Color.White
         Me.Guna2Button7.ShadowDecoration.Parent = Me.Guna2Button7
@@ -346,7 +346,7 @@ Partial Class Soal
         Me.btnsl0.FlatAppearance.BorderSize = 0
         Me.btnsl0.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnsl0.Location = New System.Drawing.Point(39, 43)
-        Me.btnsl0.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnsl0.Margin = New System.Windows.Forms.Padding(2)
         Me.btnsl0.Name = "btnsl0"
         Me.btnsl0.Size = New System.Drawing.Size(60, 52)
         Me.btnsl0.TabIndex = 29
@@ -361,7 +361,7 @@ Partial Class Soal
         Me.btnsl9.FlatAppearance.BorderSize = 0
         Me.btnsl9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnsl9.Location = New System.Drawing.Point(39, 293)
-        Me.btnsl9.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnsl9.Margin = New System.Windows.Forms.Padding(2)
         Me.btnsl9.Name = "btnsl9"
         Me.btnsl9.Size = New System.Drawing.Size(60, 52)
         Me.btnsl9.TabIndex = 38
@@ -377,7 +377,7 @@ Partial Class Soal
         Me.btnsl10.FlatAppearance.BorderSize = 0
         Me.btnsl10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnsl10.Location = New System.Drawing.Point(162, 293)
-        Me.btnsl10.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnsl10.Margin = New System.Windows.Forms.Padding(2)
         Me.btnsl10.Name = "btnsl10"
         Me.btnsl10.Size = New System.Drawing.Size(60, 52)
         Me.btnsl10.TabIndex = 37
@@ -392,7 +392,7 @@ Partial Class Soal
         Me.btnsl8.FlatAppearance.BorderSize = 0
         Me.btnsl8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnsl8.Location = New System.Drawing.Point(286, 211)
-        Me.btnsl8.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnsl8.Margin = New System.Windows.Forms.Padding(2)
         Me.btnsl8.Name = "btnsl8"
         Me.btnsl8.Size = New System.Drawing.Size(60, 52)
         Me.btnsl8.TabIndex = 36
@@ -407,7 +407,7 @@ Partial Class Soal
         Me.btnsl6.FlatAppearance.BorderSize = 0
         Me.btnsl6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnsl6.Location = New System.Drawing.Point(39, 211)
-        Me.btnsl6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnsl6.Margin = New System.Windows.Forms.Padding(2)
         Me.btnsl6.Name = "btnsl6"
         Me.btnsl6.Size = New System.Drawing.Size(60, 52)
         Me.btnsl6.TabIndex = 35
@@ -422,7 +422,7 @@ Partial Class Soal
         Me.btnsl7.FlatAppearance.BorderSize = 0
         Me.btnsl7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnsl7.Location = New System.Drawing.Point(162, 211)
-        Me.btnsl7.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnsl7.Margin = New System.Windows.Forms.Padding(2)
         Me.btnsl7.Name = "btnsl7"
         Me.btnsl7.Size = New System.Drawing.Size(60, 52)
         Me.btnsl7.TabIndex = 34
@@ -437,7 +437,7 @@ Partial Class Soal
         Me.btnsl5.FlatAppearance.BorderSize = 0
         Me.btnsl5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnsl5.Location = New System.Drawing.Point(286, 124)
-        Me.btnsl5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnsl5.Margin = New System.Windows.Forms.Padding(2)
         Me.btnsl5.Name = "btnsl5"
         Me.btnsl5.Size = New System.Drawing.Size(60, 52)
         Me.btnsl5.TabIndex = 33
@@ -452,7 +452,7 @@ Partial Class Soal
         Me.btnsl3.FlatAppearance.BorderSize = 0
         Me.btnsl3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnsl3.Location = New System.Drawing.Point(39, 124)
-        Me.btnsl3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnsl3.Margin = New System.Windows.Forms.Padding(2)
         Me.btnsl3.Name = "btnsl3"
         Me.btnsl3.Size = New System.Drawing.Size(60, 52)
         Me.btnsl3.TabIndex = 32
@@ -467,7 +467,7 @@ Partial Class Soal
         Me.btnsl4.FlatAppearance.BorderSize = 0
         Me.btnsl4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnsl4.Location = New System.Drawing.Point(162, 124)
-        Me.btnsl4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnsl4.Margin = New System.Windows.Forms.Padding(2)
         Me.btnsl4.Name = "btnsl4"
         Me.btnsl4.Size = New System.Drawing.Size(60, 52)
         Me.btnsl4.TabIndex = 31
@@ -482,7 +482,7 @@ Partial Class Soal
         Me.btnsl2.FlatAppearance.BorderSize = 0
         Me.btnsl2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnsl2.Location = New System.Drawing.Point(286, 43)
-        Me.btnsl2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnsl2.Margin = New System.Windows.Forms.Padding(2)
         Me.btnsl2.Name = "btnsl2"
         Me.btnsl2.Size = New System.Drawing.Size(60, 52)
         Me.btnsl2.TabIndex = 30
@@ -500,7 +500,7 @@ Partial Class Soal
         Me.btntpk0.Image = CType(resources.GetObject("btntpk0.Image"), System.Drawing.Image)
         Me.btntpk0.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.btntpk0.Location = New System.Drawing.Point(31, 58)
-        Me.btntpk0.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btntpk0.Margin = New System.Windows.Forms.Padding(2)
         Me.btntpk0.MinimumSize = New System.Drawing.Size(571, 30)
         Me.btntpk0.Name = "btntpk0"
         Me.btntpk0.Padding = New System.Windows.Forms.Padding(11, 0, 0, 0)
@@ -533,7 +533,7 @@ Partial Class Soal
         Me.btnsl1.FlatAppearance.BorderSize = 0
         Me.btnsl1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnsl1.Location = New System.Drawing.Point(162, 43)
-        Me.btnsl1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnsl1.Margin = New System.Windows.Forms.Padding(2)
         Me.btnsl1.Name = "btnsl1"
         Me.btnsl1.Size = New System.Drawing.Size(60, 52)
         Me.btnsl1.TabIndex = 28
@@ -549,7 +549,7 @@ Partial Class Soal
         Me.btnsmstr0.ForeColor = System.Drawing.Color.Black
         Me.btnsmstr0.HoverState.Parent = Me.btnsmstr0
         Me.btnsmstr0.Location = New System.Drawing.Point(0, 2)
-        Me.btnsmstr0.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnsmstr0.Margin = New System.Windows.Forms.Padding(2)
         Me.btnsmstr0.Name = "btnsmstr0"
         Me.btnsmstr0.ShadowDecoration.Parent = Me.btnsmstr0
         Me.btnsmstr0.Size = New System.Drawing.Size(203, 73)
@@ -571,7 +571,7 @@ Partial Class Soal
         Me.Panel3.Controls.Add(Me.btntpk1)
         Me.Panel3.Controls.Add(Me.btntpk0)
         Me.Panel3.Location = New System.Drawing.Point(418, 107)
-        Me.Panel3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(728, 439)
         Me.Panel3.TabIndex = 6
@@ -655,7 +655,7 @@ Partial Class Soal
         Me.btntpk5.Image = CType(resources.GetObject("btntpk5.Image"), System.Drawing.Image)
         Me.btntpk5.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.btntpk5.Location = New System.Drawing.Point(33, 327)
-        Me.btntpk5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btntpk5.Margin = New System.Windows.Forms.Padding(2)
         Me.btntpk5.Name = "btntpk5"
         Me.btntpk5.Padding = New System.Windows.Forms.Padding(11, 0, 0, 0)
         Me.btntpk5.ShadowDecoration.Parent = Me.btntpk5
@@ -676,7 +676,7 @@ Partial Class Soal
         Me.btntpk4.Image = CType(resources.GetObject("btntpk4.Image"), System.Drawing.Image)
         Me.btntpk4.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.btntpk4.Location = New System.Drawing.Point(33, 272)
-        Me.btntpk4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btntpk4.Margin = New System.Windows.Forms.Padding(2)
         Me.btntpk4.Name = "btntpk4"
         Me.btntpk4.Padding = New System.Windows.Forms.Padding(11, 0, 0, 0)
         Me.btntpk4.ShadowDecoration.Parent = Me.btntpk4
@@ -697,7 +697,7 @@ Partial Class Soal
         Me.btntpk3.Image = CType(resources.GetObject("btntpk3.Image"), System.Drawing.Image)
         Me.btntpk3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.btntpk3.Location = New System.Drawing.Point(31, 224)
-        Me.btntpk3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btntpk3.Margin = New System.Windows.Forms.Padding(2)
         Me.btntpk3.Name = "btntpk3"
         Me.btntpk3.Padding = New System.Windows.Forms.Padding(11, 0, 0, 0)
         Me.btntpk3.ShadowDecoration.Parent = Me.btntpk3
@@ -718,7 +718,7 @@ Partial Class Soal
         Me.btntpk2.Image = CType(resources.GetObject("btntpk2.Image"), System.Drawing.Image)
         Me.btntpk2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.btntpk2.Location = New System.Drawing.Point(31, 166)
-        Me.btntpk2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btntpk2.Margin = New System.Windows.Forms.Padding(2)
         Me.btntpk2.Name = "btntpk2"
         Me.btntpk2.Padding = New System.Windows.Forms.Padding(11, 0, 0, 0)
         Me.btntpk2.ShadowDecoration.Parent = Me.btntpk2
@@ -759,7 +759,7 @@ Partial Class Soal
         Me.btnsmstr2.ForeColor = System.Drawing.Color.Black
         Me.btnsmstr2.HoverState.Parent = Me.btnsmstr2
         Me.btnsmstr2.Location = New System.Drawing.Point(404, 2)
-        Me.btnsmstr2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnsmstr2.Margin = New System.Windows.Forms.Padding(2)
         Me.btnsmstr2.Name = "btnsmstr2"
         Me.btnsmstr2.ShadowDecoration.Parent = Me.btnsmstr2
         Me.btnsmstr2.Size = New System.Drawing.Size(202, 73)
@@ -776,7 +776,7 @@ Partial Class Soal
         Me.btnsmstr1.ForeColor = System.Drawing.Color.Black
         Me.btnsmstr1.HoverState.Parent = Me.btnsmstr1
         Me.btnsmstr1.Location = New System.Drawing.Point(203, 2)
-        Me.btnsmstr1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnsmstr1.Margin = New System.Windows.Forms.Padding(2)
         Me.btnsmstr1.Name = "btnsmstr1"
         Me.btnsmstr1.ShadowDecoration.Parent = Me.btnsmstr1
         Me.btnsmstr1.Size = New System.Drawing.Size(200, 73)
@@ -791,7 +791,7 @@ Partial Class Soal
         Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Controls.Add(Me.Panel4)
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(418, 610)
         Me.Panel1.TabIndex = 5
@@ -826,7 +826,7 @@ Partial Class Soal
         Me.Panel4.Controls.Add(Me.btnsl0)
         Me.Panel4.Controls.Add(Me.btnsl1)
         Me.Panel4.Location = New System.Drawing.Point(2, 176)
-        Me.Panel4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel4.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(418, 372)
         Me.Panel4.TabIndex = 3
@@ -839,7 +839,7 @@ Partial Class Soal
         Me.Panel8.Controls.Add(Me.Label12)
         Me.Panel8.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Panel8.Location = New System.Drawing.Point(0, 545)
-        Me.Panel8.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel8.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel8.Name = "Panel8"
         Me.Panel8.Size = New System.Drawing.Size(1027, 63)
         Me.Panel8.TabIndex = 41
@@ -848,10 +848,10 @@ Partial Class Soal
         '
         Me.Label12.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(368, 20)
+        Me.Label12.Location = New System.Drawing.Point(288, 20)
         Me.Label12.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(355, 19)
+        Me.Label12.Size = New System.Drawing.Size(533, 19)
         Me.Label12.TabIndex = 0
         Me.Label12.Text = "Support@permatabelajar.com, Phone/Whatsapp: 0811811306,"
         '
@@ -889,7 +889,7 @@ Partial Class Soal
         Me.Controls.Add(Me.Panel8)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel1)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Soal"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Soal"
