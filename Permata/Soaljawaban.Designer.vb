@@ -83,7 +83,7 @@ Partial Class Soaljawaban
         Me.Panel9.Location = New System.Drawing.Point(0, 1080)
         Me.Panel9.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel9.Name = "Panel9"
-        Me.Panel9.Size = New System.Drawing.Size(554, 10)
+        Me.Panel9.Size = New System.Drawing.Size(537, 10)
         Me.Panel9.TabIndex = 5
         '
         'Panel5
@@ -101,7 +101,7 @@ Partial Class Soaljawaban
         Me.Panel5.Location = New System.Drawing.Point(0, 543)
         Me.Panel5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(592, 76)
+        Me.Panel5.Size = New System.Drawing.Size(575, 76)
         Me.Panel5.TabIndex = 2
         '
         'Button11
@@ -185,7 +185,7 @@ Partial Class Soaljawaban
         Me.Panel4.Location = New System.Drawing.Point(0, 101)
         Me.Panel4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(610, 2479)
+        Me.Panel4.Size = New System.Drawing.Size(610, 2910)
         Me.Panel4.TabIndex = 1
         '
         'Panel8
@@ -218,8 +218,9 @@ Partial Class Soaljawaban
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.PictureBox1.Location = New System.Drawing.Point(8, 6)
         Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
+        Me.PictureBox1.MaximumSize = New System.Drawing.Size(700, 600)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(619, 429)
+        Me.PictureBox1.Size = New System.Drawing.Size(600, 429)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
