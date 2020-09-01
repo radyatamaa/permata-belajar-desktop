@@ -921,7 +921,7 @@ Partial Class MenuUtama
         Me.btnfeature0.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnfeature0.Name = "btnfeature0"
         Me.btnfeature0.ShadowDecoration.Parent = Me.btnfeature0
-        Me.btnfeature0.Size = New System.Drawing.Size(180, 126)
+        Me.btnfeature0.Size = New System.Drawing.Size(180, 124)
         Me.btnfeature0.TabIndex = 10
         '
         'btnfeature2
