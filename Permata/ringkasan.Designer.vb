@@ -119,6 +119,7 @@ Partial Class Ringkasan
         Me.btntpk0 = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel9 = New System.Windows.Forms.Panel()
+        Me.lbl_kosong = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -764,6 +765,7 @@ Partial Class Ringkasan
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel3.AutoScroll = True
+        Me.Panel3.Controls.Add(Me.lbl_kosong)
         Me.Panel3.Controls.Add(Me.drop5)
         Me.Panel3.Controls.Add(Me.drop4)
         Me.Panel3.Controls.Add(Me.drop3)
@@ -1334,6 +1336,18 @@ Partial Class Ringkasan
         Me.Panel9.Size = New System.Drawing.Size(1506, 78)
         Me.Panel9.TabIndex = 43
         '
+        'lbl_kosong
+        '
+        Me.lbl_kosong.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lbl_kosong.AutoSize = True
+        Me.lbl_kosong.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_kosong.Location = New System.Drawing.Point(186, 315)
+        Me.lbl_kosong.Name = "lbl_kosong"
+        Me.lbl_kosong.Size = New System.Drawing.Size(661, 46)
+        Me.lbl_kosong.TabIndex = 53
+        Me.lbl_kosong.Text = "Akan Kami Update Secara Bertahap"
+        Me.lbl_kosong.Visible = False
+        '
         'Ringkasan
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -1354,6 +1368,7 @@ Partial Class Ringkasan
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         Me.Panel3.ResumeLayout(False)
+        Me.Panel3.PerformLayout()
         Me.drop5.ResumeLayout(False)
         Me.drop4.ResumeLayout(False)
         Me.drop3.ResumeLayout(False)
@@ -1460,4 +1475,5 @@ Partial Class Ringkasan
     Friend WithEvents btndrop05 As Button
     Friend WithEvents Label4 As Label
     Friend WithEvents Panel9 As Panel
+    Friend WithEvents lbl_kosong As Label
 End Class

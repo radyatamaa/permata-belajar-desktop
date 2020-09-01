@@ -454,6 +454,7 @@ Public Class MenuUtama
                 Soal.Label1.Tag = Me.Guna2PictureBox3.Tag
                 Me.Hide()
         End Select
+
     End Sub
 
     Private Sub Button5_Click_1(sender As Object, e As EventArgs) Handles Button5.Click
