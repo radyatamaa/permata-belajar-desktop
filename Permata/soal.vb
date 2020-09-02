@@ -396,6 +396,11 @@ Public Class Soal
 
             Next i
         End If
+        If topik.Count = 0 Then
+            lbl_kosong.Visible = True
+        Else
+            lbl_kosong.Visible = False
+        End If
     End Function
 
 
@@ -426,7 +431,7 @@ Public Class Soal
             For Each item As SoalLatihan In latihan.Data.Data
                 Dim soal = listSoal.Where(Function(x) x.Id_Content = btntpk2.Tag).FirstOrDefault()
                 If soal.Free = "false" Then
-                    MsgBox("Hanya Untuk User Berlanggan")
+                    MsgBox("Silahkan Berlangganan Paket Permata Belajar")
                 Else
                     Dim tClient As WebClient = New WebClient
                     Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(item.Soal)))
@@ -547,7 +552,7 @@ Public Class Soal
             For Each item As SoalLatihan In latihan.Data.Data
                 Dim soal = listSoal.Where(Function(x) x.Id_Content = btntpk0.Tag).FirstOrDefault()
                 If soal.Free = "false" Then
-                    MsgBox("Hanya Untuk User Berlanggan")
+                    MsgBox("Silahkan Berlangganan Paket Permata Belajar")
                 Else
                     Dim tClient As WebClient = New WebClient
                     Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(item.Soal)))
@@ -583,7 +588,7 @@ Public Class Soal
             For Each item As SoalLatihan In latihan.Data.Data
                 Dim soal = listSoal.Where(Function(x) x.Id_Content = btntpk1.Tag).FirstOrDefault()
                 If soal.Free = "false" Then
-                    MsgBox("Hanya Untuk User Berlanggan")
+                    MsgBox("Silahkan Berlangganan Paket Permata Belajar")
                 Else
                     Dim tClient As WebClient = New WebClient
                     Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(item.Soal)))
@@ -615,7 +620,7 @@ Public Class Soal
             For Each item As SoalLatihan In latihan.Data.Data
                 Dim soal = listSoal.Where(Function(x) x.Id_Content = btntpk3.Tag).FirstOrDefault()
                 If soal.Free = "false" Then
-                    MsgBox("Hanya Untuk User Berlanggan")
+                    MsgBox("Silahkan Berlangganan Paket Permata Belajar")
                 Else
                     Dim tClient As WebClient = New WebClient
                     Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(item.Soal)))
@@ -649,7 +654,7 @@ Public Class Soal
             For Each item As SoalLatihan In latihan.Data.Data
                 Dim soal = listSoal.Where(Function(x) x.Id_Content = btntpk4.Tag).FirstOrDefault()
                 If soal.Free = "false" Then
-                    MsgBox("Hanya Untuk User Berlanggan")
+                    MsgBox("Silahkan Berlangganan Paket Permata Belajar")
                 Else
                     Dim tClient As WebClient = New WebClient
                     Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(item.Soal)))
@@ -682,7 +687,7 @@ Public Class Soal
             For Each item As SoalLatihan In latihan.Data.Data
                 Dim soal = listSoal.Where(Function(x) x.Id_Content = btntpk5.Tag).FirstOrDefault()
                 If soal.Free = "false" Then
-                    MsgBox("Hanya Untuk User Berlanggan")
+                    MsgBox("Silahkan Berlangganan Paket Permata Belajar")
                 Else
                     Dim tClient As WebClient = New WebClient
                     Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(item.Soal)))
@@ -722,5 +727,9 @@ Public Class Soal
         Label13.Visible = False
         Label14.Visible = False
         Label15.Visible = True
+    End Sub
+
+    Private Sub Soal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class

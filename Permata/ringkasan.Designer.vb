@@ -119,6 +119,7 @@ Partial Class Ringkasan
         Me.btntpk0 = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel9 = New System.Windows.Forms.Panel()
+        Me.lbl_kosong = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -143,7 +144,7 @@ Partial Class Ringkasan
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(580, 672)
+        Me.Panel1.Size = New System.Drawing.Size(715, 977)
         Me.Panel1.TabIndex = 0
         '
         'Panel4
@@ -180,7 +181,7 @@ Partial Class Ringkasan
         Me.Panel4.Location = New System.Drawing.Point(0, 217)
         Me.Panel4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(557, 453)
+        Me.Panel4.Size = New System.Drawing.Size(557, 758)
         Me.Panel4.TabIndex = 2
         '
         'lblrm11
@@ -764,6 +765,7 @@ Partial Class Ringkasan
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel3.AutoScroll = True
+        Me.Panel3.Controls.Add(Me.lbl_kosong)
         Me.Panel3.Controls.Add(Me.drop5)
         Me.Panel3.Controls.Add(Me.drop4)
         Me.Panel3.Controls.Add(Me.drop3)
@@ -797,7 +799,7 @@ Partial Class Ringkasan
         Me.Panel3.Location = New System.Drawing.Point(563, 0)
         Me.Panel3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(831, 667)
+        Me.Panel3.Size = New System.Drawing.Size(966, 972)
         Me.Panel3.TabIndex = 4
         Me.Panel3.Visible = False
         '
@@ -809,7 +811,7 @@ Partial Class Ringkasan
         Me.drop5.Controls.Add(Me.btndrop25)
         Me.drop5.Controls.Add(Me.btndrop15)
         Me.drop5.Controls.Add(Me.btndrop05)
-        Me.drop5.Location = New System.Drawing.Point(16, 780)
+        Me.drop5.Location = New System.Drawing.Point(16, 785)
         Me.drop5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.drop5.Name = "drop5"
         Me.drop5.Size = New System.Drawing.Size(928, 94)
@@ -879,7 +881,7 @@ Partial Class Ringkasan
         Me.drop4.Controls.Add(Me.btndrop24)
         Me.drop4.Controls.Add(Me.btndrop14)
         Me.drop4.Controls.Add(Me.btndrop04)
-        Me.drop4.Location = New System.Drawing.Point(32, 646)
+        Me.drop4.Location = New System.Drawing.Point(35, 645)
         Me.drop4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.drop4.Name = "drop4"
         Me.drop4.Size = New System.Drawing.Size(925, 85)
@@ -1317,28 +1319,41 @@ Partial Class Ringkasan
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(481, 25)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(781, 23)
+        Me.Label4.Size = New System.Drawing.Size(916, 23)
         Me.Label4.TabIndex = 0
         Me.Label4.Text = "Support@permatabelajar.com, Phone/Whatsapp: 0811811306,"
         '
         'Panel9
         '
+        Me.Panel9.AutoScroll = True
         Me.Panel9.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Panel9.Controls.Add(Me.Label4)
         Me.Panel9.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Panel9.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Panel9.Location = New System.Drawing.Point(0, 672)
+        Me.Panel9.Location = New System.Drawing.Point(0, 977)
         Me.Panel9.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel9.Name = "Panel9"
-        Me.Panel9.Size = New System.Drawing.Size(1371, 78)
+        Me.Panel9.Size = New System.Drawing.Size(1506, 78)
         Me.Panel9.TabIndex = 43
+        '
+        'lbl_kosong
+        '
+        Me.lbl_kosong.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lbl_kosong.AutoSize = True
+        Me.lbl_kosong.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_kosong.Location = New System.Drawing.Point(186, 315)
+        Me.lbl_kosong.Name = "lbl_kosong"
+        Me.lbl_kosong.Size = New System.Drawing.Size(661, 46)
+        Me.lbl_kosong.TabIndex = 53
+        Me.lbl_kosong.Text = "Akan Kami Update Secara Bertahap"
+        Me.lbl_kosong.Visible = False
         '
         'Ringkasan
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
-        Me.ClientSize = New System.Drawing.Size(1371, 750)
+        Me.ClientSize = New System.Drawing.Size(1506, 1055)
         Me.Controls.Add(Me.Panel9)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel1)
@@ -1353,6 +1368,7 @@ Partial Class Ringkasan
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         Me.Panel3.ResumeLayout(False)
+        Me.Panel3.PerformLayout()
         Me.drop5.ResumeLayout(False)
         Me.drop4.ResumeLayout(False)
         Me.drop3.ResumeLayout(False)
@@ -1459,4 +1475,5 @@ Partial Class Ringkasan
     Friend WithEvents btndrop05 As Button
     Friend WithEvents Label4 As Label
     Friend WithEvents Panel9 As Panel
+    Friend WithEvents lbl_kosong As Label
 End Class

@@ -156,6 +156,30 @@ Public Class Ringkasan
 
             Next i
         End If
+        If materiPelajaran.Count = 0 Then
+            lbl_kosong.Visible = True
+            Panel3.Visible = True
+            drop0.Visible = False
+            drop1.Visible = False
+            drop2.Visible = False
+            drop3.Visible = False
+            drop4.Visible = False
+            drop5.Visible = False
+            green0.Visible = False
+            green1.Visible = False
+            green2.Visible = False
+            green3.Visible = False
+            green4.Visible = False
+            green5.Visible = False
+            btntpk0.Visible = False
+            btntpk1.Visible = False
+            btntpk2.Visible = False
+            btntpk3.Visible = False
+            btntpk4.Visible = False
+            btntpk5.Visible = False
+        Else
+            lbl_kosong.Visible = False
+        End If
     End Function
     Public Function ShowRingkasanTopik(idJurusan As Integer, idFeature As Integer, idKelas As Integer, idBidangStudi As Integer, idPelanggan As String)
         Dim topik As List(Of RingkasanMateriTopik) = GetTopik(idJurusan, idFeature, idKelas, idBidangStudi, idPelanggan)
@@ -220,6 +244,11 @@ Public Class Ringkasan
 
             Next i
         End If
+        If topik.Count = 0 Then
+            lbl_kosong.Visible = True
+        Else
+            lbl_kosong.Visible = False
+        End If
     End Function
     Private Sub Panel4_Paint(sender As Object, e As PaintEventArgs) Handles Panel4.Paint
         ShowRingkasan(Integer.Parse(Me.Label26.Tag), Integer.Parse(Me.Label2.Tag), 0)
@@ -228,6 +257,18 @@ Public Class Ringkasan
     Private Sub Button12_Click(sender As Object, e As EventArgs) Handles btnrm4.Click
         ShowRingkasanTopik(0, Integer.Parse(Me.Label2.Tag), Integer.Parse(Me.Label26.Tag), Me.btnrm4.Tag, Me.Label1.Tag)
         Panel3.Visible = True
+        drop0.Visible = False
+        drop1.Visible = False
+        drop2.Visible = False
+        drop3.Visible = False
+        drop4.Visible = False
+        drop5.Visible = False
+        green0.Visible = False
+        green1.Visible = False
+        green2.Visible = False
+        green3.Visible = False
+        green4.Visible = False
+        green5.Visible = False
     End Sub
 
     Private Sub Button19_Click(sender As Object, e As EventArgs) Handles btnrm9.Click
@@ -238,6 +279,18 @@ Public Class Ringkasan
     Private Sub btnrm2_Click(sender As Object, e As EventArgs) Handles btnrm2.Click
         ShowRingkasanTopik(0, Integer.Parse(Me.Label2.Tag), Integer.Parse(Me.Label26.Tag), Me.btnrm2.Tag, Me.Label1.Tag)
         Panel3.Visible = True
+        drop0.Visible = False
+        drop1.Visible = False
+        drop2.Visible = False
+        drop3.Visible = False
+        drop4.Visible = False
+        drop5.Visible = False
+        green0.Visible = False
+        green1.Visible = False
+        green2.Visible = False
+        green3.Visible = False
+        green4.Visible = False
+        green5.Visible = False
     End Sub
 
     Private Sub Panel3_Paint(sender As Object, e As PaintEventArgs)
@@ -247,46 +300,154 @@ Public Class Ringkasan
     Private Sub btnrm0_Click(sender As Object, e As EventArgs) Handles btnrm0.Click
         ShowRingkasanTopik(0, Integer.Parse(Me.Label2.Tag), Integer.Parse(Me.Label26.Tag), Me.btnrm0.Tag, Me.Label1.Tag)
         Panel3.Visible = True
+        drop0.Visible = False
+        drop1.Visible = False
+        drop2.Visible = False
+        drop3.Visible = False
+        drop4.Visible = False
+        drop5.Visible = False
+        green0.Visible = False
+        green1.Visible = False
+        green2.Visible = False
+        green3.Visible = False
+        green4.Visible = False
+        green5.Visible = False
     End Sub
 
     Private Sub btnrm1_Click(sender As Object, e As EventArgs) Handles btnrm1.Click
         ShowRingkasanTopik(0, Integer.Parse(Me.Label2.Tag), Integer.Parse(Me.Label26.Tag), Me.btnrm1.Tag, Me.Label1.Tag)
         Panel3.Visible = True
+        drop0.Visible = False
+        drop1.Visible = False
+        drop2.Visible = False
+        drop3.Visible = False
+        drop4.Visible = False
+        drop5.Visible = False
+        green0.Visible = False
+        green1.Visible = False
+        green2.Visible = False
+        green3.Visible = False
+        green4.Visible = False
+        green5.Visible = False
     End Sub
 
     Private Sub btnrm3_Click(sender As Object, e As EventArgs) Handles btnrm3.Click
         ShowRingkasanTopik(0, Integer.Parse(Me.Label2.Tag), Integer.Parse(Me.Label26.Tag), Me.btnrm3.Tag, Me.Label1.Tag)
         Panel3.Visible = True
+        drop0.Visible = False
+        drop1.Visible = False
+        drop2.Visible = False
+        drop3.Visible = False
+        drop4.Visible = False
+        drop5.Visible = False
+        green0.Visible = False
+        green1.Visible = False
+        green2.Visible = False
+        green3.Visible = False
+        green4.Visible = False
+        green5.Visible = False
     End Sub
 
     Private Sub btnrm5_Click(sender As Object, e As EventArgs) Handles btnrm5.Click
         ShowRingkasanTopik(0, Integer.Parse(Me.Label2.Tag), Integer.Parse(Me.Label26.Tag), Me.btnrm5.Tag, Me.Label1.Tag)
         Panel3.Visible = True
+        drop0.Visible = False
+        drop1.Visible = False
+        drop2.Visible = False
+        drop3.Visible = False
+        drop4.Visible = False
+        drop5.Visible = False
+        green0.Visible = False
+        green1.Visible = False
+        green2.Visible = False
+        green3.Visible = False
+        green4.Visible = False
+        green5.Visible = False
     End Sub
 
     Private Sub btnrm6_Click(sender As Object, e As EventArgs) Handles btnrm6.Click
         ShowRingkasanTopik(0, Integer.Parse(Me.Label2.Tag), Integer.Parse(Me.Label26.Tag), Me.btnrm6.Tag, Me.Label1.Tag)
         Panel3.Visible = True
+        drop0.Visible = False
+        drop1.Visible = False
+        drop2.Visible = False
+        drop3.Visible = False
+        drop4.Visible = False
+        drop5.Visible = False
+        green0.Visible = False
+        green1.Visible = False
+        green2.Visible = False
+        green3.Visible = False
+        green4.Visible = False
+        green5.Visible = False
     End Sub
 
     Private Sub btnrm7_Click(sender As Object, e As EventArgs) Handles btnrm7.Click
         ShowRingkasanTopik(0, Integer.Parse(Me.Label2.Tag), Integer.Parse(Me.Label26.Tag), Me.btnrm7.Tag, Me.Label1.Tag)
         Panel3.Visible = True
+        drop0.Visible = False
+        drop1.Visible = False
+        drop2.Visible = False
+        drop3.Visible = False
+        drop4.Visible = False
+        drop5.Visible = False
+        green0.Visible = False
+        green1.Visible = False
+        green2.Visible = False
+        green3.Visible = False
+        green4.Visible = False
+        green5.Visible = False
     End Sub
 
     Private Sub btnrm8_Click(sender As Object, e As EventArgs) Handles btnrm8.Click
         ShowRingkasanTopik(0, Integer.Parse(Me.Label2.Tag), Integer.Parse(Me.Label26.Tag), Me.btnrm7.Tag, Me.Label1.Tag)
         Panel3.Visible = True
+        drop0.Visible = False
+        drop1.Visible = False
+        drop2.Visible = False
+        drop3.Visible = False
+        drop4.Visible = False
+        drop5.Visible = False
+        green0.Visible = False
+        green1.Visible = False
+        green2.Visible = False
+        green3.Visible = False
+        green4.Visible = False
+        green5.Visible = False
     End Sub
 
     Private Sub btnrm10_Click(sender As Object, e As EventArgs) Handles btnrm10.Click
         ShowRingkasanTopik(0, Integer.Parse(Me.Label2.Tag), Integer.Parse(Me.Label26.Tag), Me.btnrm10.Tag, Me.Label1.Tag)
         Panel3.Visible = True
+        drop0.Visible = False
+        drop1.Visible = False
+        drop2.Visible = False
+        drop3.Visible = False
+        drop4.Visible = False
+        drop5.Visible = False
+        green0.Visible = False
+        green1.Visible = False
+        green2.Visible = False
+        green3.Visible = False
+        green4.Visible = False
+        green5.Visible = False
     End Sub
 
     Private Sub btnrm11_Click(sender As Object, e As EventArgs) Handles btnrm11.Click
         ShowRingkasanTopik(0, Integer.Parse(Me.Label2.Tag), Integer.Parse(Me.Label26.Tag), Me.btnrm11.Tag, Me.Label1.Tag)
         Panel3.Visible = True
+        drop0.Visible = False
+        drop1.Visible = False
+        drop2.Visible = False
+        drop3.Visible = False
+        drop4.Visible = False
+        drop5.Visible = False
+        green0.Visible = False
+        green1.Visible = False
+        green2.Visible = False
+        green3.Visible = False
+        green4.Visible = False
+        green5.Visible = False
     End Sub
 
 
@@ -354,7 +515,7 @@ Public Class Ringkasan
             If imagePath IsNot Nothing Then
                 Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop00.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
                 If url.Free = "false" Then
-                    MsgBox("Hanya Untuk User Berlanggan")
+                    MsgBox("Silahkan Berlangganan Paket Permata Belajar")
                 Else
                     Dim tClient As WebClient = New WebClient
                     Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
@@ -387,7 +548,7 @@ Public Class Ringkasan
             If imagePath IsNot Nothing Then
                 Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop10.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
                 If url.Free = "false" Then
-                    MsgBox("Hanya Untuk User Berlanggan")
+                    MsgBox("Silahkan Berlangganan Paket Permata Belajar")
                 Else
                     Dim tClient As WebClient = New WebClient
                     Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
@@ -419,7 +580,7 @@ Public Class Ringkasan
             If imagePath IsNot Nothing Then
                 Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop20.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
                 If url.Free = "false" Then
-                    MsgBox("Hanya Untuk User Berlanggan")
+                    MsgBox("Silahkan Berlangganan Paket Permata Belajar")
                 Else
                     Dim tClient As WebClient = New WebClient
                     Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
@@ -451,7 +612,7 @@ Public Class Ringkasan
             If imagePath IsNot Nothing Then
                 Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop30.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
                 If url.Free = "false" Then
-                    MsgBox("Hanya Untuk User Berlanggan")
+                    MsgBox("Silahkan Berlangganan Paket Permata Belajar")
                 Else
                     Dim tClient As WebClient = New WebClient
                     Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
@@ -483,7 +644,7 @@ Public Class Ringkasan
             If imagePath IsNot Nothing Then
                 Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop30.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
                 If url.Free = "false" Then
-                    MsgBox("Hanya Untuk User Berlanggan")
+                    MsgBox("Silahkan Berlangganan Paket Permata Belajar")
                 Else
                     Dim tClient As WebClient = New WebClient
                     Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
@@ -508,7 +669,7 @@ Public Class Ringkasan
             If imagePath IsNot Nothing Then
                 Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop01.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
                 If url.Free = "false" Then
-                    MsgBox("Hanya Untuk User Berlanggan")
+                    MsgBox("Silahkan Berlangganan Paket Permata Belajar")
                 Else
                     Dim tClient As WebClient = New WebClient
                     Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
@@ -540,7 +701,7 @@ Public Class Ringkasan
             If imagePath IsNot Nothing Then
                 Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop11.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
                 If url.Free = "false" Then
-                    MsgBox("Hanya Untuk User Berlanggan")
+                    MsgBox("Silahkan Berlangganan Paket Permata Belajar")
                 Else
                     Dim tClient As WebClient = New WebClient
                     Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
@@ -572,7 +733,7 @@ Public Class Ringkasan
             If imagePath IsNot Nothing Then
                 Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop21.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
                 If url.Free = "false" Then
-                    MsgBox("Hanya Untuk User Berlanggan")
+                    MsgBox("Silahkan Berlangganan Paket Permata Belajar")
                 Else
                     Dim tClient As WebClient = New WebClient
                     Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
@@ -604,7 +765,7 @@ Public Class Ringkasan
             If imagePath IsNot Nothing Then
                 Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop31.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
                 If url.Free = "false" Then
-                    MsgBox("Hanya Untuk User Berlanggan")
+                    MsgBox("Silahkan Berlangganan Paket Permata Belajar")
                 Else
                     Dim tClient As WebClient = New WebClient
                     Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
@@ -636,7 +797,7 @@ Public Class Ringkasan
             If imagePath IsNot Nothing Then
                 Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop41.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
                 If url.Free = "false" Then
-                    MsgBox("Hanya Untuk User Berlanggan")
+                    MsgBox("Silahkan Berlangganan Paket Permata Belajar")
                 Else
                     Dim tClient As WebClient = New WebClient
                     Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
@@ -668,7 +829,7 @@ Public Class Ringkasan
             If imagePath IsNot Nothing Then
                 Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop02.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
                 If url.Free = "false" Then
-                    MsgBox("Hanya Untuk User Berlanggan")
+                    MsgBox("Silahkan Berlangganan Paket Permata Belajar")
                 Else
                     Dim tClient As WebClient = New WebClient
                     Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
@@ -700,7 +861,7 @@ Public Class Ringkasan
             If imagePath IsNot Nothing Then
                 Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop12.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
                 If url.Free = "false" Then
-                    MsgBox("Hanya Untuk User Berlanggan")
+                    MsgBox("Silahkan Berlangganan Paket Permata Belajar")
                 Else
                     Dim tClient As WebClient = New WebClient
                     Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
@@ -732,7 +893,7 @@ Public Class Ringkasan
             If imagePath IsNot Nothing Then
                 Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop22.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
                 If url.Free = "false" Then
-                    MsgBox("Hanya Untuk User Berlanggan")
+                    MsgBox("Silahkan Berlangganan Paket Permata Belajar")
                 Else
                     Dim tClient As WebClient = New WebClient
                     Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
@@ -764,7 +925,7 @@ Public Class Ringkasan
             If imagePath IsNot Nothing Then
                 Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop32.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
                 If url.Free = "false" Then
-                    MsgBox("Hanya Untuk User Berlanggan")
+                    MsgBox("Silahkan Berlangganan Paket Permata Belajar")
                 Else
                     Dim tClient As WebClient = New WebClient
                     Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
@@ -796,7 +957,7 @@ Public Class Ringkasan
             If imagePath IsNot Nothing Then
                 Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop42.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
                 If url.Free = "false" Then
-                    MsgBox("Hanya Untuk User Berlanggan")
+                    MsgBox("Silahkan Berlangganan Paket Permata Belajar")
                 Else
                     Dim tClient As WebClient = New WebClient
                     Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
@@ -828,7 +989,7 @@ Public Class Ringkasan
             If imagePath IsNot Nothing Then
                 Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop03.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
                 If url.Free = "false" Then
-                    MsgBox("Hanya Untuk User Berlanggan")
+                    MsgBox("Silahkan Berlangganan Paket Permata Belajar")
                 Else
                     Dim tClient As WebClient = New WebClient
                     Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
@@ -860,7 +1021,7 @@ Public Class Ringkasan
             If imagePath IsNot Nothing Then
                 Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop13.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
                 If url.Free = "false" Then
-                    MsgBox("Hanya Untuk User Berlanggan")
+                    MsgBox("Silahkan Berlangganan Paket Permata Belajar")
                 Else
                     Dim tClient As WebClient = New WebClient
                     Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
@@ -892,7 +1053,7 @@ Public Class Ringkasan
             If imagePath IsNot Nothing Then
                 Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop23.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
                 If url.Free = "false" Then
-                    MsgBox("Hanya Untuk User Berlanggan")
+                    MsgBox("Silahkan Berlangganan Paket Permata Belajar")
                 Else
                     Dim tClient As WebClient = New WebClient
                     Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
@@ -924,7 +1085,7 @@ Public Class Ringkasan
             If imagePath IsNot Nothing Then
                 Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop33.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
                 If url.Free = "false" Then
-                    MsgBox("Hanya Untuk User Berlanggan")
+                    MsgBox("Silahkan Berlangganan Paket Permata Belajar")
                 Else
                     Dim tClient As WebClient = New WebClient
                     Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
@@ -955,7 +1116,7 @@ Public Class Ringkasan
             If imagePath IsNot Nothing Then
                 Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop43.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
                 If url.Free = "false" Then
-                    MsgBox("Hanya Untuk User Berlanggan")
+                    MsgBox("Silahkan Berlangganan Paket Permata Belajar")
                 Else
                     Dim tClient As WebClient = New WebClient
                     Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
@@ -987,7 +1148,7 @@ Public Class Ringkasan
             If imagePath IsNot Nothing Then
                 Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop04.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
                 If url.Free = "false" Then
-                    MsgBox("Hanya Untuk User Berlanggan")
+                    MsgBox("Silahkan Berlangganan Paket Permata Belajar")
                 Else
                     Dim tClient As WebClient = New WebClient
                     Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
@@ -1019,7 +1180,7 @@ Public Class Ringkasan
             If imagePath IsNot Nothing Then
                 Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop14.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
                 If url.Free = "false" Then
-                    MsgBox("Hanya Untuk User Berlanggan")
+                    MsgBox("Silahkan Berlangganan Paket Permata Belajar")
                 Else
                     Dim tClient As WebClient = New WebClient
                     Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
@@ -1051,7 +1212,7 @@ Public Class Ringkasan
             If imagePath IsNot Nothing Then
                 Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop24.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
                 If url.Free = "false" Then
-                    MsgBox("Hanya Untuk User Berlanggan")
+                    MsgBox("Silahkan Berlangganan Paket Permata Belajar")
                 Else
                     Dim tClient As WebClient = New WebClient
                     Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
@@ -1083,7 +1244,7 @@ Public Class Ringkasan
             If imagePath IsNot Nothing Then
                 Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop34.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
                 If url.Free = "false" Then
-                    MsgBox("Hanya Untuk User Berlanggan")
+                    MsgBox("Silahkan Berlangganan Paket Permata Belajar")
                 Else
                     Dim tClient As WebClient = New WebClient
                     Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
@@ -1115,7 +1276,7 @@ Public Class Ringkasan
             If imagePath IsNot Nothing Then
                 Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop44.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
                 If url.Free = "false" Then
-                    MsgBox("Hanya Untuk User Berlanggan")
+                    MsgBox("Silahkan Berlangganan Paket Permata Belajar")
                 Else
                     Dim tClient As WebClient = New WebClient
                     Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
@@ -1147,7 +1308,7 @@ Public Class Ringkasan
             If imagePath IsNot Nothing Then
                 Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop05.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
                 If url.Free = "false" Then
-                    MsgBox("Hanya Untuk User Berlanggan")
+                    MsgBox("Silahkan Berlangganan Paket Permata Belajar")
                 Else
                     Dim tClient As WebClient = New WebClient
                     Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
@@ -1179,7 +1340,7 @@ Public Class Ringkasan
             If imagePath IsNot Nothing Then
                 Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop15.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
                 If url.Free = "false" Then
-                    MsgBox("Hanya Untuk User Berlanggan")
+                    MsgBox("Silahkan Berlangganan Paket Permata Belajar")
                 Else
                     Dim tClient As WebClient = New WebClient
                     Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
@@ -1211,7 +1372,7 @@ Public Class Ringkasan
             If imagePath IsNot Nothing Then
                 Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop25.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
                 If url.Free = "false" Then
-                    MsgBox("Hanya Untuk User Berlanggan")
+                    MsgBox("Silahkan Berlangganan Paket Permata Belajar")
                 Else
                     Dim tClient As WebClient = New WebClient
                     Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
@@ -1243,7 +1404,7 @@ Public Class Ringkasan
             If imagePath IsNot Nothing Then
                 Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop35.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
                 If url.Free = "false" Then
-                    MsgBox("Hanya Untuk User Berlanggan")
+                    MsgBox("Silahkan Berlangganan Paket Permata Belajar")
                 Else
                     Dim tClient As WebClient = New WebClient
                     Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))
@@ -1275,7 +1436,7 @@ Public Class Ringkasan
             If imagePath IsNot Nothing Then
                 Dim url As RingkasanMateriTopikFile = imagePath.File.Where(Function(x) x.Id_Ringkasan_Materi = Integer.Parse(Me.btndrop45.Tag.Id_Ringkasan_Materi)).FirstOrDefault()
                 If url.Free = "false" Then
-                    MsgBox("Hanya Untuk User Berlanggan")
+                    MsgBox("Silahkan Berlangganan Paket Permata Belajar")
                 Else
                     Dim tClient As WebClient = New WebClient
                     Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(url.File)))

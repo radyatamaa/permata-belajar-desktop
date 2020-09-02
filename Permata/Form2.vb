@@ -54,7 +54,15 @@ Public Class Form2
 
             Next i
         End If
+        If materiPelajaran.Count = 0 Then
+            lbl_kosong.Visible = True
+            Panel3.Visible = True
+
+        Else
+            lbl_kosong.Visible = False
+        End If
     End Function
+
     Public Function ShowVideoTopik(idJurusan As Integer, idFeature As Integer, idKelas As Integer, idBidangStudi As Integer, idPelanggan As String)
         Dim topik As List(Of VideoTopik) = GetTopik(idJurusan, idFeature, idKelas, idBidangStudi, idPelanggan)
         Dim lastIndex As Integer = 0
@@ -116,6 +124,23 @@ Public Class Form2
                 videoPanelKotak.FirstOrDefault().Hide()
 
             Next i
+        End If
+        If topik.Count = 0 Then
+            lbl_kosong.Visible = True
+            Panel3.Visible = False
+            Pnlvb0.Visible = False
+            Pnlvb1.Visible = False
+            Pnlvb2.Visible = False
+            lblbab1.Visible = False
+            lblbab2.Visible = False
+            btnvideo0.Visible = False
+            btnvideo1.Visible = False
+            btnvideo2.Visible = False
+            Button1.Visible = False
+            Button2.Visible = False
+            Button3.Visible = False
+        Else
+            lbl_kosong.Visible = False
         End If
     End Function
     Public Function GetMatapelajaranVideo(idKelas As Integer, idFeature As Integer, idJurusan As Integer)
@@ -322,7 +347,7 @@ Public Class Form2
             If imagePath IsNot Nothing Then
                 Dim url As VideoTopikFile = imagePath.File.Where(Function(x) x.Id_Video = Integer.Parse(Me.btnvideo0.Tag.Id_Video)).FirstOrDefault()
                 If url.Free = "false" Then
-                    MsgBox("Hanya Untuk User Berlanggan")
+                    MsgBox("Silahkan Berlangganan Paket Permata Belajar")
                 Else
                     IsiVideo.videoplay.URL = url.File
                     IsiVideo.Show()
@@ -344,7 +369,7 @@ Public Class Form2
             If imagePath IsNot Nothing Then
                 Dim url As VideoTopikFile = imagePath.File.Where(Function(x) x.Id_Video = Integer.Parse(Me.btnvideo1.Tag.Id_Video)).FirstOrDefault()
                 If url.Free = "false" Then
-                    MsgBox("Hanya Untuk User Berlanggan")
+                    MsgBox("Silahkan Berlangganan Paket Permata Belajar")
                 Else
 
                     IsiVideo.videoplay.URL = url.File
@@ -367,7 +392,7 @@ Public Class Form2
             If imagePath IsNot Nothing Then
                 Dim url As VideoTopikFile = imagePath.File.Where(Function(x) x.Id_Video = Integer.Parse(Me.btnvideo2.Tag.Id_Video)).FirstOrDefault()
                 If url.Free = "false" Then
-                    MsgBox("Hanya Untuk User Berlanggan")
+                    MsgBox("Silahkan Berlangganan Paket Permata Belajar")
                 Else
 
                     IsiVideo.videoplay.URL = url.File
@@ -380,5 +405,13 @@ Public Class Form2
         Else
             MsgBox("File dalam Video Tersebut Kosong!")
         End If
+    End Sub
+
+    Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub lbl_kosong_Click(sender As Object, e As EventArgs) 
+
     End Sub
 End Class
