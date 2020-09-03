@@ -237,7 +237,39 @@ Public Class MenuUtama
         End Try
         Return result
     End Function
+    Public Function GetNotification(pelangganId As String) As NotificationResponse
+        Dim result As New NotificationResponse
+        Dim myrequest As HttpWebRequest = HttpWebRequest.Create("https://api.permatamall.com/api/v2/notification/list")
+        Dim strPostData As String = String.Format("id_pelanggan={0}",
+        pelangganId)
 
+        myrequest.Method = "POST"
+        myrequest.Headers.Add("Authorization", "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjMsImlhdCI6MTU5NTI5ODMwN30.i4GWwTPyp853fcwO4f71qJTmQzu06qcSrh2_vw71tYE")
+        'myrequest.Timeout = reqtimeout
+        myrequest.ContentLength = strPostData.Length
+        myrequest.ContentType = "application/x-www-form-urlencoded"
+        myrequest.CookieContainer = New CookieContainer()
+
+        ' Post to the login form.
+        Dim swRequestWriter As StreamWriter = New StreamWriter(myrequest.GetRequestStream())
+        swRequestWriter.Write(strPostData)
+        swRequestWriter.Close()
+        Try
+            Dim resp As System.Net.HttpWebResponse = myrequest.GetResponse()
+            Dim sr As New System.IO.StreamReader(resp.GetResponseStream())
+            Dim response = sr.ReadToEnd()
+            Dim responseConvert = JsonConvert.DeserializeObject(Of NotificationResponse)(response)
+            result = responseConvert
+            sr.Close()
+        Catch ex As WebException
+            If ex.Status = WebExceptionStatus.Timeout Then
+                'result = "Error: The request has timed out"
+            Else
+                'result = "Error: " + ex.Message
+            End If
+        End Try
+        Return result
+    End Function
     Public Function ShowKelas()
         Dim DataKelas As List(Of Kelas) = GetKelas()
         Dim lastIndex As Integer = 0
@@ -479,6 +511,8 @@ Public Class MenuUtama
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Dim listNotif = GetNotification(Me.Guna2PictureBox3.Tag)
+        Notifikasi.NotificationList = listNotif
         Notifikasi.Show()
         Me.Hide()
     End Sub
