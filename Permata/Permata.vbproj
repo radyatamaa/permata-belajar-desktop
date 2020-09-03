@@ -137,6 +137,12 @@
     <Compile Include="IsiRIngkasan.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="kontak.Designer.vb">
+      <DependentUpon>kontak.vb</DependentUpon>
+    </Compile>
+    <Compile Include="kontak.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Lainnya.Designer.vb">
       <DependentUpon>Lainnya.vb</DependentUpon>
     </Compile>
@@ -161,6 +167,12 @@
     <Compile Include="Model\SoalTopikResponse.vb" />
     <Compile Include="Model\VideoTopik.vb" />
     <Compile Include="Model\VideoTopikResponse.vb" />
+    <Compile Include="Notifikasi.Designer.vb">
+      <DependentUpon>Notifikasi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Notifikasi.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Prestasi.Designer.vb">
       <DependentUpon>Prestasi.vb</DependentUpon>
     </Compile>
@@ -234,8 +246,14 @@
     <EmbeddedResource Include="IsiRIngkasan.resx">
       <DependentUpon>IsiRIngkasan.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="kontak.resx">
+      <DependentUpon>kontak.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Lainnya.resx">
       <DependentUpon>Lainnya.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notifikasi.resx">
+      <DependentUpon>Notifikasi.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Prestasi.resx">
       <DependentUpon>Prestasi.vb</DependentUpon>
