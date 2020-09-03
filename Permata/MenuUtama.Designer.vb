@@ -977,11 +977,12 @@ Partial Class MenuUtama
         Me.Label5.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 40.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(48, 57)
+        Me.Label5.Location = New System.Drawing.Point(308, 93)
         Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(753, 153)
+        Me.Label5.Size = New System.Drawing.Size(238, 76)
         Me.Label5.TabIndex = 0
         Me.Label5.Text = "Label5"
         Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -1060,6 +1061,7 @@ Partial Class MenuUtama
         Me.Panel7.ResumeLayout(False)
         Me.Panel7.PerformLayout()
         Me.Panel6.ResumeLayout(False)
+        Me.Panel6.PerformLayout()
         Me.Panel8.ResumeLayout(False)
         Me.Panel9.ResumeLayout(False)
         Me.ResumeLayout(False)
