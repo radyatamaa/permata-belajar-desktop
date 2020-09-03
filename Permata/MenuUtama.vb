@@ -477,4 +477,9 @@ Public Class MenuUtama
     Private Sub Label26_Click(sender As Object, e As EventArgs) Handles Label26.Click
 
     End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Notifikasi.Show()
+        Me.Hide()
+    End Sub
 End Class
