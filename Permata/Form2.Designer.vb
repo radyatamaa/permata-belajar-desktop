@@ -49,6 +49,7 @@ Partial Class Form2
         Me.btnvideo2 = New Guna.UI2.WinForms.Guna2Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Pnlvb1 = New System.Windows.Forms.Panel()
+        Me.lbl_kosong = New System.Windows.Forms.Label()
         Me.lblvideo1 = New System.Windows.Forms.Label()
         Me.btnvideo1 = New Guna.UI2.WinForms.Guna2Button()
         Me.Button1 = New System.Windows.Forms.Button()
@@ -68,7 +69,6 @@ Partial Class Form2
         Me.Label22 = New System.Windows.Forms.Label()
         Me.Panel8 = New System.Windows.Forms.Panel()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.lbl_kosong = New System.Windows.Forms.Label()
         Me.Panel4.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.Pnlvb2.SuspendLayout()
@@ -83,7 +83,7 @@ Partial Class Form2
         '
         Me.lblvb7.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblvb7.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblvb7.Font = New System.Drawing.Font("Abhaya Libre Medium", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblvb7.Location = New System.Drawing.Point(149, 399)
         Me.lblvb7.Name = "lblvb7"
         Me.lblvb7.Size = New System.Drawing.Size(193, 16)
@@ -95,8 +95,8 @@ Partial Class Form2
         '
         Me.lblvb6.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblvb6.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblvb6.Location = New System.Drawing.Point(-17, 399)
+        Me.lblvb6.Font = New System.Drawing.Font("Abhaya Libre Medium", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblvb6.Location = New System.Drawing.Point(-11, 399)
         Me.lblvb6.Name = "lblvb6"
         Me.lblvb6.Size = New System.Drawing.Size(193, 16)
         Me.lblvb6.TabIndex = 49
@@ -106,10 +106,10 @@ Partial Class Form2
         'Label23
         '
         Me.Label23.AutoSize = True
-        Me.Label23.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label23.Font = New System.Drawing.Font("Abhaya Libre Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label23.Location = New System.Drawing.Point(48, 14)
         Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(184, 25)
+        Me.Label23.Size = New System.Drawing.Size(195, 24)
         Me.Label23.TabIndex = 48
         Me.Label23.Text = "Pilih Mata Pelajaran"
         '
@@ -148,7 +148,7 @@ Partial Class Form2
         '
         Me.lblvb8.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblvb8.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblvb8.Font = New System.Drawing.Font("Abhaya Libre Medium", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblvb8.Location = New System.Drawing.Point(312, 399)
         Me.lblvb8.Name = "lblvb8"
         Me.lblvb8.Size = New System.Drawing.Size(193, 16)
@@ -174,8 +174,8 @@ Partial Class Form2
         '
         Me.lblvb5.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblvb5.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblvb5.Location = New System.Drawing.Point(313, 279)
+        Me.lblvb5.Font = New System.Drawing.Font("Abhaya Libre Medium", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblvb5.Location = New System.Drawing.Point(322, 279)
         Me.lblvb5.Name = "lblvb5"
         Me.lblvb5.Size = New System.Drawing.Size(193, 16)
         Me.lblvb5.TabIndex = 44
@@ -186,8 +186,8 @@ Partial Class Form2
         '
         Me.lblvb4.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblvb4.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblvb4.Location = New System.Drawing.Point(147, 279)
+        Me.lblvb4.Font = New System.Drawing.Font("Abhaya Libre Medium", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblvb4.Location = New System.Drawing.Point(164, 279)
         Me.lblvb4.Name = "lblvb4"
         Me.lblvb4.Size = New System.Drawing.Size(193, 16)
         Me.lblvb4.TabIndex = 43
@@ -198,8 +198,8 @@ Partial Class Form2
         '
         Me.lblvb3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblvb3.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblvb3.Location = New System.Drawing.Point(-11, 279)
+        Me.lblvb3.Font = New System.Drawing.Font("Abhaya Libre Medium", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblvb3.Location = New System.Drawing.Point(-2, 279)
         Me.lblvb3.Name = "lblvb3"
         Me.lblvb3.Size = New System.Drawing.Size(193, 16)
         Me.lblvb3.TabIndex = 42
@@ -210,8 +210,8 @@ Partial Class Form2
         '
         Me.lblvb2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblvb2.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblvb2.Location = New System.Drawing.Point(321, 143)
+        Me.lblvb2.Font = New System.Drawing.Font("Abhaya Libre Medium", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblvb2.Location = New System.Drawing.Point(331, 143)
         Me.lblvb2.Name = "lblvb2"
         Me.lblvb2.Size = New System.Drawing.Size(193, 16)
         Me.lblvb2.TabIndex = 41
@@ -222,7 +222,7 @@ Partial Class Form2
         '
         Me.lblvb1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblvb1.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblvb1.Font = New System.Drawing.Font("Abhaya Libre Medium", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblvb1.Location = New System.Drawing.Point(161, 143)
         Me.lblvb1.Name = "lblvb1"
         Me.lblvb1.Size = New System.Drawing.Size(187, 16)
@@ -234,8 +234,8 @@ Partial Class Form2
         '
         Me.lblvb0.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblvb0.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblvb0.Location = New System.Drawing.Point(-3, 143)
+        Me.lblvb0.Font = New System.Drawing.Font("Abhaya Libre Medium", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblvb0.Location = New System.Drawing.Point(-2, 143)
         Me.lblvb0.Name = "lblvb0"
         Me.lblvb0.Size = New System.Drawing.Size(187, 16)
         Me.lblvb0.TabIndex = 39
@@ -389,10 +389,11 @@ Partial Class Form2
         'lblvideo2
         '
         Me.lblvideo2.AutoSize = True
+        Me.lblvideo2.Font = New System.Drawing.Font("Abhaya Libre Medium", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblvideo2.Location = New System.Drawing.Point(405, 73)
         Me.lblvideo2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblvideo2.Name = "lblvideo2"
-        Me.lblvideo2.Size = New System.Drawing.Size(51, 17)
+        Me.lblvideo2.Size = New System.Drawing.Size(53, 17)
         Me.lblvideo2.TabIndex = 15
         Me.lblvideo2.Text = "Label6"
         '
@@ -417,11 +418,11 @@ Partial Class Form2
         'Button3
         '
         Me.Button3.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.Font = New System.Drawing.Font("Abhaya Libre Medium", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Button3.Image = CType(resources.GetObject("Button3.Image"), System.Drawing.Image)
         Me.Button3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button3.Location = New System.Drawing.Point(133, 132)
+        Me.Button3.Location = New System.Drawing.Point(211, 134)
         Me.Button3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button3.Name = "Button3"
         Me.Button3.Padding = New System.Windows.Forms.Padding(40, 0, 0, 0)
@@ -444,13 +445,26 @@ Partial Class Form2
         Me.Pnlvb1.Size = New System.Drawing.Size(781, 182)
         Me.Pnlvb1.TabIndex = 10
         '
+        'lbl_kosong
+        '
+        Me.lbl_kosong.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lbl_kosong.AutoSize = True
+        Me.lbl_kosong.Font = New System.Drawing.Font("Abhaya Libre Medium", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_kosong.Location = New System.Drawing.Point(31, 12)
+        Me.lbl_kosong.Name = "lbl_kosong"
+        Me.lbl_kosong.Size = New System.Drawing.Size(637, 48)
+        Me.lbl_kosong.TabIndex = 42
+        Me.lbl_kosong.Text = "Akan Kami Update Secara Bertahap"
+        Me.lbl_kosong.Visible = False
+        '
         'lblvideo1
         '
         Me.lblvideo1.AutoSize = True
+        Me.lblvideo1.Font = New System.Drawing.Font("Abhaya Libre Medium", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblvideo1.Location = New System.Drawing.Point(405, 58)
         Me.lblvideo1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblvideo1.Name = "lblvideo1"
-        Me.lblvideo1.Size = New System.Drawing.Size(51, 17)
+        Me.lblvideo1.Size = New System.Drawing.Size(53, 17)
         Me.lblvideo1.TabIndex = 14
         Me.lblvideo1.Text = "Label5"
         '
@@ -476,7 +490,7 @@ Partial Class Form2
         '
         Me.Button1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Button1.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Font = New System.Drawing.Font("Abhaya Libre Medium", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -506,10 +520,11 @@ Partial Class Form2
         'lblvideo0
         '
         Me.lblvideo0.AutoSize = True
+        Me.lblvideo0.Font = New System.Drawing.Font("Abhaya Libre Medium", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblvideo0.Location = New System.Drawing.Point(405, 58)
         Me.lblvideo0.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblvideo0.Name = "lblvideo0"
-        Me.lblvideo0.Size = New System.Drawing.Size(51, 17)
+        Me.lblvideo0.Size = New System.Drawing.Size(53, 17)
         Me.lblvideo0.TabIndex = 13
         Me.lblvideo0.Text = "Label4"
         '
@@ -545,7 +560,7 @@ Partial Class Form2
         '
         Me.Button2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Button2.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Font = New System.Drawing.Font("Abhaya Libre Medium", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Button2.Image = CType(resources.GetObject("Button2.Image"), System.Drawing.Image)
         Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -635,11 +650,11 @@ Partial Class Form2
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Abhaya Libre Medium", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(189, 59)
+        Me.Label2.Location = New System.Drawing.Point(208, 54)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(149, 29)
+        Me.Label2.Size = New System.Drawing.Size(144, 28)
         Me.Label2.TabIndex = 53
         Me.Label2.Text = "Kelas 12 IPA"
         '
@@ -648,11 +663,11 @@ Partial Class Form2
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Abhaya Libre", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(164, 22)
+        Me.Label1.Location = New System.Drawing.Point(196, 19)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(206, 36)
+        Me.Label1.Size = New System.Drawing.Size(182, 35)
         Me.Label1.TabIndex = 52
         Me.Label1.Text = "Video Belajar"
         '
@@ -662,11 +677,11 @@ Partial Class Form2
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label26.AutoSize = True
         Me.Label26.BackColor = System.Drawing.Color.Transparent
-        Me.Label26.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label26.Font = New System.Drawing.Font("Abhaya Libre Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label26.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Label26.Location = New System.Drawing.Point(33, 151)
         Me.Label26.Name = "Label26"
-        Me.Label26.Size = New System.Drawing.Size(455, 50)
+        Me.Label26.Size = New System.Drawing.Size(460, 48)
         Me.Label26.TabIndex = 51
         Me.Label26.Text = "kamu sedang berlangganan paket 1 bulan kelas 12" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "masa berlaku paket hingga 31 Des" &
     "ember 2020"
@@ -701,18 +716,6 @@ Partial Class Form2
         Me.Label4.Size = New System.Drawing.Size(643, 23)
         Me.Label4.TabIndex = 0
         Me.Label4.Text = "Support@permatabelajar.com, Phone/Whatsapp: 0811811306,"
-        '
-        'lbl_kosong
-        '
-        Me.lbl_kosong.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lbl_kosong.AutoSize = True
-        Me.lbl_kosong.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_kosong.Location = New System.Drawing.Point(31, 12)
-        Me.lbl_kosong.Name = "lbl_kosong"
-        Me.lbl_kosong.Size = New System.Drawing.Size(661, 46)
-        Me.lbl_kosong.TabIndex = 42
-        Me.lbl_kosong.Text = "Akan Kami Update Secara Bertahap"
-        Me.lbl_kosong.Visible = False
         '
         'Form2
         '

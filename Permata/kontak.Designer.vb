@@ -22,76 +22,75 @@ Partial Class kontak
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(kontak))
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Guna2Button7 = New Guna.UI2.WinForms.Guna2Button()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Panel1.Controls.Add(Me.Label2)
+        Me.Panel1.Controls.Add(Me.Label4)
+        Me.Panel1.Controls.Add(Me.Guna2Button7)
         Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Controls.Add(Me.Button2)
-        Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1083, 561)
+        Me.Panel1.Size = New System.Drawing.Size(682, 308)
         Me.Panel1.TabIndex = 0
         '
-        'Button1
+        'Label4
         '
-        Me.Button1.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button1.BackColor = System.Drawing.Color.LimeGreen
-        Me.Button1.Location = New System.Drawing.Point(354, 136)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(324, 87)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Whataspp"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.Label4.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Abhaya Libre", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(129, 130)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(363, 68)
+        Me.Label4.TabIndex = 57
+        Me.Label4.Text = "Email : @permatabelajar.com" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Phone/Whatsapp: 0811811306" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
-        'Button2
+        'Guna2Button7
         '
-        Me.Button2.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button2.BackColor = System.Drawing.Color.LightCoral
-        Me.Button2.Location = New System.Drawing.Point(354, 322)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(324, 85)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "Email"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.Guna2Button7.AutoRoundedCorners = True
+        Me.Guna2Button7.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2Button7.BorderRadius = 28
+        Me.Guna2Button7.CheckedState.Parent = Me.Guna2Button7
+        Me.Guna2Button7.CustomImages.Parent = Me.Guna2Button7
+        Me.Guna2Button7.FillColor = System.Drawing.Color.Transparent
+        Me.Guna2Button7.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Guna2Button7.ForeColor = System.Drawing.Color.White
+        Me.Guna2Button7.HoverState.Parent = Me.Guna2Button7
+        Me.Guna2Button7.Image = CType(resources.GetObject("Guna2Button7.Image"), System.Drawing.Image)
+        Me.Guna2Button7.ImageSize = New System.Drawing.Size(30, 30)
+        Me.Guna2Button7.Location = New System.Drawing.Point(0, 2)
+        Me.Guna2Button7.Margin = New System.Windows.Forms.Padding(4, 2, 4, 2)
+        Me.Guna2Button7.Name = "Guna2Button7"
+        Me.Guna2Button7.PressedColor = System.Drawing.Color.White
+        Me.Guna2Button7.ShadowDecoration.Parent = Me.Guna2Button7
+        Me.Guna2Button7.Size = New System.Drawing.Size(58, 70)
+        Me.Guna2Button7.TabIndex = 56
+        Me.Guna2Button7.UseTransparentBackground = True
         '
         'Label1
         '
         Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(421, 58)
+        Me.Label1.Font = New System.Drawing.Font("Abhaya Libre Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(210, 79)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(202, 25)
+        Me.Label1.Size = New System.Drawing.Size(217, 24)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "Hubungi Kami Melalui" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        '
-        'Label2
-        '
-        Me.Label2.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(482, 261)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(53, 25)
-        Me.Label2.TabIndex = 3
-        Me.Label2.Text = "Atau"
         '
         'kontak
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1083, 561)
+        Me.ClientSize = New System.Drawing.Size(682, 308)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "kontak"
         Me.Text = "kontak"
@@ -102,8 +101,7 @@ Partial Class kontak
     End Sub
 
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button1 As Button
+    Friend WithEvents Guna2Button7 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Label4 As Label
 End Class
