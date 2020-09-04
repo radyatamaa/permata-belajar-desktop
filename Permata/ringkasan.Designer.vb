@@ -75,6 +75,7 @@ Partial Class Ringkasan
         Me.yellow5 = New System.Windows.Forms.Label()
         Me.gray5 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.lbl_kosong = New System.Windows.Forms.Label()
         Me.drop5 = New System.Windows.Forms.Panel()
         Me.btndrop45 = New System.Windows.Forms.Button()
         Me.btndrop35 = New System.Windows.Forms.Button()
@@ -119,7 +120,6 @@ Partial Class Ringkasan
         Me.btntpk0 = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel9 = New System.Windows.Forms.Panel()
-        Me.lbl_kosong = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -188,7 +188,7 @@ Partial Class Ringkasan
         '
         Me.lblrm11.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblrm11.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblrm11.Font = New System.Drawing.Font("Abhaya Libre Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblrm11.Location = New System.Drawing.Point(323, 430)
         Me.lblrm11.Name = "lblrm11"
         Me.lblrm11.Size = New System.Drawing.Size(261, 16)
@@ -215,7 +215,7 @@ Partial Class Ringkasan
         '
         Me.lblrm10.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblrm10.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblrm10.Font = New System.Drawing.Font("Abhaya Libre Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblrm10.Location = New System.Drawing.Point(144, 428)
         Me.lblrm10.Name = "lblrm10"
         Me.lblrm10.Size = New System.Drawing.Size(261, 16)
@@ -227,7 +227,7 @@ Partial Class Ringkasan
         '
         Me.lblrm9.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblrm9.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblrm9.Font = New System.Drawing.Font("Abhaya Libre Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblrm9.Location = New System.Drawing.Point(-29, 430)
         Me.lblrm9.Name = "lblrm9"
         Me.lblrm9.Size = New System.Drawing.Size(261, 16)
@@ -238,10 +238,10 @@ Partial Class Ringkasan
         'Label23
         '
         Me.Label23.AutoSize = True
-        Me.Label23.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label23.Font = New System.Drawing.Font("Abhaya Libre Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label23.Location = New System.Drawing.Point(48, 14)
         Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(184, 25)
+        Me.Label23.Size = New System.Drawing.Size(195, 24)
         Me.Label23.TabIndex = 48
         Me.Label23.Text = "Pilih Mata Pelajaran"
         '
@@ -249,7 +249,7 @@ Partial Class Ringkasan
         '
         Me.lblrm8.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblrm8.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblrm8.Font = New System.Drawing.Font("Abhaya Libre Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblrm8.Location = New System.Drawing.Point(327, 330)
         Me.lblrm8.Name = "lblrm8"
         Me.lblrm8.Size = New System.Drawing.Size(261, 16)
@@ -261,7 +261,7 @@ Partial Class Ringkasan
         '
         Me.lblrm7.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblrm7.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblrm7.Font = New System.Drawing.Font("Abhaya Libre Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblrm7.Location = New System.Drawing.Point(148, 330)
         Me.lblrm7.Name = "lblrm7"
         Me.lblrm7.Size = New System.Drawing.Size(261, 16)
@@ -273,7 +273,7 @@ Partial Class Ringkasan
         '
         Me.lblrm6.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblrm6.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblrm6.Font = New System.Drawing.Font("Abhaya Libre Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblrm6.Location = New System.Drawing.Point(-31, 330)
         Me.lblrm6.Name = "lblrm6"
         Me.lblrm6.Size = New System.Drawing.Size(261, 16)
@@ -285,7 +285,7 @@ Partial Class Ringkasan
         '
         Me.lblrm5.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblrm5.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblrm5.Font = New System.Drawing.Font("Abhaya Libre Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblrm5.Location = New System.Drawing.Point(327, 226)
         Me.lblrm5.Name = "lblrm5"
         Me.lblrm5.Size = New System.Drawing.Size(261, 16)
@@ -297,7 +297,7 @@ Partial Class Ringkasan
         '
         Me.lblrm4.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblrm4.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblrm4.Font = New System.Drawing.Font("Abhaya Libre Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblrm4.Location = New System.Drawing.Point(147, 226)
         Me.lblrm4.Name = "lblrm4"
         Me.lblrm4.Size = New System.Drawing.Size(261, 16)
@@ -309,7 +309,7 @@ Partial Class Ringkasan
         '
         Me.lblrm3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblrm3.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblrm3.Font = New System.Drawing.Font("Abhaya Libre Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblrm3.Location = New System.Drawing.Point(-28, 226)
         Me.lblrm3.Name = "lblrm3"
         Me.lblrm3.Size = New System.Drawing.Size(261, 16)
@@ -321,7 +321,7 @@ Partial Class Ringkasan
         '
         Me.lblrm2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblrm2.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblrm2.Font = New System.Drawing.Font("Abhaya Libre Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblrm2.Location = New System.Drawing.Point(356, 121)
         Me.lblrm2.Name = "lblrm2"
         Me.lblrm2.Size = New System.Drawing.Size(200, 16)
@@ -333,7 +333,7 @@ Partial Class Ringkasan
         '
         Me.lblrm1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblrm1.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblrm1.Font = New System.Drawing.Font("Abhaya Libre Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblrm1.Location = New System.Drawing.Point(185, 121)
         Me.lblrm1.Name = "lblrm1"
         Me.lblrm1.Size = New System.Drawing.Size(187, 16)
@@ -345,7 +345,7 @@ Partial Class Ringkasan
         '
         Me.lblrm0.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblrm0.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblrm0.Font = New System.Drawing.Font("Abhaya Libre Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblrm0.Location = New System.Drawing.Point(11, 121)
         Me.lblrm0.Name = "lblrm0"
         Me.lblrm0.Size = New System.Drawing.Size(187, 16)
@@ -552,11 +552,11 @@ Partial Class Ringkasan
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Abhaya Libre Medium", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(236, 64)
+        Me.Label2.Location = New System.Drawing.Point(225, 64)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(106, 29)
+        Me.Label2.Size = New System.Drawing.Size(99, 28)
         Me.Label2.TabIndex = 53
         Me.Label2.Text = "Kelas 12"
         '
@@ -565,11 +565,11 @@ Partial Class Ringkasan
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Abhaya Libre", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(164, 22)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(263, 36)
+        Me.Label1.Size = New System.Drawing.Size(235, 35)
         Me.Label1.TabIndex = 52
         Me.Label1.Text = "Ringkasan Materi"
         '
@@ -579,11 +579,11 @@ Partial Class Ringkasan
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label26.AutoSize = True
         Me.Label26.BackColor = System.Drawing.Color.Transparent
-        Me.Label26.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label26.Font = New System.Drawing.Font("Abhaya Libre Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label26.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Label26.Location = New System.Drawing.Point(29, 151)
         Me.Label26.Name = "Label26"
-        Me.Label26.Size = New System.Drawing.Size(455, 50)
+        Me.Label26.Size = New System.Drawing.Size(460, 48)
         Me.Label26.TabIndex = 51
         Me.Label26.Text = "kamu sedang berlangganan paket 1 bulan kelas 12" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "masa berlaku paket hingga 31 Des" &
     "ember 2020"
@@ -803,6 +803,18 @@ Partial Class Ringkasan
         Me.Panel3.TabIndex = 4
         Me.Panel3.Visible = False
         '
+        'lbl_kosong
+        '
+        Me.lbl_kosong.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lbl_kosong.AutoSize = True
+        Me.lbl_kosong.Font = New System.Drawing.Font("Abhaya Libre Medium", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_kosong.Location = New System.Drawing.Point(186, 315)
+        Me.lbl_kosong.Name = "lbl_kosong"
+        Me.lbl_kosong.Size = New System.Drawing.Size(637, 48)
+        Me.lbl_kosong.TabIndex = 53
+        Me.lbl_kosong.Text = "Akan Kami Update Secara Bertahap"
+        Me.lbl_kosong.Visible = False
+        '
         'drop5
         '
         Me.drop5.BackColor = System.Drawing.Color.Transparent
@@ -822,6 +834,7 @@ Partial Class Ringkasan
         '
         Me.btndrop45.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btndrop45.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btndrop45.Font = New System.Drawing.Font("Abhaya Libre Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btndrop45.Location = New System.Drawing.Point(772, 2)
         Me.btndrop45.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btndrop45.Name = "btndrop45"
@@ -833,6 +846,7 @@ Partial Class Ringkasan
         '
         Me.btndrop35.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btndrop35.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btndrop35.Font = New System.Drawing.Font("Abhaya Libre Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btndrop35.Location = New System.Drawing.Point(577, 2)
         Me.btndrop35.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btndrop35.Name = "btndrop35"
@@ -844,6 +858,7 @@ Partial Class Ringkasan
         '
         Me.btndrop25.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btndrop25.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btndrop25.Font = New System.Drawing.Font("Abhaya Libre Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btndrop25.Location = New System.Drawing.Point(388, 2)
         Me.btndrop25.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btndrop25.Name = "btndrop25"
@@ -855,6 +870,7 @@ Partial Class Ringkasan
         '
         Me.btndrop15.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btndrop15.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btndrop15.Font = New System.Drawing.Font("Abhaya Libre Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btndrop15.Location = New System.Drawing.Point(191, 2)
         Me.btndrop15.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btndrop15.Name = "btndrop15"
@@ -866,6 +882,7 @@ Partial Class Ringkasan
         '
         Me.btndrop05.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btndrop05.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btndrop05.Font = New System.Drawing.Font("Abhaya Libre Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btndrop05.Location = New System.Drawing.Point(3, 2)
         Me.btndrop05.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btndrop05.Name = "btndrop05"
@@ -892,6 +909,7 @@ Partial Class Ringkasan
         '
         Me.btndrop44.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btndrop44.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btndrop44.Font = New System.Drawing.Font("Abhaya Libre Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btndrop44.Location = New System.Drawing.Point(769, 2)
         Me.btndrop44.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btndrop44.Name = "btndrop44"
@@ -903,6 +921,7 @@ Partial Class Ringkasan
         '
         Me.btndrop34.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btndrop34.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btndrop34.Font = New System.Drawing.Font("Abhaya Libre Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btndrop34.Location = New System.Drawing.Point(575, 2)
         Me.btndrop34.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btndrop34.Name = "btndrop34"
@@ -914,6 +933,7 @@ Partial Class Ringkasan
         '
         Me.btndrop24.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btndrop24.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btndrop24.Font = New System.Drawing.Font("Abhaya Libre Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btndrop24.Location = New System.Drawing.Point(385, 2)
         Me.btndrop24.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btndrop24.Name = "btndrop24"
@@ -925,6 +945,7 @@ Partial Class Ringkasan
         '
         Me.btndrop14.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btndrop14.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btndrop14.Font = New System.Drawing.Font("Abhaya Libre Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btndrop14.Location = New System.Drawing.Point(188, 2)
         Me.btndrop14.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btndrop14.Name = "btndrop14"
@@ -936,6 +957,7 @@ Partial Class Ringkasan
         '
         Me.btndrop04.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btndrop04.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btndrop04.Font = New System.Drawing.Font("Abhaya Libre Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btndrop04.Location = New System.Drawing.Point(3, 2)
         Me.btndrop04.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btndrop04.Name = "btndrop04"
@@ -962,6 +984,7 @@ Partial Class Ringkasan
         '
         Me.btndrop43.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btndrop43.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btndrop43.Font = New System.Drawing.Font("Abhaya Libre Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btndrop43.Location = New System.Drawing.Point(769, 2)
         Me.btndrop43.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btndrop43.Name = "btndrop43"
@@ -973,6 +996,7 @@ Partial Class Ringkasan
         '
         Me.btndrop33.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btndrop33.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btndrop33.Font = New System.Drawing.Font("Abhaya Libre Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btndrop33.Location = New System.Drawing.Point(575, 2)
         Me.btndrop33.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btndrop33.Name = "btndrop33"
@@ -984,6 +1008,7 @@ Partial Class Ringkasan
         '
         Me.btndrop23.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btndrop23.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btndrop23.Font = New System.Drawing.Font("Abhaya Libre Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btndrop23.Location = New System.Drawing.Point(385, 2)
         Me.btndrop23.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btndrop23.Name = "btndrop23"
@@ -995,6 +1020,7 @@ Partial Class Ringkasan
         '
         Me.btndrop13.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btndrop13.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btndrop13.Font = New System.Drawing.Font("Abhaya Libre Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btndrop13.Location = New System.Drawing.Point(188, 2)
         Me.btndrop13.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btndrop13.Name = "btndrop13"
@@ -1006,6 +1032,7 @@ Partial Class Ringkasan
         '
         Me.btndrop03.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btndrop03.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btndrop03.Font = New System.Drawing.Font("Abhaya Libre Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btndrop03.Location = New System.Drawing.Point(3, 2)
         Me.btndrop03.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btndrop03.Name = "btndrop03"
@@ -1032,6 +1059,7 @@ Partial Class Ringkasan
         '
         Me.btndrop42.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btndrop42.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btndrop42.Font = New System.Drawing.Font("Abhaya Libre Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btndrop42.Location = New System.Drawing.Point(775, 2)
         Me.btndrop42.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btndrop42.Name = "btndrop42"
@@ -1043,6 +1071,7 @@ Partial Class Ringkasan
         '
         Me.btndrop32.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btndrop32.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btndrop32.Font = New System.Drawing.Font("Abhaya Libre Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btndrop32.Location = New System.Drawing.Point(580, 0)
         Me.btndrop32.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btndrop32.Name = "btndrop32"
@@ -1054,6 +1083,7 @@ Partial Class Ringkasan
         '
         Me.btndrop22.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btndrop22.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btndrop22.Font = New System.Drawing.Font("Abhaya Libre Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btndrop22.Location = New System.Drawing.Point(391, 0)
         Me.btndrop22.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btndrop22.Name = "btndrop22"
@@ -1065,6 +1095,7 @@ Partial Class Ringkasan
         '
         Me.btndrop12.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btndrop12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btndrop12.Font = New System.Drawing.Font("Abhaya Libre Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btndrop12.Location = New System.Drawing.Point(193, 0)
         Me.btndrop12.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btndrop12.Name = "btndrop12"
@@ -1076,6 +1107,7 @@ Partial Class Ringkasan
         '
         Me.btndrop02.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btndrop02.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btndrop02.Font = New System.Drawing.Font("Abhaya Libre Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btndrop02.Location = New System.Drawing.Point(3, 2)
         Me.btndrop02.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btndrop02.Name = "btndrop02"
@@ -1102,6 +1134,7 @@ Partial Class Ringkasan
         '
         Me.btndrop41.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btndrop41.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btndrop41.Font = New System.Drawing.Font("Abhaya Libre Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btndrop41.Location = New System.Drawing.Point(775, 2)
         Me.btndrop41.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btndrop41.Name = "btndrop41"
@@ -1113,6 +1146,7 @@ Partial Class Ringkasan
         '
         Me.btndrop31.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btndrop31.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btndrop31.Font = New System.Drawing.Font("Abhaya Libre Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btndrop31.Location = New System.Drawing.Point(580, 2)
         Me.btndrop31.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btndrop31.Name = "btndrop31"
@@ -1124,6 +1158,7 @@ Partial Class Ringkasan
         '
         Me.btndrop21.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btndrop21.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btndrop21.Font = New System.Drawing.Font("Abhaya Libre Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btndrop21.Location = New System.Drawing.Point(391, 2)
         Me.btndrop21.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btndrop21.Name = "btndrop21"
@@ -1135,6 +1170,7 @@ Partial Class Ringkasan
         '
         Me.btndrop11.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btndrop11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btndrop11.Font = New System.Drawing.Font("Abhaya Libre Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btndrop11.Location = New System.Drawing.Point(193, 2)
         Me.btndrop11.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btndrop11.Name = "btndrop11"
@@ -1146,6 +1182,7 @@ Partial Class Ringkasan
         '
         Me.btndrop01.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btndrop01.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btndrop01.Font = New System.Drawing.Font("Abhaya Libre Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btndrop01.Location = New System.Drawing.Point(3, 2)
         Me.btndrop01.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btndrop01.Name = "btndrop01"
@@ -1172,6 +1209,7 @@ Partial Class Ringkasan
         '
         Me.btndrop40.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btndrop40.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btndrop40.Font = New System.Drawing.Font("Abhaya Libre Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btndrop40.Location = New System.Drawing.Point(775, 9)
         Me.btndrop40.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btndrop40.Name = "btndrop40"
@@ -1183,6 +1221,7 @@ Partial Class Ringkasan
         '
         Me.btndrop30.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btndrop30.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btndrop30.Font = New System.Drawing.Font("Abhaya Libre Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btndrop30.Location = New System.Drawing.Point(580, 9)
         Me.btndrop30.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btndrop30.Name = "btndrop30"
@@ -1194,6 +1233,7 @@ Partial Class Ringkasan
         '
         Me.btndrop20.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btndrop20.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btndrop20.Font = New System.Drawing.Font("Abhaya Libre Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btndrop20.Location = New System.Drawing.Point(391, 9)
         Me.btndrop20.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btndrop20.Name = "btndrop20"
@@ -1205,6 +1245,7 @@ Partial Class Ringkasan
         '
         Me.btndrop10.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btndrop10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btndrop10.Font = New System.Drawing.Font("Abhaya Libre Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btndrop10.Location = New System.Drawing.Point(193, 9)
         Me.btndrop10.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btndrop10.Name = "btndrop10"
@@ -1216,6 +1257,7 @@ Partial Class Ringkasan
         '
         Me.btndrop00.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btndrop00.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btndrop00.Font = New System.Drawing.Font("Abhaya Libre Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btndrop00.Location = New System.Drawing.Point(5, 9)
         Me.btndrop00.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btndrop00.Name = "btndrop00"
@@ -1228,6 +1270,7 @@ Partial Class Ringkasan
         Me.btntpk5.BackColor = System.Drawing.Color.White
         Me.btntpk5.FlatAppearance.BorderSize = 0
         Me.btntpk5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btntpk5.Font = New System.Drawing.Font("Abhaya Libre Medium", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btntpk5.Location = New System.Drawing.Point(27, 736)
         Me.btntpk5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btntpk5.Name = "btntpk5"
@@ -1243,6 +1286,7 @@ Partial Class Ringkasan
         Me.btntpk4.BackColor = System.Drawing.Color.White
         Me.btntpk4.FlatAppearance.BorderSize = 0
         Me.btntpk4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btntpk4.Font = New System.Drawing.Font("Abhaya Libre Medium", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btntpk4.Location = New System.Drawing.Point(32, 606)
         Me.btntpk4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btntpk4.Name = "btntpk4"
@@ -1258,6 +1302,7 @@ Partial Class Ringkasan
         Me.btntpk3.BackColor = System.Drawing.Color.White
         Me.btntpk3.FlatAppearance.BorderSize = 0
         Me.btntpk3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btntpk3.Font = New System.Drawing.Font("Abhaya Libre Medium", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btntpk3.Location = New System.Drawing.Point(32, 459)
         Me.btntpk3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btntpk3.Name = "btntpk3"
@@ -1273,6 +1318,7 @@ Partial Class Ringkasan
         Me.btntpk2.BackColor = System.Drawing.Color.White
         Me.btntpk2.FlatAppearance.BorderSize = 0
         Me.btntpk2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btntpk2.Font = New System.Drawing.Font("Abhaya Libre Medium", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btntpk2.Location = New System.Drawing.Point(27, 322)
         Me.btntpk2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btntpk2.Name = "btntpk2"
@@ -1288,6 +1334,7 @@ Partial Class Ringkasan
         Me.btntpk1.BackColor = System.Drawing.Color.White
         Me.btntpk1.FlatAppearance.BorderSize = 0
         Me.btntpk1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btntpk1.Font = New System.Drawing.Font("Abhaya Libre Medium", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btntpk1.Location = New System.Drawing.Point(27, 187)
         Me.btntpk1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btntpk1.Name = "btntpk1"
@@ -1303,6 +1350,7 @@ Partial Class Ringkasan
         Me.btntpk0.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btntpk0.FlatAppearance.BorderSize = 0
         Me.btntpk0.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btntpk0.Font = New System.Drawing.Font("Abhaya Libre Medium", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btntpk0.Location = New System.Drawing.Point(27, 42)
         Me.btntpk0.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btntpk0.Name = "btntpk0"
@@ -1316,12 +1364,13 @@ Partial Class Ringkasan
         'Label4
         '
         Me.Label4.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Abhaya Libre", 13.8!, System.Drawing.FontStyle.Bold)
         Me.Label4.Location = New System.Drawing.Point(481, 25)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(916, 23)
+        Me.Label4.Size = New System.Drawing.Size(622, 28)
         Me.Label4.TabIndex = 0
-        Me.Label4.Text = "Support@permatabelajar.com, Phone/Whatsapp: 0811811306,"
+        Me.Label4.Text = "Support@permatabelajar.com, Phone/Whatsapp: 0811811306"
         '
         'Panel9
         '
@@ -1335,18 +1384,6 @@ Partial Class Ringkasan
         Me.Panel9.Name = "Panel9"
         Me.Panel9.Size = New System.Drawing.Size(1506, 78)
         Me.Panel9.TabIndex = 43
-        '
-        'lbl_kosong
-        '
-        Me.lbl_kosong.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lbl_kosong.AutoSize = True
-        Me.lbl_kosong.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_kosong.Location = New System.Drawing.Point(186, 315)
-        Me.lbl_kosong.Name = "lbl_kosong"
-        Me.lbl_kosong.Size = New System.Drawing.Size(661, 46)
-        Me.lbl_kosong.TabIndex = 53
-        Me.lbl_kosong.Text = "Akan Kami Update Secara Bertahap"
-        Me.lbl_kosong.Visible = False
         '
         'Ringkasan
         '
@@ -1376,6 +1413,7 @@ Partial Class Ringkasan
         Me.drop1.ResumeLayout(False)
         Me.drop0.ResumeLayout(False)
         Me.Panel9.ResumeLayout(False)
+        Me.Panel9.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub

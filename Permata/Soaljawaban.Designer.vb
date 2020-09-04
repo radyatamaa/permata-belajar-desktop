@@ -38,6 +38,8 @@ Partial Class Soaljawaban
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.Button10 = New System.Windows.Forms.Button()
         Me.Button9 = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -48,8 +50,6 @@ Partial Class Soaljawaban
         Me.Guna2Button7 = New Guna.UI2.WinForms.Guna2Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
         Me.Panel2.SuspendLayout()
         Me.Panel5.SuspendLayout()
         Me.Panel4.SuspendLayout()
@@ -84,7 +84,7 @@ Partial Class Soaljawaban
         Me.Panel9.Location = New System.Drawing.Point(0, 1080)
         Me.Panel9.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel9.Name = "Panel9"
-        Me.Panel9.Size = New System.Drawing.Size(853, 10)
+        Me.Panel9.Size = New System.Drawing.Size(832, 10)
         Me.Panel9.TabIndex = 5
         '
         'Panel5
@@ -102,11 +102,12 @@ Partial Class Soaljawaban
         Me.Panel5.Location = New System.Drawing.Point(0, 543)
         Me.Panel5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(891, 76)
+        Me.Panel5.Size = New System.Drawing.Size(870, 76)
         Me.Panel5.TabIndex = 2
         '
         'Button11
         '
+        Me.Button11.Font = New System.Drawing.Font("Abhaya Libre Medium", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button11.Location = New System.Drawing.Point(433, 21)
         Me.Button11.Margin = New System.Windows.Forms.Padding(4)
         Me.Button11.Name = "Button11"
@@ -117,6 +118,7 @@ Partial Class Soaljawaban
         '
         'Button8
         '
+        Me.Button8.Font = New System.Drawing.Font("Abhaya Libre Medium", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button8.Location = New System.Drawing.Point(364, 21)
         Me.Button8.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button8.Name = "Button8"
@@ -127,6 +129,7 @@ Partial Class Soaljawaban
         '
         'Button7
         '
+        Me.Button7.Font = New System.Drawing.Font("Abhaya Libre Medium", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button7.Location = New System.Drawing.Point(285, 21)
         Me.Button7.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button7.Name = "Button7"
@@ -137,6 +140,7 @@ Partial Class Soaljawaban
         '
         'Button6
         '
+        Me.Button6.Font = New System.Drawing.Font("Abhaya Libre Medium", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button6.Location = New System.Drawing.Point(203, 21)
         Me.Button6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button6.Name = "Button6"
@@ -147,6 +151,7 @@ Partial Class Soaljawaban
         '
         'Button5
         '
+        Me.Button5.Font = New System.Drawing.Font("Abhaya Libre Medium", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button5.Location = New System.Drawing.Point(124, 21)
         Me.Button5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button5.Name = "Button5"
@@ -157,6 +162,7 @@ Partial Class Soaljawaban
         '
         'Button4
         '
+        Me.Button4.Font = New System.Drawing.Font("Abhaya Libre Medium", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.Location = New System.Drawing.Point(46, 20)
         Me.Button4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button4.Name = "Button4"
@@ -168,9 +174,10 @@ Partial Class Soaljawaban
         'Label5
         '
         Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Abhaya Libre Medium", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.Location = New System.Drawing.Point(43, 4)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(173, 17)
+        Me.Label5.Size = New System.Drawing.Size(189, 17)
         Me.Label5.TabIndex = 0
         Me.Label5.Text = "Pilihalah Jawaban Terbaik"
         '
@@ -186,7 +193,7 @@ Partial Class Soaljawaban
         Me.Panel4.Location = New System.Drawing.Point(0, 101)
         Me.Panel4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(926, 3341)
+        Me.Panel4.Size = New System.Drawing.Size(905, 3596)
         Me.Panel4.TabIndex = 1
         '
         'Panel8
@@ -197,7 +204,7 @@ Partial Class Soaljawaban
         Me.Panel8.Controls.Add(Me.PictureBox2)
         Me.Panel8.Location = New System.Drawing.Point(4, 521)
         Me.Panel8.Name = "Panel8"
-        Me.Panel8.Size = New System.Drawing.Size(922, 271)
+        Me.Panel8.Size = New System.Drawing.Size(901, 271)
         Me.Panel8.TabIndex = 1
         '
         'PictureBox2
@@ -221,7 +228,7 @@ Partial Class Soaljawaban
         Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.MaximumSize = New System.Drawing.Size(700, 600)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(700, 429)
+        Me.PictureBox1.Size = New System.Drawing.Size(679, 429)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
@@ -241,11 +248,33 @@ Partial Class Soaljawaban
         Me.Panel3.Size = New System.Drawing.Size(925, 100)
         Me.Panel3.TabIndex = 0
         '
+        'Label6
+        '
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.Color.Black
+        Me.Label6.Location = New System.Drawing.Point(12, 72)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(48, 23)
+        Me.Label6.TabIndex = 3
+        Me.Label6.Text = "1."
+        Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label4
+        '
+        Me.Label4.Font = New System.Drawing.Font("Abhaya Libre", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.Black
+        Me.Label4.Location = New System.Drawing.Point(23, 9)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(141, 38)
+        Me.Label4.TabIndex = 2
+        Me.Label4.Text = "PELAJARAN"
+        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
         'Button10
         '
         Me.Button10.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.Button10.BackColor = System.Drawing.Color.ForestGreen
-        Me.Button10.Font = New System.Drawing.Font("Ubuntu Condensed", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button10.Font = New System.Drawing.Font("Abhaya Libre Medium", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button10.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Button10.Location = New System.Drawing.Point(738, 39)
         Me.Button10.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -259,7 +288,7 @@ Partial Class Soaljawaban
         '
         Me.Button9.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.Button9.BackColor = System.Drawing.Color.ForestGreen
-        Me.Button9.Font = New System.Drawing.Font("Ubuntu Condensed", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button9.Font = New System.Drawing.Font("Abhaya Libre Medium", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button9.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Button9.Location = New System.Drawing.Point(556, 39)
         Me.Button9.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -271,7 +300,7 @@ Partial Class Soaljawaban
         '
         'Label3
         '
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Abhaya Libre", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.DimGray
         Me.Label3.Location = New System.Drawing.Point(170, 17)
         Me.Label3.Name = "Label3"
@@ -307,6 +336,7 @@ Partial Class Soaljawaban
         '
         'Button2
         '
+        Me.Button2.Font = New System.Drawing.Font("Abhaya Libre", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.Location = New System.Drawing.Point(67, 439)
         Me.Button2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button2.Name = "Button2"
@@ -317,6 +347,7 @@ Partial Class Soaljawaban
         '
         'Button1
         '
+        Me.Button1.Font = New System.Drawing.Font("Abhaya Libre", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Location = New System.Drawing.Point(67, 361)
         Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button1.Name = "Button1"
@@ -352,11 +383,11 @@ Partial Class Soaljawaban
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Abhaya Libre Medium", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
         Me.Label2.Location = New System.Drawing.Point(129, 162)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(106, 29)
+        Me.Label2.Size = New System.Drawing.Size(99, 28)
         Me.Label2.TabIndex = 55
         Me.Label2.Text = "Kelas 12"
         '
@@ -365,35 +396,13 @@ Partial Class Soaljawaban
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Abhaya Libre", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(69, 126)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(255, 36)
+        Me.Label1.Size = New System.Drawing.Size(225, 35)
         Me.Label1.TabIndex = 54
         Me.Label1.Text = "Soal dan Latihan" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        '
-        'Label4
-        '
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.Black
-        Me.Label4.Location = New System.Drawing.Point(23, 9)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(141, 38)
-        Me.Label4.TabIndex = 2
-        Me.Label4.Text = "PELAJARAN"
-        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Label6
-        '
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.Color.Black
-        Me.Label6.Location = New System.Drawing.Point(12, 72)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(48, 23)
-        Me.Label6.TabIndex = 3
-        Me.Label6.Text = "1."
-        Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Soaljawaban
         '
