@@ -457,6 +457,8 @@ Public Class MenuUtama
     End Sub
 
     Private Sub btnfeature3_Click(sender As Object, e As EventArgs) Handles btnfeature3.Click
+        kontak.Show()
+        Me.Hide()
         Dim BT As Guna.UI2.WinForms.Guna2Button = CType(sender, Guna.UI2.WinForms.Guna2Button)
         Select Case BT.Tag
             Case "ringkasanmateriPages"
@@ -487,6 +489,8 @@ Public Class MenuUtama
                 Me.Hide()
         End Select
 
+
+
     End Sub
 
     Private Sub Button5_Click_1(sender As Object, e As EventArgs) Handles Button5.Click
@@ -514,6 +518,11 @@ Public Class MenuUtama
         Dim listNotif = GetNotification(Me.Guna2PictureBox3.Tag)
         Notifikasi.NotificationList = listNotif
         Notifikasi.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        kontak.Show()
         Me.Hide()
     End Sub
 End Class

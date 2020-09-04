@@ -56,6 +56,7 @@ Partial Class Soal
         Me.btnsl1 = New System.Windows.Forms.Button()
         Me.btnsmstr0 = New Guna.UI2.WinForms.Guna2Button()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.lbl_kosong = New System.Windows.Forms.Label()
         Me.lblbab6 = New System.Windows.Forms.Label()
         Me.lblbab5 = New System.Windows.Forms.Label()
         Me.lblbab4 = New System.Windows.Forms.Label()
@@ -76,7 +77,6 @@ Partial Class Soal
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.Label14 = New System.Windows.Forms.Label()
-        Me.lbl_kosong = New System.Windows.Forms.Label()
         Me.Panel2.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.Panel1.SuspendLayout()
@@ -91,7 +91,7 @@ Partial Class Soal
         Me.btntpk1.CheckedState.Parent = Me.btntpk1
         Me.btntpk1.CustomImages.Parent = Me.btntpk1
         Me.btntpk1.FillColor = System.Drawing.Color.White
-        Me.btntpk1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.btntpk1.Font = New System.Drawing.Font("Abhaya Libre Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btntpk1.ForeColor = System.Drawing.Color.Black
         Me.btntpk1.HoverState.Parent = Me.btntpk1
         Me.btntpk1.Image = CType(resources.GetObject("btntpk1.Image"), System.Drawing.Image)
@@ -149,11 +149,11 @@ Partial Class Soal
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Abhaya Libre Medium", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(224, 60)
+        Me.Label2.Location = New System.Drawing.Point(216, 60)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(106, 29)
+        Me.Label2.Size = New System.Drawing.Size(99, 28)
         Me.Label2.TabIndex = 53
         Me.Label2.Text = "Kelas 12"
         '
@@ -162,11 +162,11 @@ Partial Class Soal
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Abhaya Libre", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(164, 22)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(238, 36)
+        Me.Label1.Size = New System.Drawing.Size(212, 35)
         Me.Label1.TabIndex = 52
         Me.Label1.Text = "Soal dan Materi"
         '
@@ -176,11 +176,11 @@ Partial Class Soal
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label26.AutoSize = True
         Me.Label26.BackColor = System.Drawing.Color.Transparent
-        Me.Label26.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label26.Font = New System.Drawing.Font("Abhaya Libre Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label26.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label26.Location = New System.Drawing.Point(83, 151)
+        Me.Label26.Location = New System.Drawing.Point(53, 151)
         Me.Label26.Name = "Label26"
-        Me.Label26.Size = New System.Drawing.Size(455, 50)
+        Me.Label26.Size = New System.Drawing.Size(460, 48)
         Me.Label26.TabIndex = 51
         Me.Label26.Text = "kamu sedang berlangganan paket 1 bulan kelas 12" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "masa berlaku paket hingga 31 Des" &
     "ember 2020"
@@ -197,7 +197,7 @@ Partial Class Soal
         '
         Me.lblsl10.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblsl10.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblsl10.Font = New System.Drawing.Font("Abhaya Libre Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblsl10.Location = New System.Drawing.Point(153, 428)
         Me.lblsl10.Name = "lblsl10"
         Me.lblsl10.Size = New System.Drawing.Size(193, 16)
@@ -209,7 +209,7 @@ Partial Class Soal
         '
         Me.lblsl9.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblsl9.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblsl9.Font = New System.Drawing.Font("Abhaya Libre Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblsl9.Location = New System.Drawing.Point(-5, 430)
         Me.lblsl9.Name = "lblsl9"
         Me.lblsl9.Size = New System.Drawing.Size(193, 16)
@@ -220,10 +220,10 @@ Partial Class Soal
         'Label23
         '
         Me.Label23.AutoSize = True
-        Me.Label23.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label23.Font = New System.Drawing.Font("Abhaya Libre Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label23.Location = New System.Drawing.Point(48, 14)
         Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(103, 25)
+        Me.Label23.Size = New System.Drawing.Size(109, 24)
         Me.Label23.TabIndex = 48
         Me.Label23.Text = "Pilih Kelas"
         '
@@ -231,7 +231,7 @@ Partial Class Soal
         '
         Me.lblsl8.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblsl8.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblsl8.Font = New System.Drawing.Font("Abhaya Libre Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblsl8.Location = New System.Drawing.Point(319, 327)
         Me.lblsl8.Name = "lblsl8"
         Me.lblsl8.Size = New System.Drawing.Size(193, 16)
@@ -243,7 +243,7 @@ Partial Class Soal
         '
         Me.lblsl7.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblsl7.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblsl7.Font = New System.Drawing.Font("Abhaya Libre Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblsl7.Location = New System.Drawing.Point(155, 327)
         Me.lblsl7.Name = "lblsl7"
         Me.lblsl7.Size = New System.Drawing.Size(193, 16)
@@ -255,7 +255,7 @@ Partial Class Soal
         '
         Me.lblsl6.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblsl6.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblsl6.Font = New System.Drawing.Font("Abhaya Libre Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblsl6.Location = New System.Drawing.Point(-7, 327)
         Me.lblsl6.Name = "lblsl6"
         Me.lblsl6.Size = New System.Drawing.Size(193, 16)
@@ -267,7 +267,7 @@ Partial Class Soal
         '
         Me.lblsl5.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblsl5.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblsl5.Font = New System.Drawing.Font("Abhaya Libre Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblsl5.Location = New System.Drawing.Point(325, 224)
         Me.lblsl5.Name = "lblsl5"
         Me.lblsl5.Size = New System.Drawing.Size(193, 16)
@@ -279,7 +279,7 @@ Partial Class Soal
         '
         Me.lblsl4.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblsl4.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblsl4.Font = New System.Drawing.Font("Abhaya Libre Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblsl4.Location = New System.Drawing.Point(155, 226)
         Me.lblsl4.Name = "lblsl4"
         Me.lblsl4.Size = New System.Drawing.Size(193, 16)
@@ -291,7 +291,7 @@ Partial Class Soal
         '
         Me.lblsl3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblsl3.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblsl3.Font = New System.Drawing.Font("Abhaya Libre Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblsl3.Location = New System.Drawing.Point(-7, 226)
         Me.lblsl3.Name = "lblsl3"
         Me.lblsl3.Size = New System.Drawing.Size(193, 16)
@@ -303,7 +303,7 @@ Partial Class Soal
         '
         Me.lblsl1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblsl1.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblsl1.Font = New System.Drawing.Font("Abhaya Libre Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblsl1.Location = New System.Drawing.Point(161, 121)
         Me.lblsl1.Name = "lblsl1"
         Me.lblsl1.Size = New System.Drawing.Size(187, 16)
@@ -315,7 +315,7 @@ Partial Class Soal
         '
         Me.lblsl0.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblsl0.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblsl0.Font = New System.Drawing.Font("Abhaya Libre Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblsl0.Location = New System.Drawing.Point(-4, 121)
         Me.lblsl0.Name = "lblsl0"
         Me.lblsl0.Size = New System.Drawing.Size(187, 16)
@@ -480,7 +480,7 @@ Partial Class Soal
         Me.btntpk0.CheckedState.Parent = Me.btntpk0
         Me.btntpk0.CustomImages.Parent = Me.btntpk0
         Me.btntpk0.FillColor = System.Drawing.Color.White
-        Me.btntpk0.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.btntpk0.Font = New System.Drawing.Font("Abhaya Libre Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btntpk0.ForeColor = System.Drawing.Color.Black
         Me.btntpk0.HoverState.Parent = Me.btntpk0
         Me.btntpk0.Image = CType(resources.GetObject("btntpk0.Image"), System.Drawing.Image)
@@ -500,7 +500,7 @@ Partial Class Soal
         '
         Me.lblsl2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblsl2.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblsl2.Font = New System.Drawing.Font("Abhaya Libre Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblsl2.Location = New System.Drawing.Point(323, 121)
         Me.lblsl2.Name = "lblsl2"
         Me.lblsl2.Size = New System.Drawing.Size(193, 16)
@@ -530,7 +530,7 @@ Partial Class Soal
         Me.btnsmstr0.CheckedState.Parent = Me.btnsmstr0
         Me.btnsmstr0.CustomImages.Parent = Me.btnsmstr0
         Me.btnsmstr0.FillColor = System.Drawing.Color.White
-        Me.btnsmstr0.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnsmstr0.Font = New System.Drawing.Font("Abhaya Libre Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnsmstr0.ForeColor = System.Drawing.Color.Black
         Me.btnsmstr0.HoverState.Parent = Me.btnsmstr0
         Me.btnsmstr0.Location = New System.Drawing.Point(0, 2)
@@ -562,6 +562,18 @@ Partial Class Soal
         Me.Panel3.Size = New System.Drawing.Size(971, 540)
         Me.Panel3.TabIndex = 6
         Me.Panel3.Visible = False
+        '
+        'lbl_kosong
+        '
+        Me.lbl_kosong.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lbl_kosong.AutoSize = True
+        Me.lbl_kosong.Font = New System.Drawing.Font("Abhaya Libre Medium", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_kosong.Location = New System.Drawing.Point(111, 206)
+        Me.lbl_kosong.Name = "lbl_kosong"
+        Me.lbl_kosong.Size = New System.Drawing.Size(637, 48)
+        Me.lbl_kosong.TabIndex = 12
+        Me.lbl_kosong.Text = "Akan Kami Update Secara Bertahap"
+        Me.lbl_kosong.Visible = False
         '
         'lblbab6
         '
@@ -629,7 +641,7 @@ Partial Class Soal
         Me.btntpk5.CheckedState.Parent = Me.btntpk5
         Me.btntpk5.CustomImages.Parent = Me.btntpk5
         Me.btntpk5.FillColor = System.Drawing.Color.White
-        Me.btntpk5.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.btntpk5.Font = New System.Drawing.Font("Abhaya Libre Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btntpk5.ForeColor = System.Drawing.Color.Black
         Me.btntpk5.HoverState.Parent = Me.btntpk5
         Me.btntpk5.Image = CType(resources.GetObject("btntpk5.Image"), System.Drawing.Image)
@@ -650,7 +662,7 @@ Partial Class Soal
         Me.btntpk4.CheckedState.Parent = Me.btntpk4
         Me.btntpk4.CustomImages.Parent = Me.btntpk4
         Me.btntpk4.FillColor = System.Drawing.Color.White
-        Me.btntpk4.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.btntpk4.Font = New System.Drawing.Font("Abhaya Libre Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btntpk4.ForeColor = System.Drawing.Color.Black
         Me.btntpk4.HoverState.Parent = Me.btntpk4
         Me.btntpk4.Image = CType(resources.GetObject("btntpk4.Image"), System.Drawing.Image)
@@ -671,7 +683,7 @@ Partial Class Soal
         Me.btntpk3.CheckedState.Parent = Me.btntpk3
         Me.btntpk3.CustomImages.Parent = Me.btntpk3
         Me.btntpk3.FillColor = System.Drawing.Color.White
-        Me.btntpk3.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.btntpk3.Font = New System.Drawing.Font("Abhaya Libre Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btntpk3.ForeColor = System.Drawing.Color.Black
         Me.btntpk3.HoverState.Parent = Me.btntpk3
         Me.btntpk3.Image = CType(resources.GetObject("btntpk3.Image"), System.Drawing.Image)
@@ -692,7 +704,7 @@ Partial Class Soal
         Me.btntpk2.CheckedState.Parent = Me.btntpk2
         Me.btntpk2.CustomImages.Parent = Me.btntpk2
         Me.btntpk2.FillColor = System.Drawing.Color.White
-        Me.btntpk2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.btntpk2.Font = New System.Drawing.Font("Abhaya Libre Medium", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btntpk2.ForeColor = System.Drawing.Color.Black
         Me.btntpk2.HoverState.Parent = Me.btntpk2
         Me.btntpk2.Image = CType(resources.GetObject("btntpk2.Image"), System.Drawing.Image)
@@ -733,7 +745,7 @@ Partial Class Soal
         Me.btnsmstr2.CheckedState.Parent = Me.btnsmstr2
         Me.btnsmstr2.CustomImages.Parent = Me.btnsmstr2
         Me.btnsmstr2.FillColor = System.Drawing.Color.White
-        Me.btnsmstr2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnsmstr2.Font = New System.Drawing.Font("Abhaya Libre Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnsmstr2.ForeColor = System.Drawing.Color.Black
         Me.btnsmstr2.HoverState.Parent = Me.btnsmstr2
         Me.btnsmstr2.Location = New System.Drawing.Point(539, 2)
@@ -750,7 +762,7 @@ Partial Class Soal
         Me.btnsmstr1.CheckedState.Parent = Me.btnsmstr1
         Me.btnsmstr1.CustomImages.Parent = Me.btnsmstr1
         Me.btnsmstr1.FillColor = System.Drawing.Color.White
-        Me.btnsmstr1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnsmstr1.Font = New System.Drawing.Font("Abhaya Libre Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnsmstr1.ForeColor = System.Drawing.Color.Black
         Me.btnsmstr1.HoverState.Parent = Me.btnsmstr1
         Me.btnsmstr1.Location = New System.Drawing.Point(271, 2)
@@ -841,7 +853,7 @@ Partial Class Soal
         Me.Panel5.Controls.Add(Me.Label13)
         Me.Panel5.Controls.Add(Me.btnsmstr2)
         Me.Panel5.Location = New System.Drawing.Point(557, 0)
-        Me.Panel5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel5.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(813, 126)
         Me.Panel5.TabIndex = 42
@@ -856,18 +868,6 @@ Partial Class Soal
         Me.Label14.Size = New System.Drawing.Size(275, 5)
         Me.Label14.TabIndex = 16
         Me.Label14.Visible = False
-        '
-        'lbl_kosong
-        '
-        Me.lbl_kosong.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lbl_kosong.AutoSize = True
-        Me.lbl_kosong.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_kosong.Location = New System.Drawing.Point(111, 206)
-        Me.lbl_kosong.Name = "lbl_kosong"
-        Me.lbl_kosong.Size = New System.Drawing.Size(661, 46)
-        Me.lbl_kosong.TabIndex = 12
-        Me.lbl_kosong.Text = "Akan Kami Update Secara Bertahap"
-        Me.lbl_kosong.Visible = False
         '
         'Soal
         '
