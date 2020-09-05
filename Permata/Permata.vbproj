@@ -149,6 +149,18 @@
     <Compile Include="Lainnya.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="LoginFacebook.Designer.vb">
+      <DependentUpon>LoginFacebook.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginFacebook.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginGoogle.Designer.vb">
+      <DependentUpon>LoginGoogle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginGoogle.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Model\Feature.vb" />
     <Compile Include="Model\FinishSoalResponse.vb" />
     <Compile Include="Model\Kelas.vb" />
@@ -252,6 +264,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Lainnya.resx">
       <DependentUpon>Lainnya.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginFacebook.resx">
+      <DependentUpon>LoginFacebook.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginGoogle.resx">
+      <DependentUpon>LoginGoogle.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Notifikasi.resx">
       <DependentUpon>Notifikasi.vb</DependentUpon>
