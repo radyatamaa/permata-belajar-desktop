@@ -90,14 +90,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Permata.exe" size="5727704">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Permata.exe" size="5739992">
       <assemblyIdentity name="Permata" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>5Hsygx+o4J2d+eaJYBmtp8uCmp/gbG56U+mYOuhrLdk=</dsig:DigestValue>
+        <dsig:DigestValue>v0KcM2qN7nrSXSMr+GkHDtH/kxEB7hbUKmECjrVWO5Y=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

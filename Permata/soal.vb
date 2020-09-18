@@ -5,6 +5,7 @@ Imports Newtonsoft.Json
 
 Public Class Soal
     Dim listSoal As New List(Of SoalTopik)
+    Dim listSoalUjian As New List(Of SoalUjian)
     Public Function GetMatapelajaranSoal(idKelas As Integer, idFeature As Integer, idJurusan As Integer)
         Dim result As New List(Of RingkasanMataPelajaran)
         Dim myrequest As HttpWebRequest = HttpWebRequest.Create("https://api.permatamall.com/api/v2/belajar/home/soal/mata-pelajaran?id_kelas=" + idKelas.ToString + "&id_feature=" + idFeature.ToString + "&id_jurusan=" + idJurusan.ToString)
@@ -145,6 +146,56 @@ Public Class Soal
         End Try
         Return result
     End Function
+    Public Function GetSoalUjian(idContent As Integer, idPelanggan As String) As List(Of SoalUjian)
+        Dim result As New List(Of SoalUjian)
+        Dim request = New With
+       {
+            .id_content = idContent,
+            .id_pelanggan = idPelanggan
+        }
+
+        Dim myrequest As HttpWebRequest = HttpWebRequest.Create("https://api.permatamall.com/api/v2/belajar/home/soal/ujian")
+        myrequest.Method = "POST"
+        myrequest.Headers.Add("Authorization", "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjMsImlhdCI6MTU5NTI5ODMwN30.i4GWwTPyp853fcwO4f71qJTmQzu06qcSrh2_vw71tYE")
+        'myrequest.Headers("content-type") = "application/json"
+        myrequest.ContentType = "application/json"
+        Dim reqString = JsonConvert.SerializeObject(request, Formatting.Indented)
+        myrequest.ContentLength = reqString.Length
+        myrequest.CookieContainer = New CookieContainer()
+
+        ' Post to the login form.
+        Dim swRequestWriter As StreamWriter = New StreamWriter(myrequest.GetRequestStream())
+        swRequestWriter.Write(reqString)
+        swRequestWriter.Close()
+
+        'myrequest.Timeout = reqtimeout
+        Try
+            Dim resp As System.Net.HttpWebResponse = myrequest.GetResponse()
+            Dim sr As New System.IO.StreamReader(resp.GetResponseStream())
+            Dim response = sr.ReadToEnd()
+            Dim responseConvert = JsonConvert.DeserializeObject(Of SoalUjianResponse)(response)
+            For Each item As SoalUjian In responseConvert.Data.Kumpulan
+                Dim videoTopik As New SoalUjian
+                With videoTopik
+                    .Id_Content = item.Id_Content
+                    .Id_Kumpulan = item.Id_Kumpulan
+                    .Kumpulan = item.Kumpulan
+                    .Sort = item.Sort
+                    .Free = item.Free
+                End With
+                result.Add(videoTopik)
+                'Do something with "item" here
+            Next
+            sr.Close()
+        Catch ex As WebException
+            If ex.Status = WebExceptionStatus.Timeout Then
+                'result = "Error: The request has timed out"
+            Else
+                'result = "Error: " + ex.Message
+            End If
+        End Try
+        Return result
+    End Function
     Public Function SubmitSoal(idContent As Integer, IdPelanggan As String)
         Dim baseUrl As String = "https://api.permatamall.com/api/v2/belajar/home/soal/submit/request"
         Dim request = New With
@@ -180,12 +231,87 @@ Public Class Soal
         End Try
 
     End Function
+    Public Function SubmitSoalUjian(idContent As Integer, idKumpulan As Integer, IdPelanggan As String)
+        Dim baseUrl As String = "https://api.permatamall.com/api/v2/belajar/home/soal/submit/semester/request"
+        Dim request = New With
+       {
+            .id_content = idContent,
+            .id_pelanggan = IdPelanggan,
+            .id_kumpulan = idKumpulan
+        }
+        Dim myrequest As HttpWebRequest = HttpWebRequest.Create(baseUrl)
+        myrequest.Method = "POST"
+        myrequest.Headers.Add("Authorization", "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjMsImlhdCI6MTU5NTI5ODMwN30.i4GWwTPyp853fcwO4f71qJTmQzu06qcSrh2_vw71tYE")
+        'myrequest.Timeout = reqtimeout
+        myrequest.ContentType = "application/json"
+        Dim reqString = JsonConvert.SerializeObject(request, Formatting.Indented)
+        myrequest.ContentLength = reqString.Length
+        myrequest.CookieContainer = New CookieContainer()
+
+        ' Post to the login form.
+        Dim swRequestWriter As StreamWriter = New StreamWriter(myrequest.GetRequestStream())
+        swRequestWriter.Write(reqString)
+        swRequestWriter.Close()
+
+        Try
+            Dim resp As System.Net.HttpWebResponse = myrequest.GetResponse()
+            Dim sr As New System.IO.StreamReader(resp.GetResponseStream())
+            Dim response = sr.ReadToEnd()
+            sr.Close()
+        Catch ex As WebException
+            If ex.Status = WebExceptionStatus.Timeout Then
+                'result = "Error: The request has timed out"
+            Else
+                'result = "Error: " + ex.Message
+            End If
+        End Try
+
+    End Function
     Public Function GetLatihanSoal(idContent As Integer, idPelanggan As String, page As Integer) As SoalLatihanResponse
         Dim result As New SoalLatihanResponse
         Dim baseUrl As String = "https://api.permatamall.com/api/v2/belajar/home/soal/latihan/result"
         Dim myrequest As HttpWebRequest = HttpWebRequest.Create(baseUrl)
         Dim strPostData As String = String.Format("id_content={0}&page={1}&id_pelanggan={2}",
         idContent.ToString, page.ToString, idPelanggan.ToString)
+
+        myrequest.Method = "POST"
+        myrequest.Headers.Add("Authorization", "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjMsImlhdCI6MTU5NTI5ODMwN30.i4GWwTPyp853fcwO4f71qJTmQzu06qcSrh2_vw71tYE")
+        myrequest.ContentLength = strPostData.Length
+        myrequest.ContentType = "application/x-www-form-urlencoded"
+        myrequest.CookieContainer = New CookieContainer()
+
+        ' Post to the login form.
+        Dim swRequestWriter As StreamWriter = New StreamWriter(myrequest.GetRequestStream())
+        swRequestWriter.Write(strPostData)
+        swRequestWriter.Close()
+
+        Try
+            Dim resp As System.Net.HttpWebResponse = myrequest.GetResponse()
+            Dim sr As New System.IO.StreamReader(resp.GetResponseStream())
+            Dim response = sr.ReadToEnd()
+            Try
+                Dim responseConvert = JsonConvert.DeserializeObject(Of SoalLatihanResponse)(response)
+
+                result = responseConvert
+                sr.Close()
+            Catch ex As Exception
+                'MsgBox("Soal Tersebut kosong")
+            End Try
+        Catch ex As WebException
+            If ex.Status = WebExceptionStatus.Timeout Then
+                'result = "Error: The request has timed out"
+            Else
+                'result = "Error: " + ex.Message
+            End If
+        End Try
+        Return result
+    End Function
+    Public Function GetLatihanSoalUjian(idContent As Integer, idKumpulan As Integer, idPelanggan As String, page As Integer) As SoalLatihanResponse
+        Dim result As New SoalLatihanResponse
+        Dim baseUrl As String = "https://api.permatamall.com/api/v2/belajar/home/soal/semester/latihan/result"
+        Dim myrequest As HttpWebRequest = HttpWebRequest.Create(baseUrl)
+        Dim strPostData As String = String.Format("id_content={0}&page={1}&id_pelanggan={2}&id_kumpulan={3}",
+        idContent.ToString, page.ToString, idPelanggan.ToString, idKumpulan.ToString)
 
         myrequest.Method = "POST"
         myrequest.Headers.Add("Authorization", "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjMsImlhdCI6MTU5NTI5ODMwN30.i4GWwTPyp853fcwO4f71qJTmQzu06qcSrh2_vw71tYE")
@@ -335,6 +461,8 @@ Public Class Soal
     End Function
     Public Function ShowSoalTopik(idContent As Integer, idPelanggan As String)
         Dim topik As List(Of SoalTopik) = GetTopik(idContent, idPelanggan)
+        listSoalUjian.Clear()
+        listSoal.Clear()
         listSoal = topik
         Dim lastIndex As Integer = 0
         Dim lastIndexDrop As New List(Of Integer)
@@ -402,10 +530,85 @@ Public Class Soal
             lbl_kosong.Visible = False
         End If
     End Function
+    Public Function ShowSoalUjian(idContent As Integer, idPelanggan As String)
+        Dim topik As List(Of SoalUjian) = GetSoalUjian(idContent, idPelanggan)
+        listSoal.Clear()
+        listSoalUjian.Clear()
+        listSoalUjian = topik
+        Dim lastIndex As Integer = 0
+        Dim lastIndexDrop As New List(Of Integer)
+        For i As Integer = 0 To 5
+            Dim tpkButton As Control() = Me.Controls.Find("btntpk" + i.ToString(), True)
 
+            Try
+
+                tpkButton.FirstOrDefault().Text = topik(i).Kumpulan
+                Dim kumpulan = New With
+                    {
+                    .Id_Content = topik(i).Id_Content,
+                    .Id_Kumpulan = topik(i).Id_Kumpulan
+                    }
+                tpkButton.FirstOrDefault().Tag = kumpulan
+                tpkButton.FirstOrDefault().Show()
+                lastIndex = lastIndex + 1
+                'For idrop As Integer = 0 To 4
+                '    Dim dtopButton As Control() = Me.Controls.Find("btndrop" + idrop.ToString() + i.ToString(), True)
+                '    dtopButton.FirstOrDefault().Text = topik(i).File(idrop).Title
+                '    Dim anonymousEvent = New With
+                '    {
+                '        .Id_Ringkasan_Materi = topik(i).File(idrop).Id_Ringkasan_Materi,
+                '        .Id_Bidang_studi = idbidangStudi
+                '        }
+
+                '    dtopButton.FirstOrDefault().Tag = anonymousEvent
+                '    dtopButton.FirstOrDefault().Show()
+                '    Dim last = idrop + 1
+                '    lastIndexDrop.Add(last)
+
+                'Next idrop
+            Catch ex As Exception
+
+            End Try
+
+        Next i
+
+        Dim test As Integer = (lastIndex + 2)
+        For i As Integer = (lastIndex) To 5
+            Dim kelasButton As Control() = Me.Controls.Find("btntpk" + i.ToString(), True)
+
+            kelasButton.FirstOrDefault().Hide()
+
+        Next i
+
+        'For i As Integer = 0 To 5
+        '    For Each item As Integer In lastIndexDrop
+        '        For idRop As Integer = item To 4
+        '            Dim dtopButton As Control() = Me.Controls.Find("btndrop" + idRop.ToString() + i.ToString(), True)
+        '            dtopButton.FirstOrDefault().Hide()
+        '        Next idRop
+        '    Next item
+        'Next i
+
+        If topik.Count = 0 Then
+            For i As Integer = 0 To 5
+
+                Dim kelasButton As Control() = Me.Controls.Find("btntpk" + i.ToString(), True)
+
+
+                kelasButton.FirstOrDefault().Hide()
+
+
+            Next i
+        End If
+        If topik.Count = 0 Then
+            lbl_kosong.Visible = True
+        Else
+            lbl_kosong.Visible = False
+        End If
+    End Function
 
     Private Sub Guna2Button9_Click(sender As Object, e As EventArgs) Handles btnsmstr1.Click
-        ShowSoalTopik(btnsmstr1.Tag, Me.Label1.Tag)
+        ShowSoalUjian(btnsmstr1.Tag, Me.Label1.Tag)
         Panel3.Visible = True
         Label13.Visible = False
         Label14.Visible = True
@@ -425,35 +628,69 @@ Public Class Soal
     End Sub
 
     Private Sub Guna2Button3_Click(sender As Object, e As EventArgs) Handles btntpk2.Click
-        SubmitSoal(btntpk2.Tag, Me.Label1.Tag)
-        Dim latihan As SoalLatihanResponse = GetLatihanSoal(btntpk2.Tag, Me.Label1.Tag, 1)
-        If latihan IsNot Nothing And latihan.Responses = "200" Then
-            For Each item As SoalLatihan In latihan.Data.Data
-                Dim soal = listSoal.Where(Function(x) x.Id_Content = btntpk2.Tag).FirstOrDefault()
-                If soal.Free = "false" Then
-                    MsgBox("Silahkan Berlangganan Paket Permata Belajar")
-                Else
-                    Dim tClient As WebClient = New WebClient
-                    Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(item.Soal)))
-                    Soaljawaban.PictureBox1.BackgroundImage = downloadImage
-                    Soaljawaban.Label2.Text = Me.Label2.Text
-                    Soaljawaban.IdPelanggan = Me.Label1.Tag
-                    Soaljawaban.IdContent = btntpk2.Tag
-                    Soaljawaban.CurrentPage = 1
-                    Soaljawaban.Label3.Text = latihan.Data.Data(0).Title
-                    Soaljawaban.PembahasanJawaban = latihan.Data.Data(0).Pembahasan
-                    Soaljawaban.IdExecute = latihan.Data.Data(0).Id_Execute
-                    Soaljawaban.IdExamp = latihan.Data.Data(0).Id_Examp
-                    Soaljawaban.PictureBox2.BackgroundImage = Nothing
-                    Soaljawaban.Show()
+        If listSoal.Count > 0 Then
+            SubmitSoal(btntpk2.Tag, Me.Label1.Tag)
+            Dim latihan As SoalLatihanResponse = GetLatihanSoal(btntpk2.Tag, Me.Label1.Tag, 1)
+            If latihan IsNot Nothing And latihan.Responses = "200" Then
+                For Each item As SoalLatihan In latihan.Data.Data
+                    Dim soal = listSoal.Where(Function(x) x.Id_Content = btntpk2.Tag).FirstOrDefault()
+                    If soal.Free = "false" Then
+                        MsgBox("Silahkan Berlangganan Paket Permata Belajar")
+                    Else
+                        Dim tClient As WebClient = New WebClient
+                        Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(item.Soal)))
+                        Soaljawaban.PictureBox1.BackgroundImage = downloadImage
+                        Soaljawaban.Label2.Text = Me.Label2.Text
+                        Soaljawaban.IdPelanggan = Me.Label1.Tag
+                        Soaljawaban.IdContent = btntpk2.Tag
+                        Soaljawaban.CurrentPage = 1
+                        Soaljawaban.Label3.Text = latihan.Data.Data(0).Title
+                        Soaljawaban.PembahasanJawaban = latihan.Data.Data(0).Pembahasan
+                        Soaljawaban.IdExecute = latihan.Data.Data(0).Id_Execute
+                        Soaljawaban.IdExamp = latihan.Data.Data(0).Id_Examp
+                        Soaljawaban.PictureBox2.BackgroundImage = Nothing
+                        Soaljawaban.Show()
 
-                    Me.Hide()
-                End If
+                        Me.Hide()
+                    End If
 
-            Next
-        Else
-            MsgBox("Soal Tidak Tersedia!")
+                Next
+            Else
+                MsgBox("Soal Tidak Tersedia!")
+            End If
+        ElseIf listSoalUjian.Count > 0 Then
+            SubmitSoalUjian(btntpk2.Tag.Id_Content, btntpk2.Tag.Id_Kumpulan, Me.Label1.Tag)
+            Dim latihan As SoalLatihanResponse = GetLatihanSoalUjian(btntpk2.Tag.Id_Content, btntpk2.Tag.Id_Kumpulan, Me.Label1.Tag, 1)
+            If latihan IsNot Nothing And latihan.Responses = "200" Then
+                For Each item As SoalLatihan In latihan.Data.Data
+                    Dim soal = listSoalUjian.Where(Function(x) x.Id_Content = btntpk2.Tag.Id_Content And
+                                                       x.Id_Kumpulan = btntpk2.Tag.Id_Kumpulan).FirstOrDefault()
+                    If soal.Free = "false" Then
+                        MsgBox("Silahkan Berlangganan Paket Permata Belajar")
+                    Else
+                        Dim tClient As WebClient = New WebClient
+                        Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(item.Soal)))
+                        Soaljawaban.PictureBox1.BackgroundImage = downloadImage
+                        Soaljawaban.Label2.Text = Me.Label2.Text
+                        Soaljawaban.IdPelanggan = Me.Label1.Tag
+                        Soaljawaban.IdContent = btntpk2.Tag.Id_Content
+                        Soaljawaban.CurrentPage = 1
+                        Soaljawaban.Label3.Text = latihan.Data.Data(0).Title
+                        Soaljawaban.PembahasanJawaban = latihan.Data.Data(0).Pembahasan
+                        Soaljawaban.IdExecute = latihan.Data.Data(0).Id_Execute
+                        Soaljawaban.IdExamp = latihan.Data.Data(0).Id_Examp
+                        Soaljawaban.PictureBox2.BackgroundImage = Nothing
+                        Soaljawaban.Show()
+
+                        Me.Hide()
+                    End If
+
+                Next
+            Else
+                MsgBox("Soal Tidak Tersedia!")
+            End If
         End If
+
 
     End Sub
 
@@ -546,35 +783,69 @@ Public Class Soal
     End Sub
 
     Private Sub btntpk0_Click(sender As Object, e As EventArgs) Handles btntpk0.Click
-        SubmitSoal(btntpk0.Tag, Me.Label1.Tag)
-        Dim latihan As SoalLatihanResponse = GetLatihanSoal(btntpk0.Tag, Me.Label1.Tag, 1)
-        If latihan IsNot Nothing And latihan.Responses = "200" Then
-            For Each item As SoalLatihan In latihan.Data.Data
-                Dim soal = listSoal.Where(Function(x) x.Id_Content = btntpk0.Tag).FirstOrDefault()
-                If soal.Free = "false" Then
-                    MsgBox("Silahkan Berlangganan Paket Permata Belajar")
-                Else
-                    Dim tClient As WebClient = New WebClient
-                    Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(item.Soal)))
-                    Soaljawaban.PictureBox1.BackgroundImage = downloadImage
-                    Soaljawaban.Label2.Text = Me.Label2.Text
-                    Soaljawaban.IdPelanggan = Me.Label1.Tag
-                    Soaljawaban.IdContent = btntpk0.Tag
-                    Soaljawaban.CurrentPage = 1
-                    Soaljawaban.Label3.Text = latihan.Data.Data(0).Title
-                    Soaljawaban.PembahasanJawaban = latihan.Data.Data(0).Pembahasan
-                    Soaljawaban.IdExecute = latihan.Data.Data(0).Id_Execute
-                    Soaljawaban.IdExamp = latihan.Data.Data(0).Id_Examp
-                    Soaljawaban.PictureBox2.BackgroundImage = Nothing
-                    Soaljawaban.Show()
+        If listSoal.Count > 0 Then
+            SubmitSoal(btntpk0.Tag, Me.Label1.Tag)
+            Dim latihan As SoalLatihanResponse = GetLatihanSoal(btntpk0.Tag, Me.Label1.Tag, 1)
+            If latihan IsNot Nothing And latihan.Responses = "200" Then
+                For Each item As SoalLatihan In latihan.Data.Data
+                    Dim soal = listSoal.Where(Function(x) x.Id_Content = btntpk0.Tag).FirstOrDefault()
+                    If soal.Free = "false" Then
+                        MsgBox("Silahkan Berlangganan Paket Permata Belajar")
+                    Else
+                        Dim tClient As WebClient = New WebClient
+                        Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(item.Soal)))
+                        Soaljawaban.PictureBox1.BackgroundImage = downloadImage
+                        Soaljawaban.Label2.Text = Me.Label2.Text
+                        Soaljawaban.IdPelanggan = Me.Label1.Tag
+                        Soaljawaban.IdContent = btntpk0.Tag
+                        Soaljawaban.CurrentPage = 1
+                        Soaljawaban.Label3.Text = latihan.Data.Data(0).Title
+                        Soaljawaban.PembahasanJawaban = latihan.Data.Data(0).Pembahasan
+                        Soaljawaban.IdExecute = latihan.Data.Data(0).Id_Execute
+                        Soaljawaban.IdExamp = latihan.Data.Data(0).Id_Examp
+                        Soaljawaban.PictureBox2.BackgroundImage = Nothing
+                        Soaljawaban.Show()
 
-                    Me.Hide()
-                End If
+                        Me.Hide()
+                    End If
 
-            Next
-        Else
-            MsgBox("Soal Tidak Tersedia!")
+                Next
+            Else
+                MsgBox("Soal Tidak Tersedia!")
+            End If
+        ElseIf listSoalUjian.Count > 0 Then
+            SubmitSoalUjian(btntpk0.Tag.Id_Content, btntpk0.Tag.Id_Kumpulan, Me.Label1.Tag)
+            Dim latihan As SoalLatihanResponse = GetLatihanSoalUjian(btntpk0.Tag.Id_Content, btntpk0.Tag.Id_Kumpulan, Me.Label1.Tag, 1)
+            If latihan IsNot Nothing And latihan.Responses = "200" Then
+                For Each item As SoalLatihan In latihan.Data.Data
+                    Dim soal = listSoalUjian.Where(Function(x) x.Id_Content = btntpk0.Tag.Id_Content And
+                                                       x.Id_Kumpulan = btntpk0.Tag.Id_Kumpulan).FirstOrDefault()
+                    If soal.Free = "false" Then
+                        MsgBox("Silahkan Berlangganan Paket Permata Belajar")
+                    Else
+                        Dim tClient As WebClient = New WebClient
+                        Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(item.Soal)))
+                        Soaljawaban.PictureBox1.BackgroundImage = downloadImage
+                        Soaljawaban.Label2.Text = Me.Label2.Text
+                        Soaljawaban.IdPelanggan = Me.Label1.Tag
+                        Soaljawaban.IdContent = btntpk0.Tag.Id_Content
+                        Soaljawaban.CurrentPage = 1
+                        Soaljawaban.Label3.Text = latihan.Data.Data(0).Title
+                        Soaljawaban.PembahasanJawaban = latihan.Data.Data(0).Pembahasan
+                        Soaljawaban.IdExecute = latihan.Data.Data(0).Id_Execute
+                        Soaljawaban.IdExamp = latihan.Data.Data(0).Id_Examp
+                        Soaljawaban.PictureBox2.BackgroundImage = Nothing
+                        Soaljawaban.Show()
+
+                        Me.Hide()
+                    End If
+
+                Next
+            Else
+                MsgBox("Soal Tidak Tersedia!")
+            End If
         End If
+
     End Sub
 
     Private Sub Panel5_Paint(sender As Object, e As PaintEventArgs) Handles Panel5.Paint
@@ -582,134 +853,271 @@ Public Class Soal
     End Sub
 
     Private Sub btntpk1_Click(sender As Object, e As EventArgs) Handles btntpk1.Click
-        SubmitSoal(btntpk1.Tag, Me.Label1.Tag)
-        Dim latihan As SoalLatihanResponse = GetLatihanSoal(btntpk1.Tag, Me.Label1.Tag, 1)
-        If latihan IsNot Nothing And latihan.Responses = "200" Then
-            For Each item As SoalLatihan In latihan.Data.Data
-                Dim soal = listSoal.Where(Function(x) x.Id_Content = btntpk1.Tag).FirstOrDefault()
-                If soal.Free = "false" Then
-                    MsgBox("Silahkan Berlangganan Paket Permata Belajar")
-                Else
-                    Dim tClient As WebClient = New WebClient
-                    Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(item.Soal)))
-                    Soaljawaban.PictureBox1.BackgroundImage = downloadImage
-                    Soaljawaban.Label2.Text = Me.Label2.Text
-                    Soaljawaban.IdPelanggan = Me.Label1.Tag
-                    Soaljawaban.IdContent = btntpk1.Tag
-                    Soaljawaban.CurrentPage = 1
-                    Soaljawaban.Label3.Text = latihan.Data.Data(0).Title
-                    Soaljawaban.PembahasanJawaban = latihan.Data.Data(0).Pembahasan
-                    Soaljawaban.IdExecute = latihan.Data.Data(0).Id_Execute
-                    Soaljawaban.IdExamp = latihan.Data.Data(0).Id_Examp
-                    Soaljawaban.PictureBox2.BackgroundImage = Nothing
-                    Soaljawaban.Show()
+        If listSoal.Count > 0 Then
+            SubmitSoal(btntpk1.Tag, Me.Label1.Tag)
+            Dim latihan As SoalLatihanResponse = GetLatihanSoal(btntpk1.Tag, Me.Label1.Tag, 1)
+            If latihan IsNot Nothing And latihan.Responses = "200" Then
+                For Each item As SoalLatihan In latihan.Data.Data
+                    Dim soal = listSoal.Where(Function(x) x.Id_Content = btntpk1.Tag).FirstOrDefault()
+                    If soal.Free = "false" Then
+                        MsgBox("Silahkan Berlangganan Paket Permata Belajar")
+                    Else
+                        Dim tClient As WebClient = New WebClient
+                        Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(item.Soal)))
+                        Soaljawaban.PictureBox1.BackgroundImage = downloadImage
+                        Soaljawaban.Label2.Text = Me.Label2.Text
+                        Soaljawaban.IdPelanggan = Me.Label1.Tag
+                        Soaljawaban.IdContent = btntpk1.Tag
+                        Soaljawaban.CurrentPage = 1
+                        Soaljawaban.Label3.Text = latihan.Data.Data(0).Title
+                        Soaljawaban.PembahasanJawaban = latihan.Data.Data(0).Pembahasan
+                        Soaljawaban.IdExecute = latihan.Data.Data(0).Id_Execute
+                        Soaljawaban.IdExamp = latihan.Data.Data(0).Id_Examp
+                        Soaljawaban.PictureBox2.BackgroundImage = Nothing
+                        Soaljawaban.Show()
 
-                    Me.Hide()
-                End If
+                        Me.Hide()
+                    End If
 
-            Next
-        Else
-            MsgBox("Soal Tidak Tersedia!")
+                Next
+            Else
+                MsgBox("Soal Tidak Tersedia!")
+            End If
+        ElseIf listSoalUjian.Count > 0 Then
+            SubmitSoalUjian(btntpk1.Tag.Id_Content, btntpk1.Tag.Id_Kumpulan, Me.Label1.Tag)
+            Dim latihan As SoalLatihanResponse = GetLatihanSoalUjian(btntpk1.Tag.Id_Content, btntpk1.Tag.Id_Kumpulan, Me.Label1.Tag, 1)
+            If latihan IsNot Nothing And latihan.Responses = "200" Then
+                For Each item As SoalLatihan In latihan.Data.Data
+                    Dim soal = listSoalUjian.Where(Function(x) x.Id_Content = btntpk1.Tag.Id_Content And
+                                                       x.Id_Kumpulan = btntpk1.Tag.Id_Kumpulan).FirstOrDefault()
+                    If soal.Free = "false" Then
+                        MsgBox("Silahkan Berlangganan Paket Permata Belajar")
+                    Else
+                        Dim tClient As WebClient = New WebClient
+                        Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(item.Soal)))
+                        Soaljawaban.PictureBox1.BackgroundImage = downloadImage
+                        Soaljawaban.Label2.Text = Me.Label2.Text
+                        Soaljawaban.IdPelanggan = Me.Label1.Tag
+                        Soaljawaban.IdContent = btntpk1.Tag.Id_Content
+                        Soaljawaban.CurrentPage = 1
+                        Soaljawaban.Label3.Text = latihan.Data.Data(0).Title
+                        Soaljawaban.PembahasanJawaban = latihan.Data.Data(0).Pembahasan
+                        Soaljawaban.IdExecute = latihan.Data.Data(0).Id_Execute
+                        Soaljawaban.IdExamp = latihan.Data.Data(0).Id_Examp
+                        Soaljawaban.PictureBox2.BackgroundImage = Nothing
+                        Soaljawaban.Show()
+
+                        Me.Hide()
+                    End If
+
+                Next
+            Else
+                MsgBox("Soal Tidak Tersedia!")
+            End If
         End If
+
     End Sub
 
     Private Sub btntpk3_Click(sender As Object, e As EventArgs) Handles btntpk3.Click
-        SubmitSoal(btntpk3.Tag, Me.Label1.Tag)
-        Dim latihan As SoalLatihanResponse = GetLatihanSoal(btntpk3.Tag, Me.Label1.Tag, 1)
-        If latihan IsNot Nothing And latihan.Responses = "200" Then
-            For Each item As SoalLatihan In latihan.Data.Data
-                Dim soal = listSoal.Where(Function(x) x.Id_Content = btntpk3.Tag).FirstOrDefault()
-                If soal.Free = "false" Then
-                    MsgBox("Silahkan Berlangganan Paket Permata Belajar")
-                Else
-                    Dim tClient As WebClient = New WebClient
-                    Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(item.Soal)))
-                    Soaljawaban.PictureBox1.BackgroundImage = downloadImage
-                    Soaljawaban.Label2.Text = Me.Label2.Text
-                    Soaljawaban.IdPelanggan = Me.Label1.Tag
-                    Soaljawaban.IdContent = btntpk3.Tag
-                    Soaljawaban.CurrentPage = 1
-                    Soaljawaban.Label3.Text = latihan.Data.Data(0).Title
-                    Soaljawaban.PembahasanJawaban = latihan.Data.Data(0).Pembahasan
-                    Soaljawaban.IdExecute = latihan.Data.Data(0).Id_Execute
-                    Soaljawaban.IdExamp = latihan.Data.Data(0).Id_Examp
-                    Soaljawaban.PictureBox2.BackgroundImage = Nothing
-                    Soaljawaban.Show()
+        If listSoal.Count > 0 Then
+            SubmitSoal(btntpk3.Tag, Me.Label1.Tag)
+            Dim latihan As SoalLatihanResponse = GetLatihanSoal(btntpk3.Tag, Me.Label1.Tag, 1)
+            If latihan IsNot Nothing And latihan.Responses = "200" Then
+                For Each item As SoalLatihan In latihan.Data.Data
+                    Dim soal = listSoal.Where(Function(x) x.Id_Content = btntpk3.Tag).FirstOrDefault()
+                    If soal.Free = "false" Then
+                        MsgBox("Silahkan Berlangganan Paket Permata Belajar")
+                    Else
+                        Dim tClient As WebClient = New WebClient
+                        Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(item.Soal)))
+                        Soaljawaban.PictureBox1.BackgroundImage = downloadImage
+                        Soaljawaban.Label2.Text = Me.Label2.Text
+                        Soaljawaban.IdPelanggan = Me.Label1.Tag
+                        Soaljawaban.IdContent = btntpk3.Tag
+                        Soaljawaban.CurrentPage = 1
+                        Soaljawaban.Label3.Text = latihan.Data.Data(0).Title
+                        Soaljawaban.PembahasanJawaban = latihan.Data.Data(0).Pembahasan
+                        Soaljawaban.IdExecute = latihan.Data.Data(0).Id_Execute
+                        Soaljawaban.IdExamp = latihan.Data.Data(0).Id_Examp
+                        Soaljawaban.PictureBox2.BackgroundImage = Nothing
+                        Soaljawaban.Show()
 
-                    Me.Hide()
-                End If
+                        Me.Hide()
+                    End If
 
-            Next
-        Else
-            MsgBox("Soal Tidak Tersedia!")
+                Next
+            Else
+                MsgBox("Soal Tidak Tersedia!")
+            End If
+
+        ElseIf listSoalUjian.Count > 0 Then
+            SubmitSoalUjian(btntpk3.Tag.Id_Content, btntpk3.Tag.Id_Kumpulan, Me.Label1.Tag)
+            Dim latihan As SoalLatihanResponse = GetLatihanSoalUjian(btntpk3.Tag.Id_Content, btntpk3.Tag.Id_Kumpulan, Me.Label1.Tag, 1)
+            If latihan IsNot Nothing And latihan.Responses = "200" Then
+                For Each item As SoalLatihan In latihan.Data.Data
+                    Dim soal = listSoalUjian.Where(Function(x) x.Id_Content = btntpk3.Tag.Id_Content And
+                                                       x.Id_Kumpulan = btntpk3.Tag.Id_Kumpulan).FirstOrDefault()
+                    If soal.Free = "false" Then
+                        MsgBox("Silahkan Berlangganan Paket Permata Belajar")
+                    Else
+                        Dim tClient As WebClient = New WebClient
+                        Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(item.Soal)))
+                        Soaljawaban.PictureBox1.BackgroundImage = downloadImage
+                        Soaljawaban.Label2.Text = Me.Label2.Text
+                        Soaljawaban.IdPelanggan = Me.Label1.Tag
+                        Soaljawaban.IdContent = btntpk3.Tag.Id_Content
+                        Soaljawaban.CurrentPage = 1
+                        Soaljawaban.Label3.Text = latihan.Data.Data(0).Title
+                        Soaljawaban.PembahasanJawaban = latihan.Data.Data(0).Pembahasan
+                        Soaljawaban.IdExecute = latihan.Data.Data(0).Id_Execute
+                        Soaljawaban.IdExamp = latihan.Data.Data(0).Id_Examp
+                        Soaljawaban.PictureBox2.BackgroundImage = Nothing
+                        Soaljawaban.Show()
+
+                        Me.Hide()
+                    End If
+
+                Next
+            Else
+                MsgBox("Soal Tidak Tersedia!")
+            End If
+
         End If
 
 
     End Sub
 
     Private Sub btntpk4_Click(sender As Object, e As EventArgs) Handles btntpk4.Click
-        SubmitSoal(btntpk4.Tag, Me.Label1.Tag)
-        Dim latihan As SoalLatihanResponse = GetLatihanSoal(btntpk4.Tag, Me.Label1.Tag, 1)
-        If latihan IsNot Nothing And latihan.Responses = "200" Then
-            For Each item As SoalLatihan In latihan.Data.Data
-                Dim soal = listSoal.Where(Function(x) x.Id_Content = btntpk4.Tag).FirstOrDefault()
-                If soal.Free = "false" Then
-                    MsgBox("Silahkan Berlangganan Paket Permata Belajar")
-                Else
-                    Dim tClient As WebClient = New WebClient
-                    Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(item.Soal)))
-                    Soaljawaban.PictureBox1.BackgroundImage = downloadImage
-                    Soaljawaban.Label2.Text = Me.Label2.Text
-                    Soaljawaban.IdPelanggan = Me.Label1.Tag
-                    Soaljawaban.IdContent = btntpk4.Tag
-                    Soaljawaban.CurrentPage = 1
-                    Soaljawaban.Label3.Text = latihan.Data.Data(0).Title
-                    Soaljawaban.PembahasanJawaban = latihan.Data.Data(0).Pembahasan
-                    Soaljawaban.IdExecute = latihan.Data.Data(0).Id_Execute
-                    Soaljawaban.IdExamp = latihan.Data.Data(0).Id_Examp
-                    Soaljawaban.PictureBox2.BackgroundImage = Nothing
-                    Soaljawaban.Show()
+        If listSoal.Count > 0 Then
+            SubmitSoal(btntpk4.Tag, Me.Label1.Tag)
+            Dim latihan As SoalLatihanResponse = GetLatihanSoal(btntpk4.Tag, Me.Label1.Tag, 1)
+            If latihan IsNot Nothing And latihan.Responses = "200" Then
+                For Each item As SoalLatihan In latihan.Data.Data
+                    Dim soal = listSoal.Where(Function(x) x.Id_Content = btntpk4.Tag).FirstOrDefault()
+                    If soal.Free = "false" Then
+                        MsgBox("Silahkan Berlangganan Paket Permata Belajar")
+                    Else
+                        Dim tClient As WebClient = New WebClient
+                        Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(item.Soal)))
+                        Soaljawaban.PictureBox1.BackgroundImage = downloadImage
+                        Soaljawaban.Label2.Text = Me.Label2.Text
+                        Soaljawaban.IdPelanggan = Me.Label1.Tag
+                        Soaljawaban.IdContent = btntpk4.Tag
+                        Soaljawaban.CurrentPage = 1
+                        Soaljawaban.Label3.Text = latihan.Data.Data(0).Title
+                        Soaljawaban.PembahasanJawaban = latihan.Data.Data(0).Pembahasan
+                        Soaljawaban.IdExecute = latihan.Data.Data(0).Id_Execute
+                        Soaljawaban.IdExamp = latihan.Data.Data(0).Id_Examp
+                        Soaljawaban.PictureBox2.BackgroundImage = Nothing
+                        Soaljawaban.Show()
 
-                    Me.Hide()
-                End If
+                        Me.Hide()
+                    End If
 
-            Next
-        Else
-            MsgBox("Soal Tidak Tersedia!")
+                Next
+            Else
+                MsgBox("Soal Tidak Tersedia!")
+            End If
+        ElseIf listSoalUjian.Count > 0 Then
+            SubmitSoalUjian(btntpk4.Tag.Id_Content, btntpk4.Tag.Id_Kumpulan, Me.Label1.Tag)
+            Dim latihan As SoalLatihanResponse = GetLatihanSoalUjian(btntpk4.Tag.Id_Content, btntpk4.Tag.Id_Kumpulan, Me.Label1.Tag, 1)
+            If latihan IsNot Nothing And latihan.Responses = "200" Then
+                For Each item As SoalLatihan In latihan.Data.Data
+                    Dim soal = listSoalUjian.Where(Function(x) x.Id_Content = btntpk4.Tag.Id_Content And
+                                                  x.Id_Kumpulan = btntpk4.Tag.Id_Kumpulan).FirstOrDefault()
+                    If soal.Free = "false" Then
+                        MsgBox("Silahkan Berlangganan Paket Permata Belajar")
+                    Else
+                        Dim tClient As WebClient = New WebClient
+                        Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(item.Soal)))
+                        Soaljawaban.PictureBox1.BackgroundImage = downloadImage
+                        Soaljawaban.Label2.Text = Me.Label2.Text
+                        Soaljawaban.IdPelanggan = Me.Label1.Tag
+                        Soaljawaban.IdContent = btntpk4.Tag.Id_Content
+                        Soaljawaban.CurrentPage = 1
+                        Soaljawaban.Label3.Text = latihan.Data.Data(0).Title
+                        Soaljawaban.PembahasanJawaban = latihan.Data.Data(0).Pembahasan
+                        Soaljawaban.IdExecute = latihan.Data.Data(0).Id_Execute
+                        Soaljawaban.IdExamp = latihan.Data.Data(0).Id_Examp
+                        Soaljawaban.PictureBox2.BackgroundImage = Nothing
+                        Soaljawaban.Show()
+
+                        Me.Hide()
+                    End If
+
+                Next
+            Else
+                MsgBox("Soal Tidak Tersedia!")
+            End If
         End If
+
 
     End Sub
 
     Private Sub btntpk5_Click(sender As Object, e As EventArgs) Handles btntpk5.Click
-        SubmitSoal(btntpk5.Tag, Me.Label1.Tag)
-        Dim latihan As SoalLatihanResponse = GetLatihanSoal(btntpk5.Tag, Me.Label1.Tag, 1)
-        If latihan IsNot Nothing And latihan.Responses = "200" Then
-            For Each item As SoalLatihan In latihan.Data.Data
-                Dim soal = listSoal.Where(Function(x) x.Id_Content = btntpk5.Tag).FirstOrDefault()
-                If soal.Free = "false" Then
-                    MsgBox("Silahkan Berlangganan Paket Permata Belajar")
-                Else
-                    Dim tClient As WebClient = New WebClient
-                    Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(item.Soal)))
-                    Soaljawaban.PictureBox1.BackgroundImage = downloadImage
-                    Soaljawaban.Label2.Text = Me.Label2.Text
-                    Soaljawaban.IdPelanggan = Me.Label1.Tag
-                    Soaljawaban.IdContent = btntpk5.Tag
-                    Soaljawaban.CurrentPage = 1
-                    Soaljawaban.Label3.Text = latihan.Data.Data(0).Title
-                    Soaljawaban.PembahasanJawaban = latihan.Data.Data(0).Pembahasan
-                    Soaljawaban.IdExecute = latihan.Data.Data(0).Id_Execute
-                    Soaljawaban.IdExamp = latihan.Data.Data(0).Id_Examp
-                    Soaljawaban.PictureBox2.BackgroundImage = Nothing
-                    Soaljawaban.Show()
+        If listSoal.Count > 0 Then
+            SubmitSoal(btntpk5.Tag, Me.Label1.Tag)
+            Dim latihan As SoalLatihanResponse = GetLatihanSoal(btntpk5.Tag, Me.Label1.Tag, 1)
+            If latihan IsNot Nothing And latihan.Responses = "200" Then
+                For Each item As SoalLatihan In latihan.Data.Data
+                    Dim soal = listSoal.Where(Function(x) x.Id_Content = btntpk5.Tag).FirstOrDefault()
+                    If soal.Free = "false" Then
+                        MsgBox("Silahkan Berlangganan Paket Permata Belajar")
+                    Else
+                        Dim tClient As WebClient = New WebClient
+                        Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(item.Soal)))
+                        Soaljawaban.PictureBox1.BackgroundImage = downloadImage
+                        Soaljawaban.Label2.Text = Me.Label2.Text
+                        Soaljawaban.IdPelanggan = Me.Label1.Tag
+                        Soaljawaban.IdContent = btntpk5.Tag
+                        Soaljawaban.CurrentPage = 1
+                        Soaljawaban.Label3.Text = latihan.Data.Data(0).Title
+                        Soaljawaban.PembahasanJawaban = latihan.Data.Data(0).Pembahasan
+                        Soaljawaban.IdExecute = latihan.Data.Data(0).Id_Execute
+                        Soaljawaban.IdExamp = latihan.Data.Data(0).Id_Examp
+                        Soaljawaban.PictureBox2.BackgroundImage = Nothing
+                        Soaljawaban.Show()
 
-                    Me.Hide()
-                End If
+                        Me.Hide()
+                    End If
 
-            Next
-        Else
-            MsgBox("Soal Tidak Tersedia!")
+                Next
+            Else
+                MsgBox("Soal Tidak Tersedia!")
+            End If
+        ElseIf listSoalUjian.Count > 0 Then
+            SubmitSoalUjian(btntpk5.Tag.Id_Content, btntpk5.Tag.Id_Kumpulan, Me.Label1.Tag)
+            Dim latihan As SoalLatihanResponse = GetLatihanSoalUjian(btntpk5.Tag.Id_Content, btntpk5.Tag.Id_Kumpulan, Me.Label1.Tag, 1)
+            If latihan IsNot Nothing And latihan.Responses = "200" Then
+                For Each item As SoalLatihan In latihan.Data.Data
+                    Dim soal = listSoalUjian.Where(Function(x) x.Id_Content = btntpk5.Tag.Id_Content And
+                                                       x.Id_Kumpulan = btntpk5.Tag.Id_Kumpulan).FirstOrDefault()
+                    If soal.Free = "false" Then
+                        MsgBox("Silahkan Berlangganan Paket Permata Belajar")
+                    Else
+                        Dim tClient As WebClient = New WebClient
+                        Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(item.Soal)))
+                        Soaljawaban.PictureBox1.BackgroundImage = downloadImage
+                        Soaljawaban.Label2.Text = Me.Label2.Text
+                        Soaljawaban.IdPelanggan = Me.Label1.Tag
+                        Soaljawaban.IdContent = btntpk5.Tag.Id_Content
+                        Soaljawaban.CurrentPage = 1
+                        Soaljawaban.Label3.Text = latihan.Data.Data(0).Title
+                        Soaljawaban.PembahasanJawaban = latihan.Data.Data(0).Pembahasan
+                        Soaljawaban.IdExecute = latihan.Data.Data(0).Id_Execute
+                        Soaljawaban.IdExamp = latihan.Data.Data(0).Id_Examp
+                        Soaljawaban.PictureBox2.BackgroundImage = Nothing
+                        Soaljawaban.Show()
+
+                        Me.Hide()
+                    End If
+
+                Next
+            Else
+                MsgBox("Soal Tidak Tersedia!")
+            End If
         End If
+
 
     End Sub
 
@@ -722,7 +1130,7 @@ Public Class Soal
     End Sub
 
     Private Sub btnsmstr2_Click(sender As Object, e As EventArgs) Handles btnsmstr2.Click
-        ShowSoalTopik(btnsmstr2.Tag, Me.Label1.Tag)
+        ShowSoalUjian(btnsmstr1.Tag, Me.Label1.Tag)
         Panel3.Visible = True
         Label13.Visible = False
         Label14.Visible = False
