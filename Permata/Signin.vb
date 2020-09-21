@@ -94,10 +94,14 @@ Public Class Signin
     End Sub
 
     Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
-        LoginGoogle.Show()
+        'LoginGoogle.Show()
+        MsgBox("Login By Google Hanya bisa dilakukan di web app saja")
+        System.Diagnostics.Process.Start("https://permatabelajar.com/registrasi")
     End Sub
 
     Private Sub Guna2Button2_Click(sender As Object, e As EventArgs) Handles Guna2Button2.Click
-        LoginFacebook.Show()
+        'LoginFacebook.Show()
+        MsgBox("Login By Facebook Hanya bisa dilakukan di web app saja")
+        System.Diagnostics.Process.Start("https://permatabelajar.com/registrasi")
     End Sub
 End Class
