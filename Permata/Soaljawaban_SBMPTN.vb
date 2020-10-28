@@ -152,7 +152,7 @@ Public Class Soaljawaban_SBMPTN
 
     End Function
     Private Sub Guna2Button7_Click(sender As Object, e As EventArgs) Handles Guna2Button7.Click
-        Soal.Show()
+        SBMPTN.Show()
         Me.Hide()
     End Sub
 

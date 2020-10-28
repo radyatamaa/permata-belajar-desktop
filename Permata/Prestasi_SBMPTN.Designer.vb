@@ -293,6 +293,7 @@ Partial Class Prestasi_SBMPTN
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "Prestasi_SBMPTN"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Prestasi_SBMPTN"
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
