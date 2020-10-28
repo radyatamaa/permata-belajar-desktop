@@ -77,7 +77,13 @@ Public Class MenuUtama
                 Ringkasan.Label1.Tag = Me.Guna2PictureBox3.Tag
                 Me.Hide()
             Case "sbmptnPages"
-                'ShowFeature(Integer.Parse(Me.btnkelas1.Tag))
+                SBMPTN.Show()
+                SBMPTN.Label26.Text = Me.Label26.Text
+                SBMPTN.Label26.Tag = Me.Label26.Tag
+                SBMPTN.Label2.Text = Me.Label13.Tag
+                SBMPTN.Label2.Tag = Me.lblfeature0.Tag
+                SBMPTN.Label1.Tag = Me.Guna2PictureBox3.Tag
+                Me.Hide()
             Case "videoPages"
                 Form2.Show()
                 Form2.Label26.Text = Me.Label26.Text
@@ -110,7 +116,13 @@ Public Class MenuUtama
                 Ringkasan.Label1.Tag = Me.Guna2PictureBox3.Tag
                 Me.Hide()
             Case "sbmptnPages"
-                'ShowFeature(Integer.Parse(Me.btnkelas1.Tag))
+                SBMPTN.Show()
+                SBMPTN.Label26.Text = Me.Label26.Text
+                SBMPTN.Label26.Tag = Me.Label26.Tag
+                SBMPTN.Label2.Text = Me.Label13.Tag
+                SBMPTN.Label2.Tag = Me.lblfeature1.Tag
+                SBMPTN.Label1.Tag = Me.Guna2PictureBox3.Tag
+                Me.Hide()
             Case "videoPages"
                 Form2.Show()
                 Form2.Label26.Text = Me.Label26.Text
@@ -143,7 +155,13 @@ Public Class MenuUtama
                 Ringkasan.Label1.Tag = Me.Guna2PictureBox3.Tag
                 Me.Hide()
             Case "sbmptnPages"
-                'ShowFeature(Integer.Parse(Me.btnkelas1.Tag))
+                SBMPTN.Show()
+                SBMPTN.Label26.Text = Me.Label26.Text
+                SBMPTN.Label26.Tag = Me.Label26.Tag
+                SBMPTN.Label2.Text = Me.Label13.Tag
+                SBMPTN.Label2.Tag = Me.lblfeature2.Tag
+                SBMPTN.Label1.Tag = Me.Guna2PictureBox3.Tag
+                Me.Hide()
             Case "videoPages"
                 Form2.Show()
                 Form2.Label26.Text = Me.Label26.Text
@@ -470,7 +488,13 @@ Public Class MenuUtama
                 Ringkasan.Label1.Tag = Me.Guna2PictureBox3.Tag
                 Me.Hide()
             Case "sbmptnPages"
-                'ShowFeature(Integer.Parse(Me.btnkelas1.Tag))
+                SBMPTN.Show()
+                SBMPTN.Label26.Text = Me.Label26.Text
+                SBMPTN.Label26.Tag = Me.Label26.Tag
+                SBMPTN.Label2.Text = Me.Label13.Tag
+                SBMPTN.Label2.Tag = Me.lblfeature3.Tag
+                SBMPTN.Label1.Tag = Me.Guna2PictureBox3.Tag
+                Me.Hide()
             Case "videoPages"
                 Form2.Show()
                 Form2.Label26.Text = Me.Label26.Text

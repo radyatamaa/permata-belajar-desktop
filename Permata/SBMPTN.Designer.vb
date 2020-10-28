@@ -32,20 +32,20 @@ Partial Class SBMPTN
         Me.Label26 = New System.Windows.Forms.Label()
         Me.Label22 = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.btnth4 = New System.Windows.Forms.Button()
+        Me.btnth3 = New System.Windows.Forms.Button()
+        Me.btnth2 = New System.Windows.Forms.Button()
+        Me.lbls2 = New System.Windows.Forms.Label()
+        Me.lbls1 = New System.Windows.Forms.Label()
+        Me.lbls0 = New System.Windows.Forms.Label()
+        Me.btnth1 = New System.Windows.Forms.Button()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.btnth0 = New System.Windows.Forms.Button()
         Me.btnsl2 = New System.Windows.Forms.Button()
         Me.btnsl0 = New System.Windows.Forms.Button()
         Me.btnsl1 = New System.Windows.Forms.Button()
         Me.Panel8 = New System.Windows.Forms.Panel()
         Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.btnth0 = New System.Windows.Forms.Button()
-        Me.btnth1 = New System.Windows.Forms.Button()
-        Me.lblsl2 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.btnth2 = New System.Windows.Forms.Button()
-        Me.btnth3 = New System.Windows.Forms.Button()
-        Me.btnth4 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel4.SuspendLayout()
@@ -178,9 +178,9 @@ Partial Class SBMPTN
         Me.Panel4.Controls.Add(Me.btnth4)
         Me.Panel4.Controls.Add(Me.btnth3)
         Me.Panel4.Controls.Add(Me.btnth2)
-        Me.Panel4.Controls.Add(Me.Label5)
-        Me.Panel4.Controls.Add(Me.Label4)
-        Me.Panel4.Controls.Add(Me.lblsl2)
+        Me.Panel4.Controls.Add(Me.lbls2)
+        Me.Panel4.Controls.Add(Me.lbls1)
+        Me.Panel4.Controls.Add(Me.lbls0)
         Me.Panel4.Controls.Add(Me.btnth1)
         Me.Panel4.Controls.Add(Me.Label3)
         Me.Panel4.Controls.Add(Me.btnth0)
@@ -193,6 +193,137 @@ Partial Class SBMPTN
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(1027, 363)
         Me.Panel4.TabIndex = 3
+        '
+        'btnth4
+        '
+        Me.btnth4.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.btnth4.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnth4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnth4.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.btnth4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnth4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.btnth4.Location = New System.Drawing.Point(716, 50)
+        Me.btnth4.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnth4.Name = "btnth4"
+        Me.btnth4.Size = New System.Drawing.Size(103, 40)
+        Me.btnth4.TabIndex = 62
+        Me.btnth4.Text = "Tahun 2018"
+        Me.btnth4.UseVisualStyleBackColor = False
+        '
+        'btnth3
+        '
+        Me.btnth3.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.btnth3.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnth3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnth3.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.btnth3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnth3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.btnth3.Location = New System.Drawing.Point(590, 50)
+        Me.btnth3.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnth3.Name = "btnth3"
+        Me.btnth3.Size = New System.Drawing.Size(103, 40)
+        Me.btnth3.TabIndex = 61
+        Me.btnth3.Text = "Tahun 2018"
+        Me.btnth3.UseVisualStyleBackColor = False
+        '
+        'btnth2
+        '
+        Me.btnth2.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.btnth2.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnth2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnth2.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.btnth2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnth2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.btnth2.Location = New System.Drawing.Point(466, 50)
+        Me.btnth2.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnth2.Name = "btnth2"
+        Me.btnth2.Size = New System.Drawing.Size(103, 40)
+        Me.btnth2.TabIndex = 60
+        Me.btnth2.Text = "Tahun 2018"
+        Me.btnth2.UseVisualStyleBackColor = False
+        '
+        'lbls2
+        '
+        Me.lbls2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lbls2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbls2.Location = New System.Drawing.Point(576, 201)
+        Me.lbls2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lbls2.Name = "lbls2"
+        Me.lbls2.Size = New System.Drawing.Size(87, 25)
+        Me.lbls2.TabIndex = 59
+        Me.lbls2.Text = "SAINTEK"
+        Me.lbls2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lbls1
+        '
+        Me.lbls1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lbls1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbls1.Location = New System.Drawing.Point(448, 201)
+        Me.lbls1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lbls1.Name = "lbls1"
+        Me.lbls1.Size = New System.Drawing.Size(87, 25)
+        Me.lbls1.TabIndex = 58
+        Me.lbls1.Text = "SAINTEK"
+        Me.lbls1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lbls0
+        '
+        Me.lbls0.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lbls0.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbls0.Location = New System.Drawing.Point(329, 201)
+        Me.lbls0.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lbls0.Name = "lbls0"
+        Me.lbls0.Size = New System.Drawing.Size(87, 25)
+        Me.lbls0.TabIndex = 57
+        Me.lbls0.Text = "SAINTEK"
+        Me.lbls0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'btnth1
+        '
+        Me.btnth1.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.btnth1.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnth1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnth1.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.btnth1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnth1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.btnth1.Location = New System.Drawing.Point(343, 50)
+        Me.btnth1.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnth1.Name = "btnth1"
+        Me.btnth1.Size = New System.Drawing.Size(103, 40)
+        Me.btnth1.TabIndex = 53
+        Me.btnth1.Text = "Tahun 2018"
+        Me.btnth1.UseVisualStyleBackColor = False
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(207, 18)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(97, 20)
+        Me.Label3.TabIndex = 52
+        Me.Label3.Text = "Pilih Tahun"
+        '
+        'btnth0
+        '
+        Me.btnth0.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.btnth0.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnth0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnth0.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.btnth0.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnth0.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.btnth0.ForeColor = System.Drawing.Color.White
+        Me.btnth0.Location = New System.Drawing.Point(211, 50)
+        Me.btnth0.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnth0.Name = "btnth0"
+        Me.btnth0.Size = New System.Drawing.Size(103, 40)
+        Me.btnth0.TabIndex = 50
+        Me.btnth0.Text = "Tahun 2017"
+        Me.btnth0.UseVisualStyleBackColor = False
         '
         'btnsl2
         '
@@ -261,137 +392,6 @@ Partial Class SBMPTN
         Me.Label12.TabIndex = 0
         Me.Label12.Text = "Support@permatabelajar.com, Phone/Whatsapp: 0811811306,"
         '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(207, 18)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(97, 20)
-        Me.Label3.TabIndex = 52
-        Me.Label3.Text = "Pilih Tahun"
-        '
-        'btnth0
-        '
-        Me.btnth0.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.btnth0.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.btnth0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnth0.FlatAppearance.BorderColor = System.Drawing.Color.Black
-        Me.btnth0.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnth0.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.btnth0.ForeColor = System.Drawing.Color.White
-        Me.btnth0.Location = New System.Drawing.Point(211, 50)
-        Me.btnth0.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnth0.Name = "btnth0"
-        Me.btnth0.Size = New System.Drawing.Size(103, 40)
-        Me.btnth0.TabIndex = 50
-        Me.btnth0.Text = "Tahun 2017"
-        Me.btnth0.UseVisualStyleBackColor = False
-        '
-        'btnth1
-        '
-        Me.btnth1.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.btnth1.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnth1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnth1.FlatAppearance.BorderColor = System.Drawing.Color.Black
-        Me.btnth1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnth1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.btnth1.Location = New System.Drawing.Point(343, 50)
-        Me.btnth1.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnth1.Name = "btnth1"
-        Me.btnth1.Size = New System.Drawing.Size(103, 40)
-        Me.btnth1.TabIndex = 53
-        Me.btnth1.Text = "Tahun 2018"
-        Me.btnth1.UseVisualStyleBackColor = False
-        '
-        'lblsl2
-        '
-        Me.lblsl2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblsl2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblsl2.Location = New System.Drawing.Point(329, 201)
-        Me.lblsl2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.lblsl2.Name = "lblsl2"
-        Me.lblsl2.Size = New System.Drawing.Size(87, 25)
-        Me.lblsl2.TabIndex = 57
-        Me.lblsl2.Text = "SAINTEK"
-        Me.lblsl2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label4
-        '
-        Me.Label4.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(448, 201)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(87, 25)
-        Me.Label4.TabIndex = 58
-        Me.Label4.Text = "SAINTEK"
-        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label5
-        '
-        Me.Label5.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(576, 201)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(87, 25)
-        Me.Label5.TabIndex = 59
-        Me.Label5.Text = "SAINTEK"
-        Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'btnth2
-        '
-        Me.btnth2.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.btnth2.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnth2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnth2.FlatAppearance.BorderColor = System.Drawing.Color.Black
-        Me.btnth2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnth2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.btnth2.Location = New System.Drawing.Point(466, 50)
-        Me.btnth2.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnth2.Name = "btnth2"
-        Me.btnth2.Size = New System.Drawing.Size(103, 40)
-        Me.btnth2.TabIndex = 60
-        Me.btnth2.Text = "Tahun 2018"
-        Me.btnth2.UseVisualStyleBackColor = False
-        '
-        'btnth3
-        '
-        Me.btnth3.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.btnth3.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnth3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnth3.FlatAppearance.BorderColor = System.Drawing.Color.Black
-        Me.btnth3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnth3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.btnth3.Location = New System.Drawing.Point(590, 50)
-        Me.btnth3.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnth3.Name = "btnth3"
-        Me.btnth3.Size = New System.Drawing.Size(103, 40)
-        Me.btnth3.TabIndex = 61
-        Me.btnth3.Text = "Tahun 2018"
-        Me.btnth3.UseVisualStyleBackColor = False
-        '
-        'btnth4
-        '
-        Me.btnth4.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.btnth4.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnth4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnth4.FlatAppearance.BorderColor = System.Drawing.Color.Black
-        Me.btnth4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnth4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.btnth4.Location = New System.Drawing.Point(716, 50)
-        Me.btnth4.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnth4.Name = "btnth4"
-        Me.btnth4.Size = New System.Drawing.Size(103, 40)
-        Me.btnth4.TabIndex = 62
-        Me.btnth4.Text = "Tahun 2018"
-        Me.btnth4.UseVisualStyleBackColor = False
-        '
         'SBMPTN
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -427,9 +427,9 @@ Partial Class SBMPTN
     Friend WithEvents btnth1 As Button
     Friend WithEvents Label3 As Label
     Friend WithEvents btnth0 As Button
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents lblsl2 As Label
+    Friend WithEvents lbls2 As Label
+    Friend WithEvents lbls1 As Label
+    Friend WithEvents lbls0 As Label
     Friend WithEvents btnth4 As Button
     Friend WithEvents btnth3 As Button
     Friend WithEvents btnth2 As Button
