@@ -202,3 +202,6 @@ C:\Users\HATIM\Documents\GitHub\permata-belajar-desktop\Permata\obj\Debug\Permat
 C:\Users\HATIM\Documents\GitHub\permata-belajar-desktop\Permata\obj\Debug\Permata.xml
 C:\Users\HATIM\Documents\GitHub\permata-belajar-desktop\Permata\obj\Debug\Permata.pdb
 E:\radya\project\pribadi\permata-belajar-desktop\Permata\obj\Debug\Permata.SBMPTN.resources
+E:\radya\project\pribadi\permata-belajar-desktop\Permata\obj\Debug\Permata.Prestasi_SBMPTN.resources
+E:\radya\project\pribadi\permata-belajar-desktop\Permata\obj\Debug\Permata.Soaljawaban_SBMPTN.resources
+E:\radya\project\pribadi\permata-belajar-desktop\Permata\obj\Debug\Permata.Soal_SBMPTN.resources
