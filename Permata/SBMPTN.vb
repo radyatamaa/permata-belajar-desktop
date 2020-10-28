@@ -1,4 +1,5 @@
-﻿Imports System.Net
+﻿Imports System.IO
+Imports System.Net
 Imports Newtonsoft.Json
 
 Public Class SBMPTN
@@ -6,9 +7,9 @@ Public Class SBMPTN
 
     End Sub
 
-    Public Function GetJurusan(idKelas As Integer, idFeature As Integer)
-        Dim result As New List(Of RingkasanMataPelajaran)
-        Dim myrequest As HttpWebRequest = HttpWebRequest.Create("https://api.permatamall.com/api/v2/belajar/home/ptn/jurusan?id_kelas=" + idKelas.ToString + "&id_feature=" + idFeature.ToString)
+    Public Function GetJurusan(idKelas As Integer, idFeature As Integer, tahun As String)
+        Dim result As New TahunPTNJurusanDto
+        Dim myrequest As HttpWebRequest = HttpWebRequest.Create("https://api.permatamall.com/api/v2/belajar/home/ptn/jurusan?id_kelas=" + idKelas.ToString + "&id_feature=" + idFeature.ToString + "&tahun=" + tahun.ToString)
         myrequest.Method = "POST"
         myrequest.Headers.Add("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEsImlhdCI6MTU5MTY5MjEwOH0.dy9E2oEca87xXJil8rOMdA2Syn8e5OmTBFco6jh5Gpo")
         'myrequest.Timeout = reqtimeout
@@ -39,6 +40,7 @@ Public Class SBMPTN
                 Next
                 'Do something with "item" here
             Next
+            result = ringkasan
             sr.Close()
         Catch ex As WebException
             If ex.Status = WebExceptionStatus.Timeout Then
@@ -49,24 +51,27 @@ Public Class SBMPTN
         End Try
         Return result
     End Function
-    Public Function ShowSoal(idKelas As Integer, idFeature As Integer, idJurusan As Integer)
-        Dim materiPelajaran As List(Of RingkasanMataPelajaran) = GetMatapelajaranSoal(idKelas, idFeature, idJurusan)
+    Public Function ShowJurusan(idKelas As Integer, idFeature As Integer, tahun As String)
+        Dim materiPelajaran As TahunPTNJurusanDto = GetJurusan(idKelas, idFeature, tahun)
+
+
+        'jurusan
         Dim lastIndex As Integer = 0
 
-        For i As Integer = 0 To materiPelajaran.Count
+        For i As Integer = 0 To materiPelajaran.Data.Count
             Dim rmButton As Control() = Me.Controls.Find("btnsl" + i.ToString(), True)
 
-            Dim rmLabel As Control() = Me.Controls.Find("lblsl" + i.ToString(), True)
+            Dim rmLabel As Control() = Me.Controls.Find("lbls" + i.ToString(), True)
 
 
             Try
 
-                rmLabel.FirstOrDefault().Text = materiPelajaran(i).Bidang_Studi
+                rmLabel.FirstOrDefault().Text = materiPelajaran.Data(i).Jurusan
                 rmLabel.FirstOrDefault().Show()
                 Dim tClient As WebClient = New WebClient
-                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(materiPelajaran(i).Image)))
+                Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(materiPelajaran.Data(i).Image)))
                 rmButton.FirstOrDefault().BackgroundImage = downloadImage
-                rmButton.FirstOrDefault().Tag = materiPelajaran(i).Id_Bidang_Studi
+                rmButton.FirstOrDefault().Tag = materiPelajaran.Data(i).Id_Jurusan
                 rmButton.FirstOrDefault().Show()
                 lastIndex = lastIndex + 1
             Catch ex As Exception
@@ -75,32 +80,100 @@ Public Class SBMPTN
 
         Next i
 
-        Dim test As Integer = (lastIndex + 2)
-        For i As Integer = (lastIndex) To 10
+        For i As Integer = (lastIndex) To 2
             'If lastIndex <> DataKelas.Count Then
             Dim kelasButton As Control() = Me.Controls.Find("btnsl" + i.ToString(), True)
 
-            Dim kelasLabel As Control() = Me.Controls.Find("lblsl" + i.ToString(), True)
+            Dim kelasLabel As Control() = Me.Controls.Find("lbls" + i.ToString(), True)
 
             kelasButton.FirstOrDefault().Hide()
             kelasLabel.FirstOrDefault().Hide()
             'End If
         Next
 
-        If materiPelajaran.Count = 0 Then
-            For i As Integer = 0 To 10
+        If materiPelajaran.Data.Count = 0 Then
+            For i As Integer = 0 To 2
 
                 Dim kelasButton As Control() = Me.Controls.Find("btnsl" + i.ToString(), True)
 
-                Dim kelasLabel As Control() = Me.Controls.Find("lblsl" + i.ToString(), True)
+                Dim kelasLabel As Control() = Me.Controls.Find("lbls" + i.ToString(), True)
 
                 kelasButton.FirstOrDefault().Hide()
                 kelasLabel.FirstOrDefault().Hide()
 
             Next i
         End If
+
+        'tahun
+        Dim lastIndexTahun As Integer = 0
+
+        For i As Integer = 0 To materiPelajaran.Tahun.Count
+            Dim rmButton As Control() = Me.Controls.Find("btnth" + i.ToString(), True)
+
+
+            Try
+
+                rmButton.FirstOrDefault().Tag = materiPelajaran.Tahun(i).Tahun
+                rmButton.FirstOrDefault().Text = materiPelajaran.Tahun(i).Tahun
+                If materiPelajaran.Tahun(i).Tahun = materiPelajaran.SelectedTahun Then
+                    'rmButton.FirstOrDefault().BackColor = BackColor.IsSystemColor
+                End If
+                rmButton.FirstOrDefault().Show()
+                lastIndexTahun = lastIndexTahun + 1
+            Catch ex As Exception
+
+            End Try
+
+        Next i
+
+        For i As Integer = (lastIndexTahun) To 4
+            'If lastIndex <> DataKelas.Count Then
+            Dim kelasButton As Control() = Me.Controls.Find("btnth" + i.ToString(), True)
+
+
+            kelasButton.FirstOrDefault().Hide()
+            'End If
+        Next
+
+        If materiPelajaran.Tahun.Count = 0 Then
+            For i As Integer = 0 To 4
+
+                Dim kelasButton As Control() = Me.Controls.Find("btnth" + i.ToString(), True)
+
+
+                kelasButton.FirstOrDefault().Hide()
+
+            Next i
+        End If
     End Function
     Private Sub Panel4_Paint(sender As Object, e As PaintEventArgs) Handles Panel4.Paint
+        ShowJurusan(Integer.Parse(Me.Label26.Tag), Integer.Parse(Me.Label2.Tag), "Tahun 2017")
+    End Sub
+
+    Private Sub btnth0_Click(sender As Object, e As EventArgs) Handles btnth0.Click
+        ShowJurusan(Integer.Parse(Me.Label26.Tag), Integer.Parse(Me.Label2.Tag), btnth0.Tag)
+    End Sub
+
+    Private Sub btnth1_Click(sender As Object, e As EventArgs) Handles btnth1.Click
+        ShowJurusan(Integer.Parse(Me.Label26.Tag), Integer.Parse(Me.Label2.Tag), btnth1.Tag)
+    End Sub
+
+    Private Sub btnth2_Click(sender As Object, e As EventArgs) Handles btnth2.Click
+
+        ShowJurusan(Integer.Parse(Me.Label26.Tag), Integer.Parse(Me.Label2.Tag), btnth2.Tag)
+    End Sub
+
+    Private Sub btnth3_Click(sender As Object, e As EventArgs) Handles btnth3.Click
+
+        ShowJurusan(Integer.Parse(Me.Label26.Tag), Integer.Parse(Me.Label2.Tag), btnth3.Tag)
+    End Sub
+
+    Private Sub btnth4_Click(sender As Object, e As EventArgs) Handles btnth4.Click
+
+        ShowJurusan(Integer.Parse(Me.Label26.Tag), Integer.Parse(Me.Label2.Tag), btnth4.Tag)
+    End Sub
+
+    Private Sub btnsl0_Click(sender As Object, e As EventArgs) Handles btnsl0.Click
 
     End Sub
 End Class

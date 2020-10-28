@@ -179,6 +179,8 @@
     <Compile Include="Model\SoalTopik.vb" />
     <Compile Include="Model\SoalTopikResponse.vb" />
     <Compile Include="Model\SoalUjianResponse.vb" />
+    <Compile Include="Model\TahunPTNJurusan.vb" />
+    <Compile Include="Model\TahunPTNResponse.vb" />
     <Compile Include="Model\VideoTopik.vb" />
     <Compile Include="Model\VideoTopikResponse.vb" />
     <Compile Include="Notifikasi.Designer.vb">
