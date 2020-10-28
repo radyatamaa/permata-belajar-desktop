@@ -148,7 +148,7 @@ Partial Class Soaljawaban_SBMPTN
         Me.Panel4.Location = New System.Drawing.Point(0, 101)
         Me.Panel4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(909, 4361)
+        Me.Panel4.Size = New System.Drawing.Size(909, 4616)
         Me.Panel4.TabIndex = 1
         '
         'Panel8
@@ -412,6 +412,7 @@ Partial Class Soaljawaban_SBMPTN
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "Soaljawaban_SBMPTN"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Soaljawaban_SBMPTN"
         Me.Panel3.ResumeLayout(False)
         Me.Panel4.ResumeLayout(False)

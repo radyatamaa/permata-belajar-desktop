@@ -202,7 +202,7 @@ Partial Class SBMPTN
         Me.btnth4.FlatAppearance.BorderColor = System.Drawing.Color.Black
         Me.btnth4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnth4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.btnth4.Location = New System.Drawing.Point(716, 50)
+        Me.btnth4.Location = New System.Drawing.Point(845, 50)
         Me.btnth4.Margin = New System.Windows.Forms.Padding(2)
         Me.btnth4.Name = "btnth4"
         Me.btnth4.Size = New System.Drawing.Size(103, 40)
@@ -218,7 +218,7 @@ Partial Class SBMPTN
         Me.btnth3.FlatAppearance.BorderColor = System.Drawing.Color.Black
         Me.btnth3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnth3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.btnth3.Location = New System.Drawing.Point(590, 50)
+        Me.btnth3.Location = New System.Drawing.Point(719, 50)
         Me.btnth3.Margin = New System.Windows.Forms.Padding(2)
         Me.btnth3.Name = "btnth3"
         Me.btnth3.Size = New System.Drawing.Size(103, 40)
@@ -234,7 +234,7 @@ Partial Class SBMPTN
         Me.btnth2.FlatAppearance.BorderColor = System.Drawing.Color.Black
         Me.btnth2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnth2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.btnth2.Location = New System.Drawing.Point(466, 50)
+        Me.btnth2.Location = New System.Drawing.Point(595, 50)
         Me.btnth2.Margin = New System.Windows.Forms.Padding(2)
         Me.btnth2.Name = "btnth2"
         Me.btnth2.Size = New System.Drawing.Size(103, 40)
@@ -289,7 +289,7 @@ Partial Class SBMPTN
         Me.btnth1.FlatAppearance.BorderColor = System.Drawing.Color.Black
         Me.btnth1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnth1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.btnth1.Location = New System.Drawing.Point(343, 50)
+        Me.btnth1.Location = New System.Drawing.Point(472, 50)
         Me.btnth1.Margin = New System.Windows.Forms.Padding(2)
         Me.btnth1.Name = "btnth1"
         Me.btnth1.Size = New System.Drawing.Size(103, 40)
@@ -301,7 +301,7 @@ Partial Class SBMPTN
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(207, 18)
+        Me.Label3.Location = New System.Drawing.Point(336, 18)
         Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(97, 20)
@@ -317,7 +317,7 @@ Partial Class SBMPTN
         Me.btnth0.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnth0.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold)
         Me.btnth0.ForeColor = System.Drawing.Color.White
-        Me.btnth0.Location = New System.Drawing.Point(211, 50)
+        Me.btnth0.Location = New System.Drawing.Point(340, 50)
         Me.btnth0.Margin = New System.Windows.Forms.Padding(2)
         Me.btnth0.Name = "btnth0"
         Me.btnth0.Size = New System.Drawing.Size(103, 40)
@@ -400,6 +400,7 @@ Partial Class SBMPTN
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Panel8)
         Me.Name = "SBMPTN"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "SBMPTN"
         Me.Panel1.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)

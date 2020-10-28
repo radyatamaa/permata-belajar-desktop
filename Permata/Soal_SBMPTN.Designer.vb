@@ -867,6 +867,7 @@ Partial Class Soal_SBMPTN
         Me.Controls.Add(Me.Panel5)
         Me.Controls.Add(Me.Panel3)
         Me.Name = "Soal_SBMPTN"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Soal_SBMPTN"
         Me.Panel1.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
