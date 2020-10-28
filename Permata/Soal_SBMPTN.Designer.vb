@@ -42,22 +42,13 @@ Partial Class Soal_SBMPTN
         Me.Label13 = New System.Windows.Forms.Label()
         Me.lblbab3 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.Panel8 = New System.Windows.Forms.Panel()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.btnsmstr0 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.lbl_kosong = New System.Windows.Forms.Label()
-        Me.lblbab6 = New System.Windows.Forms.Label()
-        Me.lblbab5 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Guna2Button7 = New Guna.UI2.WinForms.Guna2Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label26 = New System.Windows.Forms.Label()
         Me.Label22 = New System.Windows.Forms.Label()
+        Me.Panel4 = New System.Windows.Forms.Panel()
         Me.btnsl9 = New System.Windows.Forms.Button()
         Me.btnsl10 = New System.Windows.Forms.Button()
         Me.btnsl8 = New System.Windows.Forms.Button()
@@ -69,6 +60,15 @@ Partial Class Soal_SBMPTN
         Me.btnsl2 = New System.Windows.Forms.Button()
         Me.btnsl0 = New System.Windows.Forms.Button()
         Me.btnsl1 = New System.Windows.Forms.Button()
+        Me.Panel8 = New System.Windows.Forms.Panel()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.btnsmstr0 = New Guna.UI2.WinForms.Guna2Button()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.lbl_kosong = New System.Windows.Forms.Label()
+        Me.lblbab6 = New System.Windows.Forms.Label()
+        Me.lblbab5 = New System.Windows.Forms.Label()
         Me.btntpk5 = New Guna.UI2.WinForms.Guna2Button()
         Me.btntpk4 = New Guna.UI2.WinForms.Guna2Button()
         Me.btntpk3 = New Guna.UI2.WinForms.Guna2Button()
@@ -76,11 +76,11 @@ Partial Class Soal_SBMPTN
         Me.btntpk1 = New Guna.UI2.WinForms.Guna2Button()
         Me.btntpk0 = New Guna.UI2.WinForms.Guna2Button()
         Me.Panel1.SuspendLayout()
+        Me.Panel2.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.Panel8.SuspendLayout()
         Me.Panel5.SuspendLayout()
         Me.Panel3.SuspendLayout()
-        Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label15
@@ -316,162 +316,6 @@ Partial Class Soal_SBMPTN
         Me.Panel1.Size = New System.Drawing.Size(418, 610)
         Me.Panel1.TabIndex = 43
         '
-        'Panel4
-        '
-        Me.Panel4.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Panel4.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Panel4.Controls.Add(Me.lblsl10)
-        Me.Panel4.Controls.Add(Me.lblsl9)
-        Me.Panel4.Controls.Add(Me.Label23)
-        Me.Panel4.Controls.Add(Me.lblsl8)
-        Me.Panel4.Controls.Add(Me.lblsl7)
-        Me.Panel4.Controls.Add(Me.lblsl6)
-        Me.Panel4.Controls.Add(Me.lblsl5)
-        Me.Panel4.Controls.Add(Me.lblsl4)
-        Me.Panel4.Controls.Add(Me.lblsl3)
-        Me.Panel4.Controls.Add(Me.lblsl2)
-        Me.Panel4.Controls.Add(Me.lblsl1)
-        Me.Panel4.Controls.Add(Me.lblsl0)
-        Me.Panel4.Controls.Add(Me.btnsl9)
-        Me.Panel4.Controls.Add(Me.btnsl10)
-        Me.Panel4.Controls.Add(Me.btnsl8)
-        Me.Panel4.Controls.Add(Me.btnsl6)
-        Me.Panel4.Controls.Add(Me.btnsl7)
-        Me.Panel4.Controls.Add(Me.btnsl5)
-        Me.Panel4.Controls.Add(Me.btnsl3)
-        Me.Panel4.Controls.Add(Me.btnsl4)
-        Me.Panel4.Controls.Add(Me.btnsl2)
-        Me.Panel4.Controls.Add(Me.btnsl0)
-        Me.Panel4.Controls.Add(Me.btnsl1)
-        Me.Panel4.Location = New System.Drawing.Point(2, 176)
-        Me.Panel4.Margin = New System.Windows.Forms.Padding(2)
-        Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(418, 372)
-        Me.Panel4.TabIndex = 3
-        '
-        'Panel8
-        '
-        Me.Panel8.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Panel8.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Panel8.Controls.Add(Me.Label12)
-        Me.Panel8.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Panel8.Location = New System.Drawing.Point(-3, 546)
-        Me.Panel8.Margin = New System.Windows.Forms.Padding(2)
-        Me.Panel8.Name = "Panel8"
-        Me.Panel8.Size = New System.Drawing.Size(1027, 63)
-        Me.Panel8.TabIndex = 45
-        '
-        'Label12
-        '
-        Me.Label12.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(288, 20)
-        Me.Label12.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(533, 19)
-        Me.Label12.TabIndex = 0
-        Me.Label12.Text = "Support@permatabelajar.com, Phone/Whatsapp: 0811811306,"
-        '
-        'Label14
-        '
-        Me.Label14.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.Label14.BackColor = System.Drawing.Color.RoyalBlue
-        Me.Label14.Location = New System.Drawing.Point(203, 76)
-        Me.Label14.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(206, 4)
-        Me.Label14.TabIndex = 16
-        Me.Label14.Visible = False
-        '
-        'Panel5
-        '
-        Me.Panel5.Controls.Add(Me.Label15)
-        Me.Panel5.Controls.Add(Me.btnsmstr0)
-        Me.Panel5.Controls.Add(Me.Label14)
-        Me.Panel5.Controls.Add(Me.Label13)
-        Me.Panel5.Location = New System.Drawing.Point(415, 1)
-        Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(610, 102)
-        Me.Panel5.TabIndex = 46
-        Me.Panel5.Visible = False
-        '
-        'btnsmstr0
-        '
-        Me.btnsmstr0.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.btnsmstr0.CheckedState.Parent = Me.btnsmstr0
-        Me.btnsmstr0.CustomImages.Parent = Me.btnsmstr0
-        Me.btnsmstr0.FillColor = System.Drawing.Color.White
-        Me.btnsmstr0.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnsmstr0.ForeColor = System.Drawing.Color.Black
-        Me.btnsmstr0.HoverState.Parent = Me.btnsmstr0
-        Me.btnsmstr0.Location = New System.Drawing.Point(0, 2)
-        Me.btnsmstr0.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnsmstr0.Name = "btnsmstr0"
-        Me.btnsmstr0.ShadowDecoration.Parent = Me.btnsmstr0
-        Me.btnsmstr0.Size = New System.Drawing.Size(608, 73)
-        Me.btnsmstr0.TabIndex = 12
-        Me.btnsmstr0.Text = "Bab Pembelajaran"
-        '
-        'Panel3
-        '
-        Me.Panel3.Controls.Add(Me.lbl_kosong)
-        Me.Panel3.Controls.Add(Me.lblbab6)
-        Me.Panel3.Controls.Add(Me.lblbab5)
-        Me.Panel3.Controls.Add(Me.lblbab4)
-        Me.Panel3.Controls.Add(Me.lblbab3)
-        Me.Panel3.Controls.Add(Me.lblbab2)
-        Me.Panel3.Controls.Add(Me.lblbab1)
-        Me.Panel3.Controls.Add(Me.btntpk5)
-        Me.Panel3.Controls.Add(Me.btntpk4)
-        Me.Panel3.Controls.Add(Me.btntpk3)
-        Me.Panel3.Controls.Add(Me.btntpk2)
-        Me.Panel3.Controls.Add(Me.btntpk1)
-        Me.Panel3.Controls.Add(Me.btntpk0)
-        Me.Panel3.Location = New System.Drawing.Point(415, 108)
-        Me.Panel3.Margin = New System.Windows.Forms.Padding(2)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(728, 439)
-        Me.Panel3.TabIndex = 44
-        Me.Panel3.Visible = False
-        '
-        'lbl_kosong
-        '
-        Me.lbl_kosong.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lbl_kosong.AutoSize = True
-        Me.lbl_kosong.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_kosong.Location = New System.Drawing.Point(83, 167)
-        Me.lbl_kosong.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.lbl_kosong.Name = "lbl_kosong"
-        Me.lbl_kosong.Size = New System.Drawing.Size(566, 37)
-        Me.lbl_kosong.TabIndex = 12
-        Me.lbl_kosong.Text = "Akan Kami Update Secara Bertahap"
-        Me.lbl_kosong.Visible = False
-        '
-        'lblbab6
-        '
-        Me.lblbab6.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblbab6.BackColor = System.Drawing.Color.LimeGreen
-        Me.lblbab6.Location = New System.Drawing.Point(31, 327)
-        Me.lblbab6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.lblbab6.Name = "lblbab6"
-        Me.lblbab6.Size = New System.Drawing.Size(8, 30)
-        Me.lblbab6.TabIndex = 11
-        Me.lblbab6.Visible = False
-        '
-        'lblbab5
-        '
-        Me.lblbab5.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblbab5.BackColor = System.Drawing.Color.LimeGreen
-        Me.lblbab5.Location = New System.Drawing.Point(31, 272)
-        Me.lblbab5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.lblbab5.Name = "lblbab5"
-        Me.lblbab5.Size = New System.Drawing.Size(8, 30)
-        Me.lblbab5.TabIndex = 10
-        Me.lblbab5.Visible = False
-        '
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.SystemColors.ActiveCaption
@@ -562,6 +406,41 @@ Partial Class Soal_SBMPTN
         Me.Label22.Name = "Label22"
         Me.Label22.Size = New System.Drawing.Size(400, 2)
         Me.Label22.TabIndex = 3
+        '
+        'Panel4
+        '
+        Me.Panel4.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Panel4.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Panel4.Controls.Add(Me.lblsl10)
+        Me.Panel4.Controls.Add(Me.lblsl9)
+        Me.Panel4.Controls.Add(Me.Label23)
+        Me.Panel4.Controls.Add(Me.lblsl8)
+        Me.Panel4.Controls.Add(Me.lblsl7)
+        Me.Panel4.Controls.Add(Me.lblsl6)
+        Me.Panel4.Controls.Add(Me.lblsl5)
+        Me.Panel4.Controls.Add(Me.lblsl4)
+        Me.Panel4.Controls.Add(Me.lblsl3)
+        Me.Panel4.Controls.Add(Me.lblsl2)
+        Me.Panel4.Controls.Add(Me.lblsl1)
+        Me.Panel4.Controls.Add(Me.lblsl0)
+        Me.Panel4.Controls.Add(Me.btnsl9)
+        Me.Panel4.Controls.Add(Me.btnsl10)
+        Me.Panel4.Controls.Add(Me.btnsl8)
+        Me.Panel4.Controls.Add(Me.btnsl6)
+        Me.Panel4.Controls.Add(Me.btnsl7)
+        Me.Panel4.Controls.Add(Me.btnsl5)
+        Me.Panel4.Controls.Add(Me.btnsl3)
+        Me.Panel4.Controls.Add(Me.btnsl4)
+        Me.Panel4.Controls.Add(Me.btnsl2)
+        Me.Panel4.Controls.Add(Me.btnsl0)
+        Me.Panel4.Controls.Add(Me.btnsl1)
+        Me.Panel4.Location = New System.Drawing.Point(2, 176)
+        Me.Panel4.Margin = New System.Windows.Forms.Padding(2)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(418, 372)
+        Me.Panel4.TabIndex = 3
         '
         'btnsl9
         '
@@ -730,6 +609,127 @@ Partial Class Soal_SBMPTN
         Me.btnsl1.TabIndex = 28
         Me.btnsl1.UseVisualStyleBackColor = True
         '
+        'Panel8
+        '
+        Me.Panel8.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Panel8.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Panel8.Controls.Add(Me.Label12)
+        Me.Panel8.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Panel8.Location = New System.Drawing.Point(-3, 546)
+        Me.Panel8.Margin = New System.Windows.Forms.Padding(2)
+        Me.Panel8.Name = "Panel8"
+        Me.Panel8.Size = New System.Drawing.Size(1027, 63)
+        Me.Panel8.TabIndex = 45
+        '
+        'Label12
+        '
+        Me.Label12.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.Location = New System.Drawing.Point(288, 20)
+        Me.Label12.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(533, 19)
+        Me.Label12.TabIndex = 0
+        Me.Label12.Text = "Support@permatabelajar.com, Phone/Whatsapp: 0811811306,"
+        '
+        'Label14
+        '
+        Me.Label14.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.Label14.BackColor = System.Drawing.Color.RoyalBlue
+        Me.Label14.Location = New System.Drawing.Point(203, 76)
+        Me.Label14.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(206, 4)
+        Me.Label14.TabIndex = 16
+        Me.Label14.Visible = False
+        '
+        'Panel5
+        '
+        Me.Panel5.Controls.Add(Me.Label15)
+        Me.Panel5.Controls.Add(Me.btnsmstr0)
+        Me.Panel5.Controls.Add(Me.Label14)
+        Me.Panel5.Controls.Add(Me.Label13)
+        Me.Panel5.Location = New System.Drawing.Point(415, 1)
+        Me.Panel5.Name = "Panel5"
+        Me.Panel5.Size = New System.Drawing.Size(610, 102)
+        Me.Panel5.TabIndex = 46
+        Me.Panel5.Visible = False
+        '
+        'btnsmstr0
+        '
+        Me.btnsmstr0.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.btnsmstr0.CheckedState.Parent = Me.btnsmstr0
+        Me.btnsmstr0.CustomImages.Parent = Me.btnsmstr0
+        Me.btnsmstr0.FillColor = System.Drawing.Color.White
+        Me.btnsmstr0.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnsmstr0.ForeColor = System.Drawing.Color.Black
+        Me.btnsmstr0.HoverState.Parent = Me.btnsmstr0
+        Me.btnsmstr0.Location = New System.Drawing.Point(0, 2)
+        Me.btnsmstr0.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnsmstr0.Name = "btnsmstr0"
+        Me.btnsmstr0.ShadowDecoration.Parent = Me.btnsmstr0
+        Me.btnsmstr0.Size = New System.Drawing.Size(608, 73)
+        Me.btnsmstr0.TabIndex = 12
+        Me.btnsmstr0.Text = "PTN"
+        '
+        'Panel3
+        '
+        Me.Panel3.Controls.Add(Me.lbl_kosong)
+        Me.Panel3.Controls.Add(Me.lblbab6)
+        Me.Panel3.Controls.Add(Me.lblbab5)
+        Me.Panel3.Controls.Add(Me.lblbab4)
+        Me.Panel3.Controls.Add(Me.lblbab3)
+        Me.Panel3.Controls.Add(Me.lblbab2)
+        Me.Panel3.Controls.Add(Me.lblbab1)
+        Me.Panel3.Controls.Add(Me.btntpk5)
+        Me.Panel3.Controls.Add(Me.btntpk4)
+        Me.Panel3.Controls.Add(Me.btntpk3)
+        Me.Panel3.Controls.Add(Me.btntpk2)
+        Me.Panel3.Controls.Add(Me.btntpk1)
+        Me.Panel3.Controls.Add(Me.btntpk0)
+        Me.Panel3.Location = New System.Drawing.Point(415, 108)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(2)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(728, 439)
+        Me.Panel3.TabIndex = 44
+        Me.Panel3.Visible = False
+        '
+        'lbl_kosong
+        '
+        Me.lbl_kosong.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lbl_kosong.AutoSize = True
+        Me.lbl_kosong.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_kosong.Location = New System.Drawing.Point(83, 167)
+        Me.lbl_kosong.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lbl_kosong.Name = "lbl_kosong"
+        Me.lbl_kosong.Size = New System.Drawing.Size(566, 37)
+        Me.lbl_kosong.TabIndex = 12
+        Me.lbl_kosong.Text = "Akan Kami Update Secara Bertahap"
+        Me.lbl_kosong.Visible = False
+        '
+        'lblbab6
+        '
+        Me.lblbab6.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lblbab6.BackColor = System.Drawing.Color.LimeGreen
+        Me.lblbab6.Location = New System.Drawing.Point(31, 327)
+        Me.lblbab6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblbab6.Name = "lblbab6"
+        Me.lblbab6.Size = New System.Drawing.Size(8, 30)
+        Me.lblbab6.TabIndex = 11
+        Me.lblbab6.Visible = False
+        '
+        'lblbab5
+        '
+        Me.lblbab5.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lblbab5.BackColor = System.Drawing.Color.LimeGreen
+        Me.lblbab5.Location = New System.Drawing.Point(31, 272)
+        Me.lblbab5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblbab5.Name = "lblbab5"
+        Me.lblbab5.Size = New System.Drawing.Size(8, 30)
+        Me.lblbab5.TabIndex = 10
+        Me.lblbab5.Visible = False
+        '
         'btntpk5
         '
         Me.btntpk5.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -869,14 +869,14 @@ Partial Class Soal_SBMPTN
         Me.Name = "Soal_SBMPTN"
         Me.Text = "Soal_SBMPTN"
         Me.Panel1.ResumeLayout(False)
+        Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
         Me.Panel4.ResumeLayout(False)
         Me.Panel4.PerformLayout()
         Me.Panel8.ResumeLayout(False)
         Me.Panel5.ResumeLayout(False)
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
-        Me.Panel2.ResumeLayout(False)
-        Me.Panel2.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub

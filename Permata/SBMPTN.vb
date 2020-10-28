@@ -71,7 +71,11 @@ Public Class SBMPTN
                 Dim tClient As WebClient = New WebClient
                 Dim downloadImage As Bitmap = Bitmap.FromStream(New MemoryStream(tClient.DownloadData(materiPelajaran.Data(i).Image)))
                 rmButton.FirstOrDefault().BackgroundImage = downloadImage
-                rmButton.FirstOrDefault().Tag = materiPelajaran.Data(i).Id_Jurusan
+                Dim tag = New With {
+                    .jurusan = materiPelajaran.Data(i).Id_Jurusan,
+                    .tahun = materiPelajaran.SelectedTahun
+                }
+                rmButton.FirstOrDefault().Tag = tag
                 rmButton.FirstOrDefault().Show()
                 lastIndex = lastIndex + 1
             Catch ex As Exception
@@ -116,7 +120,11 @@ Public Class SBMPTN
                 rmButton.FirstOrDefault().Tag = materiPelajaran.Tahun(i).Tahun
                 rmButton.FirstOrDefault().Text = materiPelajaran.Tahun(i).Tahun
                 If materiPelajaran.Tahun(i).Tahun = materiPelajaran.SelectedTahun Then
-                    'rmButton.FirstOrDefault().BackColor = BackColor.IsSystemColor
+                    rmButton.FirstOrDefault().BackColor = Color.FromArgb(0, 192, 0)
+                    rmButton.FirstOrDefault().ForeColor = Color.White
+                Else
+                    rmButton.FirstOrDefault().BackColor = Color.White
+                    rmButton.FirstOrDefault().ForeColor = Color.Black
                 End If
                 rmButton.FirstOrDefault().Show()
                 lastIndexTahun = lastIndexTahun + 1
@@ -174,6 +182,44 @@ Public Class SBMPTN
     End Sub
 
     Private Sub btnsl0_Click(sender As Object, e As EventArgs) Handles btnsl0.Click
+        Soal_SBMPTN.Show()
+        Soal_SBMPTN.Label26.Text = Me.Label26.Text
+        Soal_SBMPTN.Label26.Tag = Me.Label26.Tag
+        Soal_SBMPTN.Label2.Text = Me.lbls0.Text
+        Soal_SBMPTN.Label2.Tag = Me.Label2.Tag
+        Soal_SBMPTN.Label1.Tag = Me.Label1.Tag
+        Soal_SBMPTN.btnsmstr0.Tag = Me.btnsl0.Tag
+        Me.Hide()
+    End Sub
+
+    Private Sub Guna2Button7_Click(sender As Object, e As EventArgs) Handles Guna2Button7.Click
+        MenuUtama.Panel5.Visible = False
+        Me.Hide()
+    End Sub
+
+    Private Sub btnsl1_Click(sender As Object, e As EventArgs) Handles btnsl1.Click
+        Soal_SBMPTN.Show()
+        Soal_SBMPTN.Label26.Text = Me.Label26.Text
+        Soal_SBMPTN.Label26.Tag = Me.Label26.Tag
+        Soal_SBMPTN.Label2.Text = Me.lbls1.Text
+        Soal_SBMPTN.Label2.Tag = Me.Label2.Tag
+        Soal_SBMPTN.Label1.Tag = Me.Label1.Tag
+        Soal_SBMPTN.btnsmstr0.Tag = Me.btnsl1.Tag
+        Me.Hide()
+    End Sub
+
+    Private Sub btnsl2_Click(sender As Object, e As EventArgs) Handles btnsl2.Click
+        Soal_SBMPTN.Show()
+        Soal_SBMPTN.Label26.Text = Me.Label26.Text
+        Soal_SBMPTN.Label26.Tag = Me.Label26.Tag
+        Soal_SBMPTN.Label2.Text = Me.lbls2.Text
+        Soal_SBMPTN.Label2.Tag = Me.Label2.Tag
+        Soal_SBMPTN.Label1.Tag = Me.Label1.Tag
+        Soal_SBMPTN.btnsmstr0.Tag = Me.btnsl2.Tag
+        Me.Hide()
+    End Sub
+
+    Private Sub lbls1_Click(sender As Object, e As EventArgs) Handles lbls1.Click
 
     End Sub
 End Class

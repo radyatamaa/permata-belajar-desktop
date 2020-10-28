@@ -162,6 +162,7 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Model\Feature.vb" />
+    <Compile Include="Model\FeaturePTNResponse.vb" />
     <Compile Include="Model\FinishSoalResponse.vb" />
     <Compile Include="Model\Kelas.vb" />
     <Compile Include="Model\KelasResponse.vb" />
@@ -170,6 +171,7 @@
     <Compile Include="Model\NotificationResponse.vb" />
     <Compile Include="Model\Pelanggan.vb" />
     <Compile Include="Model\PelangganResponse.vb" />
+    <Compile Include="Model\PTNMataPelajaranResponse.vb" />
     <Compile Include="Model\RingkasanMataPelajaran.vb" />
     <Compile Include="Model\RingkasanMateriResponse.vb" />
     <Compile Include="Model\RingkasanMateriTopik.vb" />
@@ -193,6 +195,12 @@
       <DependentUpon>Prestasi.vb</DependentUpon>
     </Compile>
     <Compile Include="Prestasi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prestasi_SBMPTN.Designer.vb">
+      <DependentUpon>Prestasi_SBMPTN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Prestasi_SBMPTN.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Profil.Designer.vb">
@@ -254,6 +262,18 @@
     <Compile Include="Soaljawaban.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Soaljawaban_SBMPTN.Designer.vb">
+      <DependentUpon>Soaljawaban_SBMPTN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Soaljawaban_SBMPTN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Soal_SBMPTN.Designer.vb">
+      <DependentUpon>Soal_SBMPTN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Soal_SBMPTN.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form2.resx">
@@ -286,6 +306,9 @@
     <EmbeddedResource Include="Prestasi.resx">
       <DependentUpon>Prestasi.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Prestasi_SBMPTN.resx">
+      <DependentUpon>Prestasi_SBMPTN.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Profil.resx">
       <DependentUpon>Profil.vb</DependentUpon>
     </EmbeddedResource>
@@ -312,6 +335,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Soaljawaban.resx">
       <DependentUpon>Soaljawaban.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Soaljawaban_SBMPTN.resx">
+      <DependentUpon>Soaljawaban_SBMPTN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Soal_SBMPTN.resx">
+      <DependentUpon>Soal_SBMPTN.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
